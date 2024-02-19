@@ -40,9 +40,10 @@
 
   <state id="alarmSuccess">
     <onentry>
-      <raise event="tickReturn" data="SKILL_SUCCESS">
+      <send event="tickReturn">
+        <param name="result" expr="SKILL_SUCCESS" />   
+      </send>
     </onentry>
     <transition event="tickReturn" target="idle" />
   </state>
 </scxml>
-
