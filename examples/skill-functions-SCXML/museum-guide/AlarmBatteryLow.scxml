@@ -51,4 +51,3 @@
     <transition event="tickReturn" target="idle" />
   </state>
 </scxml>
-
