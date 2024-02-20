@@ -1,0 +1,53 @@
+<scxml 
+  initial="idle" 
+  version="1.0" 
+  name="AlarmBatteryLow"
+  xmlns="http://www.w3.org/2005/07/scxml">
+
+  <state id="idle">
+    <transition event="tickCall" target="startAlarm" />
+    <transition event="haltCall" target="halt" />
+  </state>
+
+  <state id="halt">
+    <onentry>
+      <send event="haltReturn"/>
+    </onentry>
+    <transition event="haltReturn" target="idle" />
+  </state>
+
+	<state id="startAlarm">
+    <onentry>
+      <send event="AlarmCmp.sendAlarmCall" />
+    </onentry>
+    <transition target="alarm"/>
+  </state>
+
+  <state id="alarm">
+    <transition event="AlarmCmp.sendAlarmReturn" target="alarmSuccess"/>
+    <transition target="alarmRunning"/>
+  </state>
+
+  <state id="alarmRunning">
+    <onentry>
+      <send event="tickReturn">
+        <param name="result" expr="RUNNING"/>
+      </send>
+    </onentry>
+    <transition event="tickCall" target="alarm" />
+    <transition event="haltCall" target="waitHalt" />
+  </state>
+
+  <state id="waitHalt">
+    <transition event="AlarmCmp.sendAlarmReturn" target="halt"/>
+  </state>
+
+  <state id="alarmSuccess">
+    <onentry>
+      <send event="tickReturn">
+        <param name="result" expr="SUCCESS"/>
+      </send>
+    </onentry>
+    <transition event="tickReturn" target="idle" />
+  </state>
+</scxml>
