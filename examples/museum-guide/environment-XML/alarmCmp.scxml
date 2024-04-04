@@ -1,11 +1,13 @@
 <scxml
-  initial="idle"
   version="1.0"
+  xmlns="http://www.w3.org/2005/07/scxml"
+  datamodel="ecmascript"
   name="AlarmCmp"
-  xmlns="http://www.w3.org/2005/07/scxml">
+  initial="idle">
+
   <datamodel>
-    <!-- <data name="var" type="var_type"/> -->
-		<data id="origin" type="URI"/>
+    <!-- TYPE origin:URI -->
+		<data id="origin"/>
   </datamodel>
 
   <state id="idle">

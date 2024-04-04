@@ -1,12 +1,17 @@
 <scxml
-	initial="init"
 	version="1.0"
+  	xmlns="http://www.w3.org/2005/07/scxml"
+  	datamodel="ecmascript"
 	name="BatteryDriverCmp"
-	xmlns="http://www.w3.org/2005/07/scxml">
+  	initial="init">
+
 	<datamodel>
-		<data id="origin" type="URI"/>
-		<data id="level" type="i32" expr="0" />
-		<data id="notify" type="bool" expr="false" />
+		<!-- TYPE origin:URI -->
+		<data id="origin"/>
+		<!-- TYPE level:int32 -->
+		<data id="level" expr="0" />
+		<!-- TYPE notify:boolean -->
+		<data id="notify" expr="false" />
 	</datamodel>
 
 	<state id="init">
@@ -41,6 +46,7 @@
 		<onentry>
 			<!-- 'target' format is probably implementation-dependent -->
 			<send event="readLevelReturn" target="BatteryLevel">
+				<!-- TYPE result:int32 -->
 				<param name="result" expr="level"/>
 			</send>
 			<assign location="notify" expr="false" />
