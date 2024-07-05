@@ -8,22 +8,24 @@
     <!-- BatteryDrainer is a server for tick and halt from the BT -->
     <ros_sync_service_server id="/BatteryDrainer/tick" />
     <ros_sync_service_server id="/BatteryDrainer/halt" />
-    <!-- BatteryDrainer is a client for drain from the BatteryDriverCmp component-->
-    <ros_async_service_client id="/BatteryDriverCmp/drain" />
+    <!-- BatteryDrainer is a client for start from the BatteryDrainerSkill -->
+    <ros_async_service_client id="/BatteryDrainerSkill/start" />
+    <!-- BatteryDrainer is a client for stop from the BatteryDrainerSkill -->
+    <ros_async_service_client id="/BatteryDrainerSkill/stop" />
     
     <state id="idle">
         <!-- If ticked, send a query to the BatteryDriverCmp -->
-        <ros_sync_service_handle_request id="/BatteryDrainer/tick" target="drainQuery"/>
+        <ros_sync_service_handle_request id="/BatteryDrainer/tick" target="startSkill"/>
         <!-- If halted, do nothing-->
         <ros_sync_service_handle_request id="/BatteryDrainer/halt" target="idle">
             <ros_sync_service_send_response id="/BatteryDrainer/halt"/>
         </ros_sync_service_handle_request>
     </state>
 
-    <state id="drainQuery">
+    <state id="startSkill">
         <!-- Send an asynchronous request and answer RUNNING to the BT -->
         <onentry>
-            <ros_async_service_send_request id="/BatteryDriverCmp/drain"/>
+            <ros_async_service_send_request id="/BatteryDrainerSkill/start"/>
             <ros_sync_service_send_response id="/BatteryDrainer/tick">
                 <param name="result" expr="RUNNING"/>
             </ros_sync_service_send_response>
@@ -33,15 +35,20 @@
 
     <state id="running">
         <!-- If the drain request returns, go to answer state-->
-        <ros_async_service_handle_response id="/BatteryDriverCmp/drain" target="answer"/>
+        <ros_async_service_handle_response id="/BatteryDrainerSkill/start" target="answer">
+            <assign location="skillResponse" expr="_event.data.result"/>
+        </ros_async_service_handle_response>
         <!-- If ticked, just answer RUNNING and stay in this state --> 
         <ros_sync_service_handle_request id="/BatteryDrainer/tick" target="running">
             <ros_sync_service_send_response id="/BatteryDrainer/tick">
                 <param name="result" expr="RUNNING">
             </ros_sync_service_send_response>
         </ros_sync_service_handle_request>
-        <!-- If halted, go to waitHalt state -->
-        <ros_sync_service_handle_request id="/BatteryDrainer/halt" target="waitHalt"/>
+        <!-- If halted, send stop request to skill and go to idle state -->
+        <ros_sync_service_handle_request id="/BatteryDrainer/halt" target="idle">
+            <ros_async_service_send_request id="/BatteryDrainerSkill/stop"/>
+            <ros_sync_service_send_response id="/BatteryDrainer/halt"/>
+        </ros_sync_service_handle_request>
     </state>
 
     <state id="answer">
@@ -51,16 +58,15 @@
         </ros_sync_service_handle_request>
         <!-- If ticked, send back an answer to the BT and go to idle state -->
         <ros_sync_service_handle_request id="/BatteryDrainer/tick" target="idle">
-            <ros_sync_service_send_response id="/BatteryDrainer/tick">
-                <param name="result" expr="SUCCESS">
-            </ros_sync_service_send_response>
+            <if cond="skillResponse == true">
+                <ros_sync_service_send_response id="/BatteryDrainer/tick">
+                    <param name="result" expr="SUCCESS">
+                </ros_sync_service_send_response>
+            <else/>
+                <ros_sync_service_send_response id="/BatteryDrainer/tick">
+                    <param name="result" expr="FAILURE">
+                </ros_sync_service_send_response>
+            </if>
         </ros_sync_service_handle_request>
-    </state>
-
-    <state id="waitHalt">
-        <!-- Wait for the response from the component, then go to idle state -->
-        <ros_async_service_handle_response id="/BatteryDriverCmp/drain" target="idle">
-            <ros_sync_service_send_response id="BatteryDrainer/halt"/>
-        </ros_async_service_handle_response> 
     </state>
 </scxml>

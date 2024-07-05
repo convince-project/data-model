@@ -1,26 +1,28 @@
 <specification xmlns="..." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="...">
 
-  <types path="./types.xml" />
-  <protocols path="./protocols.xml" />
-    
   <model>
 
     <taskPlan id="Policy" moc="bt" path="./Policy.xml"/> 
 
-    <skillList>
-      <!-- Skills (BT leaves) -->
+    <plugins>
+      <!-- Plugins: correspond to BT leaves -->
+      <plugin id="BatteryLevel" moc="fsm" path="../Plugin/BatteryLevel.scxml" />
+      <plugin id="AlarmBatteryLow" moc="fsm" path="../Plugin/AlarmBatteryLow.scxml" />
+      <plugin id="BatteryDrainer" moc="fsm" path="../Plugin/BatteryDrainer.scxml" />
+    </plugins>
+  
+    <skills>
+      <!-- Skills: correspond to deliberation components -->
       <!-- Should moc="fsm" be changed to "scxml"? -->
-      <skill id="BatteryLevel" moc="fsm" path="../Skills/BatteryLevel.scxml" />
-      <skill id="AlarmBatteryLow" moc="fsm" path="../Skills/AlarmBatteryLow.scxml" />
-      <skill id="BatteryDrainer" moc="fsm" path="../Skills/BatteryDrainer.scxml" />
-    </skillList>
+      <skill id="BatteryDrainerSkill" moc="fsm" path="../Skills/BatteryDrainerSkill.scxml" />
+    </skills>
 
-    <componentList>
+    <components>
       <!-- Components (abstract models for s.w., h.w., environment) -->
       <component id="BatteryDriverCmp" moc="fsm" path="../Components/BatteryDriverCmp.scxml" />
       <component id="AlarmCmp" moc="fsm" path="../Components/AlarmCmp.scxml" />
-    </componentList>
+    </components>
  
   </model>
 
