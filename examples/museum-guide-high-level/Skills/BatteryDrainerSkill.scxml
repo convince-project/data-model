@@ -6,41 +6,41 @@
     initial="idle"> 
 
     <!-- BatteryDrainerSkill is a client for drain from the BatteryDriverCmp component-->
-    <ros_async_service_client id="/BatteryDriverCmp/drain" />
+    <ros_service_client id="/BatteryDriverCmp/drain" />
     <!-- BatteryDrainerSkill is a server for start from the BatteryDrainer plugin-->
-    <ros_async_service_server id="/BatteryDrainerSkill/start" />
+    <ros_service_server id="/BatteryDrainerSkill/start" />
     <!-- BatteryDrainerSkill is a server for stop from the BatteryDrainer plugin-->
-    <ros_async_service_server id="/BatteryDrainerSkill/stop" />
+    <ros_service_server id="/BatteryDrainerSkill/stop" />
     
     <state id="idle">
         <!-- If called, send a query to the BatteryDriverCmp -->
-        <ros_async_service_handle_request id="/BatteryDrainerSkill/start" target="draining">
-            <ros_async_service_send_request id="/BatteryDriverCmp/drain"/>
-        </ros_async_service_handle_request>
-        <ros_async_service_handle_request id="/BatteryDrainerSkill/stop" target="idle">
-            <ros_async_service_send_response id="/BatteryDrainerSkill/stop"/>
-        </ros_async_service_handle_request>
+        <ros_service_handle_request id="/BatteryDrainerSkill/start" target="draining">
+            <ros_service_send_request id="/BatteryDriverCmp/drain"/>
+        </ros_service_handle_request>
+        <ros_service_handle_request id="/BatteryDrainerSkill/stop" target="idle">
+            <ros_service_send_response id="/BatteryDrainerSkill/stop"/>
+        </ros_service_handle_request>
     </state>
 
     <state id="draining">
         <!-- If the drain request returns, answer -->
-        <ros_async_service_handle_response id="/BatteryDriverCmp/drain" target="idle">
-            <ros_async_service_send_response id="/BatteryDrainerSkill/start">
+        <ros_service_handle_response id="/BatteryDriverCmp/drain" target="idle">
+            <ros_service_send_response id="/BatteryDrainerSkill/start">
                 <param name="result" expr="true">
-            </ros_async_service_send_response>
-        </ros_async_service_handle_response>
-        <ros_async_service_handle_request id="/BatteryDrainerSkill/stop" target="stopping"/>
+            </ros_service_send_response>
+        </ros_service_handle_response>
+        <ros_service_handle_request id="/BatteryDrainerSkill/stop" target="stopping"/>
     </state>
 
     <state id="stopping">
         <!-- If the drain request returns, answer -->
-        <ros_async_service_handle_response id="/BatteryDriverCmp/drain" target="idle">
-            <ros_async_service_send_response id="/BatteryDrainerSkill/stop"/>
-        </ros_async_service_handle_response>
-        <ros_async_service_handle_request id="/BatteryDrainerSkill/start" target="stopping">
-            <ros_async_service_send_response id="/BatteryDrainerSkill/start">
+        <ros_service_handle_response id="/BatteryDriverCmp/drain" target="idle">
+            <ros_service_send_response id="/BatteryDrainerSkill/stop"/>
+        </ros_service_handle_response>
+        <ros_service_handle_request id="/BatteryDrainerSkill/start" target="stopping">
+            <ros_service_send_response id="/BatteryDrainerSkill/start">
                 <param name="result" expr="false">
-            </ros_async_service_send_response>
-        </ros_async_service_handle_request>
+            </ros_service_send_response>
+        </ros_service_handle_request>
     </state>
 </scxml>

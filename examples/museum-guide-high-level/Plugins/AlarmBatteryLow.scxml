@@ -5,29 +5,33 @@
   name="AlarmBatteryLow"
   initial="idle">
 
-  <!-- AlarmBatteryLow is a server for tick and halt from the BT -->
-  <ros_sync_service_server id="/AlarmBatteryLow/tick"/> 
-  <ros_sync_service_server id="/AlarmBatteryLow/halt"/> 
   <!-- AlarmBatteryLow is a client for sendAlarm from the AlarmCmp component-->
-  <ros_async_service_client id="/AlarmCmp/sendAlarm"/> 
+  <ros_service_client id="/AlarmCmp/sendAlarm"/> 
 
+  <datamodel>
+      <!-- How do we know the type of this? -->
+      <data id="origin">
+  </datamodel>
+  
   <state id="idle">
     <!-- If ticked, send a query to the AlarmCmp component -->
-    <ros_sync_service_handle_request id="/AlarmBatteryLow/tick" target="sendAlarm"/>
+    <transition event="AlarmBatteryLow_tick_call" target="sendAlarm">
+      <assign location="origin" expr="_event.origin"/>
+    </transition>
     <!-- If halted, do nothing-->
-    <ros_sync_service_handle_request id="/AlarmBatteryLow/halt" target="idle">
-      <ros_sync_service_send_response id="/AlarmBatteryLow/halt"/>
-    </ros_sync_service_handle_request>
+    <transition event="AlarmBatteryLow_halt_call" target="idle">
+      <send event="AlarmBatteryLow_halt_return"/>
+    </transition>
   </state>
 
 	<state id="sendAlarm">
     <onentry>
-      <ros_async_service_send_request id="/AlarmCmp/sendAlarm"/>
+      <ros_service_send_request id="/AlarmCmp/sendAlarm"/>
     </onentry>
-    <ros_async_service_handle_response id="/AlarmCmp/sendAlarm" target="idle">
-      <ros_sync_service_send_response id="/AlarmBatteryLow/tick">
+    <ros_service_handle_response id="/AlarmCmp/sendAlarm" target="idle">
+      <send event="AlarmBatteryLow_tick_return" targetexpr="origin">
         <param name="result" expr="SUCCESS"/>  
-      </ros_sync_service_send_response>
-    </ros_async_service_handle_respose>
+      </send>
+    </ros_service_handle_respose>
   </state>
 </scxml>

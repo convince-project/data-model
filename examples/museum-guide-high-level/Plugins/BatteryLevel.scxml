@@ -5,7 +5,6 @@
     name="BatteryLevel" 
     initial="idle">
 
-    <ros_sync_service_server id="/BatteryLevel/tick"/>
     <ros_topic_subscriber id="/BatteryDriverCmp/battery_status" />
 
     <datamodel>
@@ -13,7 +12,7 @@
     </datamodel>
 
     <state id="idle">
-        <ros_sync_service_handle_request id="/BatteryLevel/tick" target="getStatus"/>
+        <transition id="BatteryLevel_tick_call" target="getStatus"/>
     </state>
 
     <state id="getStatus">
@@ -25,13 +24,13 @@
     <state id="answer">
         <onentry>
             <if cond="percentage &gt; 30">
-                <ros_sync_service_send_response id="/BatteryLevel/tick">
+                <transition id="BatteryLevel_tick_return">
                     <param name="result" expr="SUCCESS"/>
-                </ros_sync_service_send_response>
+                </transition>
             <else/>
-                <ros_sync_service_send_response id="/BatteryLevel/tick">
+                <transition id="BatteryLevel_tick_return">
                     <param name="result" expr="FAILURE"/>
-                </ros_sync_service_send_response>
+                </transition>
             </if>
         </onentry>
         <transition target="idle"/>

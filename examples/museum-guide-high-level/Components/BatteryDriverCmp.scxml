@@ -6,12 +6,12 @@
 	initial="init">
 
 	<datamodel>
-		<!-- TYPE level:float32 -->
+    <!-- How do we know the type of this? -->
 		<data id="level" expr="0" />
 	</datamodel>
 
   <!-- BatteryDriverCmp is a server for drain -->
-  <ros_async_service_server id="/BatteryDriverCmp/drain" />
+  <ros_service_server id="/BatteryDriverCmp/drain" />
 	<!-- BatteryDriverCmp publishes the battery state -->
 	<ros_topic_publisher id="/BatteryDriverCmp/battery_status" />
 
@@ -28,7 +28,7 @@
 				<param name="percentage" expr="level"/>
 			</ros_topic_publish>
 		</onentry>
-		<ros_async_service_handle_request id="/BatteryDriverCmp/drain" target="drain"/>
+		<ros_service_handle_request id="/BatteryDriverCmp/drain" target="drain"/>
 	</state>
 
 	<state id="drain">
@@ -38,7 +38,7 @@
 			</if>
 		</onentry>
 		<transition target="idle">
-			<ros_async_service_send_response id="/BatteryDriverCmp/drain"/>
+			<ros_service_send_response id="/BatteryDriverCmp/drain"/>
 		</transition>
 	<state>
 </scxml>
