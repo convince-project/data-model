@@ -6,71 +6,51 @@
     initial="idle"> 
 
     <!-- BatteryDrainer is a client for start from the BatteryDrainerSkill -->
-    <ros_service_client id="/BatteryDrainerSkill/start" />
+    <ros_service_client service="/BatteryDrainerSkill/start"  type="std_srvs/Trigger"/>
     <!-- BatteryDrainer is a client for stop from the BatteryDrainerSkill -->
-    <ros_service_client id="/BatteryDrainerSkill/stop" />
-
-    <datamodel>
-        <!-- How do we know the type of this? -->
-        <data id="origin">
-    </datamodel>
+    <ros_service_client service="/BatteryDrainerSkill/stop" type="std_srvs/Trigger"/>
     
     <state id="idle">
         <!-- If ticked, send a query to the BatteryDriverCmp -->
-        <transition event="BatteryDrainer_tick_call" target="startSkill"/>
-            <assign location="origin" expr="_event.origin"/>
-        </transition>
+        <transition event="bt_tick" target="startSkill"/>
         <!-- If halted, do nothing-->
-        <transition event="BatteryDrainer_halt_call" target="idle">
-            <send event="BatteryDrainer_halt_return" targetexpr="_event.origin"/>
-        </transition>
+        <!-- Do we expect a BT return from a halt request? -->
+        <transition event="bt_halt" target="idle"/>
     </state>
 
     <state id="startSkill">
         <!-- Send an asynchronous request and answer RUNNING to the BT -->
         <onentry>
-            <ros_service_send_request id="/BatteryDrainerSkill/start"/>
-            <send event="BatteryDrainer_tick_return" targetexpr="origin">
-                <!-- How do we know the type of this? -->
-                <param name="result" expr="RUNNING"/>
-            </send>
+            <ros_service_send_request service="/BatteryDrainerSkill/start"/>
+            <send event="bt_running" />
         </onentry>
         <transition target="running"/>
     </state>
 
     <state id="running">
         <!-- If the drain request returns, go to answer state-->
-        <ros_service_handle_response id="/BatteryDrainerSkill/start" target="answer">
-            <assign location="skillResponse" expr="_event.data.result"/>
+        <ros_service_handle_response service="/BatteryDrainerSkill/start" target="answer">
+            <assign location="skillResponse" expr="_service.response.success"/>
         </ros_service_handle_response>
         <!-- If ticked, just answer RUNNING and stay in this state --> 
-        <transition event="BatteryDrainer_tick_call" target="running">
-            <send event="BatteryDrainer_tick_return" targetexpr="origin">
-                <param name="result" expr="RUNNING">
-            </send>
+        <transition event="bt_tick" target="running">
+            <send event="bt_running" />
         </transition>
         <!-- If halted, send stop request to skill and go to idle state -->
-        <ros_sync_service_handle_request id="/BatteryDrainer/halt" target="idle">
-            <ros_service_send_request id="/BatteryDrainerSkill/stop"/>
-            <ros_sync_service_send_response id="/BatteryDrainer/halt"/>
-        </ros_sync_service_handle_request>
+        <transition event="bt_halt" target="idle">
+            <ros_service_send_request service="/BatteryDrainerSkill/stop"/>
+        </transition>
     </state>
 
     <state id="answer">
         <!-- If halted, return to the idle state -->
-        <ros_sync_service_handle_request id="/BatteryDrainer/halt" target="idle">
-            <ros_sync_service_send_response id="/BatteryDrainer/halt"/>
-        </ros_sync_service_handle_request>
+        <transition event="bt_halt" target="idle"/>
         <!-- If ticked, send back an answer to the BT and go to idle state -->
         <transition event="BatteryDrainer_tick_call" target="idle">
             <if cond="skillResponse == true">
-                <send event="BatteryDrainer_tick_return" targetexpr="origin">
-                    <param name="result" expr="SUCCESS">
-                </send>
+                <send event="bt_success" />
             <else/>
-                <send event="BatteryDrainer_tick_return" targetexpr="origin">
-                    <param name="result" expr="FAILURE">
-                </send>
+                <send event="bt_failure" />
             </if>
         </transition>
     </state>

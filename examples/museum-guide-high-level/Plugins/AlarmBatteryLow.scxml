@@ -5,33 +5,53 @@
   name="AlarmBatteryLow"
   initial="idle">
 
-  <!-- AlarmBatteryLow is a client for sendAlarm from the AlarmCmp component-->
-  <ros_service_client id="/AlarmCmp/sendAlarm"/> 
+  <!-- AlarmBatteryLow is a client for sendAlarm from the AlarmCmp component. -->
+  <!-- We assume that the alarm component sounds an alarm for a fixed amount of time when it is triggered. -->
+  <!-- The trigger gets an empty request and returns success as a bool. -->
+  <ros_service_client service="/AlarmCmp/sendAlarm" type="std_srvs/Trigger"/> 
 
-  <datamodel>
-      <!-- How do we know the type of this? -->
-      <data id="origin">
-  </datamodel>
   
+  <!--In ROS, it is customary to check if there is a server for the client at construction time...-->
+  <!-- <state id="init">
+    <ros_service_client_init service="/AlarmCmp/sendAlarm" target="idle"\>
+  </state> -->
+
   <state id="idle">
     <!-- If ticked, send a query to the AlarmCmp component -->
-    <transition event="AlarmBatteryLow_tick_call" target="sendAlarm">
-      <assign location="origin" expr="_event.origin"/>
-    </transition>
+    <transition event="bt_tick" target="sendAlarm" />
     <!-- If halted, do nothing-->
-    <transition event="AlarmBatteryLow_halt_call" target="idle">
-      <send event="AlarmBatteryLow_halt_return"/>
-    </transition>
+    <transition event="bt_halt" target="idle" />
   </state>
 
 	<state id="sendAlarm">
     <onentry>
-      <ros_service_send_request id="/AlarmCmp/sendAlarm"/>
+      <ros_service_send_request service="/AlarmCmp/sendAlarm"/>
     </onentry>
-    <ros_service_handle_response id="/AlarmCmp/sendAlarm" target="idle">
-      <send event="AlarmBatteryLow_tick_return" targetexpr="origin">
-        <param name="result" expr="SUCCESS"/>  
-      </send>
-    </ros_service_handle_respose>
+    <transition target="wait_for_response">
+      <send event="bt_running"/>
+    </transition>
+  </state>
+
+  <state id="wait_for_response">
+    <ros_service_handle_response service="/AlarmCmp/sendAlarm" cond="_service.response.success == true" target="srv_success" \>
+    <ros_service_handle_response service="/AlarmCmp/sendAlarm" cond="_service.response.success == false" target="srv_failure" \>
+    <transition event="bt_tick" target="wait_for_response">
+      <send event="bt_running" />
+    </transition>
+    <transition event="bt_halt" target="idle">
+      <ros_service_cancel service="/AlarmCmp/sendAlarm" \>
+    </transition>
+  </state>
+
+  <state id="srv_success">
+    <transition event="bt_tick" target="idle">
+      <send event="bt_success" />
+    </transition>
+  </state>
+
+  <state id="srv_failure">
+    <transition event="bt_tick" target="idle">
+      <send event="bt_failure" />
+    </transition>
   </state>
 </scxml>

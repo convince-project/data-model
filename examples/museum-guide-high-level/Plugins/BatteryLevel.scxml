@@ -5,32 +5,27 @@
     name="BatteryLevel" 
     initial="idle">
 
-    <ros_topic_subscriber id="/BatteryDriverCmp/battery_status" />
+    <ros_topic_subscriber id="/BatteryDriverCmp/battery_status" type="std_msgs/Int32" />
 
     <datamodel>
-        <data id="percentage">
+        <!--We expect each data entry in the datamodel to have a default expr.-->
+        <!--This returns success as long as we didn't receive battery information.-->
+        <data id="percentage" expr="100" />
     </datamodel>
 
     <state id="idle">
-        <transition id="BatteryLevel_tick_call" target="getStatus"/>
-    </state>
-
-    <state id="getStatus">
-        <ros_topic_callback id="/BatteryDriverCmp/battery_status" target="answer">
-            <assign location="percentage" expr ="_msg.percentage"/>
+        <transition event="bt_tick" target="answer" />
+        <ros_topic_callback id="/BatteryDriverCmp/battery_status" target="idle">
+            <assign location="percentage" expr ="_msg.data" />
         </ros_topic_callback>
     </state>
 
     <state id="answer">
         <onentry>
             <if cond="percentage &gt; 30">
-                <transition id="BatteryLevel_tick_return">
-                    <param name="result" expr="SUCCESS"/>
-                </transition>
-            <else/>
-                <transition id="BatteryLevel_tick_return">
-                    <param name="result" expr="FAILURE"/>
-                </transition>
+                <send event="bt_success" />
+                <else />
+                <send event="bt_failure" />
             </if>
         </onentry>
         <transition target="idle"/>
