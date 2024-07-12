@@ -39,7 +39,9 @@
       <send event="bt_running" />
     </transition>
     <transition event="bt_halt" target="idle">
-      <ros_service_cancel service="/AlarmCmp/sendAlarm" \>
+      <!--Services have no "cancel" method: we could consider switching them to action-->
+      <!--To replicate the ROS behavior, here we are simply dropping the handle and ignoring the response-->
+      <!-- <ros_service_cancel service="/AlarmCmp/sendAlarm" \> -->
     </transition>
   </state>
 
