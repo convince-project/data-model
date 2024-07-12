@@ -9,8 +9,10 @@
 
     <datamodel>
         <!--We expect each data entry in the datamodel to have a default expr.-->
-        <!--This returns success as long as we didn't receive battery information.-->
-        <data id="percentage" expr="100" />
+        <!--type is compulsolry. Available types could match the ROS base types in
+            https://docs.ros.org/en/rolling/Concepts/Basic/About-Interfaces.html#field-types -->
+        <!--In this particular example, the FSM returns success as long as we didn't receive battery information.-->
+        <data id="percentage" expr="100" type="int32" lower_bound_incl="0" upper_bound_incl="100" />
     </datamodel>
 
     <state id="idle">

@@ -6,8 +6,7 @@
 	initial="init">
 
 	<datamodel>
-    <!-- How do we know the type of this? -->
-		<data id="level" expr="0" />
+		<data id="level" expr="0" type="int32" lower_bound_incl="0" upper_bound_incl="100" />
 	</datamodel>
 
   <!-- BatteryDriverCmp is a server for drain -->

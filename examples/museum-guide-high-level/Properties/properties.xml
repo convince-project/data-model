@@ -1,3 +1,7 @@
+<!-- Here we would like to introduce a distinction between two kinds of properties:
+     The ones to verify and to be model checked;
+     The ones representing assumptions and to be monitored, not affecting the model checking task;-->
+
 <properties>
   <ports>
     <!-- Ports are either Boolean or numeric variables associated to messages exchanged by the elements

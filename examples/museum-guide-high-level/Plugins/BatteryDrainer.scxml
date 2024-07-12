@@ -38,7 +38,9 @@
         </transition>
         <!-- If halted, send stop request to skill and go to idle state -->
         <transition event="bt_halt" target="idle">
-            <ros_service_send_request service="/BatteryDrainerSkill/stop"/>
+            <!--Services have no "cancel" method: we could consider switching them to action-->
+            <!--To replicate the ROS behavior, here we are simply dropping the handle and ignoring the response-->
+            <!--ros_service_send_request service="/BatteryDrainerSkill/stop"/-->
         </transition>
     </state>
 
@@ -46,7 +48,7 @@
         <!-- If halted, return to the idle state -->
         <transition event="bt_halt" target="idle"/>
         <!-- If ticked, send back an answer to the BT and go to idle state -->
-        <transition event="BatteryDrainer_tick_call" target="idle">
+        <transition event="bt_tick" target="idle">
             <if cond="skillResponse == true">
                 <send event="bt_success" />
             <else/>

@@ -4,10 +4,10 @@
     <BehaviorTree ID="BehaviorTree">
         <ReactiveSequence>
             <ReactiveFallback>
-                <BatteryLevel />
-                <AlarmBatteryLow />
+                <Condition ID="BatteryLevel" />
+                <Action ID="AlarmBatteryLow" />
             </ReactiveFallback>
-            <BatteryDrainer />
+            <Action ID="BatteryDrainer" />
         </ReactiveSequence>
     </BehaviorTree>
     <!-- ////////// -->
