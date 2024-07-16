@@ -3,53 +3,53 @@
     xmlns="..."
     datamodel="ecmascript"
     name="BatteryDrainer"
-    initial="idle"> 
+    initial="idle">
 
     <!-- BatteryDrainer is a client for start from the BatteryDrainerSkill -->
-    <ros_service_client service_name="/BatteryDrainerSkill/start"  type="std_srvs/Trigger"/>
+    <ros_service_client service_name="/BatteryDrainerSkill/start" type="std_srvs/Trigger" />
     <!-- BatteryDrainer is a client for stop from the BatteryDrainerSkill -->
-    <ros_service_client service_name="/BatteryDrainerSkill/stop" type="std_srvs/Trigger"/>
-    
+    <ros_service_client service_name="/BatteryDrainerSkill/stop" type="std_srvs/Trigger" />
+
     <state id="idle">
         <!-- If ticked, send a query to the BatteryDriverCmp -->
-        <transition event="bt_tick" target="startSkill"/>
+        <transition event="bt_tick" target="startSkill" />
         <!-- If halted, do nothing-->
         <!-- Do we expect a BT return from a halt request? -->
-        <transition event="bt_halt" target="idle"/>
+        <transition event="bt_halt" target="idle" />
     </state>
 
     <state id="startSkill">
         <!-- Send an asynchronous request and answer RUNNING to the BT -->
         <onentry>
-            <ros_service_send_request service_name="/BatteryDrainerSkill/start"/>
+            <ros_service_send_request service_name="/BatteryDrainerSkill/start" />
             <send event="bt_running" />
         </onentry>
-        <transition target="running"/>
+        <transition target="running" />
     </state>
 
     <state id="running">
         <!-- If the drain request returns, go to answer state-->
         <ros_service_handle_response service_name="/BatteryDrainerSkill/start" target="answer">
-            <assign location="skillResponse" expr="_service.response.success"/>
+            <assign location="skillResponse" expr="_service.response.success" />
         </ros_service_handle_response>
-        <!-- If ticked, just answer RUNNING and stay in this state --> 
+        <!-- If ticked, just answer RUNNING and stay in this state -->
         <transition event="bt_tick" target="running">
             <send event="bt_running" />
         </transition>
         <!-- If halted, send stop request to skill and go to idle state -->
         <transition event="bt_halt" target="idle">
-            <ros_service_send_request service_name="/BatteryDrainerSkill/stop"/>
+            <ros_service_send_request service_name="/BatteryDrainerSkill/stop" />
         </transition>
     </state>
 
     <state id="answer">
         <!-- If halted, return to the idle state -->
-        <transition event="bt_halt" target="idle"/>
+        <transition event="bt_halt" target="idle" />
         <!-- If ticked, send back an answer to the BT and go to idle state -->
         <transition event="bt_tick" target="idle">
             <if cond="skillResponse == true">
                 <send event="bt_success" />
-            <else/>
+                <else />
                 <send event="bt_failure" />
             </if>
         </transition>

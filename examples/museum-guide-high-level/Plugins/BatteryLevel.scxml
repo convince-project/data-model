@@ -2,23 +2,27 @@
     version="1.0"
     xmlns="..."
     datamodel="ecmascript"
-    name="BatteryLevel" 
+    name="BatteryLevel"
     initial="idle">
 
     <ros_topic_subscriber topic="/BatteryDriverCmp/battery_status" type="std_msgs/Int32" />
 
     <datamodel>
-        <!--We expect each data entry in the datamodel to have a default expr.-->
-        <!--type is compulsory. Available types could match the ROS base types in
+        <!--We
+        expect each data entry in the datamodel to have a default expr.-->
+        <!--type
+        is compulsory. Available types could match the ROS base types in
             https://docs.ros.org/en/rolling/Concepts/Basic/About-Interfaces.html#field-types -->
-        <!--In this particular example, the FSM returns success as long as we didn't receive battery information.-->
+        <!--In
+        this particular example, the FSM returns success as long as we didn't receive battery
+        information.-->
         <data id="percentage" expr="100" type="int32" lower_bound_incl="0" upper_bound_incl="100" />
     </datamodel>
 
     <state id="idle">
         <transition event="bt_tick" target="answer" />
         <ros_topic_callback topic="/BatteryDriverCmp/battery_status" target="idle">
-            <assign location="percentage" expr ="_msg.data" />
+            <assign location="percentage" expr="_msg.data" />
         </ros_topic_callback>
     </state>
 
@@ -30,7 +34,7 @@
                 <send event="bt_failure" />
             </if>
         </onentry>
-        <transition target="idle"/>
+        <transition target="idle" />
     </state>
 
 </scxml>

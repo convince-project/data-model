@@ -1,41 +1,49 @@
 <specification xmlns="..." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="...">
+    xsi:schemaLocation="...">
 
-  <model>
+    <model>
 
-    <!-- Reference to the BT xml file. The format of this file is expected to be compatible with Behaviortree.CPP -->
-    <taskPlan id="Policy" moc="bt" path="./Policy.xml"/> 
+        <!-- Reference to the BT xml file. The format of this file is expected to be compatible with
+        Behaviortree.CPP -->
+        <taskPlan id="Policy" moc="bt" path="./Policy.xml" />
 
-    <plugins>
-      <!-- BT leaves model -->
-      <!-- They represent BehaviorTree plugins, and therefore need to implement the required BT interface. -->
-      <!-- In the current format, this means that it should handle bt_tick and bt_halt events and send
+        <plugins>
+            <!-- BT leaves model -->
+            <!-- They represent BehaviorTree plugins, and therefore need to implement the required
+            BT interface. -->
+            <!-- In the current format, this means that it should handle bt_tick and bt_halt events
+            and send
            bt_success, bt_failure and bt_running -->
-      <!-- As a guiding design principle, plugins are expected to be as simple as possible, return a bt response quickly
+            <!-- As a guiding design principle, plugins are expected to be as simple as possible,
+            return a bt response quickly
            and request skills or components to perform heavier computation thorugh the ROS interfaces.
-           However, this is not enforced in any way, and developers can make it as complicated as they like.-->
-      <plugin id="BatteryLevel" moc="fsm" path="../Plugin/BatteryLevel.scxml" />
-      <plugin id="AlarmBatteryLow" moc="fsm" path="../Plugin/AlarmBatteryLow.scxml" />
-      <plugin id="BatteryDrainer" moc="fsm" path="../Plugin/BatteryDrainer.scxml" />
-    </plugins>
-  
-    <skills>
-      <!-- Skills -->
-      <!-- Skills and components represent respectively concrete and abstract models of a functionality. -->
-      <!-- In both cases, they CANNOT have any BT related interface (they would be plugins otherwise) -->
-      <!-- Communication with other skills, components or plugins should happen via ROS communication. -->
-      <!-- Should moc="fsm" be changed to "scxml"? -->
-      <skill id="BatteryDrainerSkill" moc="fsm" path="../Skills/BatteryDrainerSkill.scxml" />
-    </skills>
+           However, this is not enforced in any way, and developers can make it as complicated as they
+            like.-->
+            <plugin id="BatteryLevel" moc="fsm" path="../Plugin/BatteryLevel.scxml" />
+            <plugin id="AlarmBatteryLow" moc="fsm" path="../Plugin/AlarmBatteryLow.scxml" />
+            <plugin id="BatteryDrainer" moc="fsm" path="../Plugin/BatteryDrainer.scxml" />
+        </plugins>
 
-    <components>
-      <!-- Components (abstract models for s.w., h.w., environment). See skill description. -->
-      <component id="BatteryDriverCmp" moc="fsm" path="../Components/BatteryDriverCmp.scxml" />
-      <component id="AlarmCmp" moc="fsm" path="../Components/AlarmCmp.scxml" />
-    </components>
- 
-  </model>
+        <skills>
+            <!-- Skills -->
+            <!-- Skills and components represent respectively concrete and abstract models of a
+            functionality. -->
+            <!-- In both cases, they CANNOT have any BT related interface (they would be plugins
+            otherwise) -->
+            <!-- Communication with other skills, components or plugins should happen via ROS
+            communication. -->
+            <!-- Should moc="fsm" be changed to "scxml"? -->
+            <skill id="BatteryDrainerSkill" moc="fsm" path="../Skills/BatteryDrainerSkill.scxml" />
+        </skills>
 
-  <properties path="../Properties/properties.xml"/>
+        <components>
+            <!-- Components (abstract models for s.w., h.w., environment). See skill description. -->
+            <component id="BatteryDriverCmp" moc="fsm" path="../Components/BatteryDriverCmp.scxml" />
+            <component id="AlarmCmp" moc="fsm" path="../Components/AlarmCmp.scxml" />
+        </components>
+
+    </model>
+
+    <properties path="../Properties/properties.xml" />
 
 </specification>

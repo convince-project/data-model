@@ -1,16 +1,16 @@
 <scxml
-  version="1.0"
-  xmlns="..."
-  datamodel="ecmascript"
-  name="AlarmCmp"
-  initial="alarm">
+    version="1.0"
+    xmlns="..."
+    datamodel="ecmascript"
+    name="AlarmCmp"
+    initial="alarm">
 
-  <ros_service_server service_name="/AlarmCmp/sendAlarm" />
+    <ros_service_server service_name="/AlarmCmp/sendAlarm" />
 
-  <state id="alarm">
-    <ros_service_handle_request service_name="/AlarmCmp/sendAlarm" target="alarm">
-      <ros_service_send_response service_name="/AlarmCmp/sendAlarm"/>
-      <log expr="'Alarm sent!'"/>
-    </ros_service_handle_request>
-  </state>
+    <state id="alarm">
+        <ros_service_handle_request service_name="/AlarmCmp/sendAlarm" target="alarm">
+            <ros_service_send_response service_name="/AlarmCmp/sendAlarm" />
+            <log expr="'Alarm sent!'" />
+        </ros_service_handle_request>
+    </state>
 </scxml>
