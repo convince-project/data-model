@@ -1,6 +1,4 @@
-<specification xmlns="..." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="...">
-
+<specification xmlns="..." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <model>
 
         <!-- Reference to the BT xml file. The format of this file is expected to be compatible with
