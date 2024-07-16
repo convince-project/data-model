@@ -9,10 +9,10 @@
 		<data id="level" expr="0" type="int32" lower_bound_incl="0" upper_bound_incl="100" />
 	</datamodel>
 
-  <!-- BatteryDriverCmp is a server for drain -->
-  <ros_service_server id="/BatteryDriverCmp/drain" />
+	<!-- BatteryDriverCmp is a server for drain -->
+	<ros_service_server service_name="/BatteryDriverCmp/drain" />
 	<!-- BatteryDriverCmp publishes the battery state -->
-	<ros_topic_publisher id="/BatteryDriverCmp/battery_status" />
+	<ros_topic_publisher topic="/BatteryDriverCmp/battery_status" />
 
 	<state id="init">
 		<onentry>
@@ -23,11 +23,11 @@
 	
 	<state id="idle">
 		<onentry>
-			<ros_topic_publish id="/BatteryDriverCmp/battery_status">
+			<ros_topic_publish topic="/BatteryDriverCmp/battery_status">
 				<param name="percentage" expr="level"/>
 			</ros_topic_publish>
 		</onentry>
-		<ros_service_handle_request id="/BatteryDriverCmp/drain" target="drain"/>
+		<ros_service_handle_request service_name="/BatteryDriverCmp/drain" target="drain"/>
 	</state>
 
 	<state id="drain">
@@ -37,7 +37,7 @@
 			</if>
 		</onentry>
 		<transition target="idle">
-			<ros_service_send_response id="/BatteryDriverCmp/drain"/>
+			<ros_service_send_response service_name="/BatteryDriverCmp/drain"/>
 		</transition>
-	<state>
+	</state>
 </scxml>

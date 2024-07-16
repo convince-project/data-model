@@ -5,11 +5,11 @@
   name="AlarmCmp"
   initial="alarm">
 
-  <ros_service_server id="/AlarmCmp/sendAlarm" />
+  <ros_service_server service_name="/AlarmCmp/sendAlarm" />
 
   <state id="alarm">
-    <ros_service_handle_request id="/AlarmCmp/sendAlarm" target="alarm">
-      <ros_service_send_response id="/AlarmCmp/sendAlarm"/>
+    <ros_service_handle_request service_name="/AlarmCmp/sendAlarm" target="alarm">
+      <ros_service_send_response service_name="/AlarmCmp/sendAlarm"/>
       <log expr="'Alarm sent!'"/>
     </ros_service_handle_request>
   </state>

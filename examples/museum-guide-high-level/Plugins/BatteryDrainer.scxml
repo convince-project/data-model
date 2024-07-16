@@ -6,9 +6,9 @@
     initial="idle"> 
 
     <!-- BatteryDrainer is a client for start from the BatteryDrainerSkill -->
-    <ros_service_client service="/BatteryDrainerSkill/start"  type="std_srvs/Trigger"/>
+    <ros_service_client service_name="/BatteryDrainerSkill/start"  type="std_srvs/Trigger"/>
     <!-- BatteryDrainer is a client for stop from the BatteryDrainerSkill -->
-    <ros_service_client service="/BatteryDrainerSkill/stop" type="std_srvs/Trigger"/>
+    <ros_service_client service_name="/BatteryDrainerSkill/stop" type="std_srvs/Trigger"/>
     
     <state id="idle">
         <!-- If ticked, send a query to the BatteryDriverCmp -->
@@ -21,7 +21,7 @@
     <state id="startSkill">
         <!-- Send an asynchronous request and answer RUNNING to the BT -->
         <onentry>
-            <ros_service_send_request service="/BatteryDrainerSkill/start"/>
+            <ros_service_send_request service_name="/BatteryDrainerSkill/start"/>
             <send event="bt_running" />
         </onentry>
         <transition target="running"/>
@@ -29,7 +29,7 @@
 
     <state id="running">
         <!-- If the drain request returns, go to answer state-->
-        <ros_service_handle_response service="/BatteryDrainerSkill/start" target="answer">
+        <ros_service_handle_response service_name="/BatteryDrainerSkill/start" target="answer">
             <assign location="skillResponse" expr="_service.response.success"/>
         </ros_service_handle_response>
         <!-- If ticked, just answer RUNNING and stay in this state --> 
@@ -38,7 +38,7 @@
         </transition>
         <!-- If halted, send stop request to skill and go to idle state -->
         <transition event="bt_halt" target="idle">
-            <ros_service_send_request service="/BatteryDrainerSkill/stop"/>
+            <ros_service_send_request service_name="/BatteryDrainerSkill/stop"/>
         </transition>
     </state>
 

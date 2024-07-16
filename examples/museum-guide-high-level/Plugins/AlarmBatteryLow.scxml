@@ -8,12 +8,12 @@
   <!-- AlarmBatteryLow is a client for sendAlarm from the AlarmCmp component. -->
   <!-- We assume that the alarm component sounds an alarm for a fixed amount of time when it is triggered. -->
   <!-- The trigger gets an empty request and returns success as a bool. -->
-  <ros_service_client service="/AlarmCmp/sendAlarm" type="std_srvs/Trigger"/> 
+  <ros_service_client service_name="/AlarmCmp/sendAlarm" type="std_srvs/Trigger"/> 
 
   
   <!--In ROS, it is customary to check if there is a server for the client at construction time...-->
   <!-- <state id="init">
-    <ros_service_client_init service="/AlarmCmp/sendAlarm" target="idle"\>
+    <ros_service_client_init service_name="/AlarmCmp/sendAlarm" target="idle"\>
   </state> -->
 
   <state id="idle">
@@ -25,7 +25,7 @@
 
 	<state id="sendAlarm">
     <onentry>
-      <ros_service_send_request service="/AlarmCmp/sendAlarm"/>
+      <ros_service_send_request service_name="/AlarmCmp/sendAlarm"/>
     </onentry>
     <transition target="wait_for_response">
       <send event="bt_running"/>
@@ -33,15 +33,15 @@
   </state>
 
   <state id="wait_for_response">
-    <ros_service_handle_response service="/AlarmCmp/sendAlarm" cond="_service.response.success == true" target="srv_success" \>
-    <ros_service_handle_response service="/AlarmCmp/sendAlarm" cond="_service.response.success == false" target="srv_failure" \>
+    <ros_service_handle_response service_name="/AlarmCmp/sendAlarm" cond="_service.response.success == true" target="srv_success" />
+    <ros_service_handle_response service_name="/AlarmCmp/sendAlarm" cond="_service.response.success == false" target="srv_failure" />
     <transition event="bt_tick" target="wait_for_response">
       <send event="bt_running" />
     </transition>
     <transition event="bt_halt" target="idle">
       <!--Services have no "cancel" method: we could consider switching them to action-->
       <!--To replicate the ROS behavior, here we are simply dropping the handle and ignoring the response-->
-      <!-- <ros_service_cancel service="/AlarmCmp/sendAlarm" \> -->
+      <!-- <ros_service_cancel service_name="/AlarmCmp/sendAlarm" \> -->
     </transition>
   </state>
 
