@@ -5,6 +5,10 @@
     name="BatteryDrainer"
     initial="idle">
 
+    <datamodel>
+        <data id="skillResponse" expr="false" type="bool" />
+    </datamodel>
+
     <!-- BatteryDrainer is a client for start from the BatteryDrainerSkill -->
     <ros_service_client service_name="/BatteryDrainerSkill/start" type="std_srvs/Trigger" />
     <!-- BatteryDrainer is a client for stop from the BatteryDrainerSkill -->
