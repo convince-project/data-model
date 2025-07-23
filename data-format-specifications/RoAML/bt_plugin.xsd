@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="scxml">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="bt_declare_port_in">
+					<xs:complexType>
+						<xs:attribute name="key" type="xs:string"/>
+						<xs:attribute name="type" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="datamodel">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="data" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="id" type="xs:string"/>
+									<xs:attribute name="type" type="xs:string"/>
+									<xs:attribute name="expr" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ros_service_client">
+					<!--TODO: this must be reconciled across UC2 and UC3 (at least)-->
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="service_name">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="bt_get_input">
+											<xs:complexType>
+												<xs:attribute name="key" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="type" type="xs:string"/>
+						<xs:attribute name="name" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="state" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="bt_tick">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ros_service_send_request">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="target" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="bt_halt">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="bt_return_halted"/>
+									</xs:sequence>
+									<xs:attribute name="target" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ros_service_handle_response">
+								<xs:complexType>
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="bt_return_status">
+											<xs:complexType>
+												<xs:attribute name="status" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="assign">
+											<xs:complexType>
+												<xs:attribute name="location" type="xs:string"/>
+												<xs:attribute name="expr" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="if">
+											<xs:complexType>
+												<!--TODO: add if-then-else structure-->
+												<xs:attribute name="cond" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+									<xs:attribute name="name" type="xs:string"/>
+									<xs:attribute name="cond" type="xs:string"/>
+									<xs:attribute name="target" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="onentry">
+								<xs:complexType>
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="ros_service_send_request">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="transition">
+											<xs:complexType>
+												<xs:attribute name="target" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+						<xs:attribute name="id" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="initial" type="xs:string"/>
+			<xs:attribute name="version" type="xs:string"/>
+			<xs:attribute name="name" type="xs:string"/>
+			<xs:attribute name="model_src" type="xs:string"/>
+			<!--TODO: how to solve this?-->
+			<xs:attribute name="xmlns" type="xs:anyURI"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
