@@ -3,8 +3,8 @@
     initial="idle"
     version="1.0"
     name="ROS2Condition"
-    model_src=""
-    xmlns="http://www.w3.org/2005/07/scxml">
+    model_src="">
+    <!-- xmlns="http://www.w3.org/2005/07/scxml" -->
 
     <bt_declare_port_in key="service_name" type="string" />
 
