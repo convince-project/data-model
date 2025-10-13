@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:element name="convince_mc_tc">
+	<xs:element name="roaml">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="mc_parameters">
@@ -71,5 +71,6 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
 
 </xs:schema>
