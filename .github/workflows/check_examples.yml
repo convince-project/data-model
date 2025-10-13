@@ -1,0 +1,42 @@
+name: Validate SCXML File
+
+on:
+    - push
+
+jobs:
+    find-files:
+        runs-on: ubuntu-latest
+        outputs:
+            files: ${{ steps.set-files.outputs.files }}
+        steps:
+            - uses: actions/checkout@v3
+            - name: Find SCXML files
+              id: set-files
+              run: |
+                  FILES=$(find examples/UC1-vacuum-cleaner/high-level-models -type f \( -name "*.ascxml" -o -name "*.scxml" -o -name "*.xml" \) | jq -R . | jq -s .)
+                  FILES=$(echo "$FILES" | tr -d '\n') # Ensure single-line JSON
+                  echo "Files found: $FILES"
+                  echo "files=$FILES" >> $GITHUB_OUTPUT
+    validate-xml:
+        strategy:
+            matrix:
+                path:
+                    - ${{ fromJson(needs.find-files.outputs.files) }}
+            fail-fast: false
+        needs: find-files
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Install xmllint
+              run: sudo apt-get install -y libxml2-utils
+            - name: Validate SCXML file
+              run: |
+                  SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}")
+                  if [ -z "$SCHEMA_PATH" ]; then
+                    echo "No schema found for file: ${{ matrix.path }}. Skipping validation."
+                    exit 0
+                  fi
+                  SCHEMA_DIR=$(dirname "${{ matrix.path }}")
+                  SCHEMA_PATH="$SCHEMA_DIR/$SCHEMA_PATH"
+                  echo "Using schema: $SCHEMA_PATH"
+                  xmllint --noout --schema "$SCHEMA_PATH" "${{ matrix.path }}";

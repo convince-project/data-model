@@ -3,7 +3,8 @@
     initial="initial"
     name="PerformDockingManeuver"
     model_src=""
-    xmlns="http://www.w3.org/2005/07/scxml">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../data-format-specifications/skill-components-(A)SCXML/ascxml_component.xsd">
 
     <ros_topic_publisher name="cmd" topic="/cmd_vel" type="std_msgs/Int16" />
 
