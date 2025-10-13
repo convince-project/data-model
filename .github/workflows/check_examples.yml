@@ -18,5 +18,7 @@ jobs:
             - name: Validate SCXML file
               run: |
                   export SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}") && \
+                  SCHEMA_DIR=$(dirname "${{ matrix.path }}") && \
+                  SCHEMA_PATH="$SCHEMA_DIR/$SCHEMA_PATH" && \
                   echo "Using schema: $SCHEMA_PATH" && \
                   xmllint --noout --schema "$SCHEMA_PATH" "${{ matrix.path }}";
