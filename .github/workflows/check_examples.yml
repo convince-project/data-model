@@ -1,0 +1,22 @@
+name: Validate SCXML File
+
+on:
+    - push
+    - pull_request
+
+jobs:
+    validate-xml:
+        strategy:
+            matrix:
+                path:
+                    - "examples/UC1-vacuum-cleaner/high-level-models/nodes/robot_model.scxml"
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Install xmllint
+              run: sudo apt-get install -y libxml2-utils
+            - name: Validate SCXML file
+              run: |
+                  export SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}") && \
+                  echo "Using schema: $SCHEMA_PATH" && \
+                  xmllint --noout --schema "$SCHEMA_PATH" "${{ matrix.path }}";
