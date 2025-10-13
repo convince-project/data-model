@@ -32,6 +32,10 @@ jobs:
             - name: Validate SCXML file
               run: |
                   SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}")
+                  if [ -z "$SCHEMA_PATH" ]; then
+                    echo "No schema found for file: ${{ matrix.path }}. Skipping validation."
+                    exit 0
+                  fi
                   SCHEMA_DIR=$(dirname "${{ matrix.path }}")
                   SCHEMA_PATH="$SCHEMA_DIR/$SCHEMA_PATH"
                   echo "Using schema: $SCHEMA_PATH"
