@@ -16,7 +16,7 @@ jobs:
               run: sudo apt-get install -y libxml2-utils
             - name: Validate SCXML file
               run: |
-                  export SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}") && \
+                  SCHEMA_PATH=$(xmllint --xpath 'string(//@*[local-name()="noNamespaceSchemaLocation"])' "${{ matrix.path }}") && \
                   SCHEMA_DIR=$(dirname "${{ matrix.path }}") && \
                   SCHEMA_PATH="$SCHEMA_DIR/$SCHEMA_PATH" && \
                   echo "Using schema: $SCHEMA_PATH" && \
