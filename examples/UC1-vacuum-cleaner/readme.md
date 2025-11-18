@@ -14,9 +14,13 @@ If coverage steps forward before the robot gets unstuck, the action server tries
 
 In the current model, this should never happen.
 
+Using this model, we uncovered a bug where the robot tries to resume coverage after it was already stopped (this happened in case the robot got stuck while driving back to the dock or while docking).
+We designed a new property (`no_coverage_failures_after_mission_failed`, below), that detects the bug by ensuring the n. of failures of the coverage action never exceeds 1.
+
 ## Properties
 
 * *tree_success*: The BT reports success and cleaning coverage is above 95%
 * *tree_finished_robot_docked*: Once the BT is not running, we expect the robot to be docked and the online_coverage_done flag in the BT Blackboard to be set.
+* *no_coverage_failures_after_mission_failed*: Before the BT terminates, the coverage failures count cannot exceed 1. If that happens, the BT tried (by mistake) to request the coverage action after the robot got stuck.
 
 Both of them are expected to return 1.0 probability of the property being verified.
