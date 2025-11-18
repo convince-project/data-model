@@ -1,4 +1,17 @@
-# The model
+# Model 1: uc1-docking
+
+This models describes the docking procedure of UC1.
+
+In the model, we have a robot that tries to get to the dock using a BT.
+
+While driving, the robot might find an obstacle, might fail to align to the charging pins and so on. Using this model, we make sure that the BT properly recovers from all those situations.
+
+## Properties:
+
+* *charging_starts*: the robot gets to the docking station and starts charging.
+* *tree_success*: the BT terminates and reports a successful execution.
+
+# Model 2: uc1-mission
 
 In this model, we simulate a complete system with a robot that docks, undocks, navigates and cleans the environment.
 
