@@ -1,0 +1,72 @@
+[0.055s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy -- -j12 -l12
+[0.173s] [  2%] Built target blackboard_interfaces__rosidl_generator_type_description
+[0.205s] [  2%] Built target ament_cmake_python_copy_blackboard_interfaces_dummy
+[0.215s] [35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_generator_c[0m
+[0.269s] [  4%] Built target blackboard_interfaces__cpp
+[0.281s] [ 22%] Built target blackboard_interfaces__rosidl_generator_c
+[0.346s] [35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_c[0m
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_cpp[0m
+[0.387s] [35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.393s] Traceback (most recent call last):
+[0.394s]   File "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy/ament_cmake_python/blackboard_interfaces_dummy/setup.py", line 1, in <module>
+[0.415s]     from setuptools import find_packages
+[0.420s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 8, in <module>
+[0.420s]     import _distutils_hack.override  # noqa: F401
+[0.420s]   File "/home/ste/.local/lib/python3.10/site-packages/_distutils_hack/override.py", line 1, in <module>
+[0.420s] gmake[2]: *** [CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_c.dir/build.make:254: CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_c.dir/depend] Interrupt
+[0.420s] gmake[2]: *** [CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:255: CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_cpp.dir/depend] Interrupt
+[0.420s] gmake[1]: *** [CMakeFiles/Makefile2:426: CMakeFiles/blackboard_interfaces__rosidl_typesupport_cpp.dir/all] Interrupt
+[0.420s] gmake[1]: *** [CMakeFiles/Makefile2:345: CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_c.dir/all] Interrupt
+[0.420s] gmake[1]: *** [CMakeFiles/Makefile2:398: CMakeFiles/blackboard_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+[0.420s] gmake[2]: *** [CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:257: CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+[0.420s] gmake[1]: *** [CMakeFiles/Makefile2:319: CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[0.422s]     __import__('_distutils_hack').do_override()
+[0.422s]   File "/home/ste/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 72, in do_override
+[0.422s]     ensure_local_distutils()
+[0.422s]   File "/home/ste/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 55, in ensure_local_distutils
+[0.422s]     importlib.import_module('distutils')
+[0.422s]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[0.423s]     return _bootstrap._gcd_import(name[level:], package, level)
+[0.423s]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[0.424s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[0.424s]   File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+[0.424s] gmake[2]: *** [CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make:258: CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_c.dir/depend] Interrupt
+[0.424s]   File "<frozen importlib._bootstrap>", line 945, in _find_spec
+[0.424s] gmake[1]: *** [CMakeFiles/Makefile2:266: CMakeFiles/blackboard_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+[0.425s]   File "/home/ste/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 90, in find_spec
+[0.425s]     return method()
+[0.425s]   File "/home/ste/.local/lib/python3.10/site-packages/_distutils_hack/__init__.py", line 101, in spec_for_distutils
+[0.425s]     mod = importlib.import_module('setuptools._distutils')
+[0.425s]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[0.425s]     return _bootstrap._gcd_import(name[level:], package, level)
+[0.425s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/__init__.py", line 22, in <module>
+[0.425s]     importlib.import_module('_distutils_system_mod')
+[0.425s]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[0.425s]     return _bootstrap._gcd_import(name[level:], package, level)
+[0.426s]   File "/usr/lib/python3.10/_distutils_system_mod.py", line 16, in <module>
+[0.426s]     import distutils.command.install as orig_install
+[0.426s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/command/install.py", line 12, in <module>
+[0.427s]     from distutils.core import Command
+[0.427s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 17, in <module>
+[0.427s]     from distutils.dist import Distribution
+[0.427s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 19, in <module>
+[0.427s]     from distutils.util import check_environ, strtobool, rfc822_escape
+[0.427s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/util.py", line 15, in <module>
+[0.428s]     from distutils.spawn import spawn
+[0.428s]   File "/home/ste/.local/lib/python3.10/site-packages/setuptools/_distutils/spawn.py", line 11, in <module>
+[0.428s]     import subprocess
+[0.428s]   File "/usr/lib/python3.10/subprocess.py", line 69, in <module>
+[0.428s]     import msvcrt
+[0.428s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[0.428s]   File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+[0.428s]   File "<frozen importlib._bootstrap>", line 945, in _find_spec
+[0.428s]   File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+[0.428s]   File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+[0.429s]   File "<frozen importlib._bootstrap_external>", line 1544, in find_spec
+[0.429s]   File "<frozen importlib._bootstrap_external>", line 140, in _path_stat
+[0.429s] KeyboardInterrupt
+[0.429s] [ 31%] Built target blackboard_interfaces__rosidl_typesupport_c
+[0.429s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_blackboard_interfaces_dummy_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_blackboard_interfaces_dummy_egg] Interrupt
+[0.429s] gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_blackboard_interfaces_dummy_egg.dir/all] Interrupt
+[0.429s] gmake[1]: *** [CMakeFiles/Makefile2:373: CMakeFiles/blackboard_interfaces__rosidl_typesupport_c.dir/all] Interrupt
+[0.430s] gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from blackboard_interfaces_dummy/srv/GetIntBlackboard.srv
+// generated code does not contain a copyright notice
+
+
+module blackboard_interfaces_dummy {
+  module srv {
+    struct GetIntBlackboard_Request {
+      int32 field_name;
+    };
+    struct GetIntBlackboard_Response {
+      int32 value;
+
+      boolean is_ok;
+    };
+  };
+};

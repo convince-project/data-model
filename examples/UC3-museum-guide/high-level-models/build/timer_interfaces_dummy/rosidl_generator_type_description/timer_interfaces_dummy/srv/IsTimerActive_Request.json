@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "timer_interfaces_dummy/srv/IsTimerActive_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "timer_interfaces_dummy/srv/IsTimerActive_Request",
+      "hash_string": "RIHS01_9e5b2e0bd9d4a0cdca9a8995547ccc059cc67000a8dff2670b88098c5513c257"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+srv/GetCurrentPoi.idl
+srv/GetCurrentPoi.srv
+srv/GetCurrentPoi_Request.msg
+srv/GetCurrentPoi_Response.msg
+srv/SetPoi.idl
+srv/SetPoi.srv
+srv/SetPoi_Request.msg
+srv/SetPoi_Response.msg

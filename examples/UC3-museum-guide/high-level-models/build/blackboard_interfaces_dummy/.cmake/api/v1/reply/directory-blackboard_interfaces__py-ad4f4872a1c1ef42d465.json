@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "blackboard_interfaces__py",
+		"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy/blackboard_interfaces__py"
+	}
+}

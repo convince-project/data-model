@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c.o"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c.o.d"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c.o"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c.o.d"
+  "libnavigation_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libnavigation_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c"
+  "rosidl_typesupport_introspection_c/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

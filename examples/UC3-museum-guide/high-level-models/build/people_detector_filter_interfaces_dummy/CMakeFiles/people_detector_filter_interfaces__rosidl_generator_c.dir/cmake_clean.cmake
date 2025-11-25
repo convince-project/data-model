@@ -1,0 +1,22 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__description.c.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__description.c.o.d"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.c.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.c.o.d"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o.d"
+  "libpeople_detector_filter_interfaces__rosidl_generator_c.pdb"
+  "libpeople_detector_filter_interfaces__rosidl_generator_c.so"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__description.c"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.c"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.h"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__struct.h"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.h"
+  "rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/is_followed.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

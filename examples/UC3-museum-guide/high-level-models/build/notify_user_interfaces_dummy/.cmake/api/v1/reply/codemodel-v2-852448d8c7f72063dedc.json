@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6e3fed5a9003a1345eb8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "notify_user_interfaces__py",
+					"jsonFile" : "directory-notify_user_interfaces__py-d5f64b893144996cc1c8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/notify_user_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "notify_user_interfaces_dummy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_notify_user_interfaces_dummy_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_notify_user_interfaces_dummy_egg-a2c4cd36d1ceff50017a.json",
+					"name" : "ament_cmake_python_build_notify_user_interfaces_dummy_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_notify_user_interfaces_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_notify_user_interfaces_dummy-26e8ec7ce94dbc36c661.json",
+					"name" : "ament_cmake_python_copy_notify_user_interfaces_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces-c4a8a792ce0e388bfbda.json",
+					"name" : "notify_user_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__cpp-269f87dfc9f01af584b4.json",
+					"name" : "notify_user_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "notify_user_interfaces__py::@1c742f68f8d90efedb7f",
+					"jsonFile" : "target-notify_user_interfaces__py-d00360af63ba835505ae.json",
+					"name" : "notify_user_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_generator_c-d5c7eace391981f9e355.json",
+					"name" : "notify_user_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_generator_py-b76768f9e68f9a8c095f.json",
+					"name" : "notify_user_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_generator_type_description-6c20eee55133622c9ed4.json",
+					"name" : "notify_user_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_c-f539a08b53781884d456.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_cpp-1d83aaef904fe6d5eb62.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_fastrtps_c-54de4e044d21aa48d03f.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_fastrtps_cpp-f0957b8d6d0ae416bf46.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_introspection_c-13d3a59140f4af400c99.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces__rosidl_typesupport_introspection_cpp-48dd89f3c308df05605c.json",
+					"name" : "notify_user_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces_dummy__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces_dummy__rosidl_typesupport_c__pyext-1989731ca8dd1bd5bdbc.json",
+					"name" : "notify_user_interfaces_dummy__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext-387727781024e8268293.json",
+					"name" : "notify_user_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces_dummy__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces_dummy__rosidl_typesupport_introspection_c__pyext-e3885571844ba01c2145.json",
+					"name" : "notify_user_interfaces_dummy__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "notify_user_interfaces_dummy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-notify_user_interfaces_dummy_uninstall-41128bc541dffcd47980.json",
+					"name" : "notify_user_interfaces_dummy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2c36df135b07bbaf1916.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy",
+		"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/notify_user_interfaces_dummy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

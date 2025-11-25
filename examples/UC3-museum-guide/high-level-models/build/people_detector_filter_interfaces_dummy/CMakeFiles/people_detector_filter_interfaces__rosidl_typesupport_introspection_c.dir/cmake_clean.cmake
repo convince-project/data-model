@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o.d"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

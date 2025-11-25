@@ -8,28 +8,28 @@
 
     <behavior_tree>
         <input type="bt.cpp-xml" src="./bt_policies/Policy.xml" />
-        <input type="bt-plugin-ascxml" src="./bt_plugins/ROS2Condition.scxml" />
-        <input type="bt-plugin-ascxml" src="./bt_plugins/ROS2Action.scxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/ROS2Condition.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/ROS2Action.ascxml" />
     </behavior_tree>
 
     <node_models>
-        <input type="node-ascxml" src="./components/BatteryComponent.scxml" />
-        <input type="node-ascxml" src="./components/NotifyUserComponent.scxml" />
-        <input type="node-ascxml" src="./components/BlackboardComponent.scxml" />
-        <input type="node-ascxml" src="./components/SchedulerComponent.scxml" />
-        <input type="node-ascxml" src="./components/PeopleDetectorFilterComponent.scxml" />
-        <input type="node-ascxml" src="./components/NavigationComponent.scxml" />
-        <input type="node-ascxml" src="./skills/BatteryLevelSkill.scxml" />
-        <input type="node-ascxml" src="./skills/AlarmSkill.scxml" />
-        <input type="node-ascxml" src="./skills/IsPoiDone1Skill.scxml" />
-        <input type="node-ascxml" src="./skills/IsPoiDone2Skill.scxml" />
-        <input type="node-ascxml" src="./skills/SetPoi1Skill.scxml" />
-        <input type="node-ascxml" src="./skills/SetPoi2Skill.scxml" />
-        <input type="node-ascxml" src="./skills/ResetSkill.scxml" />
-        <input type="node-ascxml" src="./skills/SetCurrentPoiDoneSkill.scxml" />
-        <input type="node-ascxml" src="./skills/VisitorsFollowingRobotSkill.scxml" />
-        <input type="node-ascxml" src="./skills/WaitSkill.scxml" />
-        <input type="node-ascxml" src="./skills/GoToPoiActionSkill.scxml" />
+        <input type="node-ascxml" src="./components/BatteryComponent.ascxml" />
+        <input type="node-ascxml" src="./components/NotifyUserComponent.ascxml" />
+        <input type="node-ascxml" src="./components/BlackboardComponent.ascxml" />
+        <input type="node-ascxml" src="./components/SchedulerComponent.ascxml" />
+        <input type="node-ascxml" src="./components/PeopleDetectorFilterComponent.ascxml" />
+        <input type="node-ascxml" src="./components/NavigationComponent.ascxml" />
+        <input type="node-ascxml" src="./skills/BatteryLevelSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/AlarmSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/IsPoiDone1Skill.ascxml" />
+        <input type="node-ascxml" src="./skills/IsPoiDone2Skill.ascxml" />
+        <input type="node-ascxml" src="./skills/SetPoi1Skill.ascxml" />
+        <input type="node-ascxml" src="./skills/SetPoi2Skill.ascxml" />
+        <input type="node-ascxml" src="./skills/ResetSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/SetCurrentPoiDoneSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/VisitorsFollowingRobotSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/WaitSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/GoToPoiActionSkill.ascxml" />
     </node_models>
 
     <properties>

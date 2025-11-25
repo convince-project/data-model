@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support.c.o"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support.c.o.d"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support.c.o"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support.c.o.d"
+  "libnotify_user_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libnotify_user_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/start_alarm__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support.c"
+  "rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

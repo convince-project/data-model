@@ -1,0 +1,12 @@
+{
+  "package_name": "notify_user_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_generator_type_description/notify_user_interfaces_dummy",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StartAlarm.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StopAlarm.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces"
+  ]
+}

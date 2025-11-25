@@ -1,0 +1,7 @@
+{
+  "package_name": "notify_user_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/notify_user_interfaces_dummy:srv/StartAlarm.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/notify_user_interfaces_dummy:srv/StopAlarm.srv"
+  ]
+}

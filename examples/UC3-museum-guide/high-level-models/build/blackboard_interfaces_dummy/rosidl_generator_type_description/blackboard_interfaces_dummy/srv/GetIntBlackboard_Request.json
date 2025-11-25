@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "blackboard_interfaces_dummy/srv/GetIntBlackboard_Request",
+      "fields": [
+        {
+          "name": "field_name",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "blackboard_interfaces_dummy/srv/GetIntBlackboard_Request",
+      "hash_string": "RIHS01_b3c6210ba31a0e42e260421c661ac1f9f1b54d4e3737e811d8e076b65556eaf2"
+    }
+  ]
+}

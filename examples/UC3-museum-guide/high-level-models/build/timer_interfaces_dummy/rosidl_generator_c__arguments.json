@@ -1,0 +1,52 @@
+{
+  "package_name": "timer_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_generator_c/timer_interfaces_dummy",
+  "template_dir": "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy:srv/StartTimer.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy:srv/IsTimerActive.idl"
+  ],
+  "ros_interface_files": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy/srv/StartTimer.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_cmake/srv/StartTimer_Request.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_cmake/srv/StartTimer_Response.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy/srv/IsTimerActive.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_cmake/srv/IsTimerActive_Request.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_cmake/srv/IsTimerActive_Response.msg"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../../../lib/python3.10/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy/srv/StartTimer.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy/srv/IsTimerActive.idl",
+    "/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "srv/StartTimer.idl:/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_generator_type_description/timer_interfaces_dummy/srv/StartTimer.json",
+    "srv/IsTimerActive.idl:/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_generator_type_description/timer_interfaces_dummy/srv/IsTimerActive.json"
+  ]
+}

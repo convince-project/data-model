@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from timer_interfaces_dummy/srv/IsTimerActive.srv
+// generated code does not contain a copyright notice
+
+
+module timer_interfaces_dummy {
+  module srv {
+    struct IsTimerActive_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct IsTimerActive_Response {
+      boolean is_ok;
+
+      boolean is_active;
+    };
+  };
+};

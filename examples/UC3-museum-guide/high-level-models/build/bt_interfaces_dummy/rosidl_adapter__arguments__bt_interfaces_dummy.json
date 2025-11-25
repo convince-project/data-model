@@ -1,0 +1,10 @@
+{
+  "package_name": "bt_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy:srv/TickAction.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy:msg/ActionResponse.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy:msg/ConditionResponse.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy:srv/HaltAction.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy:srv/TickCondition.srv"
+  ]
+}

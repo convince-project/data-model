@@ -1,0 +1,29 @@
+{
+  "package_name": "notify_user_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_typesupport_introspection_c/notify_user_interfaces_dummy",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StartAlarm.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StopAlarm.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy/srv/StartAlarm.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy/srv/StopAlarm.idl",
+    "/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

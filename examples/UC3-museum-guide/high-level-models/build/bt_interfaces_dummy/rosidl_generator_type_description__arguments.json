@@ -1,0 +1,15 @@
+{
+  "package_name": "bt_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_generator_type_description/bt_interfaces_dummy",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickAction.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ActionResponse.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ConditionResponse.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/HaltAction.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickCondition.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces"
+  ]
+}

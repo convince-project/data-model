@@ -1,0 +1,15 @@
+{
+  "package_name": "scheduler_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy/rosidl_generator_type_description/scheduler_interfaces_dummy",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy/rosidl_adapter/scheduler_interfaces_dummy:srv/SetPoi.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy/rosidl_adapter/scheduler_interfaces_dummy:srv/GetCurrentPoi.idl"
+  ],
+  "include_paths": [
+    "sensor_msgs:/opt/ros/iron/share/sensor_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/iron/share/geometry_msgs",
+    "std_msgs:/opt/ros/iron/share/std_msgs",
+    "service_msgs:/opt/ros/iron/share/service_msgs"
+  ]
+}

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from navigation_interfaces_dummy/action/GoToPoi.action
+// generated code does not contain a copyright notice
+
+
+module navigation_interfaces_dummy {
+  module action {
+    struct GoToPoi_Goal {
+      int32 poi_number;
+    };
+    struct GoToPoi_Result {
+      boolean is_ok;
+    };
+    struct GoToPoi_Feedback {
+      int32 status;
+    };
+  };
+};

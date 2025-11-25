@@ -1,0 +1,285 @@
+[0.039s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/navigation_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.316s] -- The CXX compiler identification is GNU 11.4.0
+[0.329s] -- Detecting C compiler ABI info
+[0.446s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.462s] -- Detecting C compile features
+[0.463s] -- Detecting C compile features - done
+[0.469s] -- Detecting CXX compiler ABI info
+[0.630s] -- Detecting CXX compiler ABI info - done
+[0.650s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.650s] -- Detecting CXX compile features
+[0.652s] -- Detecting CXX compile features - done
+[0.657s] -- Found ament_cmake: 2.0.7 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.255s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.497s] -- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+[2.585s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[2.612s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[2.655s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.693s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.091s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[3.124s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[4.052s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[5.291s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.933s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.001s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.006s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[6.135s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.135s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.135s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.135s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.252s] -- Found PythonExtra: .so  
+[6.714s] -- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[6.832s] -- Added test 'lint_cmake' to check CMake code style
+[6.835s] -- Added test 'xmllint' to check XML markup files
+[6.850s] -- Configuring done
+[7.130s] -- Generating done
+[7.207s] -- Build files have been written to: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy
+[7.250s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/navigation_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy
+[7.251s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy -- -j12 -l12
+[7.528s] [  0%] Built target ament_cmake_python_copy_navigation_interfaces_dummy
+[7.549s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.072s] [  2%] Built target navigation_interfaces__rosidl_generator_type_description
+[9.206s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.287s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[12.496s] running egg_info
+[12.498s] creating navigation_interfaces_dummy.egg-info
+[13.414s] writing navigation_interfaces_dummy.egg-info/PKG-INFO
+[14.094s] writing dependency_links to navigation_interfaces_dummy.egg-info/dependency_links.txt
+[15.003s] [  6%] Built target navigation_interfaces__cpp
+[16.651s] [  9%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/msg/detail/navigation_status__description.c.o[0m
+[16.696s] [ 11%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/action/detail/go_to_poi__description.c.o[0m
+[16.701s] [ 13%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c.o[0m
+[16.713s] [ 15%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/msg/detail/navigation_status__functions.c.o[0m
+[16.798s] [ 18%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/action/detail/go_to_poi__functions.c.o[0m
+[16.805s] [ 20%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c.o[0m
+[17.962s] writing top-level names to navigation_interfaces_dummy.egg-info/top_level.txt
+[17.985s] writing manifest file 'navigation_interfaces_dummy.egg-info/SOURCES.txt'
+[18.353s] [ 22%] [32m[1mLinking C shared library libnavigation_interfaces__rosidl_generator_c.so[0m
+[18.748s] [ 22%] Built target navigation_interfaces__rosidl_generator_c
+[18.896s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[18.910s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.940s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[18.944s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[20.081s] reading manifest file 'navigation_interfaces_dummy.egg-info/SOURCES.txt'
+[20.082s] writing manifest file 'navigation_interfaces_dummy.egg-info/SOURCES.txt'
+[20.276s] [ 31%] Built target ament_cmake_python_build_navigation_interfaces_dummy_egg
+[20.376s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[20.435s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.191s] [ 38%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c.o[0m
+[21.199s] [ 40%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c.o[0m
+[21.631s] [ 43%] [32m[1mLinking C shared library libnavigation_interfaces__rosidl_typesupport_introspection_c.so[0m
+[21.938s] [ 43%] Built target navigation_interfaces__rosidl_typesupport_introspection_c
+[22.017s] [ 45%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces_dummy/msg/navigation_status__type_support.cpp.o[0m
+[22.037s] [ 47%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces_dummy/action/go_to_poi__type_support.cpp.o[0m
+[22.632s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/msg/detail/dds_fastrtps/navigation_status__type_support.cpp.o[0m
+[22.668s] [ 52%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/action/detail/dds_fastrtps/go_to_poi__type_support.cpp.o[0m
+[22.871s] [ 54%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces_dummy/msg/detail/navigation_status__type_support_c.cpp.o[0m
+[22.901s] [ 56%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces_dummy/action/detail/go_to_poi__type_support_c.cpp.o[0m
+[22.914s] [ 61%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces_dummy/msg/navigation_status__type_support.cpp.o[0m
+[22.916s] [ 61%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces_dummy/action/go_to_poi__type_support.cpp.o[0m
+[23.184s] [ 63%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.cpp.o[0m
+[23.207s] [ 65%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.cpp.o[0m
+[23.244s] [ 68%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_c.so[0m
+[23.410s] [ 68%] Built target navigation_interfaces__rosidl_typesupport_c
+[24.201s] [ 70%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[24.353s] [ 72%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_cpp.so[0m
+[24.392s] [ 72%] Built target navigation_interfaces__rosidl_typesupport_fastrtps_c
+[24.561s] [ 72%] Built target navigation_interfaces__rosidl_typesupport_cpp
+[25.046s] [ 75%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[25.187s] [ 75%] Built target navigation_interfaces__rosidl_typesupport_fastrtps_cpp
+[25.238s] [ 77%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[25.372s] [ 77%] Built target navigation_interfaces__rosidl_typesupport_introspection_cpp
+[25.408s] [ 77%] Built target navigation_interfaces
+[25.444s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[27.249s] [ 79%] Built target navigation_interfaces__py
+[27.280s] [ 81%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces_dummy/msg/_navigation_status_s.c.o[0m
+[27.280s] [ 84%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces_dummy/action/_go_to_poi_s.c.o[0m
+[27.476s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces_dummy/libnavigation_interfaces__rosidl_generator_py.so[0m
+[27.528s] [ 86%] Built target navigation_interfaces__rosidl_generator_py
+[27.557s] [ 88%] [32mBuilding C object CMakeFiles/navigation_interfaces_dummy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.562s] [ 90%] [32mBuilding C object CMakeFiles/navigation_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.720s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.727s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.787s] [ 95%] Built target navigation_interfaces_dummy__rosidl_typesupport_introspection_c__pyext
+[27.795s] [ 95%] Built target navigation_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext
+[27.823s] [ 97%] [32mBuilding C object CMakeFiles/navigation_interfaces_dummy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_c.c.o[0m
+[27.987s] [100%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[28.044s] [100%] Built target navigation_interfaces_dummy__rosidl_typesupport_c__pyext
+[28.056s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy -- -j12 -l12
+[28.058s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy
+[28.070s] -- Install configuration: ""
+[28.070s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/ament_index/resource_index/rosidl_interfaces/navigation_interfaces_dummy
+[28.070s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/msg/NavigationStatus.json
+[28.071s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/action/GoToPoi.json
+[28.071s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.071s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.071s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/go_to_poi.h
+[28.071s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__functions.c
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__functions.h
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__description.c
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.h
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__struct.h
+[28.072s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/navigation_status.h
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__description.c
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__functions.h
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__functions.c
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.h
+[28.073s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__struct.h
+[28.074s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/rosidl_generator_c__visibility_control.h
+[28.074s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/library_path.sh
+[28.074s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/library_path.dsv
+[28.074s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_generator_c.so
+[28.075s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_generator_c.so" to ""
+[28.075s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.075s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.075s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.075s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_fastrtps_c.h
+[28.075s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.075s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.076s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_fastrtps_c.h
+[28.076s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.076s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so
+[28.076s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[28.076s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.076s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.076s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/go_to_poi.hpp
+[28.076s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.077s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__builder.hpp
+[28.077s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__struct.hpp
+[28.077s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__traits.hpp
+[28.077s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.077s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/navigation_status.hpp
+[28.078s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.078s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__struct.hpp
+[28.078s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__builder.hpp
+[28.078s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__traits.hpp
+[28.078s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.078s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.078s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.078s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/dds_fastrtps
+[28.078s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_fastrtps_cpp.hpp
+[28.079s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.079s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.079s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/dds_fastrtps
+[28.079s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_fastrtps_cpp.hpp
+[28.079s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[28.079s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[28.079s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[28.079s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.080s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.080s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_introspection_c.h
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.c
+[28.080s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.080s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_introspection_c.h
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.c
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.080s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_introspection_c.so
+[28.081s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[28.081s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_c.so
+[28.081s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_c.so" to ""
+[28.082s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy
+[28.082s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action
+[28.082s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail
+[28.082s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__type_support.cpp
+[28.082s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_introspection_cpp.hpp
+[28.082s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg
+[28.082s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail
+[28.082s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__type_support.cpp
+[28.082s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/include/navigation_interfaces_dummy/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_introspection_cpp.hpp
+[28.082s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so
+[28.083s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[28.083s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_cpp.so
+[28.084s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_typesupport_cpp.so" to ""
+[28.084s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/pythonpath.sh
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/pythonpath.dsv
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy-0.0.0-py3.10.egg-info
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy-0.0.0-py3.10.egg-info/PKG-INFO
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy-0.0.0-py3.10.egg-info/dependency_links.txt
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy-0.0.0-py3.10.egg-info/top_level.txt
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy-0.0.0-py3.10.egg-info/SOURCES.txt
+[28.085s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/libnavigation_interfaces__rosidl_generator_py.so
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action/_go_to_poi.py
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action/_go_to_poi_s.c
+[28.086s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action/__init__.py
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/__init__.py
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_c.c
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.087s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg
+[28.088s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg/_navigation_status.py
+[28.088s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg/__init__.py
+[28.088s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg/_navigation_status_s.c
+[28.088s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/_navigation_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c
+[28.143s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy'...
+[28.143s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/__init__.py'...
+[28.143s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action'...
+[28.143s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action/__init__.py'...
+[28.143s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/action/_go_to_poi.py'...
+[28.143s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg'...
+[28.143s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg/__init__.py'...
+[28.143s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/msg/_navigation_status.py'...
+[28.148s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.148s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.148s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.149s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.149s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.150s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/python3.10/site-packages/navigation_interfaces_dummy/navigation_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.150s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_generator_py.so
+[28.150s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/lib/libnavigation_interfaces__rosidl_generator_py.so" to ""
+[28.150s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/msg/NavigationStatus.idl
+[28.150s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/action/GoToPoi.idl
+[28.150s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/msg/NavigationStatus.msg
+[28.150s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/action/GoToPoi.action
+[28.151s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/ament_index/resource_index/package_run_dependencies/navigation_interfaces_dummy
+[28.151s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/ament_index/resource_index/parent_prefix_path/navigation_interfaces_dummy
+[28.151s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/ament_prefix_path.sh
+[28.151s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/ament_prefix_path.dsv
+[28.151s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/path.sh
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/environment/path.dsv
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/local_setup.bash
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/local_setup.sh
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/local_setup.zsh
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/local_setup.dsv
+[28.152s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/package.dsv
+[28.153s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/ament_index/resource_index/packages/navigation_interfaces_dummy
+[28.153s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_generator_cExport.cmake
+[28.153s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_generator_cExport-noconfig.cmake
+[28.153s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[28.153s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[28.154s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_generator_cppExport.cmake
+[28.154s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[28.154s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[28.154s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[28.154s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[28.155s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_cExport.cmake
+[28.155s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[28.155s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[28.155s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_cppExport.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_generator_pyExport.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/export_navigation_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/rosidl_cmake-extras.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.156s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/ament_cmake_export_libraries-extras.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/ament_cmake_export_targets-extras.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces_dummyConfig.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/cmake/navigation_interfaces_dummyConfig-version.cmake
+[28.157s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/navigation_interfaces_dummy/share/navigation_interfaces_dummy/package.xml
+[28.161s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/navigation_interfaces_dummy

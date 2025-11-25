@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bt_interfaces_dummy/srv/HaltAction.srv
+// generated code does not contain a copyright notice
+
+
+module bt_interfaces_dummy {
+  module srv {
+    struct HaltAction_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct HaltAction_Response {
+      boolean is_ok;
+    };
+  };
+};

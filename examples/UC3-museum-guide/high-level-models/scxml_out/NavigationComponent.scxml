@@ -1,0 +1,91 @@
+<scxml name="NavigationComponent" version="1.0" model_src="" initial="idle" xmlns="http://www.w3.org/2005/07/scxml">
+    <datamodel>
+        <!-- TYPE GOAL_REACHED:int32 -->
+        <data id="GOAL_REACHED" expr="4"/>
+        <!-- TYPE ABORTED:int32 -->
+        <data id="ABORTED" expr="5"/>
+        <!-- TYPE MOVING:int32 -->
+        <data id="MOVING" expr="2"/>
+        <!-- TYPE IDLE:int32 -->
+        <data id="IDLE" expr="0"/>
+        <!-- TYPE goal_name:string -->
+        <data id="goal_name" expr="''"/>
+        <!-- TYPE goal_id:int32 -->
+        <data id="goal_id" expr="0"/>
+        <!-- TYPE start_time:int32 -->
+        <data id="start_time" expr="0"/>
+        <!-- TYPE navigation_time:int32 -->
+        <data id="navigation_time" expr="0"/>
+        <!-- TYPE current_time:int32 -->
+        <data id="current_time" expr="0"/>
+        <!-- TYPE current_position:string -->
+        <data id="current_position" expr="''"/>
+        <!-- TYPE navigation_timeout:int32 -->
+        <data id="navigation_timeout" expr="30"/>
+        <!-- TYPE poi_number:int32 -->
+        <data id="poi_number" expr="0"/>
+        <!-- TYPE is_near:bool -->
+        <data id="is_near" expr="false"/>
+        <!-- TYPE status:int32 -->
+        <data id="status" expr="0"/>
+        <!-- TYPE __RAND__:float64 -->
+        <data id="__RAND__" expr="0.0"/>
+    </datamodel>
+    <state id="idle">
+        <transition event="action_NavigationComponent__GoToPoi_goal_handle" target="getCurrentTimeForGoal">
+            <assign location="status" expr="2"/>
+            <assign location="poi_number" expr="_event.data.ros_fields__poi_number"/>
+            <send event="action_NavigationComponent__GoToPoi_goal_accepted" target="action_handler_NavigationComponent__GoToPoi">
+                <param name="goal_id" expr="goal_id"/>
+            </send>
+        </transition>
+    </state>
+    <state id="navigationAborted">
+        <onentry>
+            <assign location="status" expr="5"/>
+            <send event="action_NavigationComponent__GoToPoi_result" target="action_handler_NavigationComponent__GoToPoi">
+                <!-- TYPE goal_id:int32 -->
+                <param name="goal_id" expr="goal_id"/>
+                <!-- TYPE code:int32 -->
+                <param name="code" expr="6"/>
+            </send>
+            <assign location="goal_id" expr="0"/>
+        </onentry>
+        <transition target="idle"/>
+    </state>
+    <state id="getCurrentTimeForGoal">
+        <transition event="topic_clock_msg" target="navigating">
+            <assign location="current_time" expr="_event.data.ros_fields__sec"/>
+        </transition>
+    </state>
+    <state id="handleNavigating">
+        <onentry>
+            <assign location="__RAND__" expr="Math.random()"/>
+        </onentry>
+        <transition cond="0.0 &lt; __RAND__ &amp;&amp; __RAND__ &lt;= 0.99" target="GetTimeWhileNavigating">
+            <assign location="status" expr="2"/>
+        </transition>
+        <transition cond="0.99 &lt; __RAND__ &amp;&amp; __RAND__ &lt;= 1.0" target="navigationAborted"/>
+    </state>
+    <state id="GetTimeWhileNavigating">
+        <transition event="topic_clock_msg" target="navigating">
+            <assign location="current_time" expr="_event.data.ros_fields__sec"/>
+        </transition>
+    </state>
+    <state id="navigating">
+        <onentry>
+            <if cond="current_time - start_time &gt; navigation_timeout">
+                <assign location="status" expr="GOAL_REACHED"/>
+                <assign location="is_near" expr="true"/>
+                <send event="action_NavigationComponent__GoToPoi_result" target="action_handler_NavigationComponent__GoToPoi">
+                    <param name="ros_fields__is_ok" expr="true"/>
+                    <param name="goal_id" expr="goal_id"/>
+                    <param name="code" expr="4"/>
+                </send>
+                <assign location="goal_id" expr="0"/>
+            </if>
+        </onentry>
+        <transition cond="status == MOVING" target="handleNavigating"/>
+        <transition target="idle"/>
+    </state>
+</scxml>

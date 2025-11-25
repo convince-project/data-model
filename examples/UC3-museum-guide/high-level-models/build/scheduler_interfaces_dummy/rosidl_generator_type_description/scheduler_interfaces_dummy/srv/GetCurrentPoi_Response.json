@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "scheduler_interfaces_dummy/srv/GetCurrentPoi_Response",
+      "fields": [
+        {
+          "name": "poi_number",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "is_ok",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "scheduler_interfaces_dummy/srv/GetCurrentPoi_Response",
+      "hash_string": "RIHS01_013dc3f0293d359c41e9c6f69ee75878d7d343b13eb7607f08af6d2d0a16a666"
+    }
+  ]
+}

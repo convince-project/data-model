@@ -1,0 +1,4 @@
+action/GoToPoi.action
+action/GoToPoi.idl
+msg/NavigationStatus.idl
+msg/NavigationStatus.msg

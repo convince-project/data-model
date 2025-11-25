@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support_c.cpp.o"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support_c.cpp.o.d"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support_c.cpp.o"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support_c.cpp.o.d"
+  "libscheduler_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libscheduler_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

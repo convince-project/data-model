@@ -1,0 +1,273 @@
+[0.041s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy
+[0.158s] -- The C compiler identification is GNU 11.4.0
+[0.296s] -- The CXX compiler identification is GNU 11.4.0
+[0.310s] -- Detecting C compiler ABI info
+[0.440s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.469s] -- Detecting CXX compiler ABI info
+[0.640s] -- Detecting CXX compiler ABI info - done
+[0.658s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.659s] -- Detecting CXX compile features
+[0.660s] -- Detecting CXX compile features - done
+[0.665s] -- Found ament_cmake: 2.0.7 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.006s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.184s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[2.209s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.457s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[3.361s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[3.726s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.190s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.238s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.242s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[4.304s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.304s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.304s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.304s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.342s] -- Found PythonExtra: .so  
+[4.437s] -- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[4.506s] -- Added test 'lint_cmake' to check CMake code style
+[4.509s] -- Added test 'xmllint' to check XML markup files
+[4.516s] -- Configuring done
+[4.603s] -- Generating done
+[4.631s] -- Build files have been written to: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy
+[4.642s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy
+[4.647s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy -- -j12 -l12
+[4.810s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.848s] [  2%] Built target ament_cmake_python_copy_timer_interfaces_dummy
+[5.586s] [  2%] Built target timer_interfaces__rosidl_generator_type_description
+[5.634s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.714s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.231s] running egg_info
+[7.231s] creating timer_interfaces_dummy.egg-info
+[7.366s] [  6%] Built target timer_interfaces__cpp
+[7.558s] writing timer_interfaces_dummy.egg-info/PKG-INFO
+[7.739s] writing dependency_links to timer_interfaces_dummy.egg-info/dependency_links.txt
+[8.060s] [  9%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/start_timer__description.c.o[0m
+[8.092s] [ 11%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/start_timer__type_support.c.o[0m
+[8.092s] [ 13%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/start_timer__functions.c.o[0m
+[8.092s] [ 15%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/is_timer_active__functions.c.o[0m
+[8.095s] [ 20%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/is_timer_active__description.c.o[0m
+[8.108s] [ 20%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.c.o[0m
+[8.625s] [ 22%] [32m[1mLinking C shared library libtimer_interfaces__rosidl_generator_c.so[0m
+[8.972s] [ 22%] Built target timer_interfaces__rosidl_generator_c
+[9.053s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.093s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.131s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.140s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.172s] [ 36%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.176s] [ 36%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.365s] writing top-level names to timer_interfaces_dummy.egg-info/top_level.txt
+[9.365s] writing manifest file 'timer_interfaces_dummy.egg-info/SOURCES.txt'
+[11.090s] [ 38%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/timer_interfaces_dummy/srv/detail/start_timer__type_support_c.cpp.o[0m
+[11.110s] [ 40%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/timer_interfaces_dummy/srv/detail/is_timer_active__type_support_c.cpp.o[0m
+[11.333s] reading manifest file 'timer_interfaces_dummy.egg-info/SOURCES.txt'
+[11.335s] writing manifest file 'timer_interfaces_dummy.egg-info/SOURCES.txt'
+[11.562s] [ 40%] Built target ament_cmake_python_build_timer_interfaces_dummy_egg
+[11.955s] [ 43%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/timer_interfaces_dummy/srv/start_timer__type_support.cpp.o[0m
+[12.012s] [ 50%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/timer_interfaces_dummy/srv/is_timer_active__type_support.cpp.o[0m
+[12.016s] [ 50%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/timer_interfaces_dummy/srv/start_timer__type_support.cpp.o[0m
+[12.020s] [ 50%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/timer_interfaces_dummy/srv/is_timer_active__type_support.cpp.o[0m
+[12.593s] [ 52%] [32m[1mLinking CXX shared library libtimer_interfaces__rosidl_typesupport_c.so[0m
+[12.665s] [ 54%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/timer_interfaces_dummy/srv/detail/start_timer__type_support.c.o[0m
+[12.734s] [ 56%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.c.o[0m
+[13.005s] [ 61%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.cpp.o[0m
+[13.028s] [ 61%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/timer_interfaces_dummy/srv/detail/start_timer__type_support.cpp.o[0m
+[13.218s] [ 61%] Built target timer_interfaces__rosidl_typesupport_c
+[13.388s] [ 63%] [32m[1mLinking C shared library libtimer_interfaces__rosidl_typesupport_introspection_c.so[0m
+[13.404s] [ 65%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/timer_interfaces_dummy/srv/detail/dds_fastrtps/is_timer_active__type_support.cpp.o[0m
+[13.414s] [ 68%] [32mBuilding CXX object CMakeFiles/timer_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/timer_interfaces_dummy/srv/detail/dds_fastrtps/start_timer__type_support.cpp.o[0m
+[13.690s] [ 68%] Built target timer_interfaces__rosidl_typesupport_introspection_c
+[15.258s] [ 70%] [32m[1mLinking CXX shared library libtimer_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[16.048s] [ 70%] Built target timer_interfaces__rosidl_typesupport_fastrtps_c
+[16.623s] [ 72%] [32m[1mLinking CXX shared library libtimer_interfaces__rosidl_typesupport_cpp.so[0m
+[17.446s] [ 72%] Built target timer_interfaces__rosidl_typesupport_cpp
+[18.101s] [ 75%] [32m[1mLinking CXX shared library libtimer_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[18.827s] [ 75%] Built target timer_interfaces__rosidl_typesupport_introspection_cpp
+[19.040s] [ 77%] [32m[1mLinking CXX shared library libtimer_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.764s] [ 77%] Built target timer_interfaces__rosidl_typesupport_fastrtps_cpp
+[20.017s] [ 77%] Built target timer_interfaces
+[20.213s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.297s] [ 79%] Built target timer_interfaces__py
+[23.443s] [ 81%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_py.dir/rosidl_generator_py/timer_interfaces_dummy/srv/_is_timer_active_s.c.o[0m
+[23.447s] [ 84%] [32mBuilding C object CMakeFiles/timer_interfaces__rosidl_generator_py.dir/rosidl_generator_py/timer_interfaces_dummy/srv/_start_timer_s.c.o[0m
+[23.950s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/timer_interfaces_dummy/libtimer_interfaces__rosidl_generator_py.so[0m
+[24.077s] [ 86%] Built target timer_interfaces__rosidl_generator_py
+[24.116s] [ 88%] [32mBuilding C object CMakeFiles/timer_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.137s] [ 90%] [32mBuilding C object CMakeFiles/timer_interfaces_dummy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.329s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.427s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.440s] [ 95%] Built target timer_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext
+[24.511s] [ 97%] [32mBuilding C object CMakeFiles/timer_interfaces_dummy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_c.c.o[0m
+[24.540s] [ 97%] Built target timer_interfaces_dummy__rosidl_typesupport_introspection_c__pyext
+[24.743s] [100%] [32m[1mLinking C shared library rosidl_generator_py/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.805s] [100%] Built target timer_interfaces_dummy__rosidl_typesupport_c__pyext
+[24.827s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy -- -j12 -l12
+[24.829s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy
+[24.840s] -- Install configuration: ""
+[24.840s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/ament_index/resource_index/rosidl_interfaces/timer_interfaces_dummy
+[24.841s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/StartTimer.json
+[24.841s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/IsTimerActive.json
+[24.841s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.841s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.841s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__type_support.c
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.h
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__functions.c
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__functions.h
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.c
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__description.c
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__struct.h
+[24.842s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__functions.c
+[24.843s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__functions.h
+[24.843s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__description.c
+[24.843s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__type_support.h
+[24.843s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__struct.h
+[24.843s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/start_timer.h
+[24.844s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/is_timer_active.h
+[24.844s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg
+[24.844s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg/rosidl_generator_c__visibility_control.h
+[24.844s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/library_path.sh
+[24.844s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/library_path.dsv
+[24.845s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_generator_c.so
+[24.846s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_generator_c.so" to ""
+[24.846s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.847s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.847s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.847s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__rosidl_typesupport_fastrtps_c.h
+[24.847s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__rosidl_typesupport_fastrtps_c.h
+[24.847s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg
+[24.848s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[24.848s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_fastrtps_c.so
+[24.848s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[24.848s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.849s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.849s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.849s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__type_support.c
+[24.849s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__rosidl_typesupport_introspection_c.h
+[24.849s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__rosidl_typesupport_introspection_c.h
+[24.849s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.c
+[24.849s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg
+[24.850s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.850s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_introspection_c.so
+[24.850s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[24.850s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_c.so
+[24.851s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_c.so" to ""
+[24.851s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.851s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.851s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.851s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__traits.hpp
+[24.852s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__struct.hpp
+[24.852s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__builder.hpp
+[24.852s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__struct.hpp
+[24.852s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__traits.hpp
+[24.853s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__builder.hpp
+[24.853s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/start_timer.hpp
+[24.853s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/is_timer_active.hpp
+[24.853s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.853s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.854s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.854s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/dds_fastrtps
+[24.854s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__rosidl_typesupport_fastrtps_cpp.hpp
+[24.854s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__rosidl_typesupport_fastrtps_cpp.hpp
+[24.854s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg
+[24.854s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.855s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[24.855s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.855s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy
+[24.855s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv
+[24.856s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail
+[24.856s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__type_support.cpp
+[24.856s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__rosidl_typesupport_introspection_cpp.hpp
+[24.856s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/start_timer__rosidl_typesupport_introspection_cpp.hpp
+[24.859s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/include/timer_interfaces_dummy/timer_interfaces_dummy/srv/detail/is_timer_active__type_support.cpp
+[24.859s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_introspection_cpp.so
+[24.860s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[24.860s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_cpp.so
+[24.861s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_typesupport_cpp.so" to ""
+[24.862s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/pythonpath.sh
+[24.862s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/pythonpath.dsv
+[24.862s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy-0.0.0-py3.10.egg-info
+[24.863s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy-0.0.0-py3.10.egg-info/PKG-INFO
+[24.863s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy-0.0.0-py3.10.egg-info/dependency_links.txt
+[24.863s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy-0.0.0-py3.10.egg-info/top_level.txt
+[24.863s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy-0.0.0-py3.10.egg-info/SOURCES.txt
+[24.863s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy
+[24.864s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.864s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.864s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/__init__.py
+[24.864s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c
+[24.864s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv
+[24.865s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_start_timer.py
+[24.865s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_is_timer_active.py
+[24.865s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_is_timer_active_s.c
+[24.865s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/__init__.py
+[24.866s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_start_timer_s.c
+[24.866s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.866s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.866s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/_timer_interfaces_dummy_s.ep.rosidl_typesupport_c.c
+[24.867s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/libtimer_interfaces__rosidl_generator_py.so
+[24.945s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy'...
+[24.945s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/__init__.py'...
+[24.945s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv'...
+[24.945s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/__init__.py'...
+[24.945s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_is_timer_active.py'...
+[24.946s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/srv/_start_timer.py'...
+[24.956s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.956s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.956s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.957s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.957s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.958s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/python3.10/site-packages/timer_interfaces_dummy/timer_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.958s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_generator_py.so
+[24.958s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/lib/libtimer_interfaces__rosidl_generator_py.so" to ""
+[24.959s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/StartTimer.idl
+[24.959s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/IsTimerActive.idl
+[24.959s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/StartTimer.srv
+[24.959s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/StartTimer_Request.msg
+[24.959s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/StartTimer_Response.msg
+[24.960s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/IsTimerActive.srv
+[24.960s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/IsTimerActive_Request.msg
+[24.960s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/srv/IsTimerActive_Response.msg
+[24.960s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/ament_index/resource_index/package_run_dependencies/timer_interfaces_dummy
+[24.961s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/ament_index/resource_index/parent_prefix_path/timer_interfaces_dummy
+[24.961s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/ament_prefix_path.sh
+[24.961s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/ament_prefix_path.dsv
+[24.961s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/path.sh
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/environment/path.dsv
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/local_setup.bash
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/local_setup.sh
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/local_setup.zsh
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/local_setup.dsv
+[24.962s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/package.dsv
+[24.963s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/ament_index/resource_index/packages/timer_interfaces_dummy
+[24.963s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_generator_cExport.cmake
+[24.963s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_generator_cExport-noconfig.cmake
+[24.963s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[24.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[24.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_cExport.cmake
+[24.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_generator_cppExport.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_cppExport.cmake
+[24.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[24.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_generator_pyExport.cmake
+[24.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/export_timer_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[24.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/rosidl_cmake-extras.cmake
+[24.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/ament_cmake_export_libraries-extras.cmake
+[24.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/ament_cmake_export_targets-extras.cmake
+[24.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces_dummyConfig.cmake
+[24.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/cmake/timer_interfaces_dummyConfig-version.cmake
+[24.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/timer_interfaces_dummy/share/timer_interfaces_dummy/package.xml
+[24.973s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy

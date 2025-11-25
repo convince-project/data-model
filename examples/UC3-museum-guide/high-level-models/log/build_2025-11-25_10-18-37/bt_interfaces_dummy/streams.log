@@ -1,0 +1,387 @@
+[0.043s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy
+[0.194s] -- The C compiler identification is GNU 11.4.0
+[0.319s] -- The CXX compiler identification is GNU 11.4.0
+[0.334s] -- Detecting C compiler ABI info
+[0.464s] -- Detecting C compiler ABI info - done
+[0.487s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.488s] -- Detecting C compile features
+[0.489s] -- Detecting C compile features - done
+[0.496s] -- Detecting CXX compiler ABI info
+[0.660s] -- Detecting CXX compiler ABI info - done
+[0.674s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.674s] -- Detecting CXX compile features
+[0.675s] -- Detecting CXX compile features - done
+[0.681s] -- Found ament_cmake: 2.0.7 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.059s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.249s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[2.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.387s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.488s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[3.403s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[3.786s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.279s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.329s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.333s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[4.404s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.404s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.404s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.404s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.458s] -- Found PythonExtra: .so  
+[4.561s] -- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[4.613s] -- Added test 'lint_cmake' to check CMake code style
+[4.617s] -- Added test 'xmllint' to check XML markup files
+[4.624s] -- Configuring done
+[4.731s] -- Generating done
+[4.763s] -- Build files have been written to: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy
+[4.780s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/bt_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy
+[4.782s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy -- -j12 -l12
+[4.943s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.966s] [  1%] Built target ament_cmake_python_copy_bt_interfaces_dummy
+[5.691s] [  1%] Built target bt_interfaces_dummy__rosidl_generator_type_description
+[5.760s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.787s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.131s] running egg_info
+[7.133s] creating bt_interfaces_dummy.egg-info
+[7.361s] writing bt_interfaces_dummy.egg-info/PKG-INFO
+[7.538s] writing dependency_links to bt_interfaces_dummy.egg-info/dependency_links.txt
+[8.696s] [  4%] Built target bt_interfaces_dummy__cpp
+[9.145s] writing top-level names to bt_interfaces_dummy.egg-info/top_level.txt
+[9.145s] writing manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'
+[9.696s] [  5%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_action__functions.c.o[0m
+[9.712s] [  6%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_action__description.c.o[0m
+[9.732s] [  9%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/action_response__description.c.o[0m
+[9.736s] [ 10%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_action__type_support.c.o[0m
+[9.759s] [ 10%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/action_response__type_support.c.o[0m
+[9.768s] [ 12%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/condition_response__description.c.o[0m
+[9.771s] [ 13%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/action_response__functions.c.o[0m
+[9.941s] [ 14%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/condition_response__type_support.c.o[0m
+[9.949s] [ 16%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/msg/detail/condition_response__functions.c.o[0m
+[10.000s] [ 17%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/halt_action__functions.c.o[0m
+[10.004s] [ 18%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/halt_action__description.c.o[0m
+[10.096s] [ 20%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/halt_action__type_support.c.o[0m
+[10.180s] [ 21%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_condition__description.c.o[0m
+[10.219s] [ 22%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_condition__functions.c.o[0m
+[10.232s] [ 24%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_c.dir/rosidl_generator_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c.o[0m
+[10.849s] [ 25%] [32m[1mLinking C shared library libbt_interfaces_dummy__rosidl_generator_c.so[0m
+[11.335s] reading manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'
+[11.336s] writing manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'
+[11.375s] [ 25%] Built target bt_interfaces_dummy__rosidl_generator_c
+[11.517s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.521s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.555s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.569s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.571s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.603s] [ 33%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.698s] [ 33%] Built target ament_cmake_python_build_bt_interfaces_dummy_egg
+[14.560s] [ 35%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_action__type_support.c.o[0m
+[14.586s] [ 36%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/condition_response__type_support.c.o[0m
+[14.598s] [ 37%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/halt_action__type_support.c.o[0m
+[14.602s] [ 39%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/action_response__type_support.c.o[0m
+[14.620s] [ 40%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c.o[0m
+[15.216s] [ 41%] [32m[1mLinking C shared library libbt_interfaces_dummy__rosidl_typesupport_introspection_c.so[0m
+[15.590s] [ 41%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_c
+[16.400s] [ 44%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_interfaces_dummy/msg/action_response__type_support.cpp.o[0m
+[16.401s] [ 44%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_interfaces_dummy/srv/halt_action__type_support.cpp.o[0m
+[16.404s] [ 45%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_interfaces_dummy/msg/condition_response__type_support.cpp.o[0m
+[16.413s] [ 47%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_interfaces_dummy/srv/tick_action__type_support.cpp.o[0m
+[16.459s] [ 48%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_interfaces_dummy/srv/tick_condition__type_support.cpp.o[0m
+[16.773s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_interfaces_dummy/srv/tick_action__type_support.cpp.o[0m
+[16.796s] [ 51%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_interfaces_dummy/msg/action_response__type_support.cpp.o[0m
+[16.840s] [ 52%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_interfaces_dummy/msg/condition_response__type_support.cpp.o[0m
+[16.850s] [ 54%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_interfaces_dummy/srv/halt_action__type_support.cpp.o[0m
+[17.199s] [ 55%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_interfaces_dummy/srv/tick_condition__type_support.cpp.o[0m
+[17.570s] [ 56%] [32m[1mLinking CXX shared library libbt_interfaces_dummy__rosidl_typesupport_c.so[0m
+[17.617s] [ 58%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_interfaces_dummy/srv/detail/tick_action__type_support.cpp.o[0m
+[17.662s] [ 59%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_interfaces_dummy/msg/detail/action_response__type_support.cpp.o[0m
+[17.664s] [ 60%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_interfaces_dummy/srv/detail/halt_action__type_support.cpp.o[0m
+[17.666s] [ 62%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_interfaces_dummy/msg/detail/condition_response__type_support.cpp.o[0m
+[17.907s] [ 62%] Built target bt_interfaces_dummy__rosidl_typesupport_c
+[18.226s] [ 63%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_interfaces_dummy/srv/detail/tick_condition__type_support.cpp.o[0m
+[18.376s] [ 64%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_interfaces_dummy/srv/detail/tick_action__type_support_c.cpp.o[0m
+[18.651s] [ 66%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_interfaces_dummy/msg/detail/action_response__type_support_c.cpp.o[0m
+[18.885s] [ 67%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/srv/detail/dds_fastrtps/tick_action__type_support.cpp.o[0m
+[19.039s] [ 68%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/msg/detail/dds_fastrtps/action_response__type_support.cpp.o[0m
+[19.088s] [ 70%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/msg/detail/dds_fastrtps/condition_response__type_support.cpp.o[0m
+[19.882s] [ 71%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/srv/detail/dds_fastrtps/halt_action__type_support.cpp.o[0m
+[20.285s] [ 72%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_interfaces_dummy/msg/detail/condition_response__type_support_c.cpp.o[0m
+[20.464s] [ 74%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/srv/detail/dds_fastrtps/tick_condition__type_support.cpp.o[0m
+[20.810s] [ 75%] [32m[1mLinking CXX shared library libbt_interfaces_dummy__rosidl_typesupport_cpp.so[0m
+[20.996s] [ 77%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_interfaces_dummy/srv/detail/halt_action__type_support_c.cpp.o[0m
+[21.246s] [ 78%] [32mBuilding CXX object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support_c.cpp.o[0m
+[21.370s] [ 79%] [32m[1mLinking CXX shared library libbt_interfaces_dummy__rosidl_typesupport_introspection_cpp.so[0m
+[21.421s] [ 79%] Built target bt_interfaces_dummy__rosidl_typesupport_cpp
+[21.896s] [ 79%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_cpp
+[22.833s] [ 81%] [32m[1mLinking CXX shared library libbt_interfaces_dummy__rosidl_typesupport_fastrtps_c.so[0m
+[23.151s] [ 81%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_c
+[23.233s] [ 82%] [32m[1mLinking CXX shared library libbt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.526s] [ 82%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp
+[23.699s] [ 82%] Built target bt_interfaces_dummy
+[23.830s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.067s] [ 83%] Built target bt_interfaces_dummy__py
+[26.104s] [ 85%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_py.dir/rosidl_generator_py/bt_interfaces_dummy/srv/_tick_action_s.c.o[0m
+[26.104s] [ 86%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_py.dir/rosidl_generator_py/bt_interfaces_dummy/msg/_action_response_s.c.o[0m
+[26.255s] [ 87%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_py.dir/rosidl_generator_py/bt_interfaces_dummy/srv/_tick_condition_s.c.o[0m
+[26.282s] [ 89%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_py.dir/rosidl_generator_py/bt_interfaces_dummy/srv/_halt_action_s.c.o[0m
+[26.416s] [ 90%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_generator_py.dir/rosidl_generator_py/bt_interfaces_dummy/msg/_condition_response_s.c.o[0m
+[26.532s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/bt_interfaces_dummy/libbt_interfaces_dummy__rosidl_generator_py.so[0m
+[26.586s] [ 91%] Built target bt_interfaces_dummy__rosidl_generator_py
+[26.618s] [ 94%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.618s] [ 94%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.800s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.803s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.856s] [ 97%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext
+[26.856s] [ 97%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_c__pyext
+[26.885s] [ 98%] [32mBuilding C object CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_c.c.o[0m
+[27.040s] [100%] [32m[1mLinking C shared library rosidl_generator_py/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.087s] [100%] Built target bt_interfaces_dummy__rosidl_typesupport_c__pyext
+[27.103s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy -- -j12 -l12
+[27.105s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy
+[27.116s] -- Install configuration: ""
+[27.117s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/ament_index/resource_index/rosidl_interfaces/bt_interfaces_dummy
+[27.117s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickAction.json
+[27.117s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ActionResponse.json
+[27.117s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ConditionResponse.json
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/HaltAction.json
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickCondition.json
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/tick_condition.h
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__type_support.h
+[27.118s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__type_support.c
+[27.119s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__functions.h
+[27.119s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__functions.h
+[27.119s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__functions.h
+[27.119s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__type_support.h
+[27.119s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__functions.c
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__description.c
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__struct.h
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__struct.h
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__description.c
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__type_support.h
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__functions.c
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__description.c
+[27.120s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__type_support.c
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__struct.h
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__functions.c
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/tick_action.h
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/halt_action.h
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.121s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__struct.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__type_support.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__description.c
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__struct.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__functions.c
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__type_support.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__functions.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__functions.h
+[27.122s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__functions.c
+[27.123s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__type_support.c
+[27.123s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__description.c
+[27.123s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__type_support.c
+[27.123s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/rosidl_generator_c__visibility_control.h
+[27.123s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/action_response.h
+[27.124s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/condition_response.h
+[27.124s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/library_path.sh
+[27.124s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/library_path.dsv
+[27.124s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_generator_c.so
+[27.125s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_generator_c.so" to ""
+[27.125s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.125s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.125s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.125s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_fastrtps_c.h
+[27.125s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__rosidl_typesupport_fastrtps_c.h
+[27.126s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__rosidl_typesupport_fastrtps_c.h
+[27.126s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.126s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.126s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__rosidl_typesupport_fastrtps_c.h
+[27.126s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__rosidl_typesupport_fastrtps_c.h
+[27.126s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[27.126s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_fastrtps_c.so
+[27.127s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_fastrtps_c.so" to ""
+[27.127s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.127s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.127s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.127s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__type_support.c
+[27.127s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_introspection_c.h
+[27.127s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__type_support.c
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__rosidl_typesupport_introspection_c.h
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__rosidl_typesupport_introspection_c.h
+[27.128s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.128s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__rosidl_typesupport_introspection_c.h
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__type_support.c
+[27.128s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__type_support.c
+[27.129s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__rosidl_typesupport_introspection_c.h
+[27.129s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[27.129s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_introspection_c.so
+[27.129s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_introspection_c.so" to ""
+[27.130s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_c.so
+[27.130s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_c.so" to ""
+[27.130s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.130s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/tick_condition.hpp
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/tick_action.hpp
+[27.131s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__builder.hpp
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__struct.hpp
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__struct.hpp
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__builder.hpp
+[27.131s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__struct.hpp
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__builder.hpp
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__traits.hpp
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__traits.hpp
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__traits.hpp
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/halt_action.hpp
+[27.132s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.132s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/action_response.hpp
+[27.133s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__builder.hpp
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__builder.hpp
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__struct.hpp
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__traits.hpp
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__traits.hpp
+[27.133s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__struct.hpp
+[27.134s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/condition_response.hpp
+[27.134s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.134s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.134s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.134s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__rosidl_typesupport_fastrtps_cpp.hpp
+[27.134s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/dds_fastrtps
+[27.134s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_fastrtps_cpp.hpp
+[27.134s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__rosidl_typesupport_fastrtps_cpp.hpp
+[27.135s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.135s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.135s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__rosidl_typesupport_fastrtps_cpp.hpp
+[27.135s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/dds_fastrtps
+[27.135s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__rosidl_typesupport_fastrtps_cpp.hpp
+[27.135s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[27.136s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.so
+[27.137s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp.so" to ""
+[27.137s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy
+[27.137s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv
+[27.137s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail
+[27.137s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__rosidl_typesupport_introspection_cpp.hpp
+[27.138s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__type_support.cpp
+[27.138s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__rosidl_typesupport_introspection_cpp.hpp
+[27.138s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_introspection_cpp.hpp
+[27.138s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_condition__type_support.cpp
+[27.138s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/srv/detail/tick_action__type_support.cpp
+[27.138s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg
+[27.138s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail
+[27.139s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__rosidl_typesupport_introspection_cpp.hpp
+[27.139s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__type_support.cpp
+[27.139s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/action_response__rosidl_typesupport_introspection_cpp.hpp
+[27.139s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/include/bt_interfaces_dummy/bt_interfaces_dummy/msg/detail/condition_response__type_support.cpp
+[27.139s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_introspection_cpp.so
+[27.140s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_introspection_cpp.so" to ""
+[27.140s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_cpp.so
+[27.141s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_typesupport_cpp.so" to ""
+[27.141s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/pythonpath.sh
+[27.141s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/pythonpath.dsv
+[27.141s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy-0.0.0-py3.10.egg-info
+[27.141s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy-0.0.0-py3.10.egg-info/PKG-INFO
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy-0.0.0-py3.10.egg-info/dependency_links.txt
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy-0.0.0-py3.10.egg-info/top_level.txt
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy-0.0.0-py3.10.egg-info/SOURCES.txt
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_c.c
+[27.142s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c
+[27.143s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.143s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/__init__.py
+[27.143s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/_bt_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c
+[27.143s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/libbt_interfaces_dummy__rosidl_generator_py.so
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_action_s.c
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_condition.py
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_halt_action_s.c
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_action.py
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/__init__.py
+[27.144s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_halt_action.py
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_condition_s.c
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_action_response_s.c
+[27.145s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_condition_response_s.c
+[27.146s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_action_response.py
+[27.146s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/__init__.py
+[27.146s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_condition_response.py
+[27.209s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/__init__.py'...
+[27.209s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/__init__.py'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_action_response.py'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/msg/_condition_response.py'...
+[27.209s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/__init__.py'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_halt_action.py'...
+[27.209s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_action.py'...
+[27.210s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/srv/_tick_condition.py'...
+[27.215s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.216s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.216s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.216s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.217s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.217s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/python3.10/site-packages/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.217s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_generator_py.so
+[27.217s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/lib/libbt_interfaces_dummy__rosidl_generator_py.so" to ""
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickAction.idl
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ActionResponse.idl
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ConditionResponse.idl
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/HaltAction.idl
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickCondition.idl
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickAction.srv
+[27.218s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickAction_Request.msg
+[27.219s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickAction_Response.msg
+[27.219s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ActionResponse.msg
+[27.219s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/msg/ConditionResponse.msg
+[27.219s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/HaltAction.srv
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/HaltAction_Request.msg
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/HaltAction_Response.msg
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickCondition.srv
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickCondition_Request.msg
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/srv/TickCondition_Response.msg
+[27.220s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/ament_index/resource_index/package_run_dependencies/bt_interfaces_dummy
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/ament_index/resource_index/parent_prefix_path/bt_interfaces_dummy
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/ament_prefix_path.sh
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/ament_prefix_path.dsv
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/path.sh
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/environment/path.dsv
+[27.221s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/local_setup.bash
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/local_setup.sh
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/local_setup.zsh
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/local_setup.dsv
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.dsv
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/ament_index/resource_index/packages/bt_interfaces_dummy
+[27.222s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_generator_cExport.cmake
+[27.223s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_generator_cExport-noconfig.cmake
+[27.223s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_typesupport_fastrtps_cExport.cmake
+[27.223s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[27.223s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_introspection_cExport.cmake
+[27.223s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_cExport.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_cExport-noconfig.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_generator_cppExport.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_typesupport_fastrtps_cppExport.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[27.224s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_introspection_cppExport.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_cppExport.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummy__rosidl_typesupport_cppExport-noconfig.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_generator_pyExport.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/export_bt_interfaces_dummy__rosidl_generator_pyExport-noconfig.cmake
+[27.225s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/rosidl_cmake-extras.cmake
+[27.226s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.226s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.226s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/ament_cmake_export_libraries-extras.cmake
+[27.226s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/ament_cmake_export_targets-extras.cmake
+[27.226s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[27.227s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[27.227s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummyConfig.cmake
+[27.227s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake/bt_interfaces_dummyConfig-version.cmake
+[27.227s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.xml
+[27.230s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy

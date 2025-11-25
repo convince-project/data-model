@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "people_detector_filter_interfaces__py",
+		"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces__py"
+	}
+}

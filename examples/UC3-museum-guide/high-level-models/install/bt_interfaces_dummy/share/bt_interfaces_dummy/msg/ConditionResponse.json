@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "bt_interfaces_dummy/msg/ConditionResponse",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "bt_interfaces_dummy/msg/ConditionResponse",
+      "hash_string": "RIHS01_44aa5d52fe65d1e56c153dd0ab304868d37bbb2dbaa15c089fffb55a7021c213"
+    }
+  ]
+}

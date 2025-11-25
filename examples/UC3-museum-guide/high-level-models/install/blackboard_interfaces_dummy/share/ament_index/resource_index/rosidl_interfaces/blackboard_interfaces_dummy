@@ -1,0 +1,8 @@
+srv/GetIntBlackboard.idl
+srv/GetIntBlackboard.srv
+srv/GetIntBlackboard_Request.msg
+srv/GetIntBlackboard_Response.msg
+srv/SetIntBlackboard.idl
+srv/SetIntBlackboard.srv
+srv/SetIntBlackboard_Request.msg
+srv/SetIntBlackboard_Response.msg

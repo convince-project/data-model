@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from notify_user_interfaces_dummy/srv/StopAlarm.srv
+// generated code does not contain a copyright notice
+
+
+module notify_user_interfaces_dummy {
+  module srv {
+    struct StopAlarm_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct StopAlarm_Response {
+      boolean is_ok;
+    };
+  };
+};

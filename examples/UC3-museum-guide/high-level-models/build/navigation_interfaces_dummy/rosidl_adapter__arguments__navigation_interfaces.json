@@ -1,0 +1,7 @@
+{
+  "package_name": "navigation_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/navigation_interfaces_dummy:msg/NavigationStatus.msg",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/navigation_interfaces_dummy:action/GoToPoi.action"
+  ]
+}

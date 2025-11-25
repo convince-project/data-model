@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6f6fa3363eebadde46e8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "scheduler_interfaces__py",
+					"jsonFile" : "directory-scheduler_interfaces__py-dfe6947b59a3713453d2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy/scheduler_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "scheduler_interfaces_dummy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_scheduler_interfaces_dummy_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_scheduler_interfaces_dummy_egg-1c88530f443343aa486c.json",
+					"name" : "ament_cmake_python_build_scheduler_interfaces_dummy_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_scheduler_interfaces_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_scheduler_interfaces_dummy-3f577bf07d82c9a4ed84.json",
+					"name" : "ament_cmake_python_copy_scheduler_interfaces_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces-74b84e8aa29b400bdb7f.json",
+					"name" : "scheduler_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__cpp-6049a199b880290f5724.json",
+					"name" : "scheduler_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "scheduler_interfaces__py::@74276148f394b5094a2b",
+					"jsonFile" : "target-scheduler_interfaces__py-4a8a9bc50770025bc3eb.json",
+					"name" : "scheduler_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_generator_c-7f7e0d08a34495bf6913.json",
+					"name" : "scheduler_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_generator_py-dafab00a86f0ba209313.json",
+					"name" : "scheduler_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_generator_type_description-ac15082b991e248e0756.json",
+					"name" : "scheduler_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_c-0cfa52e1178ef4c2c9d7.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_cpp-913d86fc800251f0a554.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_fastrtps_c-f3db3bd530125e8562a2.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_fastrtps_cpp-dd6df2d6e5e6e5ee3e85.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_introspection_c-c4ca2e00a3fad8b93b86.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces__rosidl_typesupport_introspection_cpp-0eb785156e3ba267b19c.json",
+					"name" : "scheduler_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces_dummy__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces_dummy__rosidl_typesupport_c__pyext-2b650a58c863af2cd7f7.json",
+					"name" : "scheduler_interfaces_dummy__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext-8ac78bc95e7ff733d180.json",
+					"name" : "scheduler_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces_dummy__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces_dummy__rosidl_typesupport_introspection_c__pyext-8c6cdaca31d833dae302.json",
+					"name" : "scheduler_interfaces_dummy__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scheduler_interfaces_dummy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scheduler_interfaces_dummy_uninstall-06e5304d420333302001.json",
+					"name" : "scheduler_interfaces_dummy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-64ea38e16001504abd98.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy",
+		"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/scheduler_interfaces_dummy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

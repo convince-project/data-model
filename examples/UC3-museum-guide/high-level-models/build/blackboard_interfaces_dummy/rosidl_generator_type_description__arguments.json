@@ -1,0 +1,15 @@
+{
+  "package_name": "blackboard_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy/rosidl_generator_type_description/blackboard_interfaces_dummy",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy/rosidl_adapter/blackboard_interfaces_dummy:srv/SetIntBlackboard.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/blackboard_interfaces_dummy/rosidl_adapter/blackboard_interfaces_dummy:srv/GetIntBlackboard.idl"
+  ],
+  "include_paths": [
+    "sensor_msgs:/opt/ros/iron/share/sensor_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/iron/share/geometry_msgs",
+    "std_msgs:/opt/ros/iron/share/std_msgs",
+    "service_msgs:/opt/ros/iron/share/service_msgs"
+  ]
+}

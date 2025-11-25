@@ -1,0 +1,5 @@
+/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickAction.idl
+/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ActionResponse.idl
+/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ConditionResponse.idl
+/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/HaltAction.idl
+/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickCondition.idl

@@ -1,0 +1,7 @@
+{
+  "package_name": "timer_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy:srv/StartTimer.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/timer_interfaces_dummy:srv/IsTimerActive.srv"
+  ]
+}

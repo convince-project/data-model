@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c.o"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c.o.d"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c.o"
+  "CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c.o.d"
+  "libscheduler_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libscheduler_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c"
+  "rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

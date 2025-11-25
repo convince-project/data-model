@@ -1,0 +1,4 @@
+gmake[1]: *** [CMakeFiles/Makefile2:346: CMakeFiles/timer_interfaces__cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_timer_interfaces_dummy_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_timer_interfaces_dummy_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_timer_interfaces_dummy_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

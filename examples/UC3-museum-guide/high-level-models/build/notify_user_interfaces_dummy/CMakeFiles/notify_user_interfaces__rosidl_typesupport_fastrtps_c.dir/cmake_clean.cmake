@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support_c.cpp.o"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support_c.cpp.o.d"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support_c.cpp.o"
+  "CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support_c.cpp.o.d"
+  "libnotify_user_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libnotify_user_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/start_alarm__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/start_alarm__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/notify_user_interfaces_dummy/srv/detail/stop_alarm__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

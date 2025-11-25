@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support_c.cpp.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support_c.cpp.o.d"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

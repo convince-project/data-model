@@ -1,0 +1,12 @@
+{
+  "package_name": "timer_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_generator_type_description/timer_interfaces_dummy",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy:srv/StartTimer.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/timer_interfaces_dummy/rosidl_adapter/timer_interfaces_dummy:srv/IsTimerActive.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces"
+  ]
+}

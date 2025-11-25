@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "scheduler_interfaces_dummy/srv/GetCurrentPoi_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "scheduler_interfaces_dummy/srv/GetCurrentPoi_Request",
+      "hash_string": "RIHS01_8db7c6ddec27c5d365ae1cee3ab03b6b1bc2a6f78a2d6ab43ce46deca09d31b5"
+    }
+  ]
+}

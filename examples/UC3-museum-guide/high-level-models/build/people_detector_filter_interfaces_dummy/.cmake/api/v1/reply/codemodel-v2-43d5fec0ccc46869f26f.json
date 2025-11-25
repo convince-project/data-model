@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c7b5ecb02890bd0334cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "people_detector_filter_interfaces__py",
+					"jsonFile" : "directory-people_detector_filter_interfaces__py-df2b7849e85a61b74bdf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "people_detector_filter_interfaces_dummy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg-81b59ece1be53eae77b4.json",
+					"name" : "ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_people_detector_filter_interfaces_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_people_detector_filter_interfaces_dummy-dcf619675594576fa8ca.json",
+					"name" : "ament_cmake_python_copy_people_detector_filter_interfaces_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces-07f997e70baae6b9d839.json",
+					"name" : "people_detector_filter_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__cpp-6a4202d68e92df120a74.json",
+					"name" : "people_detector_filter_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "people_detector_filter_interfaces__py::@b3e95ee76336c93a6090",
+					"jsonFile" : "target-people_detector_filter_interfaces__py-ec29dc71ed152a8eb63a.json",
+					"name" : "people_detector_filter_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_generator_c-c6bba45c1185225a706b.json",
+					"name" : "people_detector_filter_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_generator_py-5fdba996b1a7bf92a270.json",
+					"name" : "people_detector_filter_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_generator_type_description-adb59772e6c826fd8d28.json",
+					"name" : "people_detector_filter_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_c-42378131f9fc8234111a.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_cpp-0ef462aad672d9fe68e9.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c-973946606025e400395b.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp-e22dadb418fc6a3021d2.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_introspection_c-b5504718ee283a01cfbb.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces__rosidl_typesupport_introspection_cpp-32d743fca13a4e0a923e.json",
+					"name" : "people_detector_filter_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces_dummy__rosidl_typesupport_c__pyext-10a3237da5aef85f8523.json",
+					"name" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext-839fb5fcebf3fc402312.json",
+					"name" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces_dummy__rosidl_typesupport_introspection_c__pyext-ca678f0c8c7f60a64259.json",
+					"name" : "people_detector_filter_interfaces_dummy__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "people_detector_filter_interfaces_dummy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-people_detector_filter_interfaces_dummy_uninstall-810a67836efd6415fdc4.json",
+					"name" : "people_detector_filter_interfaces_dummy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9d7df1f7d7469864cb03.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/people_detector_filter_interfaces_dummy",
+		"source" : "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/people_detector_filter_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

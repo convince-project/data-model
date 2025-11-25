@@ -1,0 +1,7 @@
+{
+  "package_name": "scheduler_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/scheduler_interfaces_dummy:srv/SetPoi.srv",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/scheduler_interfaces_dummy:srv/GetCurrentPoi.srv"
+  ]
+}

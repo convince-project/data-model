@@ -1,0 +1,276 @@
+[0.036s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/scheduler_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy
+[0.162s] -- The C compiler identification is GNU 11.4.0
+[0.284s] -- The CXX compiler identification is GNU 11.4.0
+[0.302s] -- Detecting C compiler ABI info
+[0.425s] -- Detecting C compiler ABI info - done
+[0.437s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.438s] -- Detecting C compile features
+[0.439s] -- Detecting C compile features - done
+[0.443s] -- Detecting CXX compiler ABI info
+[0.589s] -- Detecting CXX compiler ABI info - done
+[0.610s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.610s] -- Detecting CXX compile features
+[0.611s] -- Detecting CXX compile features - done
+[0.622s] -- Found ament_cmake: 2.0.7 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.447s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.644s] -- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+[2.750s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[2.786s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[2.831s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.869s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.277s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[3.300s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[4.085s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[5.277s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.923s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.983s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.990s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[6.066s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.067s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.067s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.126s] -- Found PythonExtra: .so  
+[6.366s] -- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[6.421s] -- Added test 'lint_cmake' to check CMake code style
+[6.423s] -- Added test 'xmllint' to check XML markup files
+[6.431s] -- Configuring done
+[6.591s] -- Generating done
+[6.643s] -- Build files have been written to: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy
+[6.684s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/scheduler_interfaces_dummy -DCMAKE_INSTALL_PREFIX=/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy
+[6.685s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy -- -j12 -l12
+[6.950s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[6.965s] [  2%] Built target ament_cmake_python_copy_scheduler_interfaces_dummy
+[7.803s] [  2%] Built target scheduler_interfaces__rosidl_generator_type_description
+[7.919s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.955s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.031s] running egg_info
+[10.041s] creating scheduler_interfaces_dummy.egg-info
+[10.531s] [  6%] Built target scheduler_interfaces__cpp
+[10.656s] writing scheduler_interfaces_dummy.egg-info/PKG-INFO
+[10.943s] writing dependency_links to scheduler_interfaces_dummy.egg-info/dependency_links.txt
+[12.535s] [  9%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/set_poi__description.c.o[0m
+[12.569s] [ 11%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/set_poi__functions.c.o[0m
+[12.569s] [ 13%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c.o[0m
+[12.579s] [ 15%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__description.c.o[0m
+[12.631s] [ 18%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__functions.c.o[0m
+[12.646s] [ 20%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_c.dir/rosidl_generator_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c.o[0m
+[13.446s] [ 22%] [32m[1mLinking C shared library libscheduler_interfaces__rosidl_generator_c.so[0m
+[13.845s] [ 22%] Built target scheduler_interfaces__rosidl_generator_c
+[13.954s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[14.027s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.045s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[14.078s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.103s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[14.105s] [ 36%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[14.268s] writing top-level names to scheduler_interfaces_dummy.egg-info/top_level.txt
+[14.277s] writing manifest file 'scheduler_interfaces_dummy.egg-info/SOURCES.txt'
+[15.824s] [ 38%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scheduler_interfaces_dummy/srv/set_poi__type_support.cpp.o[0m
+[15.853s] [ 40%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scheduler_interfaces_dummy/srv/get_current_poi__type_support.cpp.o[0m
+[16.989s] reading manifest file 'scheduler_interfaces_dummy.egg-info/SOURCES.txt'
+[16.991s] writing manifest file 'scheduler_interfaces_dummy.egg-info/SOURCES.txt'
+[17.289s] [ 43%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/scheduler_interfaces_dummy/srv/set_poi__type_support.cpp.o[0m
+[17.311s] [ 45%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/scheduler_interfaces_dummy/srv/get_current_poi__type_support.cpp.o[0m
+[17.413s] [ 45%] Built target ament_cmake_python_build_scheduler_interfaces_dummy_egg
+[17.720s] [ 47%] [32m[1mLinking CXX shared library libscheduler_interfaces__rosidl_typesupport_c.so[0m
+[17.793s] [ 52%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.cpp.o[0m
+[17.808s] [ 52%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.cpp.o[0m
+[18.157s] [ 54%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c.o[0m
+[18.177s] [ 54%] Built target scheduler_interfaces__rosidl_typesupport_c
+[18.187s] [ 56%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c.o[0m
+[18.264s] [ 59%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/set_poi__type_support_c.cpp.o[0m
+[18.275s] [ 61%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support_c.cpp.o[0m
+[18.539s] [ 63%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scheduler_interfaces_dummy/srv/detail/dds_fastrtps/set_poi__type_support.cpp.o[0m
+[18.563s] [ 65%] [32mBuilding CXX object CMakeFiles/scheduler_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scheduler_interfaces_dummy/srv/detail/dds_fastrtps/get_current_poi__type_support.cpp.o[0m
+[18.645s] [ 68%] [32m[1mLinking C shared library libscheduler_interfaces__rosidl_typesupport_introspection_c.so[0m
+[18.881s] [ 68%] Built target scheduler_interfaces__rosidl_typesupport_introspection_c
+[19.787s] [ 70%] [32m[1mLinking CXX shared library libscheduler_interfaces__rosidl_typesupport_cpp.so[0m
+[20.442s] [ 70%] Built target scheduler_interfaces__rosidl_typesupport_cpp
+[21.045s] [ 72%] [32m[1mLinking CXX shared library libscheduler_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[21.424s] [ 75%] [32m[1mLinking CXX shared library libscheduler_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[21.665s] [ 75%] Built target scheduler_interfaces__rosidl_typesupport_fastrtps_c
+[22.042s] [ 75%] Built target scheduler_interfaces__rosidl_typesupport_introspection_cpp
+[22.621s] [ 77%] [32m[1mLinking CXX shared library libscheduler_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.089s] [ 77%] Built target scheduler_interfaces__rosidl_typesupport_fastrtps_cpp
+[23.223s] [ 77%] Built target scheduler_interfaces
+[23.337s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.073s] [ 79%] Built target scheduler_interfaces__py
+[25.108s] [ 84%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_py.dir/rosidl_generator_py/scheduler_interfaces_dummy/srv/_get_current_poi_s.c.o[0m
+[25.108s] [ 84%] [32mBuilding C object CMakeFiles/scheduler_interfaces__rosidl_generator_py.dir/rosidl_generator_py/scheduler_interfaces_dummy/srv/_set_poi_s.c.o[0m
+[25.294s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/scheduler_interfaces_dummy/libscheduler_interfaces__rosidl_generator_py.so[0m
+[25.362s] [ 86%] Built target scheduler_interfaces__rosidl_generator_py
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/scheduler_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[25.397s] [ 90%] [32mBuilding C object CMakeFiles/scheduler_interfaces_dummy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[25.574s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.576s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.643s] [ 95%] Built target scheduler_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext
+[25.651s] [ 95%] Built target scheduler_interfaces_dummy__rosidl_typesupport_introspection_c__pyext
+[25.677s] [ 97%] [32mBuilding C object CMakeFiles/scheduler_interfaces_dummy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_c.c.o[0m
+[25.862s] [100%] [32m[1mLinking C shared library rosidl_generator_py/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.932s] [100%] Built target scheduler_interfaces_dummy__rosidl_typesupport_c__pyext
+[25.949s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --build /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy -- -j12 -l12
+[25.952s] Invoking command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy
+[25.963s] -- Install configuration: ""
+[25.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/ament_index/resource_index/rosidl_interfaces/scheduler_interfaces_dummy
+[25.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/SetPoi.json
+[25.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/GetCurrentPoi.json
+[25.964s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/set_poi.h
+[25.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c
+[25.965s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.h
+[25.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__description.c
+[25.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__functions.h
+[25.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__functions.c
+[25.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__functions.h
+[25.966s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__functions.c
+[25.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__description.c
+[25.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c
+[25.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__struct.h
+[25.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.h
+[25.967s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__struct.h
+[25.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/get_current_poi.h
+[25.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg
+[25.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg/rosidl_generator_c__visibility_control.h
+[25.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/library_path.sh
+[25.968s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/library_path.dsv
+[25.969s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_generator_c.so
+[25.969s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_generator_c.so" to ""
+[25.969s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.969s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.969s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.969s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_fastrtps_c.h
+[25.969s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_fastrtps_c.h
+[25.969s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg
+[25.969s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[25.969s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_fastrtps_c.so
+[25.970s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[25.970s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.970s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.970s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.970s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__builder.hpp
+[25.970s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__traits.hpp
+[25.970s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__builder.hpp
+[25.970s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__struct.hpp
+[25.970s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__traits.hpp
+[25.971s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__struct.hpp
+[25.971s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/set_poi.hpp
+[25.971s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/get_current_poi.hpp
+[25.971s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.971s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.971s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.971s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_fastrtps_cpp.hpp
+[25.971s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/dds_fastrtps
+[25.972s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_fastrtps_cpp.hpp
+[25.972s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg
+[25.972s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[25.972s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[25.972s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.972s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.972s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.973s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.c
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_introspection_c.h
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.c
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_introspection_c.h
+[25.973s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[25.973s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_introspection_c.so
+[25.974s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[25.974s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_c.so
+[25.974s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_c.so" to ""
+[25.974s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy
+[25.974s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv
+[25.975s] -- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail
+[25.975s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__type_support.cpp
+[25.975s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/get_current_poi__rosidl_typesupport_introspection_cpp.hpp
+[25.975s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__type_support.cpp
+[25.975s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/include/scheduler_interfaces_dummy/scheduler_interfaces_dummy/srv/detail/set_poi__rosidl_typesupport_introspection_cpp.hpp
+[25.975s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_introspection_cpp.so
+[25.976s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[25.976s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_cpp.so
+[25.977s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_typesupport_cpp.so" to ""
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/pythonpath.sh
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/pythonpath.dsv
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy-0.0.0-py3.10.egg-info
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy-0.0.0-py3.10.egg-info/PKG-INFO
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy-0.0.0-py3.10.egg-info/dependency_links.txt
+[25.977s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy-0.0.0-py3.10.egg-info/top_level.txt
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy-0.0.0-py3.10.egg-info/SOURCES.txt
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/__init__.py
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/libscheduler_interfaces__rosidl_generator_py.so
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_c.c
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c
+[25.978s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_set_poi.py
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_get_current_poi.py
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/__init__.py
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_get_current_poi_s.c
+[25.979s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_set_poi_s.c
+[25.980s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[25.980s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/_scheduler_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c
+[25.980s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.037s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy'...
+[26.037s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/__init__.py'...
+[26.037s] Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv'...
+[26.037s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/__init__.py'...
+[26.037s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_get_current_poi.py'...
+[26.037s] Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/srv/_set_poi.py'...
+[26.043s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.044s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.044s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.044s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.045s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.045s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/python3.10/site-packages/scheduler_interfaces_dummy/scheduler_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.045s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_generator_py.so
+[26.046s] -- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/lib/libscheduler_interfaces__rosidl_generator_py.so" to ""
+[26.046s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/SetPoi.idl
+[26.046s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/GetCurrentPoi.idl
+[26.046s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/SetPoi.srv
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/SetPoi_Request.msg
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/SetPoi_Response.msg
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/GetCurrentPoi.srv
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/GetCurrentPoi_Request.msg
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/srv/GetCurrentPoi_Response.msg
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/ament_index/resource_index/package_run_dependencies/scheduler_interfaces_dummy
+[26.047s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/ament_index/resource_index/parent_prefix_path/scheduler_interfaces_dummy
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/ament_prefix_path.sh
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/ament_prefix_path.dsv
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/path.sh
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/environment/path.dsv
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/local_setup.bash
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/local_setup.sh
+[26.048s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/local_setup.zsh
+[26.049s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/local_setup.dsv
+[26.049s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/package.dsv
+[26.049s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/ament_index/resource_index/packages/scheduler_interfaces_dummy
+[26.049s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_generator_cExport.cmake
+[26.049s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_generator_cExport-noconfig.cmake
+[26.050s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[26.050s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.050s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_generator_cppExport.cmake
+[26.050s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.050s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_cExport.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[26.051s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_cppExport.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_generator_pyExport.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/export_scheduler_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/rosidl_cmake-extras.cmake
+[26.052s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.053s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.053s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/ament_cmake_export_libraries-extras.cmake
+[26.053s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/ament_cmake_export_targets-extras.cmake
+[26.053s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.053s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[26.054s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces_dummyConfig.cmake
+[26.054s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/cmake/scheduler_interfaces_dummyConfig-version.cmake
+[26.054s] -- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/scheduler_interfaces_dummy/share/scheduler_interfaces_dummy/package.xml
+[26.058s] Invoked command in '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron PS1=\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\e[91m\]$(parse_git_branch)\[\e[00m\]$ /usr/bin/cmake --install /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/scheduler_interfaces_dummy

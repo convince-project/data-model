@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from scheduler_interfaces_dummy/srv/GetCurrentPoi.srv
+// generated code does not contain a copyright notice
+
+
+module scheduler_interfaces_dummy {
+  module srv {
+    struct GetCurrentPoi_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetCurrentPoi_Response {
+      int32 poi_number;
+
+      boolean is_ok;
+    };
+  };
+};

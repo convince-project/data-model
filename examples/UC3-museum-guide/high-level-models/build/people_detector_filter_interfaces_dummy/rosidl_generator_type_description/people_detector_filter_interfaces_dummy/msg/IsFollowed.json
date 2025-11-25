@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "people_detector_filter_interfaces_dummy/msg/IsFollowed",
+      "fields": [
+        {
+          "name": "is_followed",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "people_detector_filter_interfaces_dummy/msg/IsFollowed",
+      "hash_string": "RIHS01_a3fb45f43a958bbd8e934599631a2235d58b0b715bc4abdf70483003a0c0d0c3"
+    }
+  ]
+}

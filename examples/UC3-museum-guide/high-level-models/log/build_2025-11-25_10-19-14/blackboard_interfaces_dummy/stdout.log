@@ -1,0 +1,9 @@
+[  2%] Built target blackboard_interfaces__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_copy_blackboard_interfaces_dummy
+[35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_generator_c[0m
+[  4%] Built target blackboard_interfaces__cpp
+[ 22%] Built target blackboard_interfaces__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target blackboard_interfaces__rosidl_typesupport_fastrtps_c[0m
+[ 31%] Built target blackboard_interfaces__rosidl_typesupport_c

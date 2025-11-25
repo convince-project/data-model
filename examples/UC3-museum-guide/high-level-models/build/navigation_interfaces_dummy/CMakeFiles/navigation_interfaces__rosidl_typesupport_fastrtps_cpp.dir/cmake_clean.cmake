@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/action/detail/dds_fastrtps/go_to_poi__type_support.cpp.o"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/action/detail/dds_fastrtps/go_to_poi__type_support.cpp.o.d"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/msg/detail/dds_fastrtps/navigation_status__type_support.cpp.o"
+  "CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/msg/detail/dds_fastrtps/navigation_status__type_support.cpp.o.d"
+  "libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/action/detail/dds_fastrtps/go_to_poi__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/action/detail/go_to_poi__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/msg/detail/dds_fastrtps/navigation_status__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/navigation_interfaces_dummy/msg/detail/navigation_status__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

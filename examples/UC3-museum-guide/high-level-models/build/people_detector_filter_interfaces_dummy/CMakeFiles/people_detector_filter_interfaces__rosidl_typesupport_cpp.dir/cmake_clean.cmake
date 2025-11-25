@@ -1,0 +1,12 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/people_detector_filter_interfaces_dummy/msg/is_followed__type_support.cpp.o"
+  "CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/people_detector_filter_interfaces_dummy/msg/is_followed__type_support.cpp.o.d"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_cpp.pdb"
+  "libpeople_detector_filter_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/people_detector_filter_interfaces_dummy/msg/is_followed__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

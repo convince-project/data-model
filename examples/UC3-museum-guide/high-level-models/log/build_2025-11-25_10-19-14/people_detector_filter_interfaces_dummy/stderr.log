@@ -1,0 +1,22 @@
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site.py", line 636, in <module>
+gmake[1]: *** [CMakeFiles/Makefile2:319: CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+    main()
+  File "/usr/lib/python3.10/site.py", line 623, in main
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.10/site.py", line 406, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.10/site.py", line 232, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.10/site.py", line 186, in addpackage
+    if line.startswith("#"):
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/build.make:224: CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:425: CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make:233: CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:266: CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

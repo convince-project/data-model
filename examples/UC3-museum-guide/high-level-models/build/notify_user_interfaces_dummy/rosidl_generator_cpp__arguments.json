@@ -1,0 +1,40 @@
+{
+  "package_name": "notify_user_interfaces_dummy",
+  "output_dir": "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_generator_cpp/notify_user_interfaces_dummy",
+  "template_dir": "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource",
+  "idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StartAlarm.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy:srv/StopAlarm.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/python3.10/site-packages/rosidl_generator_cpp/__init__.py",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy/srv/StartAlarm.idl",
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_adapter/notify_user_interfaces_dummy/srv/StopAlarm.idl",
+    "/opt/ros/iron/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/iron/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "srv/StartAlarm.idl:/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_generator_type_description/notify_user_interfaces_dummy/srv/StartAlarm.json",
+    "srv/StopAlarm.idl:/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/notify_user_interfaces_dummy/rosidl_generator_type_description/notify_user_interfaces_dummy/srv/StopAlarm.json"
+  ]
+}

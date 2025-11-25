@@ -1,0 +1,229 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.0.7 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/build/people_detector_filter_interfaces_dummy
+[  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_copy_people_detector_filter_interfaces_dummy
+[  2%] Built target people_detector_filter_interfaces__rosidl_generator_type_description
+[  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[ 11%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__description.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces__rosidl_generator_c.dir/rosidl_generator_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o[0m
+[ 20%] [32m[1mLinking C shared library libpeople_detector_filter_interfaces__rosidl_generator_c.so[0m
+[ 20%] Built target people_detector_filter_interfaces__cpp
+[ 20%] Built target people_detector_filter_interfaces__rosidl_generator_c
+[ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 26%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 35%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 41%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/people_detector_filter_interfaces_dummy/msg/is_followed__type_support.cpp.o[0m
+running egg_info
+creating people_detector_filter_interfaces_dummy.egg-info
+[ 47%] [32mBuilding CXX object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/people_detector_filter_interfaces_dummy/msg/detail/dds_fastrtps/is_followed__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/people_detector_filter_interfaces_dummy/msg/is_followed__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.cpp.o[0m
+[ 55%] [32m[1mLinking C shared library libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support_c.cpp.o[0m
+[ 58%] Built target people_detector_filter_interfaces__rosidl_typesupport_introspection_c
+[ 61%] [32m[1mLinking CXX shared library libpeople_detector_filter_interfaces__rosidl_typesupport_c.so[0m
+writing people_detector_filter_interfaces_dummy.egg-info/PKG-INFO
+[ 61%] Built target people_detector_filter_interfaces__rosidl_typesupport_c
+writing dependency_links to people_detector_filter_interfaces_dummy.egg-info/dependency_links.txt
+[ 64%] [32m[1mLinking CXX shared library libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 67%] [32m[1mLinking CXX shared library libpeople_detector_filter_interfaces__rosidl_typesupport_cpp.so[0m
+[ 70%] [32m[1mLinking CXX shared library libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 70%] Built target people_detector_filter_interfaces__rosidl_typesupport_cpp
+[ 70%] Built target people_detector_filter_interfaces__rosidl_typesupport_introspection_cpp
+[ 73%] [32m[1mLinking CXX shared library libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 73%] Built target people_detector_filter_interfaces__rosidl_typesupport_fastrtps_c
+[ 73%] Built target people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 73%] Built target people_detector_filter_interfaces
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+writing top-level names to people_detector_filter_interfaces_dummy.egg-info/top_level.txt
+writing manifest file 'people_detector_filter_interfaces_dummy.egg-info/SOURCES.txt'
+reading manifest file 'people_detector_filter_interfaces_dummy.egg-info/SOURCES.txt'
+writing manifest file 'people_detector_filter_interfaces_dummy.egg-info/SOURCES.txt'
+[ 76%] Built target ament_cmake_python_build_people_detector_filter_interfaces_dummy_egg
+[ 76%] Built target people_detector_filter_interfaces__py
+[ 79%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces__rosidl_generator_py.dir/rosidl_generator_py/people_detector_filter_interfaces_dummy/msg/_is_followed_s.c.o[0m
+[ 82%] [32m[1mLinking C shared library rosidl_generator_py/people_detector_filter_interfaces_dummy/libpeople_detector_filter_interfaces__rosidl_generator_py.so[0m
+[ 82%] Built target people_detector_filter_interfaces__rosidl_generator_py
+[ 85%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces_dummy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/people_detector_filter_interfaces_dummy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] [32m[1mLinking C shared library rosidl_generator_py/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target people_detector_filter_interfaces_dummy__rosidl_typesupport_c__pyext
+[100%] Built target people_detector_filter_interfaces_dummy__rosidl_typesupport_introspection_c__pyext
+[100%] Built target people_detector_filter_interfaces_dummy__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/ament_index/resource_index/rosidl_interfaces/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/msg/IsFollowed.json
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/is_followed.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__description.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__functions.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__struct.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/library_path.sh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/library_path.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__builder.hpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__traits.hpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__struct.hpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/is_followed.hpp
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/dds_fastrtps
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg
+-- Up-to-date: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__type_support.cpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/include/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy/msg/detail/is_followed__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/pythonpath.sh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/pythonpath.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy-0.0.0-py3.10.egg-info
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/__init__.py
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/libpeople_detector_filter_interfaces__rosidl_generator_py.so
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/_people_detector_filter_interfaces_dummy_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg/__init__.py
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg/_is_followed.py
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg/_is_followed_s.c
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy'...
+Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/__init__.py'...
+Listing '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg'...
+Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg/__init__.py'...
+Compiling '/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/msg/_is_followed.py'...
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/python3.10/site-packages/people_detector_filter_interfaces_dummy/people_detector_filter_interfaces_dummy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_generator_py.so
+-- Set runtime path of "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/lib/libpeople_detector_filter_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/msg/IsFollowed.idl
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/msg/IsFollowed.msg
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/ament_index/resource_index/package_run_dependencies/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/ament_index/resource_index/parent_prefix_path/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/ament_prefix_path.sh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/ament_prefix_path.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/path.sh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/environment/path.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/local_setup.bash
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/local_setup.sh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/local_setup.zsh
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/local_setup.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/package.dsv
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/ament_index/resource_index/packages/people_detector_filter_interfaces_dummy
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/export_people_detector_filter_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces_dummyConfig.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/cmake/people_detector_filter_interfaces_dummyConfig-version.cmake
+-- Installing: /home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/install/people_detector_filter_interfaces_dummy/share/people_detector_filter_interfaces_dummy/package.xml

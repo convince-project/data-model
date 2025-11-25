@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "navigation_interfaces_dummy/msg/NavigationStatus",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "navigation_interfaces_dummy/msg/NavigationStatus",
+      "hash_string": "RIHS01_e6ddb367fecb723b1b70350e5e0b6b934fa6a2d0cc4e0d1f59a6c97737893bf1"
+    }
+  ]
+}

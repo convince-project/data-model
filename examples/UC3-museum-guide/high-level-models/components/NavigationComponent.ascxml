@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ascxml xmlns="http://www.w3.org/2005/07/ascxml"
+       version="1.0"
+       name="NavigationComponent"
+       initial="idle"
+       datamodel="ecmascript">
+
+  <datamodel>
+    <data id="GOAL_REACHED" type="int32" expr="4" />
+    <data id="ABORTED" type="int32" expr="5" />
+    <data id="MOVING" type="int32" expr="2" />
+    <data id="IDLE" type="int32" expr="0" />
+    <data id="goal_name" type="string" expr="''" />
+    <data id="goal_id" type="int32" expr="0" />
+    <data id="start_time" type="int32" expr="0" />
+    <data id="navigation_time" type="int32" expr="0" />
+    <data id="current_time" type="int32" expr="0" />
+    <data id="current_position" type="string" expr="''" />
+    <data id="navigation_timeout" type="int32" expr="30" />
+    <!-- <data id="poi_name" type="string" expr="" /> -->
+    <data id="poi_number" type="int32" expr="0" />
+    <!-- Exec fields -->
+    <data id="is_near" type="bool" expr="false" />
+    <data id="status" type="int32" expr="0" />
+    <!-- temp variables -->
+  </datamodel>
+
+  <!-- Service servers -->
+  <!-- <ros_service_server service_name="/NavigationComponent/GoToPoiByName" type="navigation_interfaces/GoToPoiByName"/> -->
+  <ros_topic_subscriber name="clock_sub" type="builtin_interfaces/Time" topic="clock"/>
+  <!-- Action server -->
+  <ros_action_server name="goto_act" action_name="/NavigationComponent/GoToPoi" type="navigation_interfaces_dummy/GoToPoi"/>
+  <!-- <ros_time_rate name="action_timer" rate_hz="10"/> -->
+
+  <state id="idle">
+
+    <!-- GetNavigationStatus -->
+    <!-- Action‐goal -->
+    <ros_action_handle_goal name="goto_act" target="getCurrentTimeForGoal">
+      <assign location="status" expr="2"/>
+      <assign location="poi_number" expr="_goal.poi_number"/>
+      <ros_action_accept_goal name="goto_act" goal_id="goal_id"/>
+
+    </ros_action_handle_goal>
+
+    <!-- <ros_action_handle_cancel name="goto_act" target="HandleActionCancel"/> -->
+  </state>
+
+
+<state id="navigationAborted">
+    <onentry>
+        <assign location="status" expr="5" />
+        
+      <ros_action_aborted name="goto_act" goal_id="goal_id">
+      </ros_action_aborted>
+      <assign location="goal_id" expr="0"/>
+    </onentry>
+    <transition target="idle"/>
+  </state>  
+
+
+<!-- 
+  <state id="HandleTurnBack">
+    <onentry>
+      <ros_service_send_response name="/NavigationComponent/TurnBack">
+        <field name="is_ok"      expr="_callSucceeded()"/>
+        <field name="error_msg"  expr="_callSucceeded() ? '' : _errorMessage()"/>
+      </ros_service_send_response>
+    </onentry>
+    <transition target="idle"/>
+  </state> -->
+
+  <state id="getCurrentTimeForGoal">
+    <ros_topic_callback name="clock_sub" target="navigating">
+      <assign location="current_time" expr="_msg.sec"/>
+    </ros_topic_callback>
+  </state>
+
+  <state id="handleNavigating">
+    <transition>
+      <target id="GetTimeWhileNavigating" prob="0.99">
+        <!-- success -->
+        <assign location="status" expr="2" />
+      </target>
+      <target id="navigationAborted" prob="0.01">
+          <!-- failure -->
+          <!-- <ros_action_abort name="goto_act" goal_id="goal_id">
+            <field name="is_ok" expr="false"/>
+            <field name="error_msg" expr="'goal aborted'"/>
+          </ros_action_abort> -->
+      </target>
+    </transition>
+  </state>
+
+  <state id="GetTimeWhileNavigating">
+    <ros_topic_callback name="clock_sub" target="navigating">
+      <assign location="current_time" expr="_msg.sec"/>
+    </ros_topic_callback>
+  </state>
+
+  <state id="navigating">
+    <onentry>
+      <if cond="current_time - start_time  > navigation_timeout">
+        <!-- Timeout reached, goal reached -->
+        <assign location="status" expr="GOAL_REACHED" />
+        <assign location="is_near" expr="true" />
+        <ros_action_succeed name="goto_act" goal_id="goal_id" >
+            <field name="is_ok" expr="true"/>
+        </ros_action_succeed>
+        <assign location="goal_id" expr="0"/>
+
+      </if>
+    </onentry>
+      <transition cond="status == MOVING" target="handleNavigating"/>
+      <transition target="idle"/>
+    
+  </state>
+
+</ascxml>

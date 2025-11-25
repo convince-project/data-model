@@ -1,0 +1,35 @@
+[  2%] Built target notify_user_interfaces__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_copy_notify_user_interfaces_dummy
+[35m[1mConsolidate compiler generated dependencies of target notify_user_interfaces__rosidl_generator_c[0m
+[  4%] Built target notify_user_interfaces__cpp
+[ 22%] Built target notify_user_interfaces__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target notify_user_interfaces__rosidl_typesupport_cpp[0m
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:161: CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_cpp.dir/depend] Interrupt
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_c.dir/build.make:150: CMakeFiles/notify_user_interfaces__rosidl_typesupport_c.dir/depend] Interrupt
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:163: CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site.py", line 636, in <module>
+gmake[1]: *** [CMakeFiles/Makefile2:398: CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:318: CMakeFiles/notify_user_interfaces__rosidl_typesupport_c.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:371: CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+    main()
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/build.make:160: CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/depend] Interrupt
+  File "/usr/lib/python3.10/site.py", line 623, in main
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make:164: CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/notify_user_interfaces__rosidl_typesupport_introspection_c.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:266: CMakeFiles/notify_user_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.10/site.py", line 406, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.10/site.py", line 232, in addsitedir
+gmake[2]: *** [CMakeFiles/notify_user_interfaces__rosidl_typesupport_cpp.dir/build.make:151: CMakeFiles/notify_user_interfaces__rosidl_typesupport_cpp.dir/depend] Interrupt
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.10/site.py", line 194, in addpackage
+gmake[1]: *** [CMakeFiles/Makefile2:425: CMakeFiles/notify_user_interfaces__rosidl_typesupport_cpp.dir/all] Interrupt
+    line = line.rstrip()
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_notify_user_interfaces_dummy_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_notify_user_interfaces_dummy_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_notify_user_interfaces_dummy_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

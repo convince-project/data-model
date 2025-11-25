@@ -1,0 +1,6 @@
+{
+  "package_name": "people_detector_filter_interfaces_dummy",
+  "non_idl_tuples": [
+    "/home/ste/ws/hsp-iit/data-model/examples/UC3-museum-guide/high-level-models/ros_interfaces/people_detector_filter_interfaces:msg/IsFollowed.msg"
+  ]
+}

@@ -1,0 +1,4 @@
+source;share/timer_interfaces_dummy/environment/ament_prefix_path.sh
+source;share/timer_interfaces_dummy/environment/library_path.sh
+source;share/timer_interfaces_dummy/environment/path.sh
+source;share/timer_interfaces_dummy/environment/pythonpath.sh

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from navigation_interfaces_dummy/msg/NavigationStatus.msg
+// generated code does not contain a copyright notice
+
+
+module navigation_interfaces_dummy {
+  module msg {
+    module NavigationStatus_Constants {
+      const int8 NAVIGATION_STATUS_IDLE = 0;
+      const int8 NAVIGATION_STATUS_PREPARING_BEFORE_MOVE = 1;
+      const int8 NAVIGATION_STATUS_MOVING = 2;
+      const int8 NAVIGATION_STATUS_WAITING_OBSTACLE = 3;
+      const int8 NAVIGATION_STATUS_GOAL_REACHED = 4;
+      const int8 NAVIGATION_STATUS_ABORTED = 5;
+      const int8 NAVIGATION_STATUS_FAILING = 6;
+      const int8 NAVIGATION_STATUS_PAUSED = 7;
+      const int8 NAVIGATION_STATUS_THINKING = 8;
+      const int8 NAVIGATION_STATUS_ERROR = 9;
+    };
+    struct NavigationStatus {
+      int8 status;
+    };
+  };
+};

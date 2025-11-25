@@ -1,0 +1,4 @@
+source;share/people_detector_filter_interfaces_dummy/local_setup.bash
+source;share/people_detector_filter_interfaces_dummy/local_setup.dsv
+source;share/people_detector_filter_interfaces_dummy/local_setup.sh
+source;share/people_detector_filter_interfaces_dummy/local_setup.zsh

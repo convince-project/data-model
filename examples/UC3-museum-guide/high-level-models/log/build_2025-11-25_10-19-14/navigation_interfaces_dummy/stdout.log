@@ -1,0 +1,5 @@
+[  2%] Built target navigation_interfaces__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_copy_navigation_interfaces_dummy
+[35m[1mConsolidate compiler generated dependencies of target navigation_interfaces__rosidl_generator_c[0m
+[  4%] Built target navigation_interfaces__cpp
+[ 22%] Built target navigation_interfaces__rosidl_generator_c

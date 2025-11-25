@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "scheduler_interfaces_dummy/srv/SetPoi_Response",
+      "fields": [
+        {
+          "name": "is_ok",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "scheduler_interfaces_dummy/srv/SetPoi_Response",
+      "hash_string": "RIHS01_ce41174b8159428f2e828ab2fcad4c89d0fb9372efafdb1cf0bba18f58d62f74"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from people_detector_filter_interfaces_dummy/msg/IsFollowed.msg
+// generated code does not contain a copyright notice
+
+
+module people_detector_filter_interfaces_dummy {
+  module msg {
+    struct IsFollowed {
+      boolean is_followed;
+    };
+  };
+};

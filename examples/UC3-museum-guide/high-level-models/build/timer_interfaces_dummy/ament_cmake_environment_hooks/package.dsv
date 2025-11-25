@@ -1,0 +1,4 @@
+source;share/timer_interfaces_dummy/local_setup.bash
+source;share/timer_interfaces_dummy/local_setup.dsv
+source;share/timer_interfaces_dummy/local_setup.sh
+source;share/timer_interfaces_dummy/local_setup.zsh

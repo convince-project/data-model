@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from scheduler_interfaces_dummy/srv/SetPoi.srv
+// generated code does not contain a copyright notice
+
+
+module scheduler_interfaces_dummy {
+  module srv {
+    struct SetPoi_Request {
+      int32 poi_number;
+    };
+    struct SetPoi_Response {
+      boolean is_ok;
+    };
+  };
+};

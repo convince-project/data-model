@@ -1,0 +1,6 @@
+setup.py
+people_detector_filter_interfaces_dummy/__init__.py
+people_detector_filter_interfaces_dummy.egg-info/PKG-INFO
+people_detector_filter_interfaces_dummy.egg-info/SOURCES.txt
+people_detector_filter_interfaces_dummy.egg-info/dependency_links.txt
+people_detector_filter_interfaces_dummy.egg-info/top_level.txt
