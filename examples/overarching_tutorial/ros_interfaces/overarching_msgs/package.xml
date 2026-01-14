@@ -3,7 +3,7 @@
 <package format="3">
   <name>overarching_msgs</name>
   <version>0.0.0</version>
-  <description>Contains the interfaces use in the delib example.</description>
+  <description>Contains the interfaces use in the overaching tutorial example.</description>
 
   <maintainer email="marco.lampacrescia@de.bosch.com">Marco Lampacrescia</maintainer>
 
