@@ -6,15 +6,13 @@
     model_src=""
     xmlns="http://www.w3.org/2005/07/scxml">
 
-    <!--
-    obj
-    0 .. snacks0
-    -->
+    <ros_time_rate rate_hz="10" name="world_update_rate" />
 
     <ros_action_server name="act_nav" action_name="/go_to_goal" type="overarching_msgs/Navigate" />
     <ros_action_server name="act_pick" action_name="/pick_object" type="overarching_msgs/Pick" />
     <ros_action_server name="act_place" action_name="/place_object" type="overarching_msgs/Place" />
     <ros_topic_publisher name="pub_object" topic="/object_loc" type="overarching_msgs/ObjectLocation" />
+    <ros_topic_publisher name="pub_robot" topic="/robot_loc" type="overarching_msgs/ObjectLocation" />
 
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
@@ -29,6 +27,8 @@
         <data id="goal_id" type="int32" expr="0" />
         <data id="req_obj_idx" type="int32" expr="0" />
         <data id="req_loc" type="ObjectLocation" expr="{'parent': 'world', 'x': 0, 'y': 0}" />
+        <data id="robot_at_target" type="bool" expr="false" />
+        <data id="robot_at_object" type="bool" expr="false" />
     </datamodel>
 
     <state id="idle">
@@ -37,6 +37,11 @@
                 <field name="parent" expr="obj_locs[0].parent" />
                 <field name="x" expr="obj_locs[0].x" />
                 <field name="y" expr="obj_locs[0].y" />
+            </ros_topic_publish>
+            <ros_topic_publish name="pub_robot">
+                <field name="parent" expr="robot_loc.parent" />
+                <field name="x" expr="robot_loc.x" />
+                <field name="y" expr="robot_loc.y" />
             </ros_topic_publish>
         </onentry>
 
@@ -66,25 +71,69 @@
     </state>
 
     <state id="handle_nav_request">
-        <!-- Navigation always successful -->
-        <transition target="idle">
-            <assign location="robot_loc" expr="req_loc_idx" />
+        <onentry>
+            <assign location="robot_at_target" expr="req_loc.x == robot_loc.x &amp;&amp; req_loc.y == robot_loc.y" />
+        </onentry>
+        <!-- Navigation request successful if robot already in place -->
+        <transition target="idle" condition="robot_at_target">
             <ros_action_succeed name="act_nav" goal_id="goal_id" />
+        </transition>
+        <!-- Otherwise, start to move! -->
+        <transition target="navigate_to_target">
+            <ros_action_feedback name="act_nav" goal_id="goal_id" />
         </transition>
     </state>
 
+    <state id="navigate_to_target">
+        <onentry>
+            <ros_topic_publish name="pub_object">
+                <field name="parent" expr="obj_locs[0].parent" />
+                <field name="x" expr="obj_locs[0].x" />
+                <field name="y" expr="obj_locs[0].y" />
+            </ros_topic_publish>
+            <ros_topic_publish name="pub_robot">
+                <field name="parent" expr="robot_loc.parent" />
+                <field name="x" expr="robot_loc.x" />
+                <field name="y" expr="robot_loc.y" />
+            </ros_topic_publish>
+            <assign location="robot_at_target" expr="false" />
+            <if cond="req_loc.x &gt; robot_loc.x">
+                <assign location="robot_loc.x" expr="robot_loc.x + 1" />
+            <elseif cond="req_loc.x &lt; robot_loc.x" />
+                <assign location="robot_loc.x" expr="robot_loc.x - 1" />
+            <elseif cond="req_loc.y &gt; robot_loc.y" />
+                <assign location="robot_loc.y" expr="robot_loc.y + 1" />
+            <elseif cond="req_loc.y &lt; robot_loc.y" />
+                <assign location="robot_loc.y" expr="robot_loc.y - 1" />
+            <else/>
+                <assign location="robot_at_target" expr="true" />
+            </if>
+        </onentry>
+        <ros_rate_callback name="world_update_rate" cond="robot_at_target" target="idle">
+            <ros_action_succeed name="act_nav" goal_id="goal_id" />
+        </ros_rate_callback>
+        <ros_rate_callback name="world_update_rate" target="navigate_to_target">
+            <ros_action_feedback name="act_nav" goal_id="goal_id" />
+        </ros_rate_callback>
+    </state>
+
     <state id="handle_pick_request">
-        <transition target="idle">
-            <if  cond="obj_locs[req_obj_idx] == robot_loc &amp;&amp; robot_holding &lt; 0">
+        <onentry>
+            <assign location="robot_at_object" expr="obj_locs[req_obj_idx].x == robot_loc.x &amp;&amp; obj_locs[req_obj_idx].y == robot_loc.y" />
+        </onentry>
+        <ros_rate_callback name="world_update_rate" target="idle">
+            <if cond="robot_holding &lt; 0 &amp;&amp; robot_at_object">
                 <!-- The robot and object location match and the robot is not holding anything: it may succeed -->
                 <assign location="robot_holding" expr="req_obj_idx" />
-                <assign location="obj_locs[req_obj_idx]" expr="-1" />
+                <assign location="obj_locs[req_obj_idx].parent" expr="'robot'" />
+                <assign location="obj_locs[req_obj_idx].x" expr="0" />
+                <assign location="obj_locs[req_obj_idx].y" expr="0" />
                 <ros_action_succeed name="act_pick" goal_id="goal_id" />
             <else/>
                 <!-- Otherwise... FAIL!  -->
                 <ros_action_aborted name="act_pick" goal_id="goal_id" />
             </if>
-        </transition>
+        </ros_rate_callback>
     </state>
 
 </ascxml>
