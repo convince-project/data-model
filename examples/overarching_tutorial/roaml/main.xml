@@ -5,17 +5,18 @@
     </parameters>
 
     <behavior_tree>
-        <input type="bt.cpp-xml" src="./bt_tree.xml" />
-        <input type="bt-plugin-ascxml" src="./bt_navigate_action.ascxml" />
-        <input type="bt-plugin-ascxml" src="./bt_pick_action.ascxml" />
-        <input type="bt-plugin-ascxml" src="./bt_place_action.ascxml" />
+        <input type="bt.cpp-xml" src="./policy/bt_tree.xml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/bt_navigate_to_location.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/bt_detect_object.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/bt_pick_object.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/bt_place_object.ascxml" />
     </behavior_tree>
 
     <node_models>
-        <input type="node-ascxml" src="./world.ascxml" />
+        <input type="node-ascxml" src="./environment/world.ascxml" />
     </node_models>
 
     <properties>
-        <input type="jani" src="./properties.jani" />
+        <input type="jani" src="./properties/properties.jani" />
     </properties>
 </roaml>

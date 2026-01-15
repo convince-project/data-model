@@ -13,10 +13,26 @@
                             "op": "∧",
                             "left": {
                                 "op": "=",
-                                "left": "topic_snacks0_loc_msg__ros_fields__data",
-                                "right": 1
+                                "left": "topic_object_loc_msg__ros_fields__x",
+                                "right": 0
                             },
-                            "right": "topic_snacks0_loc_msg.valid"
+                            "right": {
+                                "op": "∧",
+                                "left": {
+                                    "op": "=",
+                                    "left": "topic_object_loc_msg__ros_fields__y",
+                                    "right": 0
+                                },
+                                "right": {
+                                    "op": "=",
+                                    "left": "topic_object_loc_msg__ros_fields__parent",
+                                    "right": {
+                                        "comment": "'world'",
+                                        "op": "av",
+                                        "elements": [119, 111, 114, 108, 100]
+                                    }
+                                }
+                            }
                         }
                     }
                 },
