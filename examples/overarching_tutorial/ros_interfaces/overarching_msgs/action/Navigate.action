@@ -1,6 +1,5 @@
 # Goal
-int32 goal_x
-int32 goal_y
+int32 location_id
 ---
 # Result
 ---

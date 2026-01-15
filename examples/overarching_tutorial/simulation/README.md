@@ -1,5 +1,8 @@
 # How to use the simulation
 
+> [!attention]
+> You must be in the `data-model/examples/overarching_tutorial/simulation` folder for this to work.
+
 ## Build
 
 ```bash

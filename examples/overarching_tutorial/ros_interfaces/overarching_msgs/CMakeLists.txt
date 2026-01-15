@@ -15,9 +15,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/ObjectDetection.msg"
   "action/Navigate.action"
   "action/Pick.action"
   "action/Place.action"
+  "action/Detect.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

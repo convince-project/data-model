@@ -11,6 +11,7 @@
     <ros_action_server name="act_nav" action_name="/go_to_goal" type="overarching_msgs/Navigate" />
     <ros_action_server name="act_pick" action_name="/pick_object" type="overarching_msgs/Pick" />
     <ros_action_server name="act_place" action_name="/place_object" type="overarching_msgs/Place" />
+    <ros_action_server name="act_detect" action_name="/detect_object" type="overarching_msgs/Detect" />
     <ros_topic_publisher name="pub_object" topic="/object_loc" type="overarching_msgs/ObjectLocation" />
     <ros_topic_publisher name="pub_robot" topic="/robot_loc" type="overarching_msgs/ObjectLocation" />
 
@@ -19,14 +20,18 @@
         <data id="obj_locs" type="ObjectLocation[1]" expr="[
             {'parent': 'world', 'x': 4, 'y': 2}
         ]" />
+        <data id="locations" type="Coordinates[2]" expr="[
+            {'x': 0, 'y': 0},
+            {'x': 4, 'y': 2},
+        ]" />
         <!-- The initial location of the robot in the world is (0,0). -->
-        <data id="robot_loc" type="ObjectLocation" expr="{'parent': 'world', 'x': 0, 'y': 0}" />
-        <!-- Varible referring to the index of the object holded by the robot. This is -1 if it holds nothing. -->
+        <data id="robot_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />
+        <!-- Variable referring to the index of the object holded by the robot. This is -1 if it holds nothing. -->
         <data id="robot_holding" type="int32" expr="-1" />
         <!-- Additional support variables for the action goal_id and the value of the received requests. -->
         <data id="goal_id" type="int32" expr="0" />
         <data id="req_obj_idx" type="int32" expr="0" />
-        <data id="req_loc" type="ObjectLocation" expr="{'parent': 'world', 'x': 0, 'y': 0}" />
+        <data id="req_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />
         <data id="robot_at_target" type="bool" expr="false" />
         <data id="robot_at_object" type="bool" expr="false" />
     </datamodel>
@@ -39,7 +44,7 @@
                 <field name="y" expr="obj_locs[0].y" />
             </ros_topic_publish>
             <ros_topic_publish name="pub_robot">
-                <field name="parent" expr="robot_loc.parent" />
+                <field name="parent" expr="'world'" />
                 <field name="x" expr="robot_loc.x" />
                 <field name="y" expr="robot_loc.y" />
             </ros_topic_publish>
@@ -47,13 +52,18 @@
 
         <ros_action_handle_goal name="act_nav" target="handle_nav_request">
             <assign location="goal_id" expr="_action.goal_id" />
-            <assign location="req_loc" expr="{'parent': 'world', 'x': _goal.x, 'y': _goal.y}}" />
+            <assign location="req_loc" expr="locations[_goal.location_id]" />
             <ros_action_accept_goal name="act_nav" goal_id="goal_id" />
         </ros_action_handle_goal>
 
         <ros_action_handle_goal name="act_pick" target="handle_pick_request">
             <assign location="goal_id" expr="_action.goal_id" />
             <assign location="req_obj_idx" expr="_goal.object_id" />
+            <ros_action_accept_goal name="act_pick" goal_id="goal_id" />
+        </ros_action_handle_goal>
+
+        <ros_action_handle_goal name="act_detect" target="handle_detect_request">
+            <assign location="goal_id" expr="_action.goal_id" />
             <ros_action_accept_goal name="act_pick" goal_id="goal_id" />
         </ros_action_handle_goal>
 
@@ -132,6 +142,26 @@
             <else/>
                 <!-- Otherwise... FAIL!  -->
                 <ros_action_aborted name="act_pick" goal_id="goal_id" />
+            </if>
+        </ros_rate_callback>
+    </state>
+
+    <state id="handle_detect_request">
+        <onentry>
+            <assign location="robot_at_object" expr="obj_locs[req_obj_idx].x == robot_loc.x &amp;&amp; obj_locs[req_obj_idx].y == robot_loc.y" />
+        </onentry>
+        <ros_rate_callback name="world_update_rate" target="idle">
+            <if cond="robot_at_object">
+                <!-- The robot and object location match -->
+                <ros_action_succeed name="act_detect" goal_id="goal_id">
+                    <field name="object_id" expr="0" />
+                    <field name="detection.parent" expr="obj_locs[0].parent" />
+                    <field name="detection.x" expr="obj_locs[0].x" />
+                    <field name="detection.y" expr="obj_locs[0].y" />
+                </ros_action_succeed>
+            <else/>
+                <!-- Otherwise fail -->
+                <ros_action_aborted name="act_detect" goal_id="goal_id" />
             </if>
         </ros_rate_callback>
     </state>
