@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(overarching_msgs)
 
@@ -15,7 +15,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ObjectDetection.msg"
+  "msg/Location.msg"
   "action/Navigate.action"
   "action/Pick.action"
   "action/Place.action"

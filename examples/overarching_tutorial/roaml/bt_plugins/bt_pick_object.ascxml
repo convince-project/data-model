@@ -2,7 +2,7 @@
 <ascxml
     initial="initial"
     version="1.0"
-    name="PickAction"
+    name="PickObject"
     model_src=""
     xmlns="http://www.w3.org/2005/07/scxml">
 

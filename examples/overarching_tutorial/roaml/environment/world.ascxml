@@ -12,8 +12,8 @@
     <ros_action_server name="act_pick" action_name="/pick_object" type="overarching_msgs/Pick" />
     <ros_action_server name="act_place" action_name="/place_object" type="overarching_msgs/Place" />
     <ros_action_server name="act_detect" action_name="/detect_object" type="overarching_msgs/Detect" />
-    <ros_topic_publisher name="pub_object" topic="/object_loc" type="overarching_msgs/ObjectLocation" />
-    <ros_topic_publisher name="pub_robot" topic="/robot_loc" type="overarching_msgs/ObjectLocation" />
+    <ros_topic_publisher name="pub_object" topic="/object_loc" type="overarching_msgs/Location" />
+    <ros_topic_publisher name="pub_robot" topic="/robot_loc" type="overarching_msgs/Location" />
 
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
@@ -22,7 +22,7 @@
         ]" />
         <data id="locations" type="Coordinates[2]" expr="[
             {'x': 0, 'y': 0},
-            {'x': 4, 'y': 2},
+            {'x': 4, 'y': 2}
         ]" />
         <!-- The initial location of the robot in the world is (0,0). -->
         <data id="robot_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />

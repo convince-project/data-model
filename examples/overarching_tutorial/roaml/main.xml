@@ -4,6 +4,10 @@
         <max_array_size value="10" />
     </parameters>
 
+    <data_declarations>
+        <input type="xml" src="./data_types/data_types.xml" />
+    </data_declarations>
+
     <behavior_tree>
         <input type="bt.cpp-xml" src="./policy/bt_tree.xml" />
         <input type="bt-plugin-ascxml" src="./bt_plugins/bt_navigate_to_location.ascxml" />
