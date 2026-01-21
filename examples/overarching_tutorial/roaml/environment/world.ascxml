@@ -18,11 +18,11 @@
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
         <data id="obj_locs" type="ObjectLocation[1]" expr="[
-            {'parent': 'world', 'x': 4, 'y': 2}
+            {'parent': 'world', 'x': 4.0, 'y': 2.0}
         ]" />
         <data id="locations" type="Coordinates[2]" expr="[
-            {'x': 0, 'y': 0},
-            {'x': 4, 'y': 2}
+            {'x': 0.0, 'y': 0.0},
+            {'x': 4.0, 'y': 2.0}
         ]" />
         <!-- The initial location of the robot in the world is (0,0). -->
         <data id="robot_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />
@@ -85,7 +85,7 @@
             <assign location="robot_at_target" expr="req_loc.x == robot_loc.x &amp;&amp; req_loc.y == robot_loc.y" />
         </onentry>
         <!-- Navigation request successful if robot already in place -->
-        <transition target="idle" condition="robot_at_target">
+        <transition target="idle" cond="robot_at_target">
             <ros_action_succeed name="act_nav" goal_id="goal_id" />
         </transition>
         <!-- Otherwise, start to move! -->

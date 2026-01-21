@@ -21,7 +21,7 @@
             <bt_return_status status="RUNNING" />
         </bt_tick>
         <bt_halt target="initial">
-            <assign location="tmp_result" expr="false" />
+            <assign location="detected_obj_id" expr="-1" />
             <bt_return_halted />
         </bt_halt>
     </state>
@@ -31,7 +31,7 @@
             <bt_return_status status="RUNNING" />
         </bt_tick>
         <bt_halt target="initial">
-            <assign location="tmp_result" expr="false" />
+            <assign location="detected_obj_id" expr="-1" />
             <bt_return_halted />
         </bt_halt>
         <ros_action_handle_success_result name="act" target="result_available">
@@ -52,7 +52,7 @@
             </if>
         </bt_tick>
         <bt_halt target="initial">
-            <assign location="tmp_result" expr="false" />
+            <assign location="detected_obj_id" expr="-1" />
             <bt_return_halted />
         </bt_halt>
     </state>
