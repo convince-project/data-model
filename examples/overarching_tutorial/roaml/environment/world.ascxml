@@ -73,6 +73,7 @@
             <if cond="robot_holding != -1">
                 <assign location="obj_locs[robot_holding].x" expr="robot_loc.x" />
                 <assign location="obj_locs[robot_holding].y" expr="robot_loc.y" />
+                <assign location="obj_locs[robot_holding].parent" expr="'world'" />
                 <assign location="robot_holding" expr="-1" />
                 <ros_action_succeed name="act_place" goal_id="goal_id" />
             <else/>
