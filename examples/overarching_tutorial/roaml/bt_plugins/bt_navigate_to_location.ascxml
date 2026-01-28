@@ -10,18 +10,20 @@
 
     <datamodel>
         <data id="tmp_result" type="bool" expr="false" />
+        <data id="tmp_location" type="int32" expr="0" />
     </datamodel>
 
     <bt_declare_port_in key="location" type="int32" />
 
     <state id="initial">
         <bt_tick target="wait_result">
+            <assign location="tmp_location">
+                <expr>
+                    <bt_get_input key="location" />
+                </expr>
+            </assign>
             <ros_action_send_goal name="act">
-                <field name="location_id">
-                    <expr>
-                        <bt_get_input key="location" />
-                    </expr>
-                </field>
+                <field name="location_id" expr="tmp_location" />
             </ros_action_send_goal>
             <bt_return_status status="RUNNING" />
         </bt_tick>

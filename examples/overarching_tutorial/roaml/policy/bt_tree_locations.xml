@@ -1,0 +1,22 @@
+<root BTCPP_format="4">
+    <BehaviorTree ID="OverarchingTutorialBase">
+        <Sequence>
+            <SetBlackboard output_key="{current_location}" value="1"/>
+            <RetryUntilSuccessful num_attempts="4">
+                <Sequence>
+                    <NavigateToLocation name="navigate_to_obj" location="{current_location}" />
+                    <Fallback>
+                        <DetectObject name="detect_obj" object_id="{detection_id}" />
+                        <Sequence>
+                            <GetNextLocation location="{current_location}" />
+                            <AlwaysFailure/>
+                        </Sequence>
+                    </Fallback>
+                </Sequence>
+            </RetryUntilSuccessful>
+            <PickObject name="pick_obj" object_id="{detection_id}" />
+            <NavigateToLocation name="navigate_to_start" location="0" />
+            <PlaceObject name="place_obj" />
+        </Sequence>
+    </BehaviorTree>
+</root>

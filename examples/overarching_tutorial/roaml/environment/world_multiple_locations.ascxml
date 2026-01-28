@@ -18,11 +18,13 @@
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
         <data id="obj_locs" type="ObjectLocation[1]" expr="[
-            {'parent': 'world', 'x': 4.0, 'y': 2.0}
+            {'parent': 'world', 'x': 1.0, 'y': -2.0}
         ]" />
-        <data id="locations" type="Coordinates[2]" expr="[
+        <data id="locations" type="Coordinates[4]" expr="[
             {'x': 0.0, 'y': 0.0},
-            {'x': 4.0, 'y': 2.0}
+            {'x': 4.0, 'y': 2.0},
+            {'x': 1.0, 'y': -2.0},
+            {'x': -2.0, 'y': -2.0},
         ]" />
         <!-- The initial location of the robot in the world is (0,0). -->
         <data id="robot_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />
