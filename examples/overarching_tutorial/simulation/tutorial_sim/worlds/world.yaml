@@ -123,12 +123,12 @@ locations:
         position:
           x: -4.25
           y: 4.5
-    - name: storage
+    - name: kitchen_table
       parent: kitchen
-      category: storage
+      category: table
       pose:
         position:
-          x: -4.5
+          x: -4.25
           y: -4.5
     - name: fridge
       parent: kitchen
@@ -139,9 +139,9 @@ locations:
           y: -4.5
 
 objects:
-  - parent: storage
+  - parent: kitchen_table
     category: soda
-  - parent: storage
+  - parent: table
     category: snacks
   - parent: fridge
     category: butter

@@ -25,6 +25,8 @@ def create_ros_node():
         "world.yaml",
     )
     world = WorldYamlLoader().from_file(world_file)
+    # world.reset(seed=0)
+    world.reset()  # This randomizes the world.
     node.set_world(world)
 
     return node
