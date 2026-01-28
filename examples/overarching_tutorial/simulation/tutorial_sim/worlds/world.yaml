@@ -53,7 +53,7 @@ rooms:
         - [-1, 1]
         - [-1, 3]
     wall_width: 0.2
-    color: [1, 0, 0]
+    color: "#FA9F00"
 
   - name: kitchen
     footprint:
@@ -64,7 +64,7 @@ rooms:
         - [-1, -1]
         - [-1, -3]
     wall_width: 0.2
-    color: [0, 1, 0]
+    color: "#009A95"
 
   - name: trash
     footprint:
@@ -75,12 +75,13 @@ rooms:
         - [1, -1]
         - [1, -3]
     wall_width: 0.2
-    color: [0, 0, 1]
+    color: "#F70063"
 
 hallways:
   - room_start: dining
     room_end: kitchen
     width: 0.6
+    wall_width: 0.05
     conn_method: angle
     conn_angle: -1.57
     offset: 0
@@ -90,10 +91,21 @@ hallways:
   - room_start: kitchen
     room_end: trash
     width: 0.6
+    wall_width: 0.05
     conn_method: angle
     conn_angle: 0
     offset: 0
-    is_open: false
+    is_open: faltruese
+    is_locked: false
+
+  - room_start: dining
+    room_end: trash
+    width: 0.6
+    wall_width: 0.05
+    conn_method: angle
+    conn_angle: -0.77
+    offset: .9
+    is_open: true
     is_locked: false
 
 locations:
