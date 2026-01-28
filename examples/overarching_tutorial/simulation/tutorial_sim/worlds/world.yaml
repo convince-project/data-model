@@ -13,6 +13,7 @@ params:
 robots:
   - name: robot
     radius: 0.1
+    color: "#000"
     location: hall
     partial_obs_objects: false
     path_executor:
@@ -52,7 +53,7 @@ rooms:
         - [-5, 2]
         - [-2, 2]
         - [-2, 5]
-    wall_width: 0.2
+    wall_width: 0.3
     color: "#FA9F00"
 
   - name: kitchen
@@ -63,7 +64,7 @@ rooms:
         - [-5, -2]
         - [-2, -2]
         - [-2, -5]
-    wall_width: 0.2
+    wall_width: 0.3
     color: "#009A95"
 
   - name: hall
@@ -74,14 +75,15 @@ rooms:
         - [5, -2]
         - [2, -2]
         - [2, -5]
-    wall_width: 0.2
+    wall_width: 0.3
     color: "#F70063"
 
 hallways:
   - room_start: dining
     room_end: kitchen
-    width: 0.6
+    width: 0.8
     wall_width: 0.05
+    color: "#CCC"
     conn_method: angle
     conn_angle: -1.57
     offset: 0
@@ -90,8 +92,9 @@ hallways:
 
   - room_start: kitchen
     room_end: hall
-    width: 0.6
+    width: 0.8
     wall_width: 0.05
+    color: "#CCC"
     conn_method: angle
     conn_angle: 0
     offset: 0
@@ -100,8 +103,9 @@ hallways:
 
   - room_start: dining
     room_end: hall
-    width: 0.6
+    width: 0.8
     wall_width: 0.05
+    color: "#CCC"
     conn_method: angle
     conn_angle: -0.77
     offset: .9
