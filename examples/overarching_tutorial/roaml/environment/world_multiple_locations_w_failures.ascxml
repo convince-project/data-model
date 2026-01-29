@@ -165,19 +165,25 @@
         <onentry>
             <assign location="robot_at_object" expr="obj_locs[req_obj_idx].x == robot_loc.x &amp;&amp; obj_locs[req_obj_idx].y == robot_loc.y" />
         </onentry>
-        <ros_rate_callback name="world_update_rate" target="idle">
-            <if cond="robot_at_object">
-                <!-- The robot and object location match -->
-                <ros_action_succeed name="act_detect" goal_id="goal_id">
-                    <field name="object_id" expr="0" />
-                    <field name="detection.parent" expr="obj_locs[0].parent" />
-                    <field name="detection.x" expr="obj_locs[0].x" />
-                    <field name="detection.y" expr="obj_locs[0].y" />
-                </ros_action_succeed>
-            <else/>
-                <!-- Otherwise fail -->
+        <ros_rate_callback name="world_update_rate">
+            <target id="idle" prob="0.8">
+                <if cond="robot_at_object">
+                    <!-- The robot and object location match -->
+                    <ros_action_succeed name="act_detect" goal_id="goal_id">
+                        <field name="object_id" expr="0" />
+                        <field name="detection.parent" expr="obj_locs[0].parent" />
+                        <field name="detection.x" expr="obj_locs[0].x" />
+                        <field name="detection.y" expr="obj_locs[0].y" />
+                    </ros_action_succeed>
+                <else/>
+                    <!-- Otherwise fail -->
+                    <ros_action_aborted name="act_detect" goal_id="goal_id" />
+                </if>
+            </target>
+            <target id="idle">
+                <!-- Fail, no matter what! -->
                 <ros_action_aborted name="act_detect" goal_id="goal_id" />
-            </if>
+            </target>
         </ros_rate_callback>
     </state>
 
