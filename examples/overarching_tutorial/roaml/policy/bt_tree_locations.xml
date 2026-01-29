@@ -1,5 +1,5 @@
 <root BTCPP_format="4">
-    <BehaviorTree ID="OverarchingTutorialBase">
+    <BehaviorTree ID="OverarchingTutorialLocations">
         <Sequence>
             <SetBlackboard output_key="{current_location}" value="1"/>
             <RetryUntilSuccessful num_attempts="4">
