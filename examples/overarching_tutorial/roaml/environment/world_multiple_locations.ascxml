@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ascxml
-    initial="idle"
+    initial="init"
     version="1.0"
     name="world"
     model_src=""
@@ -18,7 +18,7 @@
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
         <data id="obj_locs" type="ObjectLocation[1]" expr="[
-            {'parent': 'world', 'x': 1.0, 'y': -2.0}
+            {'parent': 'world', 'x': 0.0, 'y': 0.0}
         ]" />
         <data id="locations" type="Coordinates[4]" expr="[
             {'x': 0.0, 'y': 0.0},
@@ -37,6 +37,23 @@
         <data id="robot_at_target" type="bool" expr="false" />
         <data id="robot_at_object" type="bool" expr="false" />
     </datamodel>
+
+    <state id="init">
+        <transition>
+            <target id="idle" prob="0.2">
+                <assign location="obj_locs[0].x" expr="locations[1].x" />
+                <assign location="obj_locs[0].y" expr="locations[1].y" />
+            </target>
+            <target id="idle" prob="0.3">
+                <assign location="obj_locs[0].x" expr="locations[2].x" />
+                <assign location="obj_locs[0].y" expr="locations[2].y" />
+            </target>
+            <target id="idle" prob="0.5">
+                <assign location="obj_locs[0].x" expr="locations[3].x" />
+                <assign location="obj_locs[0].y" expr="locations[3].y" />
+            </target>
+        </transition>
+    </state>
 
     <state id="idle">
         <onentry>
