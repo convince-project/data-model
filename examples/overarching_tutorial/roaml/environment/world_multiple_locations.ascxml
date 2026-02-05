@@ -17,19 +17,19 @@
 
     <datamodel>
         <!-- Only one object in this world, located at (4,2). -->
-        <data id="obj_locs" type="ObjectLocation[1]" expr="[
-            {'parent': 'world', 'x': 0.0, 'y': 0.0}
-        ]" />
-        <data id="locations" type="Coordinates[4]" expr="[
-            {'x': 0.0, 'y': 0.0},
-            {'x': 4.0, 'y': 2.0},
-            {'x': 1.0, 'y': -2.0},
-            {'x': -2.0, 'y': -2.0},
-        ]" />
+        <data id="obj_loc" type="ObjectLocation" expr="{'parent': '', 'x': 0.0, 'y': 0.0}" />
+        <!-- Location ID: 0 -->
+        <data id="location_start" type="Coordinates" expr="{'x': 0.0, 'y': 0.0}" />
+        <!-- Location ID: 1 -->
+        <data id="location_table" type="Coordinates" expr="{'x': 4.0, 'y': 2.0}" />
+        <!-- Location ID: 2 -->
+        <data id="location_fridge" type="Coordinates" expr="{'x': 1.0, 'y': -2.0}" />
+        <!-- Location ID: 3 -->
+        <data id="location_bin" type="Coordinates" expr="{'x': -2.0, 'y': -2.0}" />
         <!-- The initial location of the robot in the world is (0,0). -->
         <data id="robot_loc" type="Coordinates" expr="{'x': 0, 'y': 0}" />
         <!-- Variable referring to the index of the object held by the robot. This is -1 if it holds nothing. -->
-        <data id="robot_holding" type="int32" expr="-1" />
+        <data id="robot_holding" type="bool" expr="false" />
         <!-- Additional support variables for the action goal_id and the value of the received requests. -->
         <data id="goal_id" type="int32" expr="0" />
         <data id="req_obj_idx" type="int32" expr="0" />
