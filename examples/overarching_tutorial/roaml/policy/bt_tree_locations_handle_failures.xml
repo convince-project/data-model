@@ -3,7 +3,7 @@
         <Sequence name="main_sequence">
             <SetBlackboard output_key="{current_location}" value="1"/>
             <Inverter>
-                <Repeat name="reach_and_detect_attempt" num_cycles="4">
+                <Repeat name="reach_and_detect_attempt" num_cycles="3">
                     <Sequence>
                         <RetryUntilSuccessful name="navigation_to_obj_attempts" num_attempts="4">
                             <NavigateToLocation name="navigate_to_obj" location="{current_location}" />
