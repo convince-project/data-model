@@ -1,6 +1,9 @@
 FROM ros:jazzy-ros-base
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+USER root
+
+
 # Install apt dependencies.
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -11,21 +14,33 @@ RUN apt-get update && \
     libxi-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev \
     libnss3 libasound2t64 libxkbfile1 \
     python3-pip python3-tk python3-wrapt python3-inflection \
-    ros-jazzy-example-interfaces ros-jazzy-rqt-service-caller
+    ros-jazzy-example-interfaces ros-jazzy-rqt-service-caller \
+    libczmq-dev ros-jazzy-zmqpp-vendor-dbgsym ros-jazzy-zmqpp-vendor libczmq-dev libczmq4 curl
 
 # Create a ROS 2 workspace.
 RUN mkdir -p /convince_ws/src/
 WORKDIR /convince_ws
 
+
+RUN /bin/bash -c "git clone --recurse-submodules https://github.com/BehaviorTree/BehaviorTree.CPP.git -b v3.8 && \
+    cd BehaviorTree.CPP && \
+    cmake -S . -B build && \
+    cmake --build build && \
+    cmake --install build"
+
+    
+
 # Install external dependencies.
 # (pip)
 COPY requirements.txt /convince_ws
 RUN pip3 install --break-system-packages -r requirements.txt
-# COPY dependencies src/dependencies
-# RUN source /opt/ros/jazzy/setup.bash && \
-#     rosdep install --from-paths src -y --ignore-src
-# (pyrobosim)
+COPY dependencies src/dependencies
 RUN git clone -b 4.3.3 https://github.com/sea-bass/pyrobosim.git src/pyrobosim
+COPY behavior_tree src/behavior_tree
+RUN source /opt/ros/jazzy/setup.bash && \
+    rosdep install --from-paths src -y --ignore-src
+# (pyrobosim)
+
 
 # # (smc_storm)
 # RUN curl -O -L https://github.com/convince-project/smc_storm/releases/download/0.0.6/smc_storm_executable.tar.gz && \
