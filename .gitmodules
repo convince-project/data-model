@@ -1,0 +1,6 @@
+[submodule "examples/overarching_tutorial/simulation/dependencies/examples/overarching_tutorial/simulation/dependencies/BehaviorTree.ROS2"]
+	path = examples/overarching_tutorial/simulation/dependencies/examples/overarching_tutorial/simulation/dependencies/BehaviorTree.ROS2
+	url = https://github.com/BehaviorTree/BehaviorTree.ROS2.git
+[submodule "examples/overarching_tutorial/simulation/dependencies/BehaviorTree.ROS2"]
+	path = examples/overarching_tutorial/simulation/dependencies/BehaviorTree.ROS2
+	url = https://github.com/BehaviorTree/BehaviorTree.ROS2.git
