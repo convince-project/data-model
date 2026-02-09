@@ -1,4 +1,6 @@
+#include <algorithm>
 #include <fstream>
+#include <sstream>
 
 // ROS includes
 #include <rclcpp/rclcpp.hpp>
@@ -31,7 +33,7 @@ std::filesystem::path GetFilePath(const std::string& filename)
     return filename;
   }
   // try appending the package directory
-  const std::string package_dir = ament_index_cpp::get_package_share_directory("pyrobosim_btcpp");
+  const std::string package_dir = ament_index_cpp::get_package_share_directory("bt_executor");
   const auto package_path = std::filesystem::path(package_dir) / filename;
   if(std::filesystem::exists(package_path))
   {
@@ -47,10 +49,15 @@ int main(int argc, char** argv)
   auto nh = std::make_shared<rclcpp::Node>("btcpp_executor");
 
   nh->declare_parameter("tree", rclcpp::PARAMETER_STRING);
+  nh->declare_parameter<std::string>("tree_id", "MainTree");
   nh->declare_parameter("save_model_only", false);
 
   std::string tree_filename;
   nh->get_parameter("tree", tree_filename);
+
+  std::string tree_id;
+  nh->get_parameter("tree_id", tree_id);
+
   bool save_model = false;
   nh->get_parameter("save_model_only", save_model);
 
@@ -99,10 +106,67 @@ int main(int argc, char** argv)
   // load a tree and execute
   factory.registerBehaviorTreeFromFile(filepath.string());
 
+  const auto registered_tree_ids = factory.registeredBehaviorTrees();
+  if(registered_tree_ids.empty())
+  {
+    RCLCPP_FATAL(nh->get_logger(),
+                 "No <BehaviorTree> found in XML file: %s. "
+                 "This often happens if you pass a TreeNodesModel XML (node model) instead of an executable tree. "
+                 "Try: /convince_ws/src/behavior_tree/bt_executor/trees/navigation_demo.xml",
+                 filepath.c_str());
+    return 1;
+  }
+
+  if(tree_id.empty())
+  {
+    if(registered_tree_ids.size() == 1)
+    {
+      tree_id = registered_tree_ids.front();
+      RCLCPP_INFO(nh->get_logger(), "Parameter tree_id is empty. Using the only tree found: '%s'",
+                  tree_id.c_str());
+    }
+    else
+    {
+      RCLCPP_FATAL(nh->get_logger(),
+                   "Parameter tree_id is empty and multiple trees are registered. "
+                   "Set -p tree_id:=<ID> to choose one.");
+      std::ostringstream oss;
+      for(const auto& id : registered_tree_ids)
+      {
+        oss << "  - " << id << "\n";
+      }
+      RCLCPP_FATAL(nh->get_logger(), "Registered trees:\n%s", oss.str().c_str());
+      return 1;
+    }
+  }
+
+  if(std::find(registered_tree_ids.begin(), registered_tree_ids.end(), tree_id) ==
+     registered_tree_ids.end())
+  {
+    if(registered_tree_ids.size() == 1)
+    {
+      const auto& only_id = registered_tree_ids.front();
+      RCLCPP_WARN(nh->get_logger(), "Can't find a tree with name: '%s'. Using the only tree found: '%s'",
+                  tree_id.c_str(), only_id.c_str());
+      tree_id = only_id;
+    }
+    else
+    {
+      std::ostringstream oss;
+      for(const auto& id : registered_tree_ids)
+      {
+        oss << "  - " << id << "\n";
+      }
+      RCLCPP_FATAL(nh->get_logger(), "Can't find a tree with name: '%s'. Registered trees:\n%s",
+                   tree_id.c_str(), oss.str().c_str());
+      return 1;
+    }
+  }
+
   // the global blackboard patterns is explained here:
   // https://www.behaviortree.dev/docs/tutorial-advanced/tutorial_16_global_blackboard
   auto global_blackboard = BT::Blackboard::create();
-  BT::Tree tree = factory.createTree("MainTree", BT::Blackboard::create(global_blackboard));
+  BT::Tree tree = factory.createTree(tree_id, BT::Blackboard::create(global_blackboard));
 
   // This will add console messages for each action and condition executed
   BT::StdCoutLogger console_logger(tree);
