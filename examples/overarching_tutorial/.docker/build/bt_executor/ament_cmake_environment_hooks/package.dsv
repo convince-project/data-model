@@ -1,4 +1,0 @@
-source;share/bt_executor/local_setup.bash
-source;share/bt_executor/local_setup.dsv
-source;share/bt_executor/local_setup.sh
-source;share/bt_executor/local_setup.zsh

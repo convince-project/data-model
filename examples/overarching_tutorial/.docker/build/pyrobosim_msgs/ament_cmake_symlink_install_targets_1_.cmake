@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/convince_ws/build/pyrobosim_msgs/rosidl_generator_py/pyrobosim_msgs/pyrobosim_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "pyrobosim_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/pyrobosim_msgs")

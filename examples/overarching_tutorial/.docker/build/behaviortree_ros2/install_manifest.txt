@@ -1,3 +1,0 @@
-/convince_ws/install/behaviortree_ros2/lib/libbehaviortree_ros2.a
-/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake/behaviortree_ros2TargetsExport.cmake
-/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake/behaviortree_ros2TargetsExport-noconfig.cmake

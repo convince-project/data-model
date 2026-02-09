@@ -12,22 +12,30 @@ docker build -t convince_tutorial -f .docker/Dockerfile .
 ## Run
 
 ```bash
-docker run -it --rm\
-    --name convince_tutorial\
-    -v /tmp/.X11-unix:/tmp/.X11-unix:rw\
-    -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority\
-    -v ./simulation/tutorial_sim:/convince_ws/src/tutorial_sim\
-    -v ./.docker/build:/convince_ws/build\
-    -e DISPLAY\
-    -e QT_X11_NO_MITSHM=1\
-    convince_tutorial\
-    bash 
+docker run -it --rm \
+  --name convince_tutorial \
+  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+  -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority \
+  -v ./tutorial_sim:/convince_ws/src/tutorial_sim \
+  -v ../ros_interfaces:/convince_ws/src/ros_interfaces \
+  -v ../roaml:/convince_ws/src/roaml \
+  -v ./.docker/build:/convince_ws/build \
+  -e DISPLAY \
+  -e QT_X11_NO_MITSHM=1 \
+  convince_tutorial \
+  bash
 ```
 
 Inside the docker container, run
 
 ```bash
 ros2 run tutorial_sim run
+```
+
+In another shell (attach to the same running container) run:
+
+```bash
+ros2 run bt_executor btcpp_executor --ros-args -p tree:=src/roaml/policy/bt_tree.xml
 ```
 
 ## Usage

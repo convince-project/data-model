@@ -10,6 +10,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
     apt-utils curl fuse3 libfuse2 gdb nano \
+    terminator dbus-x11 \
     libegl1 libgl1-mesa-dev libglu1-mesa-dev '^libxcb.*-dev' libx11-xcb-dev \
     libxi-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev \
     libnss3 libasound2t64 libxkbfile1 \
@@ -39,6 +40,10 @@ RUN git clone -b 4.3.3 https://github.com/sea-bass/pyrobosim.git src/pyrobosim
 COPY simulation/behavior_tree src/behavior_tree
 COPY roaml src/roaml
 COPY ros_interfaces src/ros_interfaces
+COPY behavior_tree src/behavior_tree
+# `bt_executor` depends on `behaviortree_ros2`, which is not released for Jazzy.
+# Bring it in as a source package so rosdep does not need a rosdep key for it.
+RUN git clone --depth 1 https://github.com/BehaviorTree/BehaviorTree.ROS2.git src/behaviortree_ros2
 RUN source /opt/ros/jazzy/setup.bash && \
     rosdep install --from-paths src -y --ignore-src
 # (pyrobosim)
