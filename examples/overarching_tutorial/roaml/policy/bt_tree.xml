@@ -1,21 +1,11 @@
 <root BTCPP_format="4">
-    <BehaviorTree ID="OverarchingTutorialBase">
-        <!-- For now use a normal sequence, since failures aren't expected yet -->
+    <BehaviorTree ID="MainTree">
         <Sequence>
-            <!--
-            loc
-            0 .. table
-            1 .. desk
-
-            obj
-            0 .. waste0
-            -->
-
-            <NavigateToLocation name="navigate_to_obj" location="1" />
-            <DetectObject name="detect_obj" object_id="{detection_id}" />
-            <PickObject name="pick_obj" object_id="{detection_id}" />
-            <NavigateToLocation name="navigate_to_start" location="0" />
-            <PlaceObject name="place_obj" />
+            <Navigate name="navigate_to_obj" target="fridge" />
+            <DetectObject name="detect_obj" object="butter" />
+            <PickObject name="pick_obj" object="butter" />
+            <Navigate name="navigate_to_place" target="dining_table" />
+            <PlaceObject name="place_obj" object="butter" />
         </Sequence>
     </BehaviorTree>
 </root>

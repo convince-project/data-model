@@ -11,6 +11,7 @@
 
   <depend>ament_index_cpp</depend>
   <depend>behaviortree_ros2</depend>
+  <depend>overarching_msgs</depend>
   <depend>pyrobosim_msgs</depend>
   <depend>rclcpp</depend>
 

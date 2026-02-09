@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "ament_index_cpp;behaviortree_ros2;pyrobosim_msgs;rclcpp")
+set(_exported_dependencies "ament_index_cpp;behaviortree_ros2;overarching_msgs;pyrobosim_msgs;rclcpp")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

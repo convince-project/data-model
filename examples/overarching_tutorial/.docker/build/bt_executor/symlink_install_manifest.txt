@@ -7,6 +7,10 @@
 /convince_ws/install/bt_executor/share/bt_executor/trees/solution/problem3.xml
 /convince_ws/install/bt_executor/share/bt_executor/trees/solution/problem4.xml
 /convince_ws/install/bt_executor/lib/bt_executor/btcpp_executor
+/convince_ws/install/bt_executor/include//overarching_btcpp/nodes/detect_object_node.hpp
+/convince_ws/install/bt_executor/include//overarching_btcpp/nodes/navigate_to_location_node.hpp
+/convince_ws/install/bt_executor/include//overarching_btcpp/nodes/pick_object_node.hpp
+/convince_ws/install/bt_executor/include//overarching_btcpp/nodes/place_object_node.hpp
 /convince_ws/install/bt_executor/include//pyrobosim_btcpp/nodes/battery_nodes.hpp
 /convince_ws/install/bt_executor/include//pyrobosim_btcpp/nodes/close_node.hpp
 /convince_ws/install/bt_executor/include//pyrobosim_btcpp/nodes/detect_object_node.hpp
