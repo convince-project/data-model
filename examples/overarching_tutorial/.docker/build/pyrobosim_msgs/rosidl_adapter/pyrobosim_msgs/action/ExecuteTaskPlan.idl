@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pyrobosim_msgs/action/ExecuteTaskPlan.action
+// generated code does not contain a copyright notice
+
+#include "pyrobosim_msgs/msg/ExecutionResult.idl"
+#include "pyrobosim_msgs/msg/TaskPlan.idl"
+
+module pyrobosim_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Execute Task Plan -- ROS Action Definition")
+    struct ExecuteTaskPlan_Goal {
+      @verbatim (language="comment", text=
+        "Goal")
+      pyrobosim_msgs::msg::TaskPlan plan;
+
+      @verbatim (language="comment", text=
+        "An artificial delay, in seconds, to introduce between actions.")
+      @default (value=0.5)
+      float delay;
+
+      @verbatim (language="comment", text=
+        "A multiplier on the execution time relative to real time." "\n"
+        "Defaults to 1.0. If negative, runs as quickly as possible.")
+      @default (value=1.0)
+      float realtime_factor;
+    };
+    struct ExecuteTaskPlan_Result {
+      @verbatim (language="comment", text=
+        "Result")
+      pyrobosim_msgs::msg::ExecutionResult execution_result;
+
+      int64 num_completed;
+
+      int64 num_total;
+    };
+    struct ExecuteTaskPlan_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

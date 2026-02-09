@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "overarching_msgs/action/Navigate_Feedback",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "overarching_msgs/action/Navigate_Feedback",
+      "hash_string": "RIHS01_43702354e42bc3b2bb5e7de43b8960188176df9c9765333e7bce6a4243857320"
+    }
+  ]
+}

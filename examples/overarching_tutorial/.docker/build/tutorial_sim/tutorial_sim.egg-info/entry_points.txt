@@ -1,0 +1,2 @@
+[console_scripts]
+run = tutorial_sim.run:main

@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca5e62e983b2e2e83e83.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test"
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "pyrobosim_ros",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_pyrobosim_ros_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_pyrobosim_ros_egg-9dbd2bf706e545d679a4.json",
+					"name" : "ament_cmake_python_build_pyrobosim_ros_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_pyrobosim_ros::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_pyrobosim_ros-9afd2ea118bcaebb3006.json",
+					"name" : "ament_cmake_python_symlink_pyrobosim_ros",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pyrobosim_ros_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pyrobosim_ros_uninstall-e6bc3815fc34af800cd6.json",
+					"name" : "pyrobosim_ros_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0be6a5e2bcefeef6d479.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/convince_ws/build/pyrobosim_ros",
+		"source" : "/convince_ws/src/pyrobosim/pyrobosim_ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,33 @@
+<root BTCPP_format="4">
+
+  <!--
+    Demo tree for the tutorial_sim world.
+
+    Valid locations (from tutorial_sim/worlds/world.yaml):
+      - hall (robot starts here)
+      - dining_table, side_table
+      - kitchen_table, fridge
+
+    This tree only navigates between known locations and retries a few times
+    to handle the world action success_probability settings.
+  -->
+
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <IsBatteryFull full_threshold="10.0"/>
+
+      <RetryUntilSuccessful num_attempts="5">
+        <Navigate name="GoToFridge" target="fridge"/>
+      </RetryUntilSuccessful>
+
+      <RetryUntilSuccessful num_attempts="5">
+        <Navigate name="GoToDiningTable" target="dining_table"/>
+      </RetryUntilSuccessful>
+
+      <RetryUntilSuccessful num_attempts="5">
+        <Navigate name="GoToKitchenTable" target="kitchen_table"/>
+      </RetryUntilSuccessful>
+    </Sequence>
+  </BehaviorTree>
+
+</root>

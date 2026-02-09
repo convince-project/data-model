@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "pyrobosim_msgs/srv/RequestWorldInfo_Response",
+      "fields": [
+        {
+          "name": "info",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "pyrobosim_msgs/msg/WorldInfo"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "pyrobosim_msgs/msg/WorldInfo",
+        "fields": [
+          {
+            "name": "name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "location_categories",
+            "type": {
+              "type_id": 161,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "object_categories",
+            "type": {
+              "type_id": 161,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "pyrobosim_msgs/srv/RequestWorldInfo_Response",
+      "hash_string": "RIHS01_5d8752f35eded090c6dd22fada469e2d4db2cedf6e0e3c8b8a985ae0cda80d86"
+    },
+    {
+      "type_name": "pyrobosim_msgs/msg/WorldInfo",
+      "hash_string": "RIHS01_c9015f7b7d843f2a930ae7d1f1efc95ebc109a36d899460cab974ce980e3c32b"
+    }
+  ]
+}

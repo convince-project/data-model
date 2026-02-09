@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pyrobosim_msgs/action/PlanPath.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "pyrobosim_msgs/msg/ExecutionResult.idl"
+#include "pyrobosim_msgs/msg/Path.idl"
+
+module pyrobosim_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "ROS Action Definition for Path Planning")
+    struct PlanPath_Goal {
+      @verbatim (language="comment", text=
+        "Goal")
+      string target_location;
+
+      geometry_msgs::msg::Pose target_pose;
+    };
+    struct PlanPath_Result {
+      @verbatim (language="comment", text=
+        "Result")
+      pyrobosim_msgs::msg::ExecutionResult execution_result;
+
+      pyrobosim_msgs::msg::Path path;
+    };
+    struct PlanPath_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

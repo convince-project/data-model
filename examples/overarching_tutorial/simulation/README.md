@@ -16,7 +16,7 @@ docker run -it --rm\
     --name convince_tutorial\
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw\
     -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority\
-    -v ./tutorial_sim:/convince_ws/src/tutorial_sim\
+    -v ./simulation/tutorial_sim:/convince_ws/src/tutorial_sim\
     -v ./.docker/build:/convince_ws/build\
     -e DISPLAY\
     -e QT_X11_NO_MITSHM=1\

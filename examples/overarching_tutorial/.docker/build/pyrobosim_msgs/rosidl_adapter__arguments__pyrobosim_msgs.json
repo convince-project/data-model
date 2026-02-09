@@ -1,0 +1,26 @@
+{
+  "package_name": "pyrobosim_msgs",
+  "non_idl_tuples": [
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/ExecutionResult.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/GoalPredicate.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/GoalSpecification.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/HallwayState.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/LocationState.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/ObjectState.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/Path.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/RobotState.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/TaskAction.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/TaskPlan.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/WorldInfo.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:msg/WorldState.msg",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:srv/RequestWorldInfo.srv",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:srv/RequestWorldState.srv",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:srv/ResetWorld.srv",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:srv/SetLocationState.srv",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:action/DetectObjects.action",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:action/ExecuteTaskAction.action",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:action/ExecuteTaskPlan.action",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:action/FollowPath.action",
+    "/convince_ws/src/pyrobosim/pyrobosim_msgs:action/PlanPath.action"
+  ]
+}

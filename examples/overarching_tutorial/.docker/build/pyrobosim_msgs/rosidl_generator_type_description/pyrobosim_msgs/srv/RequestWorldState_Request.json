@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "pyrobosim_msgs/srv/RequestWorldState_Request",
+      "fields": [
+        {
+          "name": "robot",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "pyrobosim_msgs/srv/RequestWorldState_Request",
+      "hash_string": "RIHS01_abe46c5d8d64f09559bc05a1d5fded6fc3123f1a3cc4d33b2f58d723aa4e6b20"
+    }
+  ]
+}

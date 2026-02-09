@@ -1,0 +1,522 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "overarching_msgs/action/Place",
+      "fields": [
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_Goal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_Result"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_Feedback"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "send_goal_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_SendGoal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "get_result_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_GetResult"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_FeedbackMessage"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_Feedback",
+        "fields": [
+          {
+            "name": "structure_needs_at_least_one_member",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_FeedbackMessage",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "feedback",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_Feedback"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_GetResult",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_GetResult_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_GetResult_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_GetResult_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_GetResult_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_GetResult_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_GetResult_Response",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "result",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_Result"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_Goal",
+        "fields": [
+          {
+            "name": "structure_needs_at_least_one_member",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_Result",
+        "fields": [
+          {
+            "name": "structure_needs_at_least_one_member",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_SendGoal",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_SendGoal_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_SendGoal_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_SendGoal_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_SendGoal_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "overarching_msgs/action/Place_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "overarching_msgs/action/Place_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "overarching_msgs/action/Place",
+      "hash_string": "RIHS01_39a76aa7499a66ce8cdaff0c182cd1cbd76da97bf6dbad7d363d7ee1f4e6877a"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_Feedback",
+      "hash_string": "RIHS01_1e157c1d2e4ed96f8d8f7ae676f8cbd0332a4aeca4bfeec0e0b4b27f6740edbc"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_FeedbackMessage",
+      "hash_string": "RIHS01_2dfe5abbb2b7ff0571436b5fa8d6ad1b1a86f15f1c6e577c1a66bfc797d32db2"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_GetResult",
+      "hash_string": "RIHS01_fcbad5624f2015d65cf6f6cd3a32287aa36a5b5f0c0c5b3fafdd238f8fa31529"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_GetResult_Event",
+      "hash_string": "RIHS01_4f4ce12ccb7fcf8abe1cd57dab1e9adad76d92fe21197434b8a79666a6521694"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_GetResult_Request",
+      "hash_string": "RIHS01_04a94cc483465108cac47947bfecacb39f92bc6ba288040e15d2ad01d8719be9"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_GetResult_Response",
+      "hash_string": "RIHS01_5fbc2defc924a2a09c809ef927820bc5f752b5735a2a2a3ab6b846cfaca97bfa"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_Goal",
+      "hash_string": "RIHS01_0b1c639c82dc63f1ade5d0f259098f6df26479608589384211ee2811c320433b"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_Result",
+      "hash_string": "RIHS01_2d7c315296ccd63b2ae3a0eae9ffda6204e43bca9afcc3d555159dded7388b51"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_SendGoal",
+      "hash_string": "RIHS01_ac9de7f002c6dfa0375795952b9fa032e342ccb13f2cdb83cc4ae4fccbaebadc"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_SendGoal_Event",
+      "hash_string": "RIHS01_8ab642cccb76aa38513487f5a727f5c0350bcb3322c4769872597b101d9b3e41"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_SendGoal_Request",
+      "hash_string": "RIHS01_c6c954d7e184b3cf039a45d055231b444c38451d2003fcdd3d94e765ddef76e8"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_SendGoal_Response",
+      "hash_string": "RIHS01_b7210ec5073587dc307850fea610014288210935ed55e173dc43f827c2be53b4"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

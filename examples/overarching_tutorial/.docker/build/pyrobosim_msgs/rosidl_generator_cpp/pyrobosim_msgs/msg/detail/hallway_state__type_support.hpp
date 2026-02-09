@@ -1,0 +1,31 @@
+// generated from rosidl_generator_cpp/resource/idl__type_support.hpp.em
+// with input from pyrobosim_msgs:msg/HallwayState.idl
+// generated code does not contain a copyright notice
+
+#ifndef PYROBOSIM_MSGS__MSG__DETAIL__HALLWAY_STATE__TYPE_SUPPORT_HPP_
+#define PYROBOSIM_MSGS__MSG__DETAIL__HALLWAY_STATE__TYPE_SUPPORT_HPP_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "pyrobosim_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
+
+#include "rosidl_typesupport_cpp/message_type_support.hpp"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_CPP_PUBLIC_pyrobosim_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_cpp,
+  pyrobosim_msgs,
+  msg,
+  HallwayState
+)();
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // PYROBOSIM_MSGS__MSG__DETAIL__HALLWAY_STATE__TYPE_SUPPORT_HPP_

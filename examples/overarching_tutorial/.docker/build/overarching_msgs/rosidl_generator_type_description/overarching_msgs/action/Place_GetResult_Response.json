@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "overarching_msgs/action/Place_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "overarching_msgs/action/Place_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "overarching_msgs/action/Place_Result",
+        "fields": [
+          {
+            "name": "structure_needs_at_least_one_member",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "overarching_msgs/action/Place_GetResult_Response",
+      "hash_string": "RIHS01_5fbc2defc924a2a09c809ef927820bc5f752b5735a2a2a3ab6b846cfaca97bfa"
+    },
+    {
+      "type_name": "overarching_msgs/action/Place_Result",
+      "hash_string": "RIHS01_2d7c315296ccd63b2ae3a0eae9ffda6204e43bca9afcc3d555159dded7388b51"
+    }
+  ]
+}

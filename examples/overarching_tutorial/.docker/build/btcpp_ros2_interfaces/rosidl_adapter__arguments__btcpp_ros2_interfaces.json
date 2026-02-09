@@ -1,0 +1,9 @@
+{
+  "package_name": "btcpp_ros2_interfaces",
+  "non_idl_tuples": [
+    "/convince_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:msg/NodeStatus.msg",
+    "/convince_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:srv/GetTrees.srv",
+    "/convince_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:action/ExecuteTree.action",
+    "/convince_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:action/Sleep.action"
+  ]
+}
