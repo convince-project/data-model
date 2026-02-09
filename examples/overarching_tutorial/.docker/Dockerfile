@@ -32,11 +32,13 @@ RUN /bin/bash -c "git clone --recurse-submodules https://github.com/BehaviorTree
 
 # Install external dependencies.
 # (pip)
-COPY requirements.txt /convince_ws
+COPY simulation/requirements.txt /convince_ws
 RUN pip3 install --break-system-packages -r requirements.txt
-COPY dependencies src/dependencies
+COPY simulation/dependencies src/dependencies
 RUN git clone -b 4.3.3 https://github.com/sea-bass/pyrobosim.git src/pyrobosim
-COPY behavior_tree src/behavior_tree
+COPY simulation/behavior_tree src/behavior_tree
+COPY roaml src/roaml
+COPY ros_interfaces src/ros_interfaces
 RUN source /opt/ros/jazzy/setup.bash && \
     rosdep install --from-paths src -y --ignore-src
 # (pyrobosim)
