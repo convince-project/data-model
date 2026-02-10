@@ -10,10 +10,10 @@
 
     <datamodel>
         <data id="tmp_result" type="bool" expr="false" />
-        <data id="tmp_location" type="int32" expr="0" />
+        <data id="tmp_location" type="string" expr="''" />
     </datamodel>
 
-    <bt_declare_port_in key="location" type="int32" />
+    <bt_declare_port_in key="location" type="string" />
 
     <state id="initial">
         <bt_tick target="wait_result">
