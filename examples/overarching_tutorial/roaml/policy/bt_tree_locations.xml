@@ -1,0 +1,19 @@
+<root BTCPP_format="4">
+    <BehaviorTree ID="OverarchingTutorialLocations">
+        <Sequence name="main_seq">
+            <SetBlackboard output_key="{current_location}" value="1"/>
+            <Repeat name="detect_or_next" num_cycles="3">
+                <Sequence>
+                    <NavigateToLocation name="navigate_to_obj" location="{current_location}" />
+                    <Fallback>
+                        <DetectObject name="detect_obj" object_id="{detection_id}" />
+                        <GetNextLocation location="{current_location}" />
+                    </Fallback>
+                </Sequence>
+            </Repeat>
+            <PickObject name="pick_obj" object_id="{detection_id}" />
+            <NavigateToLocation name="navigate_to_start" location="0" />
+            <PlaceObject name="place_obj" />
+        </Sequence>
+    </BehaviorTree>
+</root>
