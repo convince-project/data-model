@@ -1,7 +1,7 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="OverarchingTutorialLocationFailures">
         <Sequence name="main_sequence">
-            <SetBlackboard output_key="{current_location}" value="1"/>
+            <GetNextLocation name="get_first_loc" location="{current_location}" />
             <Inverter>
                 <Repeat name="reach_and_detect_attempt" num_cycles="3">
                     <Sequence>
@@ -25,7 +25,7 @@
                 <PickObject name="pick_obj" object_id="{detection_id}" />
             </RetryUntilSuccessful>
             <RetryUntilSuccessful name="navigation_to_start_attempts" num_attempts="4">
-                <NavigateToLocation name="navigate_to_start" location="0" />
+                <NavigateToLocation name="navigate_to_start" location="'start'" />
             </RetryUntilSuccessful>
             <PlaceObject name="place_obj" />
         </Sequence>
