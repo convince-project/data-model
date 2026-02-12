@@ -1,10 +1,10 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="OverarchingTutorialLocationFailures">
         <Sequence name="main_sequence">
-            <GetNextLocation name="get_first_loc" location="{current_location}" />
             <Inverter>
                 <Repeat name="reach_and_detect_attempt" num_cycles="3">
                     <Sequence>
+                        <GetNextLocation name="get_first_loc" location="{current_location}" />
                         <RetryUntilSuccessful name="navigation_to_obj_attempts" num_attempts="4">
                             <NavigateToLocation name="navigate_to_obj" location="{current_location}" />
                         </RetryUntilSuccessful>
