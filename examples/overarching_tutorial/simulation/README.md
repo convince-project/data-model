@@ -25,7 +25,7 @@ docker run -it --rm\
    -v ./.docker/build:/convince_ws/build\
    -e DISPLAY\
    -e QT_X11_NO_MITSHM=1\
-   ste93/overarching:test\
+   convince_tutorial\
    bash
 
 
