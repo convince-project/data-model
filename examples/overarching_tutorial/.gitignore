@@ -1,3 +1,4 @@
 roaml/scxml
 roaml/*.jani
 **/*.csv
+simulation/.docker/build/

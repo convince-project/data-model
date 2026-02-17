@@ -22,6 +22,7 @@
 #include "pyrobosim_btcpp/nodes/navigate_node.hpp"
 #include "pyrobosim_btcpp/nodes/pick_object_node.hpp"
 #include "pyrobosim_btcpp/nodes/place_object_node.hpp"
+#include "pyrobosim_btcpp/ROS2Action.h" 
 
 // TO_WORKSHOP_USER: add here the include to your custom actions, if you have any
 
@@ -88,6 +89,7 @@ int main(int argc, char** argv)
   factory.registerNodeType<BT::OpenAction>("Open", params);
   factory.registerNodeType<BT::PickObject>("PickObject", params);
   factory.registerNodeType<BT::PlaceObject>("PlaceObject", params);
+  factory.registerNodeType<ROS2Action>("ROS2Action", params);
 
   // TO_WORKSHOP_USER: register here more Nodes, if you decided to implement your own
 
