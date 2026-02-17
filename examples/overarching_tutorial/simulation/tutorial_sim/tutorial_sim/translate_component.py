@@ -4,7 +4,7 @@
 Place translator node.
 
 This node bridges:
-- input action:  overarching_msgs/Place   (default topic: /place_object)
+- input action:  overarching_msgs/Place   (default topic: /PlaceComponet/place_object)
 - output action: pyrobosim_msgs/ExecuteTaskAction (default topic: /execute_action)
 
 It receives a Place goal, resolves which object should be placed,
@@ -28,7 +28,7 @@ class PlaceTranslatorNode(Node):
         super().__init__("place_translator")
 
         # Input/output endpoints and behavior configuration.
-        self.declare_parameter("input_action_name", "/place_object")
+        self.declare_parameter("input_action_name", "/PlaceComponet/place_object")
         self.declare_parameter("output_action_name", "/execute_action")
         self.declare_parameter("robot_state_topic", "/robot/robot_state")
         self.declare_parameter("robot_id", "robot")

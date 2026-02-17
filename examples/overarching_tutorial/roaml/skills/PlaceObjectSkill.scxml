@@ -11,7 +11,7 @@
     <ros_service_server service_name="/PlaceObjectSkill/tick" type="bt_interfaces_dummy/TickAction"/>
     <ros_service_server service_name="/PlaceObjectSkill/halt" type="bt_interfaces_dummy/HaltAction"/>
 
-    <ros_action_client name="place_action" action_name="/place_object" type="overarching_msgs/Place" />
+    <ros_action_client name="place_action" action_name="/PlaceComponet/place_object" type="overarching_msgs/Place" />
 
     <state id="idle">
         <ros_service_handle_request name="/PlaceObjectSkill/tick" target="wait_goal_response">

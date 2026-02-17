@@ -16,7 +16,7 @@ Compatibility wrapper:
 ### What it does
 
 The translator exposes an action server for:
-- Input action: `/place_object`
+- Input action: `/PlaceComponet/place_object`
 - Input type: `overarching_msgs/action/Place`
 
 When a goal is received, it forwards a new goal to pyrobosim:
@@ -47,7 +47,7 @@ The goal is also aborted if:
 
 ### ROS parameters
 
-- `input_action_name` (default: `/place_object`)
+- `input_action_name` (default: `/PlaceComponet/place_object`)
 - `output_action_name` (default: `/execute_action`)
 - `robot_state_topic` (default: `/robot/robot_state`)
 - `robot_id` (default: `robot`)
@@ -66,7 +66,7 @@ Example with custom parameters:
 
 ```bash
 ros2 run tutorial_sim translate_component --ros-args \
-  -p input_action_name:=/place_object \
+  -p input_action_name:=/PlaceComponet/place_object \
   -p output_action_name:=/execute_action \
   -p robot_id:=robot
 ```
@@ -76,7 +76,7 @@ ros2 run tutorial_sim translate_component --ros-args \
 Once `translate_component` is running, send a `Place` request to the new action endpoint:
 
 ```bash
-ros2 action send_goal /place_object overarching_msgs/action/Place "{}"
+ros2 action send_goal /PlaceComponet/place_object overarching_msgs/action/Place "{}"
 ```
 otherwise bypassing the bridger/translator:
 
@@ -89,7 +89,7 @@ Useful checks:
 
 ```bash
 ros2 action list
-ros2 action info /place_object
+ros2 action info /PlaceComponet/place_object
 ros2 action info /execute_action
 ```
 
