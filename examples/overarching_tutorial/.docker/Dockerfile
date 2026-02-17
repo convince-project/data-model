@@ -68,6 +68,7 @@ RUN source /opt/ros/jazzy/setup.bash && \
 # RUN chmod -R 0700 /tmp/runtime-root
 # ENV NO_AT_BRIDGE 1
 
+RUN apt install -y  qt6-scxml*
 # Set up the entrypoint.
 CMD /bin/bash
 COPY .docker/entrypoint.sh /entrypoint.sh

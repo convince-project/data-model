@@ -13,6 +13,8 @@
   <depend>behaviortree_ros2</depend>
   <depend>pyrobosim_msgs</depend>
   <depend>rclcpp</depend>
+  <depend>bt_interfaces_dummy</depend>
+  <depend>overarching_msgs</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

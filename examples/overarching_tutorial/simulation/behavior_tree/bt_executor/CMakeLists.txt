@@ -13,6 +13,8 @@ set(THIS_PACKAGE_DEPS
   behaviortree_ros2
   pyrobosim_msgs
   rclcpp
+  bt_interfaces_dummy
+  overarching_msgs
 )
 
 # for each dependency, find and include the package
