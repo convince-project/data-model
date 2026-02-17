@@ -12,20 +12,23 @@ docker build -t convince_tutorial -f .docker/Dockerfile .
 ## Run
 
 ```bash
-docker run -it --rm \
-  --name convince_tutorial \
-  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-  -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority \
-  -v ./tutorial_sim:/convince_ws/src/tutorial_sim \
-  -v ../ros_interfaces:/convince_ws/src/ros_interfaces \
-  -v ../roaml:/convince_ws/src/roaml \
-  -v ./behavior_tree:/convince_ws/src/behavior_tree \
-  -v ./generated_skill:/convince_ws/src/generated_skill \
-  -v ./.docker/build:/convince_ws/build \
-  -e DISPLAY \
-  -e QT_X11_NO_MITSHM=1 \
-  convince_tutorial \
-  bash
+docker run -it --rm\
+   --name convince_tutorial\
+   -v /tmp/.X11-unix:/tmp/.X11-unix:rw\
+   -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority\
+   -v ./tutorial_sim:/convince_ws/src/tutorial_sim\
+   -v ../ros_interfaces:/convince_ws/src/ros_interfaces\
+   -v ../roaml:/convince_ws/src/roaml\
+   -v ./behavior_tree:/convince_ws/src/behavior_tree\
+   -v ./generated_skill:/convince_ws/src/generated_skill\
+   -v ./bt_nodes:/convince_ws/src/bt_nodes\
+   -v ./.docker/build:/convince_ws/build\
+   -e DISPLAY\
+   -e QT_X11_NO_MITSHM=1\
+   ste93/overarching:test\
+   bash
+
+
 ```
 
 Inside the docker container, run
