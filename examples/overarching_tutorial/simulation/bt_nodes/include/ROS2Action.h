@@ -18,12 +18,17 @@
 #include <bt_interfaces_dummy/srv/tick_action.hpp>
 #include <bt_interfaces_dummy/srv/halt_action.hpp>
 #include <rclcpp/rclcpp.hpp>
-#include <behaviortree_cpp_v3/action_node.h>
-
+#include <behaviortree_cpp/action_node.h>
+// namespace BT 
+// {
+//   using NodeConfiguration = NodeConfig;
+//   using AsyncActionNode = ThreadedAction;
+//   using Optional = Expected;
+// }
 class ROS2Action :  public BT::ActionNodeBase
 {
 public:
-    ROS2Action (const std::string name, const BT::NodeConfiguration &config);
+    ROS2Action (const std::string& name, const BT::NodeConfig &config);
     int sendTickToSkill();
     void halt() override;
     BT::NodeStatus tick() override;
@@ -41,3 +46,4 @@ private:
     double m_average_time{0.0};
     std::string m_suffixMonitor;
 };
+

@@ -15,6 +15,7 @@ set(THIS_PACKAGE_DEPS
   rclcpp
   bt_interfaces_dummy
   overarching_msgs
+  bt_nodes
 )
 
 # for each dependency, find and include the package

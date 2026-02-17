@@ -13,16 +13,16 @@
 
 #include <ROS2Action.h>
 #define VERBOSE_LOGGING
-ROS2Action::ROS2Action(const std::string name, const BT::NodeConfiguration& config) :
+ROS2Action::ROS2Action(const std::string& name, const BT::NodeConfig& config) :
         ActionNodeBase(name, config)
 {
 
-    BT::Optional<std::string> is_monitored = BT::TreeNode::getInput<std::string>("isMonitored");
+    BT::Expected<std::string> is_monitored = BT::TreeNode::getInput<std::string>("isMonitored");
     if (is_monitored.value() == "true")
     {
         m_suffixMonitor = "_mon";
     }
-    BT::Optional<std::string> interface = BT::TreeNode::getInput<std::string>("interface");
+    BT::Expected<std::string> interface = BT::TreeNode::getInput<std::string>("interface");
     bool ok = init();
 
     if(!ok)
