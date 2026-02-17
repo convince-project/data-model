@@ -19,6 +19,8 @@ docker run -it --rm \
   -v ./tutorial_sim:/convince_ws/src/tutorial_sim \
   -v ../ros_interfaces:/convince_ws/src/ros_interfaces \
   -v ../roaml:/convince_ws/src/roaml \
+  -v ./behavior_tree:/convince_ws/src/behavior_tree \
+  -v ./generated_skill:/convince_ws/src/generated_skill \
   -v ./.docker/build:/convince_ws/build \
   -e DISPLAY \
   -e QT_X11_NO_MITSHM=1 \

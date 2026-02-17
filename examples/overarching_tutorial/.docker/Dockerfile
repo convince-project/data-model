@@ -37,10 +37,11 @@ COPY simulation/requirements.txt /convince_ws
 RUN pip3 install --break-system-packages -r requirements.txt
 COPY simulation/dependencies src/dependencies
 RUN git clone -b 4.3.3 https://github.com/sea-bass/pyrobosim.git src/pyrobosim
-COPY simulation/behavior_tree src/behavior_tree
-COPY roaml src/roaml
-COPY ros_interfaces src/ros_interfaces
-COPY behavior_tree src/behavior_tree
+# COPY simulation/behavior_tree src/behavior_tree
+# COPY roaml src/roaml
+# COPY ros_interfaces src/ros_interfaces
+# COPY simulation/generated_skill src/generated_skill
+
 # `bt_executor` depends on `behaviortree_ros2`, which is not released for Jazzy.
 # Bring it in as a source package so rosdep does not need a rosdep key for it.
 RUN git clone --depth 1 https://github.com/BehaviorTree/BehaviorTree.ROS2.git src/behaviortree_ros2
