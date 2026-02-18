@@ -18,7 +18,7 @@ ROS2Action::ROS2Action(const std::string& name, const BT::NodeConfig& config) :
 {
 
     BT::Expected<std::string> is_monitored = BT::TreeNode::getInput<std::string>("isMonitored");
-    if (is_monitored.value() == "true")
+    if (is_monitored && is_monitored.value() == "true")
     {
         m_suffixMonitor = "_mon";
     }
@@ -91,7 +91,9 @@ BT::NodeStatus ROS2Action::tick()
 BT::PortsList ROS2Action::providedPorts()
 {
     return { BT::InputPort<std::string>("interface"),
-             BT::InputPort<std::string>("isMonitored")  };
+             BT::InputPort<std::string>("isMonitored"),
+             BT::InputPort<std::string>("service_name_tick"),
+             BT::InputPort<std::string>("service_name_halt") };
 }
 
 void ROS2Action::halt()
@@ -128,8 +130,21 @@ bool ROS2Action::init()
     }
 
     m_node = rclcpp::Node::make_shared(ActionNodeBase::name()+ "ActionLeaf");
-    m_clientTick = m_node->create_client<bt_interfaces_dummy::srv::TickAction>(ActionNodeBase::name() + "Skill/tick" + m_suffixMonitor);
-    m_clientHalt = m_node->create_client<bt_interfaces_dummy::srv::HaltAction>(ActionNodeBase::name() + "Skill/halt" + m_suffixMonitor);
+
+    std::string tick_service = ActionNodeBase::name() + "Skill/tick" + m_suffixMonitor;
+    std::string halt_service = ActionNodeBase::name() + "Skill/halt" + m_suffixMonitor;
+
+    if (auto tick_input = BT::TreeNode::getInput<std::string>("service_name_tick"))
+    {
+        tick_service = tick_input.value();
+    }
+    if (auto halt_input = BT::TreeNode::getInput<std::string>("service_name_halt"))
+    {
+        halt_service = halt_input.value();
+    }
+
+    m_clientTick = m_node->create_client<bt_interfaces_dummy::srv::TickAction>(tick_service);
+    m_clientHalt = m_node->create_client<bt_interfaces_dummy::srv::HaltAction>(halt_service);
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"),"name -- " << ActionNodeBase::name() << " -- suffixmonitor " << m_suffixMonitor);
     
     return true;
