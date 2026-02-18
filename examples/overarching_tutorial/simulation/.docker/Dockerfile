@@ -26,9 +26,7 @@ RUN pip3 install --break-system-packages -r requirements.txt
 #     rosdep install --from-paths src -y --ignore-src
 # (pyrobosim)
 RUN git clone https://github.com/sea-bass/pyrobosim.git src/pyrobosim
-RUN cd src/pyrobosim
-RUN git checkout 96cff5da8e91082e955251ff0735f6b1338f5702
-RUN cd ../..
+RUN cd src/pyrobosim; git checkout 96cff5da8e91082e955251ff0735f6b1338f5702; cd ../..
 
 # # (smc_storm)
 # RUN curl -O -L https://github.com/convince-project/smc_storm/releases/download/0.0.6/smc_storm_executable.tar.gz && \
