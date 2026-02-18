@@ -93,8 +93,19 @@ For this part, we refer to the [main.xml file](main.xml).
 
 To be able to operate in this world, we need a simple BT Sequence, as the one described in [this BT](policy/bt_tree.xml).
 
-We can verify the property using SMC Storm (or SCAN), and see that it results in the porperty being always verified (Result = 1.0), meaning that the object always ends up in the desired location.
+We can verify the property using SMC Storm (or SCAN), and see that it results in the property being always verified (Result = 1.0), meaning that the object always ends up in the desired location.
 
 ### Part 2: the world with multiple locations
+
+For this part, we refer to the [main_locations.xml file](main_locations.xml).
+
+In this scenario, the world becomes more complex: the object now spawns each time in a different location. This means the robot can no longer rely on a simple sequence: it must visit multiple locations until it finds the object.
+
+To handle this, we developed a new BT policy described in [bt_tree_locations.xml](policy/bt_tree_locations.xml), which uses a `RetryUntilSuccessful` node that iterates through locations until the object is detected. The key to this approach is the introduction of a new BT Plugin called `GetNextLocation` (see [get_next_location.ascxml](bt_plugins/get_next_location.ascxml)).
+
+The GetNextLocation plugin maintains an internal counter and returns a different location each time it is called, cycling through: `table`, `fridge`, `bin`, and finally back to `start`. This allows the robot to systematically search each location in turn.
+
+Even with this increased complexity and non-determinism in object placement, the actions from the robot in the world succeed deterministically.
+For this reason, the result from verifying the property using SMC Storm (or SCAN) still holds with Result = 1.0, meaning that the object always ends up in the desired location regardless of where it initially spawns.
 
 ### Part 3: The world with multiple locations and failures
