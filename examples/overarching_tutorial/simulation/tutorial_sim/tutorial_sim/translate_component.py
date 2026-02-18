@@ -4,7 +4,7 @@
 Place translator node.
 
 This node bridges:
-- input action:  overarching_msgs/Place   (default topic: /PlaceComponet/place_object)
+- input action:  overarching_msgs/Place   (default topic: /PlaceComponet/Place)
 - output action: pyrobosim_msgs/ExecuteTaskAction (default topic: /execute_action)
 
 It receives a Place goal, resolves which object should be placed,
@@ -28,7 +28,7 @@ class PlaceTranslatorNode(Node):
         super().__init__("place_translator")
 
         # Input/output endpoints and behavior configuration.
-        self.declare_parameter("input_action_name", "/PlaceComponet/place_object")
+        self.declare_parameter("input_action_name", "/PlaceComponet/Place")
         self.declare_parameter("output_action_name", "/execute_action")
         self.declare_parameter("robot_state_topic", "/robot/robot_state")
         self.declare_parameter("robot_id", "robot")
@@ -99,7 +99,7 @@ class PlaceTranslatorNode(Node):
         Priority:
         1) object currently manipulated by robot (from RobotState)
         2) configured default_object parameter
-        3) empty string => request cannot be fulfilled
+        3) empty string => let downstream decide (e.g., place currently held object)
         """
         if (
             self._latest_robot_state is not None
@@ -118,13 +118,6 @@ class PlaceTranslatorNode(Node):
 
         # Determine which object should be placed.
         object_name = self._resolve_object_to_place()
-        if not object_name:
-            self.get_logger().error(
-                "Place request rejected: no object available. "
-                "Set default_object or publish RobotState with manipulated_object."
-            )
-            goal_handle.abort()
-            return Place.Result()
 
         # Ensure downstream action server is reachable.
         if not self._pyrobosim_client.wait_for_server(timeout_sec=self._wait_server_timeout_sec):
@@ -139,6 +132,12 @@ class PlaceTranslatorNode(Node):
         forward_goal.action.robot = self._robot_id
         forward_goal.action.type = "place"
         forward_goal.action.object = object_name
+
+        if not object_name:
+            self.get_logger().warn(
+                "No object resolved from RobotState/default_object; forwarding place request "
+                "with empty object to downstream action server."
+            )
 
         self.get_logger().info(
             f"Forwarding Place -> ExecuteTaskAction(type='place', robot='{self._robot_id}', object='{object_name}')"

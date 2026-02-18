@@ -12,7 +12,16 @@ docker build -t convince_tutorial -f .docker/Dockerfile .
 ## Run
 
 ```bash
- docker run -it --rm   --name convince_tutorial   -v /tmp/.X11-unix:/tmp/.X11-unix:rw   -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority   -v ./tutorial_sim:/convince_ws/src/tutorial_sim   -v ../ros_interfaces:/convince_ws/src/ros_interfaces   -v ../roaml:/convince_ws/src/roaml   -v ./behavior_tree:/convince_ws/src/behavior_tree   -v ./generated_skill:/convince_ws/src/generated_skill   -v ./.docker/build:/convince_ws/build  -v ./bt_nodes:/convince_ws/src/bt_nodes  -e DISPLAY   -e QT_X11_NO_MITSHM=1   convince_tutorial   bash
+ docker run -it --rm   --name convince_tutorial   -v /tmp/.X11-unix:/tmp/.X11-unix:rw   -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority   -v ./tutorial_sim:/convince_ws/src/tutorial_sim   -v ../ros_interfaces:/convince_ws/src/ros_interfaces   -v ../roaml:/convince_ws/src/roaml   -v ./behavior_tree:/convince_ws/src/behavior_tree   -v ./generated_skill:/convince_ws/src/generated_skill   -v ./bt_nodes:/convince_ws/src/bt_nodes   -v ./.docker/build:/convince_ws/build   -v ./.docker/install:/convince_ws/install   -v ./.docker/log:/convince_ws/log   -e DISPLAY   -e QT_X11_NO_MITSHM=1   convince_tutorial   bash
+```
+
+If you previously mounted only `build`, the colcon cache can become inconsistent across container restarts
+(for example missing `/convince_ws/install/.../ament_index/...` files for Python packages like `tutorial_sim`).
+If this happens, clear cache once before re-running:
+
+```bash
+rm -rf ./.docker/build ./.docker/install ./.docker/log
+mkdir -p ./.docker/build ./.docker/install ./.docker/log
 ```
 
 Inside the docker container, run
@@ -22,6 +31,12 @@ ros2 run tutorial_sim run
 ```
 
 In another shell (attach to the same running container) run:
+
+```bash
+ros2 run tutorial_sim translate_component
+```
+
+In a third shell (attach to the same running container) run:
 
 ```bash
 ros2 run bt_executor btcpp_executor --ros-args -p tree:=src/roaml/policy/bt_tree.xml

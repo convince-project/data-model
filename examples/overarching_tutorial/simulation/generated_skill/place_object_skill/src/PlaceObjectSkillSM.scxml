@@ -54,7 +54,7 @@
         </transition>
         <transition target="wait_result" event="PlaceComponet.Place.FeedbackReturn"/>
         <transition target="goal_done" event="PlaceComponet.Place.ResultResponse">
-            <assign location="m_result_ok" expr="true"/>
+            <assign location="m_result_ok" expr="_event.data.call_succeeded"/>
         </transition>
     </state>
     <state id="goal_done">

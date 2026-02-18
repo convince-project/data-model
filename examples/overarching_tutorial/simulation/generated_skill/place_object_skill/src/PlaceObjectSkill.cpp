@@ -241,8 +241,10 @@ void PlaceObjectSkill::send_goal(overarching_msgs::action::Place::Goal goal_msg)
 
 void PlaceObjectSkill::result_callback(const  rclcpp_action::ClientGoalHandle<overarching_msgs::action::Place>::WrappedResult & result)
 {
+  bool call_succeeded = false;
   switch (result.code) {
     case rclcpp_action::ResultCode::SUCCEEDED:
+      call_succeeded = true;
       break;
     case rclcpp_action::ResultCode::ABORTED:
       RCLCPP_ERROR(m_node->get_logger(), "Goal was aborted");
@@ -257,7 +259,7 @@ void PlaceObjectSkill::result_callback(const  rclcpp_action::ClientGoalHandle<ov
   //std::cout << "Result received: " << result.result->is_ok << std::endl;
   // RCLCPP_INFO(m_node->get_logger(), "Result received: %d ", result.result->is_ok);
   QVariantMap data;
-  // data.insert("is_ok", result.result->is_ok);
+  data.insert("call_succeeded", call_succeeded);
   m_stateMachine.submitEvent("PlaceComponet.Place.ResultResponse", data);
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "PlaceComponet.Place.ResultResponse");
 }
@@ -280,7 +282,7 @@ void PlaceObjectSkill::goal_response_callback(const rclcpp_action::ClientGoalHan
 
 void PlaceObjectSkill::feedback_callback(
     rclcpp_action::ClientGoalHandle<overarching_msgs::action::Place>::SharedPtr,
-  const std::shared_ptr<const overarching_msgs::action::Place::Feedback> feedback)
+  [[maybe_unused]] const std::shared_ptr<const overarching_msgs::action::Place::Feedback> feedback)
 {
   
 }
