@@ -17,6 +17,7 @@ docker run -it --rm\
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw\
     -v ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority\
     -v ./tutorial_sim:/convince_ws/src/tutorial_sim\
+    -v ./refine_plan_demo:/convince_ws/src/refine_plan_demo\
     -v ./.docker/build:/convince_ws/build\
     -e DISPLAY\
     -e QT_X11_NO_MITSHM=1\
