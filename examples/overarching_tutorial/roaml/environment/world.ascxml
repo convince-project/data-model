@@ -58,9 +58,9 @@
 
         <ros_action_handle_goal name="act_nav" target="handle_nav_request">
             <assign location="goal_id" expr="_action.goal_id" />
-            <if cond="_goal.location_id == 0">
+            <if cond="_goal.location_id == 'start'">
                 <assign location="req_loc" expr="location_start" />
-            <elseif cond="_goal.location_id == 1" />
+            <elseif cond="_goal.location_id == 'table'" />
                 <assign location="req_loc" expr="location_table" />
             <else/>
                 <assign location="req_loc.x" expr="-1000" /> <!-- Dummy x value, should never happen! -->
