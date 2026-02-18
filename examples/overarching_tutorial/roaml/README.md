@@ -109,3 +109,25 @@ Even with this increased complexity and non-determinism in object placement, the
 For this reason, the result from verifying the property using SMC Storm (or SCAN) still holds with Result = 1.0, meaning that the object always ends up in the desired location regardless of where it initially spawns.
 
 ### Part 3: The world with multiple locations and failures
+
+In this final part, we introduce the most challenging scenario: a world where the robot's actions can fail probabilistically. The environment model [world_multiple_locations_w_failures.ascxml](environment/world_multiple_locations_w_failures.ascxml) introduces failure modes for navigation (10% failure rate), object detection (20% failure rate), and object picking (20% failure rate). This reflects real-world conditions where sensors, actuators, and planning algorithms don't always succeed on the first attempt.
+
+#### Part 3.1: Unhandled failures
+
+We first examine what happens when we use the policy from Part 2 in this failure-prone environment. This configuration is captured in [main_locations_failures_unhandled.xml](main_locations_failures_unhandled.xml), which combines the [bt_tree_locations.xml](policy/bt_tree_locations.xml) policy with the probabilistic failure environment.
+
+Since the policy from Part 2 was designed for a deterministic world, it lacks proper failure handling mechanisms. The `RetryUntilSuccessful` node is configured with only 3 attempts to find the object across locations, and there are no retries for individual actions like navigation, detection, or picking.
+
+When we verify the property using SMC Storm (or SCAN) on this model, we observe that the property verification fails in most cases (Result 0.25), describing that the robot fails to complete its task 75% of the times.
+
+#### Part 3.2: Handling failures with retries
+
+To address the failures, we developed a more robust BT policy: [bt_tree_locations_handle_failures.xml](policy/bt_tree_locations_handle_failures.xml). This policy is used in the [main_locations_w_failures.xml](main_locations_w_failures.xml) model.
+
+The new policy introduces multiple layers of retry logic to handle probabilistic failures:
+- **Navigation retries**: Each `NavigateToLocation` action is wrapped in a `RetryUntilSuccessful` node with 4 attempts, handling the 10% navigation failure rate
+- **Detection retries**: The `DetectObject` action has 3 retry attempts to overcome the 20% detection failure rate
+- **Pick retries**: The `PickObject` action also gets 3 retry attempts to handle the 20% pick failure rate
+- **Location search loop**: The `Repeat` node with 3 cycles ensures the robot can iterate through multiple locations even if some attempts fail
+
+This layered retry strategy significantly improves the robot's resilience. When we verify the property using SMC Storm (or SCAN), we see that despite the probabilistic failures in the environment, the property holds with a much higher success rate (Result 0.98), demonstrating that proper failure handling in the BT policy enables the robot to reliably complete its task even in uncertain conditions.
