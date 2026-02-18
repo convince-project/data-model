@@ -11,7 +11,8 @@ RUN apt-get update && \
     libxi-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev \
     libnss3 libasound2t64 libxkbfile1 \
     python3-pip python3-tk python3-wrapt python3-inflection \
-    ros-jazzy-example-interfaces ros-jazzy-rqt-service-caller
+    ros-jazzy-example-interfaces ros-jazzy-rqt-service-caller \
+    tmux
 
 # Create a ROS 2 workspace.
 RUN mkdir -p /convince_ws/src/
