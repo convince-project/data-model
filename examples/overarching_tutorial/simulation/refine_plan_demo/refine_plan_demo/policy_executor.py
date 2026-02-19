@@ -297,7 +297,7 @@ class PolicyExecutor(Node):
             self.get_logger().error("Edge Navigation Action Failed")
             new_state = state
         else:
-            self.get_logger().error("Edge Navigation Action Successful")
+            self.get_logger().info("Edge Navigation Action Successful")
             new_state_dict = {}
             for sf in state._state_dict:  # Update location
                 new_state_dict[state._sf_dict[sf]] = (

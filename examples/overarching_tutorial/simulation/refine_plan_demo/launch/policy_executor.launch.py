@@ -16,7 +16,7 @@ import os
 def generate_launch_description():
 
     # Set sim time
-    set_sim_time = SetParameter(name="use_sim_time", value=True)
+    set_sim_time = SetParameter(name="use_sim_time", value=False)
 
     # All launch args
     db_connection_string = LaunchConfiguration("db_connection_string")

@@ -14,4 +14,4 @@ tmux select-window -t $SESSION:pyrobosim
 tmux send-keys "ros2 run tutorial_sim run --ros-args -p detect_succ_prob:=1.0" C-m
 
 tmux select-window -t $SESSION:policy-executor
-tmux send-keys "ros2 launch refine_plan_demo policy_executor.launch.py db_collection:=demo-$POLICY_MODE mode:=$POLICY_MODE db_connection_string:=$MONGO_CONNECTION_STRING" C-m
+tmux send-keys "ros2 launch refine_plan_demo policy_executor.launch.py db_collection:=demo-$POLICY_EXECUTOR_MODE mode:=$POLICY_EXECUTOR_MODE db_connection_string:=$MONGO_CONNECTION_STRING" C-m

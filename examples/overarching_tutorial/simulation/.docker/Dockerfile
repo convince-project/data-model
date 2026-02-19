@@ -30,6 +30,13 @@ RUN pip3 install --break-system-packages -r requirements.txt
 RUN git clone https://github.com/sea-bass/pyrobosim.git src/pyrobosim
 RUN cd src/pyrobosim; git checkout 96cff5da8e91082e955251ff0735f6b1338f5702; cd ../..
 
+# Install REFINE-PLAN
+RUN git clone https://github.com/convince-project/refine-plan.git src/refine-plan
+RUN cd src/refine-plan; git checkout dc28b5d150fea4b73f1049bdcbada28828d9ef3e
+RUN cd src/refine-plan; pip3 install --break-system-packages -r requirements.txt
+RUN cd src/refine-plan; pip3 install --break-system-packages .
+RUN rm -r src/refine-plan
+
 # # (smc_storm)
 # RUN curl -O -L https://github.com/convince-project/smc_storm/releases/download/0.0.6/smc_storm_executable.tar.gz && \
 #     tar -xzf smc_storm_executable.tar.gz && \
