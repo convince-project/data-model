@@ -225,7 +225,7 @@ class PolicyExecutor(Node):
         start = self.get_clock().now()
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.get_logger().error("Navigation Action Not Accepted")
+            self.get_logger().error("Detect Action Not Accepted")
             return None
 
         result = goal_handle.get_result_async()
@@ -234,6 +234,7 @@ class PolicyExecutor(Node):
 
         bread_found = result.result().result.execution_result.status == 0
         new_bread_status = "yes" if bread_found else "no"
+        self.get_logger().info(f"Bread found: {new_bread_status}")
 
         new_state_dict = {}
         unknown_vars = []
