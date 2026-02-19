@@ -157,6 +157,7 @@ class PolicyExecutor(Node):
             enabled_actions.add("detect")
 
         # We have a fully connected graph so add actions for each pair
+        # Note that the edges here are directed
         for next_loc in self._nav_locs:
             if next_loc != state["location"]:
                 enabled_actions.add(f"{loc}-{next_loc}")
@@ -205,7 +206,7 @@ class PolicyExecutor(Node):
             self.get_logger().info(f"Finished {doc["option"]} in {doc["duration"]} seconds")
 
     def _search_for_bread(self, state):
-        """Check if the wire is at a location.
+        """Check if the bread is at a location.
 
         Args:
             state: The current state
@@ -213,31 +214,40 @@ class PolicyExecutor(Node):
         Returns:
             The updated state
         """
-        # TODO: Change
-        wire_req = WireCheck.Request()
-        wire_req.node = state["location"]
+        detect_goal = ExecuteTaskAction.Goal()
+        detect_goal.action.robot = "robot"
+        detect_goal.action.type = "detect"
+        detect_goal.action.object = "bread"
+        self.get_logger().info(f"Trying to detect bread")
 
-        future = self._check_wire_client.call_async(wire_req)
-        start = self.get_clock().now()
+        future = self._pyrobosim_client.send_goal_async(detect_goal)
         rclpy.spin_until_future_complete(self, future)
-        end = self.get_clock().now()
-        result = future.result()
+        start = self.get_clock().now()
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().error("Navigation Action Not Accepted")
+            return None
 
-        new_wire_status = "yes" if result.found else "no"
+        result = goal_handle.get_result_async()
+        rclpy.spin_until_future_complete(self, result)
+        end = self.get_clock().now()
+
+        bread_found = result.result().result.execution_result.status == 0
+        new_bread_status = "yes" if bread_found else "no"
 
         new_state_dict = {}
         unknown_vars = []
         for sf in state._state_dict:
             new_state_dict[state._sf_dict[sf]] = (
-                new_wire_status
-                if sf == "wire_at_{}".format(state["location"])
+                new_bread_status
+                if sf == "bread_at_{}".format(state["location"])
                 else state._state_dict[sf]
             )
             if new_state_dict[state._sf_dict[sf]] == "unknown":
                 unknown_vars.append(state._sf_dict[sf])
 
         fill_val = None
-        if new_wire_status == "yes":  # We can fill in everything once a yes is found
+        if new_bread_status == "yes":  # We can fill in everything once a yes is found
             fill_val = "no"
         elif len(unknown_vars) == 1:  # The last unknown is yes if all else is no
             fill_val = "yes"
@@ -247,7 +257,7 @@ class PolicyExecutor(Node):
                 new_state_dict[sf] = fill_val
 
         new_state = State(new_state_dict)
-        self._log_action(state, new_state, "check_for_wire", start, end)
+        self._log_action(state, new_state, "detect", start, end)
         return new_state
 
     def _navigation(self, state, action):
@@ -260,38 +270,42 @@ class PolicyExecutor(Node):
         Returns:
             The updated state
         """
-        # TODO: Change
-        edge_goal = NavigateEdge.Goal()
-        edge_goal.edge_id = action
+        goal_loc = action.split("-")[-1]
+        nav_goal = ExecuteTaskAction.Goal()
+        nav_goal.action.robot = "robot"
+        nav_goal.action.type = "navigate"
+        nav_goal.action.target_location = goal_loc
+        self.get_logger().info(f"Trying to navigate to {goal_loc}")
 
-        future = self._edge_client.send_goal_async(edge_goal)
+        future = self._pyrobosim_client.send_goal_async(nav_goal)
         rclpy.spin_until_future_complete(self, future)
         start = self.get_clock().now()
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.get_logger().error("Edge Navigation Action Not Accepted")
+            self.get_logger().error("Navigation Action Not Accepted")
             return None
 
         result = goal_handle.get_result_async()
         rclpy.spin_until_future_complete(self, result)
         end = self.get_clock().now()
 
-        if result.result().status != GoalStatus.STATUS_SUCCEEDED:
+        # Nav may fail - we want to check the Execution result message
+        # End status 0 means success, anything else means failure
+        end_status = result.result().result.execution_result.status
+        if end_status != 0:
             self.get_logger().error("Edge Navigation Action Failed")
-            return None
+            new_state = state
         else:
-            new_loc = result.result().result.dest
+            self.get_logger().error("Edge Navigation Action Successful")
             new_state_dict = {}
-
             for sf in state._state_dict:  # Update location
                 new_state_dict[state._sf_dict[sf]] = (
-                    new_loc if sf == "location" else state._state_dict[sf]
+                    goal_loc if sf == "location" else state._state_dict[sf]
                 )
-
             new_state = State(new_state_dict)
-            self._log_action(state, new_state, action, start, end)
 
-            return new_state
+        self._log_action(state, new_state, action, start, end)
+        return new_state
 
     def execute_policy(self):
         """Execute the policy until a termination condition is satisfied."""
