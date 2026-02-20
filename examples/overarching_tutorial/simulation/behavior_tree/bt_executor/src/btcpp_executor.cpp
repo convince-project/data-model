@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <fstream>
+#include <memory>
 #include <sstream>
 
 // ROS includes
@@ -9,6 +10,9 @@
 
 // BTCPP includes
 #include <behaviortree_cpp/bt_factory.h>
+#include <behaviortree_cpp/controls/fallback_node.h>
+#include <behaviortree_cpp/controls/parallel_node.h>
+#include <behaviortree_cpp/controls/sequence_node.h>
 #include <behaviortree_cpp/loggers/bt_cout_logger.h>
 #include <behaviortree_cpp/loggers/groot2_publisher.h>
 #include <behaviortree_cpp/xml_parsing.h>
@@ -16,6 +20,7 @@
 // BTCPP nodes in this package
 #include "pyrobosim_btcpp/nodes/battery_nodes.hpp"
 #include "pyrobosim_btcpp/nodes/get_current_location_node.hpp"
+#include "pyrobosim_btcpp/nodes/get_next_location_node.hpp"
 #include "pyrobosim_btcpp/nodes/open_node.hpp"
 #include "pyrobosim_btcpp/nodes/close_node.hpp"
 #include "pyrobosim_btcpp/nodes/detect_object_node.hpp"
@@ -82,6 +87,7 @@ int main(int argc, char** argv)
   factory.registerNodeType<BT::IsBatteryLow>("IsBatteryLow", nh->get_logger());
   factory.registerNodeType<BT::IsBatteryFull>("IsBatteryFull", nh->get_logger());
   factory.registerNodeType<BT::GetCurrentLocation>("GetCurrentLocation", nh->get_logger());
+  factory.registerNodeType<BT::DecoratorGetNextLocation>("GetNextLocation", nh->get_logger());
   factory.registerNodeType<BT::CloseAction>("Close", params);
   factory.registerNodeType<BT::DetectObject>("DetectObject", params);
   factory.registerNodeType<BT::NavigateAction>("Navigate", params);
@@ -89,6 +95,27 @@ int main(int argc, char** argv)
   factory.registerNodeType<BT::PickObject>("PickObject", params);
   factory.registerNodeType<BT::PlaceObject>("PlaceObject", params);
   factory.registerNodeType<ROS2Action>("ROS2Action");
+  if(factory.manifests().count("Sequence") == 0)
+  {
+    factory.registerBuilder<BT::SequenceNode>(
+        "Sequence", [](const std::string& name, const BT::NodeConfig& config) {
+          return std::make_unique<BT::SequenceNode>(name, false, config);
+        });
+  }
+  if(factory.manifests().count("Fallback") == 0)
+  {
+    factory.registerBuilder<BT::FallbackNode>(
+        "Fallback", [](const std::string& name, const BT::NodeConfig&) {
+          return std::make_unique<BT::FallbackNode>(name, false);
+        });
+  }
+  if(factory.manifests().count("Parallel") == 0)
+  {
+    factory.registerBuilder<BT::ParallelNode>(
+        "Parallel", [](const std::string& name, const BT::NodeConfig& config) {
+          return std::make_unique<BT::ParallelNode>(name, config);
+        });
+  }
 
   // TO_WORKSHOP_USER: register here more Nodes, if you decided to implement your own
 
