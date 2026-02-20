@@ -17,7 +17,7 @@ from ament_index_python.packages import get_package_share_directory
 def create_ros_node():
     """Initializes ROS node"""
     rclpy.init()
-    node = WorldROSWrapper(state_pub_rate=0.1, dynamics_rate=0.01)
+    node = WorldROSWrapper(state_pub_rate=5.0, dynamics_rate=0.01)
     
     world_file = os.path.join(
         get_package_share_directory("tutorial_sim"),

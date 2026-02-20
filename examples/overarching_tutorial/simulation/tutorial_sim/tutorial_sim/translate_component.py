@@ -12,6 +12,8 @@ forwards a "place" task to pyrobosim, and maps the result back to Place.
 """
 
 import rclpy
+import re
+import time
 from rclpy.action import ActionClient, ActionServer, CancelResponse, GoalResponse
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.node import Node
@@ -33,6 +35,7 @@ class PlaceTranslatorNode(Node):
         self.declare_parameter("robot_state_topic", "/robot/robot_state")
         self.declare_parameter("robot_id", "robot")
         self.declare_parameter("default_object", "")
+        self.declare_parameter("wait_for_object_timeout_sec", 0.5)
         self.declare_parameter("wait_server_timeout_sec", 5.0)
 
         # Cache parameter values for faster usage in callbacks.
@@ -41,6 +44,9 @@ class PlaceTranslatorNode(Node):
         self._robot_state_topic = self.get_parameter("robot_state_topic").value
         self._robot_id = self.get_parameter("robot_id").value
         self._default_object = self.get_parameter("default_object").value
+        self._wait_for_object_timeout_sec = float(
+            self.get_parameter("wait_for_object_timeout_sec").value
+        )
         self._wait_server_timeout_sec = float(self.get_parameter("wait_server_timeout_sec").value)
 
         # Reentrant callback group allows overlapping callbacks if needed.
@@ -48,6 +54,7 @@ class PlaceTranslatorNode(Node):
 
         # Last robot state is used to infer which object is currently held.
         self._latest_robot_state = None
+        self._last_seen_manipulated_object = ""
 
         # Subscribe to robot state updates from pyrobosim.
         self._state_sub = self.create_subscription(
@@ -83,6 +90,8 @@ class PlaceTranslatorNode(Node):
     def _on_robot_state(self, msg: RobotState) -> None:
         """Store latest robot state for object resolution."""
         self._latest_robot_state = msg
+        if msg.manipulated_object:
+            self._last_seen_manipulated_object = msg.manipulated_object
 
     def _on_goal(self, _goal_request: Place.Goal) -> GoalResponse:
         """Accept all incoming Place goals."""
@@ -92,32 +101,75 @@ class PlaceTranslatorNode(Node):
         """Accept cancel requests from clients."""
         return CancelResponse.ACCEPT
 
-    def _resolve_object_to_place(self) -> str:
+    def _infer_object_type(self, object_name: str) -> str:
+        """Infer object type/category from object instance name (e.g. butter0 -> butter)."""
+        if not object_name:
+            return ""
+
+        inferred_type = re.sub(r"\d+$", "", object_name)
+        inferred_type = re.sub(r"[_-]+$", "", inferred_type)
+        return inferred_type or object_name
+
+    def _resolve_object_to_place(self) -> tuple[str, str]:
         """
-        Resolve the object name to place.
+        Resolve object name to place.
 
         Priority:
         1) object currently manipulated by robot (from RobotState)
         2) configured default_object parameter
-        3) empty string => let downstream decide (e.g., place currently held object)
+        3) last seen manipulated_object from RobotState
+        4) empty string => let downstream decide (e.g., place currently held object)
+
+        Returns:
+            tuple(object_name, source)
         """
-        if (
-            self._latest_robot_state is not None
-            and self._latest_robot_state.holding_object
-            and self._latest_robot_state.manipulated_object
-        ):
-            return self._latest_robot_state.manipulated_object
+        if self._latest_robot_state is not None and self._latest_robot_state.manipulated_object:
+            object_name = self._latest_robot_state.manipulated_object
+            return object_name, "robot_state"
 
         if self._default_object:
-            return self._default_object
+            object_name = self._default_object
+            return object_name, "default_object"
 
-        return ""
+        if self._last_seen_manipulated_object:
+            object_name = self._last_seen_manipulated_object
+            return object_name, "last_seen_robot_state"
+
+        return "", "none"
+
+    def _resolve_object_to_place_with_wait(self) -> tuple[str, str]:
+        """
+        Resolve object, optionally waiting a short time for RobotState updates.
+
+        This helps when Place is requested right after Pick and RobotState is still propagating.
+        """
+        object_name, object_source = self._resolve_object_to_place()
+        if object_name or self._wait_for_object_timeout_sec <= 0.0:
+            return object_name, object_source
+
+        deadline = time.monotonic() + self._wait_for_object_timeout_sec
+        self.get_logger().info(
+            "No object currently resolved; waiting briefly for RobotState update "
+            f"(timeout={self._wait_for_object_timeout_sec:.2f}s)."
+        )
+
+        while time.monotonic() < deadline:
+            time.sleep(0.05)
+            object_name, object_source = self._resolve_object_to_place()
+            if object_name:
+                self.get_logger().info(
+                    "Object resolved after wait: " f"'{object_name}' (source='{object_source}')."
+                )
+                return object_name, object_source
+
+        return "", "none"
 
     async def _execute_place(self, goal_handle) -> Place.Result:
         """Main translation flow for a Place goal."""
 
         # Determine which object should be placed.
-        object_name = self._resolve_object_to_place()
+        object_name, object_source = self._resolve_object_to_place_with_wait()
+        object_type = self._infer_object_type(object_name)
 
         # Ensure downstream action server is reachable.
         if not self._pyrobosim_client.wait_for_server(timeout_sec=self._wait_server_timeout_sec):
@@ -135,12 +187,17 @@ class PlaceTranslatorNode(Node):
 
         if not object_name:
             self.get_logger().warn(
-                "No object resolved from RobotState/default_object; forwarding place request "
-                "with empty object to downstream action server."
+                "Place resolve: no object found (robot_state/default/last_seen). "
+                "Forwarding with empty object."
+            )
+        else:
+            self.get_logger().info(
+                f"Resolved object '{object_name}' (type='{object_type}', source='{object_source}')."
             )
 
         self.get_logger().info(
-            f"Forwarding Place -> ExecuteTaskAction(type='place', robot='{self._robot_id}', object='{object_name}')"
+            "Forwarding Place -> ExecuteTaskAction("
+            f"type='place', robot='{self._robot_id}', object='{object_name}')"
         )
 
         # Send translated goal and wait for goal acceptance.

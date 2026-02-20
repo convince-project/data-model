@@ -42,6 +42,22 @@ In a third shell (attach to the same running container) run:
 ros2 run bt_executor btcpp_executor --ros-args -p tree:=src/roaml/policy/bt_tree.xml
 ```
 
+## Recent changes (translator + simulator)
+
+To make dynamic `Place` object resolution reliable during BT execution, two aligned updates were introduced:
+
+- `tutorial_sim run` now publishes `RobotState` at a higher rate (`state_pub_rate=5.0`) so object updates are visible in time.
+- `tutorial_sim translate_component` now resolves the object using:
+	1. current `RobotState.manipulated_object`,
+	2. `default_object` fallback,
+	3. last seen non-empty `manipulated_object`,
+	4. short wait window (`wait_for_object_timeout_sec`) before sending empty object.
+
+Expected translator logs in the successful case:
+
+- `Resolved object 'butter0' (type='butter', source='robot_state').`
+- `Forwarding Place -> ExecuteTaskAction(type='place', robot='robot', object='butter0')`
+
 ## Usage
 
 For example:

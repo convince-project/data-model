@@ -29,9 +29,31 @@ Forwarded fields are mapped as:
 - `action.object` <- resolved object to place
 
 Object resolution order:
-1. `RobotState.manipulated_object` (when `holding_object` is true)
+1. `RobotState.manipulated_object` (when available)
 2. `default_object` parameter
-3. If still empty, the request is forwarded with an empty object and downstream behavior decides the outcome
+3. Last seen non-empty `RobotState.manipulated_object`
+4. If still empty, the request is forwarded with an empty object and downstream behavior decides the outcome
+
+If no object is immediately available, the node waits briefly for `RobotState` updates
+before falling back to empty object forwarding (configurable timeout below).
+
+### Behavior difference vs previous version
+
+- Forwarded `action.object` remains the resolved object name/instance.
+- `run.py` now uses a higher `RobotState` publication rate to improve timing alignment with `Place` translation.
+- Additional logs now show resolved object name, inferred type, and source (`robot_state`, `default_object`, or `last_seen_robot_state`).
+- The translator waits up to `wait_for_object_timeout_sec` (default `0.5`) for dynamic updates before sending an empty object.
+
+### Why this change was needed
+
+During BT execution, the object to place is decided dynamically and may arrive slightly later on `/robot/robot_state`.
+With low state publication frequency, the translator could miss that update and forward `object=''`.
+
+This package now addresses it by combining:
+
+- higher simulator state publication rate in `tutorial_sim run`,
+- short wait window in the translator,
+- fallback to last seen non-empty `manipulated_object`.
 
 ### Result handling
 
@@ -51,6 +73,7 @@ The goal is aborted if:
 - `robot_state_topic` (default: `/robot/robot_state`)
 - `robot_id` (default: `robot`)
 - `default_object` (default: empty string)
+- `wait_for_object_timeout_sec` (default: `0.5`)
 - `wait_server_timeout_sec` (default: `5.0`)
 
 ### Run
@@ -61,6 +84,8 @@ After building and sourcing your workspace:
 ros2 run tutorial_sim translate_component
 ```
 
+For reliable dynamic object resolution in `translate_component`, run the simulator (`tutorial_sim run`) from this package version: it publishes `RobotState` at a higher rate (`state_pub_rate=5.0`), so `manipulated_object` updates are visible in time for `Place` translation.
+
 Example with custom parameters:
 
 ```bash
@@ -68,6 +93,23 @@ ros2 run tutorial_sim translate_component --ros-args \
   -p input_action_name:=/PlaceComponet/Place \
   -p output_action_name:=/execute_action \
   -p robot_id:=robot
+```
+
+To see which object is being placed, run the translator and check its logs when a `Place` goal arrives:
+
+```bash
+ros2 run tutorial_sim translate_component
+```
+
+You will see log lines like:
+- `Resolved object 'butter0' (type='butter', source='robot_state').`
+- `Forwarding Place -> ExecuteTaskAction(type='place', robot='robot', object='butter0')`
+
+If you want strict behavior (no wait), set:
+
+```bash
+ros2 run tutorial_sim translate_component --ros-args \
+  -p wait_for_object_timeout_sec:=0.0
 ```
 
 ### Send commands after startup
