@@ -1,5 +1,5 @@
 <root BTCPP_format="4">
-    <BehaviorTree ID="MainTree">
+    <BehaviorTree ID="OverarchingTutorialLocations">
         <Sequence name="main_seq">
             <SetBlackboard output_key="current_location" value="fridge"/>
             <Repeat name="detect_or_next" num_cycles="3">
