@@ -1,5 +1,5 @@
 # Goal
-int32 location_id
+string location_id
 ---
 # Result
 ---

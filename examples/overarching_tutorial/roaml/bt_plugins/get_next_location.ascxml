@@ -6,20 +6,24 @@
     model_src=""
     xmlns="http://www.w3.org/2005/07/scxml">
 
-    <bt_declare_port_out key="location" type="int32" />
+    <bt_declare_port_out key="location" type="string" />
 
     <datamodel>
-        <data id="tmp_loc" type="int32" expr="0" />
+        <data id="loc_id" type="int32" expr="0" />
     </datamodel>
 
     <state id="initial">
         <bt_tick target="initial">
-            <assign location="tmp_loc">
-                <expr>
-                    <bt_get_input key="location" />
-                </expr>
-            </assign>
-            <bt_set_output key="location" expr="tmp_loc + 1" />
+            <if cond="loc_id == 0">
+                <bt_set_output key="location" expr="'table'" />
+            <elseif cond="loc_id == 1" />
+                <bt_set_output key="location" expr="'fridge'" />
+            <elseif cond="loc_id == 2" />
+                <bt_set_output key="location" expr="'bin'" />
+            <else/>
+                <bt_set_output key="location" expr="'start'" />
+            </if>
+            <assign location="loc_id" expr="(loc_id + 1) % 4"/>
             <bt_return_status status="SUCCESS" />
         </bt_tick>
         <bt_halt target="initial">

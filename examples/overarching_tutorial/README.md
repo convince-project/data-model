@@ -1,15 +1,13 @@
 # CONVINCE - Overarching tutorial
 
-## Offline verification
+Within this folder, we are providing a tutorial to demonstrate the functionalities of the tools developed in the CONVINCE project.
 
-### Convert the RoAML model
+In particular, we provide an exemplary environment (defined using both RoAML and PyRoboSim), and custom ROS interfaces used in this environment.
 
-A model of the system, to be used for verification, can be found in the `roaml` folder.
+## Custom ROS interfaces
 
-The custom ROS interfaces used by this model can be found in the `ros_interfaces` folder:
-they need to be built and sourced before trying to compile the RoAML model with AS2FM.
-
-From this folder, run the following:
+Those interfaces are used in the RoAML model for the communication between the BT plugins and the environment's model.
+The are located in [ros_interfaces](ros_interfaces) and can be built using colcon:
 
 ```bash
 cd ros_interfaces
@@ -19,37 +17,12 @@ source install/setup.bash
 cd ..
 ```
 
-Once the ROS interfaces are compiled and sourced, we are ready to generate the JANI and the SCXML model:
+## Offline verification
 
-```bash
-cd roaml
-as2fm_roaml_to_jani main.xml --jani-out-file main.jani --generated-scxml-dir scxml
-```
+The model for offline verification is located in the [roaml folder](roaml).
 
-This will make a JANI model of the system, in the `main.jani` file, and a plain SCXML model, in the scxml folder.
+The instructions for generating a verifiable model using [AS2FM](https://github.com/convince-project/AS2FM) and verifying it using [SMC STORM](https://github.com/convince-project/smc_storm) and [SCAN](https://github.com/convince-project/scan) are provided in the [roaml folder's readme](roaml/README.md).
 
-### Verify the JANI model using SMC_STORM
+## Running the PyRoboSim simulation
 
-#### Run smc_storm
-smc_storm can be used to verify properties on the generated model.
-
-In the following line, we verify that, in the model, the snack object eventually reaches the table.
-
-```bash
-smc_storm --model main.jani --properties-names snack_at_table --disable-explored-states-caching --n-threads 10 --show-statistics --batch-size 5 --traces-folder smc_storm_traces
-```
-
-The human-readable version of the property in use is the following:
-```
-F((topic_object_loc_msg__ros_fields__x = 0) & ((topic_object_loc_msg__ros_fields__y = 0) & (topic_object_loc_msg__ros_fields__parent = 'world')))
-```
-
-#### Visualize what happens in PlotJuggler
-
-Any trace can be loaded using:
-
-```bash
-ros2 run plotjuggler plotjuggler -d smc_storm_traces/trace_<id>.csv
-```
-
-Then, topics can be plotted to see their evolution along the trace.
+The instructions for running the simulation in PyRoboSim can be found in the [simulation folder's readme](simulation/README.md).
