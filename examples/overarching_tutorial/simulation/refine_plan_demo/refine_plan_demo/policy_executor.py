@@ -20,6 +20,13 @@ from rclpy.node import Node
 import random
 import rclpy
 
+# Node to nodes we can directly reach from that node
+GRAPH = {"hall": ["dining_table", "fridge"],
+         "dining_table": ["hall", "side_table"],
+         "side_table": ["dining_table", "kitchen_table"],
+         "kitchen_table": ["side_table", "fridge"],
+         "fridge": ["kitchen_table", "hall"]}
+
 
 class PolicyExecutor(Node):
     """A node for behaviour execution in the CONVINCE demo environment.
@@ -156,11 +163,8 @@ class PolicyExecutor(Node):
         if loc in self._bread_locs and state["bread_at_{}".format(loc)] == "unknown":
             enabled_actions.add("detect")
 
-        # We have a fully connected graph so add actions for each pair
-        # Note that the edges here are directed
-        for next_loc in self._nav_locs:
-            if next_loc != state["location"]:
-                enabled_actions.add(f"{loc}-{next_loc}")
+        # Connect to locations in GRAPH
+        enabled_actions.update(GRAPH[state["location"]])
 
         return list(enabled_actions)
 
@@ -266,17 +270,16 @@ class PolicyExecutor(Node):
 
         Args:
             state: The current state
-            action: The current navigation action (<SRC>_<DST>)
+            action: The current navigation action (just the destination)
 
         Returns:
             The updated state
         """
-        goal_loc = action.split("-")[-1]
         nav_goal = ExecuteTaskAction.Goal()
         nav_goal.action.robot = "robot"
         nav_goal.action.type = "navigate"
-        nav_goal.action.target_location = goal_loc
-        self.get_logger().info(f"Trying to navigate to {goal_loc}")
+        nav_goal.action.target_location = action
+        self.get_logger().info(f"Trying to navigate to {action}")
 
         future = self._pyrobosim_client.send_goal_async(nav_goal)
         rclpy.spin_until_future_complete(self, future)
@@ -301,7 +304,7 @@ class PolicyExecutor(Node):
             new_state_dict = {}
             for sf in state._state_dict:  # Update location
                 new_state_dict[state._sf_dict[sf]] = (
-                    goal_loc if sf == "location" else state._state_dict[sf]
+                    action if sf == "location" else state._state_dict[sf]
                 )
             new_state = State(new_state_dict)
 
