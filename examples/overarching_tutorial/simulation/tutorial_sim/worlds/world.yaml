@@ -117,14 +117,14 @@ locations:
       category: table
       pose:
         position:
-          x: -2.75
+          x: -2.7
           y: 4.5
     - name: side_table
       parent: dining
       category: table
       pose:
         position:
-          x: -4.25
+          x: -4.3
           y: 4.5
     - name: kitchen_table
       parent: kitchen
@@ -151,4 +151,4 @@ objects:
   - category: bread
     parent:
       choices: [dining_table, fridge, kitchen_table, side_table]
-      probabilities: [0.5, 0.0, 0.4, 0.1]
+      probabilities: [0.5, 0.1, 0.1, 0.3]
