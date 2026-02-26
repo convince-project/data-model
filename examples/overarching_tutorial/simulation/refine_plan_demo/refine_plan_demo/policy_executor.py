@@ -164,7 +164,8 @@ class PolicyExecutor(Node):
             enabled_actions.add("detect")
 
         # Connect to locations in GRAPH
-        enabled_actions.update(GRAPH[state["location"]])
+        actions = [f"{state['location']}-{next_loc}" for next_loc in GRAPH[state["location"]]]
+        enabled_actions.update(actions)
 
         return list(enabled_actions)
 
@@ -275,11 +276,12 @@ class PolicyExecutor(Node):
         Returns:
             The updated state
         """
+        goal_loc = action.split("-")[-1]
         nav_goal = ExecuteTaskAction.Goal()
         nav_goal.action.robot = "robot"
         nav_goal.action.type = "navigate"
-        nav_goal.action.target_location = action
-        self.get_logger().info(f"Trying to navigate to {action}")
+        nav_goal.action.target_location = goal_loc
+        self.get_logger().info(f"Trying to navigate to {goal_loc}")
 
         future = self._pyrobosim_client.send_goal_async(nav_goal)
         rclpy.spin_until_future_complete(self, future)
@@ -304,7 +306,7 @@ class PolicyExecutor(Node):
             new_state_dict = {}
             for sf in state._state_dict:  # Update location
                 new_state_dict[state._sf_dict[sf]] = (
-                    action if sf == "location" else state._state_dict[sf]
+                    goal_loc if sf == "location" else state._state_dict[sf]
                 )
             new_state = State(new_state_dict)
 
