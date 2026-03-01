@@ -104,7 +104,7 @@ class PolicyExecutor(Node):
             self._goal_fn = self._data_collect_goal
         elif self._mode == "refined":
             self._refined_policy = Policy(
-                {}, policy_file="../params/demo_refined_policy.yaml"
+                {}, policy_file="../params/refined_policy.yaml"
             )
             self._policy_fn = self._refined_policy.get_action
             self._goal_fn = self._at_bread
@@ -164,7 +164,7 @@ class PolicyExecutor(Node):
             enabled_actions.add("detect")
 
         # Connect to locations in GRAPH
-        actions = [f"{state['location']}-{next_loc}" for next_loc in GRAPH[state["location"]]]
+        actions = [f"{state['location']}TO{next_loc}" for next_loc in GRAPH[state["location"]]]
         enabled_actions.update(actions)
 
         return list(enabled_actions)
@@ -276,7 +276,7 @@ class PolicyExecutor(Node):
         Returns:
             The updated state
         """
-        goal_loc = action.split("-")[-1]
+        goal_loc = action.split("TO")[-1]
         nav_goal = ExecuteTaskAction.Goal()
         nav_goal.action.robot = "robot"
         nav_goal.action.type = "navigate"
