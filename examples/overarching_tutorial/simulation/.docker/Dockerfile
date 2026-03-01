@@ -31,8 +31,7 @@ RUN git clone https://github.com/sea-bass/pyrobosim.git src/pyrobosim
 RUN cd src/pyrobosim; git checkout 96cff5da8e91082e955251ff0735f6b1338f5702; cd ../..
 
 # Install REFINE-PLAN
-RUN git clone https://github.com/convince-project/refine-plan.git src/refine-plan
-RUN cd src/refine-plan; git checkout dc28b5d150fea4b73f1049bdcbada28828d9ef3e
+RUN git clone -b overarching_demo https://github.com/convince-project/refine-plan.git src/refine-plan
 RUN cd src/refine-plan; pip3 install --break-system-packages -r requirements.txt
 RUN cd src/refine-plan; pip3 install --break-system-packages .
 RUN rm -r src/refine-plan

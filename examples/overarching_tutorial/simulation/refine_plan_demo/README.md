@@ -4,6 +4,7 @@ This demo shows the robot executing refined behaviours within the Pyrobosim simu
 The robot's goal is to search for a loaf of bread within the house. 
 The bread appears stochastically at either the side table, dining table, kitchen table, or fridge.
 Through REFINE-PLAN, the robot learns the distribution of where the bread may appear and navigates to it quickly.
+In this instance, the robot navigates anti-clockwise through the environment, starting from the hall.
 
 ## How to run the demo
 
@@ -44,5 +45,9 @@ From this, a tmux session will begin with two windows.
 The first window is for the simulation, and the second is for execution.
 The execution window provides insights into the robot's decision-making.
 Upon running `./run_demo.sh` the robot will begin moving automatically.
+
+## How was this behaviour generated?
+
+The script used to run REFINE-PLAN from simulated data for this problem can be found [here](https://github.com/convince-project/refine-plan/blob/main/bin/overarching_demo_planning.py).
 
 
