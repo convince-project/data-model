@@ -81,7 +81,52 @@ Afterwards, topics can be plotted to see their evolution along the trace.
 
 ### Verify the SCXML model using SCAN
 
-TODO
+Once we have a SCXML model of the system, we can use Scan to verify properties on it.
+
+In particular, for this model we developed the property `snack_at_start`, already present in the RoAML model, that reads as follows:
+
+```xml
+<property id="snack_at_start" pattern="existence">
+  <event>x == 0 && y == 0 && parent == 'world'</event>
+  <scope type="globally"/>
+</property>
+```
+
+and that checks that, eventually, the snack object reaches the table (in position `(0, 0)`).
+We can verify that the SCXML model compiled correctly and is accepted by Scan without errors with the following command:
+
+```bash
+scan [SCXML/MODEL/DIR/] validate
+```
+
+We can verify this property using Scan with the following command:
+
+```bash
+scan [SCXML/MODEL/DIR/] verify snack_at_start --duration 1000
+```
+
+(the argument `--duration 1000` informs Scan on how many time-steps the execution takes).
+
+Run `scan --help` (or just `scan`) to see the help message with the complete list of available options.
+
+#### Generate CSV traces
+
+In order to generate execution traces, e.g. 100, we can use the command:
+
+```bash
+scan [SCXML/MODEL/DIR/] trace snack_at_start --duration 1000 --traces 100
+```
+
+Generated traces will be individually written to disk as gz-compressed CSV files,
+and sorted into folders based on the satisfaction of the property.
+
+Traces can be opened with any CSV-compatible tool
+but are particularly meant to be examined as spreadsheets,
+so that plots and graphs can be generated from the included data.
+Opening a trace will show the sequence of system messages exchanges,
+including their data payload,
+and the current state of the open ports (the state variables defining the properties, so `x`, `y` and `parent` in this case),
+from which the execution can be reconstructed.
 
 ## The tutorial
 
