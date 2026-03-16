@@ -1,0 +1,23 @@
+[  1%] Built target bt_interfaces_dummy__rosidl_generator_type_description
+[  1%] Built target ament_cmake_python_symlink_bt_interfaces_dummy
+[  2%] Built target bt_interfaces_dummy__cpp
+[ 26%] Built target bt_interfaces_dummy__rosidl_generator_c
+[ 35%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_c
+[ 53%] Built target bt_interfaces_dummy__rosidl_typesupport_c
+[ 54%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_c
+[ 64%] Built target bt_interfaces_dummy__rosidl_typesupport_cpp
+[ 73%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_cpp
+[ 83%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp
+[ 83%] Built target bt_interfaces_dummy
+[ 84%] Built target bt_interfaces_dummy__py
+[ 92%] Built target bt_interfaces_dummy__rosidl_generator_py
+[ 95%] Built target bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c
+[ 97%] Built target bt_interfaces_dummy_s__rosidl_typesupport_c
+[100%] Built target bt_interfaces_dummy_s__rosidl_typesupport_introspection_c
+running egg_info
+writing bt_interfaces_dummy.egg-info/PKG-INFO
+writing dependency_links to bt_interfaces_dummy.egg-info/dependency_links.txt
+writing top-level names to bt_interfaces_dummy.egg-info/top_level.txt
+reading manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'
+writing manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_bt_interfaces_dummy_egg

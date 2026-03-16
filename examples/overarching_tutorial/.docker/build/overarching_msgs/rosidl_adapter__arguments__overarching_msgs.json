@@ -1,0 +1,10 @@
+{
+  "package_name": "overarching_msgs",
+  "non_idl_tuples": [
+    "/convince_ws/src/ros_interfaces/src/overarching_msgs:msg/Location.msg",
+    "/convince_ws/src/ros_interfaces/src/overarching_msgs:action/Navigate.action",
+    "/convince_ws/src/ros_interfaces/src/overarching_msgs:action/Pick.action",
+    "/convince_ws/src/ros_interfaces/src/overarching_msgs:action/Place.action",
+    "/convince_ws/src/ros_interfaces/src/overarching_msgs:action/Detect.action"
+  ]
+}

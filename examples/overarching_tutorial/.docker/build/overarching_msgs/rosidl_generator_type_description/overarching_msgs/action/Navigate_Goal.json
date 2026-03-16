@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "overarching_msgs/action/Navigate_Goal",
+      "fields": [
+        {
+          "name": "location_id",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "overarching_msgs/action/Navigate_Goal",
+      "hash_string": "RIHS01_5027c807046f2812b539d9f6288301e7a088bc7405d898ff0085aff178912b08"
+    }
+  ]
+}

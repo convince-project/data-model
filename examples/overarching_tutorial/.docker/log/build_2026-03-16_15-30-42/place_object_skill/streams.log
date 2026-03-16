@@ -1,0 +1,81 @@
+[0.016s] Invoking command in '/convince_ws/build/place_object_skill': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/generated_skill/place_object_skill -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/place_object_skill
+[0.020s] Not searching for unused variables given on the command line.
+[0.057s] -- The C compiler identification is GNU 13.3.0
+[0.098s] -- The CXX compiler identification is GNU 13.3.0
+[0.109s] -- Detecting C compiler ABI info
+[0.165s] -- Detecting C compiler ABI info - done
+[0.173s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.173s] -- Detecting C compile features
+[0.173s] -- Detecting C compile features - done
+[0.179s] -- Detecting CXX compiler ABI info
+[0.241s] -- Detecting CXX compiler ABI info - done
+[0.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.246s] -- Detecting CXX compile features
+[0.246s] -- Detecting CXX compile features - done
+[0.248s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.348s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.394s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.412s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.432s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.440s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.458s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.501s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.502s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.547s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.556s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.571s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.614s] -- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.640s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.648s] -- Found bt_interfaces_dummy: 0.0.0 (/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake)
+[0.657s] -- Found overarching_msgs: 0.0.0 (/convince_ws/install/overarching_msgs/share/overarching_msgs/cmake)
+[0.689s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.746s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.747s] -- Found Threads: TRUE  
+[0.749s] -- Performing Test HAVE_STDATOMIC
+[0.827s] -- Performing Test HAVE_STDATOMIC - Success
+[0.828s] -- Found WrapAtomic: TRUE  
+[0.849s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.850s] -- Found WrapOpenGL: TRUE  
+[0.884s] -- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "1.6.0", minimum required is "0.5.0") 
+[0.909s] -- Found WrapVulkanHeaders: /usr/include  
+[0.921s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.984s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.984s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/convince_ws/src/generated_skill/place_object_skill/include>
+[0.984s] -- Configured cppcheck exclude dirs and/or files: 
+[0.984s] -- Added test 'lint_cmake' to check CMake code style
+[0.984s] -- Added test 'uncrustify' to check C / C++ code style
+[0.984s] -- Configured uncrustify additional arguments: 
+[0.985s] -- Added test 'xmllint' to check XML markup files
+[0.985s] -- Configuring done (1.0s)
+[0.995s] -- Generating done (0.0s)
+[0.997s] -- Build files have been written to: /convince_ws/build/place_object_skill
+[1.003s] Invoked command in '/convince_ws/build/place_object_skill' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/generated_skill/place_object_skill -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/place_object_skill
+[1.004s] Invoking command in '/convince_ws/build/place_object_skill': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/place_object_skill -- -j20 -l20
+[1.033s] [ 20%] [34m[1mGenerating PlaceObjectSkillSM.cpp, PlaceObjectSkillSM.h[0m
+[1.062s] [ 40%] [32mBuilding CXX object CMakeFiles/place_object_skill.dir/src/PlaceObjectSkill.cpp.o[0m
+[1.063s] [ 80%] [32mBuilding CXX object CMakeFiles/place_object_skill.dir/PlaceObjectSkillSM.cpp.o[0m
+[1.063s] [ 80%] [32mBuilding CXX object CMakeFiles/place_object_skill.dir/src/main.cpp.o[0m
+[4.345s] [100%] [32m[1mLinking CXX executable place_object_skill[0m
+[4.519s] [100%] Built target place_object_skill
+[4.527s] Invoked command in '/convince_ws/build/place_object_skill' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/place_object_skill -- -j20 -l20
+[4.527s] Invoking command in '/convince_ws/build/place_object_skill': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/place_object_skill
+[4.531s] -- Install configuration: ""
+[4.531s] -- Execute custom install script
+[4.531s] -- Symlinking: /convince_ws/install/place_object_skill/lib/place_object_skill/place_object_skill
+[4.536s] -- Symlinking: /convince_ws/install/place_object_skill/share/ament_index/resource_index/package_run_dependencies/place_object_skill
+[4.542s] -- Symlinking: /convince_ws/install/place_object_skill/share/ament_index/resource_index/parent_prefix_path/place_object_skill
+[4.547s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/environment/ament_prefix_path.sh
+[4.553s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/environment/ament_prefix_path.dsv
+[4.558s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/environment/path.sh
+[4.563s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/environment/path.dsv
+[4.570s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.bash
+[4.575s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.sh
+[4.581s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.zsh
+[4.587s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.dsv
+[4.593s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/package.dsv
+[4.600s] -- Symlinking: /convince_ws/install/place_object_skill/share/ament_index/resource_index/packages/place_object_skill
+[4.605s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/cmake/place_object_skillConfig.cmake
+[4.610s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/cmake/place_object_skillConfig-version.cmake
+[4.615s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/package.xml
+[4.622s] Invoked command in '/convince_ws/build/place_object_skill' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/place_object_skill

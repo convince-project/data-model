@@ -1,0 +1,71 @@
+[0.016s] Invoking command in '/convince_ws/build/bt_nodes': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/bt_nodes -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_nodes
+[0.021s] Not searching for unused variables given on the command line.
+[0.052s] -- The C compiler identification is GNU 13.3.0
+[0.095s] -- The CXX compiler identification is GNU 13.3.0
+[0.106s] -- Detecting C compiler ABI info
+[0.159s] -- Detecting C compiler ABI info - done
+[0.167s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.167s] -- Detecting C compile features
+[0.167s] -- Detecting C compile features - done
+[0.173s] -- Detecting CXX compiler ABI info
+[0.242s] -- Detecting CXX compiler ABI info - done
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.249s] -- Detecting CXX compile features - done
+[0.250s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.339s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.381s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.424s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.431s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.492s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.493s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.539s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.550s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.566s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.615s] -- Found behaviortree_cpp: 4.8.3 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+[0.616s] -- Found bt_interfaces_dummy: 0.0.0 (/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake)
+[0.627s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.689s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.689s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/convince_ws/src/bt_nodes/include>
+[0.689s] -- Configured cppcheck exclude dirs and/or files: 
+[0.689s] -- Added test 'lint_cmake' to check CMake code style
+[0.690s] -- Added test 'uncrustify' to check C / C++ code style
+[0.690s] -- Configured uncrustify additional arguments: 
+[0.691s] -- Added test 'xmllint' to check XML markup files
+[0.692s] -- Configuring done (0.7s)
+[0.699s] -- Generating done (0.0s)
+[0.701s] -- Build files have been written to: /convince_ws/build/bt_nodes
+[0.705s] Invoked command in '/convince_ws/build/bt_nodes' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/bt_nodes -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_nodes
+[0.706s] Invoking command in '/convince_ws/build/bt_nodes': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/bt_nodes -- -j20 -l20
+[0.739s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_nodes.dir/src/ROS2Action.cpp.o[0m
+[3.624s] [100%] [32m[1mLinking CXX static library libbt_nodes.a[0m
+[3.661s] [100%] Built target bt_nodes
+[3.670s] Invoked command in '/convince_ws/build/bt_nodes' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/bt_nodes -- -j20 -l20
+[3.670s] Invoking command in '/convince_ws/build/bt_nodes': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/bt_nodes
+[3.675s] -- Install configuration: ""
+[3.675s] -- Execute custom install script
+[3.675s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/library_path.sh
+[3.681s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/library_path.dsv
+[3.687s] -- Symlinking: /convince_ws/install/bt_nodes/include/ROS2Action.h
+[3.694s] -- Symlinking: /convince_ws/install/bt_nodes/share/ament_index/resource_index/package_run_dependencies/bt_nodes
+[3.700s] -- Symlinking: /convince_ws/install/bt_nodes/share/ament_index/resource_index/parent_prefix_path/bt_nodes
+[3.707s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/ament_prefix_path.sh
+[3.712s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/ament_prefix_path.dsv
+[3.717s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/path.sh
+[3.722s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/environment/path.dsv
+[3.727s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.bash
+[3.732s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.sh
+[3.739s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.zsh
+[3.745s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.dsv
+[3.750s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/package.dsv
+[3.755s] -- Symlinking: /convince_ws/install/bt_nodes/share/ament_index/resource_index/packages/bt_nodes
+[3.760s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/ament_cmake_export_targets-extras.cmake
+[3.765s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesConfig.cmake
+[3.771s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesConfig-version.cmake
+[3.776s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/package.xml
+[3.782s] -- Installing: /convince_ws/install/bt_nodes/lib/libbt_nodes.a
+[3.783s] -- Installing: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport.cmake
+[3.783s] -- Installing: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport-noconfig.cmake
+[3.784s] Invoked command in '/convince_ws/build/bt_nodes' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/bt_nodes

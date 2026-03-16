@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7e8101176f52f9d3a413.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "btcpp_ros2_samples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bool_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bool_client-12a8907759c4dddae8b8.json",
+					"name" : "bool_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bool_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bool_server-c0a4e59e19b68e7895f0.json",
+					"name" : "bool_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "btcpp_ros2_samples_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-btcpp_ros2_samples_uninstall-a2dd72ed585f9f10631f.json",
+					"name" : "btcpp_ros2_samples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sample_bt_executor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sample_bt_executor-1fe39712bd7d31a99cb2.json",
+					"name" : "sample_bt_executor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sleep_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sleep_client-c66562c34ba34eeac162.json",
+					"name" : "sleep_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sleep_client_dyn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sleep_client_dyn-5eb76bd0f618be492b78.json",
+					"name" : "sleep_client_dyn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sleep_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sleep_plugin-a91f6caee3bc19a48c04.json",
+					"name" : "sleep_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sleep_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sleep_server-a4f8ca873bf3798bb850.json",
+					"name" : "sleep_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subscriber_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subscriber_test-21c9f9227d7f6b9b5495.json",
+					"name" : "subscriber_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9b8641e61ec3c1770ab9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/convince_ws/build/btcpp_ros2_samples",
+		"source" : "/convince_ws/src/behaviortree_ros2/btcpp_ros2_samples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

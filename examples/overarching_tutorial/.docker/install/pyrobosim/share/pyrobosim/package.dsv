@@ -1,0 +1,6 @@
+source;share/pyrobosim/hook/pythonpath.ps1
+source;share/pyrobosim/hook/pythonpath.dsv
+source;share/pyrobosim/hook/pythonpath.sh
+source;../../build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.ps1
+source;../../build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.dsv
+source;../../build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.sh

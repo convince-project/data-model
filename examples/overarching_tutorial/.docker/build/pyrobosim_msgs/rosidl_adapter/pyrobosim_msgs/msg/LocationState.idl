@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pyrobosim_msgs/msg/LocationState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module pyrobosim_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Location state definition message")
+    struct LocationState {
+      @verbatim (language="comment", text=
+        "Fixed data")
+      string name;
+
+      string category;
+
+      sequence<string> spawns;
+
+      @verbatim (language="comment", text=
+        "Dynamic data")
+      string parent;
+
+      geometry_msgs::msg::Pose pose;
+
+      boolean is_open;
+
+      boolean is_locked;
+    };
+  };
+};

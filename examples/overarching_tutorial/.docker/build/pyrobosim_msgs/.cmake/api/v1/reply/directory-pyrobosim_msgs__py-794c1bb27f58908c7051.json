@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pyrobosim_msgs__py",
+		"source" : "/convince_ws/build/pyrobosim_msgs/pyrobosim_msgs__py"
+	}
+}

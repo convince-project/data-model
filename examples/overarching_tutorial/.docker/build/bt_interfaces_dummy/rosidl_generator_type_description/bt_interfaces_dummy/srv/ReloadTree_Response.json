@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "bt_interfaces_dummy/srv/ReloadTree_Response",
+      "fields": [
+        {
+          "name": "is_ok",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "error_msg",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "bt_interfaces_dummy/srv/ReloadTree_Response",
+      "hash_string": "RIHS01_b5cbabba0af562f61d40f348f4b937d7b2fe82c80e2983075c55919daa9a09df"
+    }
+  ]
+}

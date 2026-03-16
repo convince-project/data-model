@@ -1,0 +1,23 @@
+[0.017s] Invoking command in '/convince_ws/build/place_object_skill': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/place_object_skill -- -j20 -l20
+[0.059s] [100%] Built target place_object_skill
+[0.065s] Invoked command in '/convince_ws/build/place_object_skill' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/place_object_skill -- -j20 -l20
+[0.065s] Invoking command in '/convince_ws/build/place_object_skill': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/place_object_skill
+[0.070s] -- Install configuration: ""
+[0.070s] -- Execute custom install script
+[0.070s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/lib/place_object_skill/place_object_skill
+[0.070s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/ament_index/resource_index/package_run_dependencies/place_object_skill
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/ament_index/resource_index/parent_prefix_path/place_object_skill
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/environment/ament_prefix_path.sh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/environment/ament_prefix_path.dsv
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/environment/path.sh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/environment/path.dsv
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.bash
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.sh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.zsh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/local_setup.dsv
+[0.071s] -- Symlinking: /convince_ws/install/place_object_skill/share/place_object_skill/package.dsv
+[0.076s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/ament_index/resource_index/packages/place_object_skill
+[0.076s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/cmake/place_object_skillConfig.cmake
+[0.076s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/cmake/place_object_skillConfig-version.cmake
+[0.076s] -- Up-to-date symlink: /convince_ws/install/place_object_skill/share/place_object_skill/package.xml
+[0.077s] Invoked command in '/convince_ws/build/place_object_skill' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/overarching_msgs:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/overarching_msgs/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/place_object_skill

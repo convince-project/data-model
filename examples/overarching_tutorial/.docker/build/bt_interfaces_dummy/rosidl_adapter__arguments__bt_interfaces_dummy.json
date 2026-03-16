@@ -1,0 +1,11 @@
+{
+  "package_name": "bt_interfaces_dummy",
+  "non_idl_tuples": [
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:srv/TickAction.srv",
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:msg/ActionResponse.msg",
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:msg/ConditionResponse.msg",
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:srv/HaltAction.srv",
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:srv/TickCondition.srv",
+    "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy:srv/ReloadTree.srv"
+  ]
+}

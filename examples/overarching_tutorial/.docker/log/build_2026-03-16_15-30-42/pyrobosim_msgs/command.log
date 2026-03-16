@@ -1,0 +1,4 @@
+Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/pyrobosim_msgs -- -j20 -l20
+Invoked command in '/convince_ws/build/pyrobosim_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/pyrobosim_msgs -- -j20 -l20
+Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/pyrobosim_msgs
+Invoked command in '/convince_ws/build/pyrobosim_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/pyrobosim_msgs

@@ -1,0 +1,1 @@
+/convince_ws/src/pyrobosim/pyrobosim_msgs/msg/GoalPredicate.msg

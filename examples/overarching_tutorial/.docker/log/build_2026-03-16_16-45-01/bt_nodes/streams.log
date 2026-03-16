@@ -1,0 +1,29 @@
+[0.018s] Invoking command in '/convince_ws/build/bt_nodes': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/bt_nodes -- -j20 -l20
+[0.058s] [100%] Built target bt_nodes
+[0.065s] Invoked command in '/convince_ws/build/bt_nodes' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/bt_nodes -- -j20 -l20
+[0.066s] Invoking command in '/convince_ws/build/bt_nodes': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/bt_nodes
+[0.069s] -- Install configuration: ""
+[0.070s] -- Execute custom install script
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/library_path.sh
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/library_path.dsv
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/include/ROS2Action.h
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/ament_index/resource_index/package_run_dependencies/bt_nodes
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/ament_index/resource_index/parent_prefix_path/bt_nodes
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/ament_prefix_path.sh
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/ament_prefix_path.dsv
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/path.sh
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/environment/path.dsv
+[0.070s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.bash
+[0.071s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.sh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.zsh
+[0.071s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/local_setup.dsv
+[0.071s] -- Symlinking: /convince_ws/install/bt_nodes/share/bt_nodes/package.dsv
+[0.078s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/ament_index/resource_index/packages/bt_nodes
+[0.078s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/ament_cmake_export_targets-extras.cmake
+[0.078s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesConfig.cmake
+[0.078s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesConfig-version.cmake
+[0.078s] -- Up-to-date symlink: /convince_ws/install/bt_nodes/share/bt_nodes/package.xml
+[0.078s] -- Up-to-date: /convince_ws/install/bt_nodes/lib/libbt_nodes.a
+[0.078s] -- Up-to-date: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport.cmake
+[0.078s] -- Up-to-date: /convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport-noconfig.cmake
+[0.089s] Invoked command in '/convince_ws/build/bt_nodes' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/bt_nodes

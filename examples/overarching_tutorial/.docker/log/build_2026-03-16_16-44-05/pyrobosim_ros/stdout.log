@@ -1,0 +1,45 @@
+Built target ament_cmake_python_symlink_pyrobosim_ros
+running egg_info
+writing pyrobosim_ros.egg-info/PKG-INFO
+writing dependency_links to pyrobosim_ros.egg-info/dependency_links.txt
+writing top-level names to pyrobosim_ros.egg-info/top_level.txt
+reading manifest file 'pyrobosim_ros.egg-info/SOURCES.txt'
+writing manifest file 'pyrobosim_ros.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_pyrobosim_ros_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo_commands.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo_pddl_world.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo_pddl_planner.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo_pddl_goal_publisher.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/pyrobosim_ros/demo_velocity_publisher.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/pythonpath.sh
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/pythonpath.dsv
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros-4.3.3-py3.12.egg-info/PKG-INFO
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros-4.3.3-py3.12.egg-info/SOURCES.txt
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros-4.3.3-py3.12.egg-info/dependency_links.txt
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros-4.3.3-py3.12.egg-info/top_level.txt
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros/__init__.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros/ros_conversions.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros/ros_interface.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/launch/demo.launch.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/launch/demo_commands.launch.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/launch/demo_commands_multirobot.launch.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/launch/demo_pddl.launch.py
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/ament_index/resource_index/package_run_dependencies/pyrobosim_ros
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/ament_index/resource_index/parent_prefix_path/pyrobosim_ros
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/path.sh
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/environment/path.dsv
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/local_setup.bash
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/local_setup.sh
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/local_setup.zsh
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/local_setup.dsv
+-- Symlinking: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.dsv
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/ament_index/resource_index/packages/pyrobosim_ros
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/cmake/pyrobosim_rosConfig.cmake
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/cmake/pyrobosim_rosConfig-version.cmake
+-- Up-to-date symlink: /convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.xml
+Listing '/convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages/pyrobosim_ros'...

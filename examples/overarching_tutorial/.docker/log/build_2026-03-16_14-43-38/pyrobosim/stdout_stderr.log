@@ -1,0 +1,14 @@
+running develop
+running egg_info
+creating pyrobosim.egg-info
+writing pyrobosim.egg-info/PKG-INFO
+writing dependency_links to pyrobosim.egg-info/dependency_links.txt
+writing requirements to pyrobosim.egg-info/requires.txt
+writing top-level names to pyrobosim.egg-info/top_level.txt
+writing manifest file 'pyrobosim.egg-info/SOURCES.txt'
+reading manifest file 'pyrobosim.egg-info/SOURCES.txt'
+writing manifest file 'pyrobosim.egg-info/SOURCES.txt'
+running build_ext
+Creating /convince_ws/install/pyrobosim/lib/python3.12/site-packages/pyrobosim.egg-link (link to .)
+
+Installed /convince_ws/build/pyrobosim

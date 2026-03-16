@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "bt_interfaces_dummy__py",
+		"source" : "/convince_ws/build/bt_interfaces_dummy/bt_interfaces_dummy__py"
+	}
+}

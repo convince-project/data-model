@@ -1,0 +1,1178 @@
+[0.053s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--continue-on-error', '--mixin', 'compile-commands']
+[0.053s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=True, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=['compile-commands'], verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73486014f230>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73486014f020>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73486014f020>>, mixin_verb=('build',))
+[0.072s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.072s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.072s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.073s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.073s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/convince_ws'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(BehaviorTree.CPP) by extension 'ros'
+[0.090s] DEBUG:colcon.colcon_core.package_identification:Package 'BehaviorTree.CPP' with type 'ros.ament_cmake' and name 'behaviortree_cpp_v3'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'ignore_ament_install'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['colcon_pkg']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'colcon_pkg'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['colcon_meta']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'colcon_meta'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['ros']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'ros'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['cmake', 'python']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'cmake'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'python'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extensions ['python_setup_py']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_tree) by extension 'python_setup_py'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'ignore'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'ignore_ament_install'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['colcon_pkg']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'colcon_pkg'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['colcon_meta']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'colcon_meta'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['ros']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'ros'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['cmake', 'python']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'cmake'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'python'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extensions ['python_setup_py']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2) by extension 'python_setup_py'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extension 'ignore'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extension 'ignore_ament_install'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extensions ['colcon_pkg']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extension 'colcon_pkg'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extensions ['colcon_meta']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extension 'colcon_meta'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extensions ['ros']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/behaviortree_ros2) by extension 'ros'
+[0.091s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behaviortree_ros2/behaviortree_ros2' with type 'ros.ament_cmake' and name 'behaviortree_ros2'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extension 'ignore'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extension 'ignore_ament_install'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extensions ['colcon_pkg']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extension 'colcon_pkg'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extensions ['colcon_meta']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extension 'colcon_meta'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extensions ['ros']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_interfaces) by extension 'ros'
+[0.092s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behaviortree_ros2/btcpp_ros2_interfaces' with type 'ros.ament_cmake' and name 'btcpp_ros2_interfaces'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extensions ['ignore', 'ignore_ament_install']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extension 'ignore'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extension 'ignore_ament_install'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extensions ['colcon_pkg']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extension 'colcon_pkg'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extensions ['colcon_meta']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extension 'colcon_meta'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extensions ['ros']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviortree_ros2/btcpp_ros2_samples) by extension 'ros'
+[0.092s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behaviortree_ros2/btcpp_ros2_samples' with type 'ros.ament_cmake' and name 'btcpp_ros2_samples'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'ignore'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'ignore_ament_install'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['colcon_pkg']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'colcon_pkg'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['colcon_meta']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'colcon_meta'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['ros']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'ros'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['cmake', 'python']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'cmake'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'python'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extensions ['python_setup_py']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_nodes) by extension 'python_setup_py'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['ignore', 'ignore_ament_install']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'ignore'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'ignore_ament_install'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['colcon_pkg']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'colcon_pkg'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['colcon_meta']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'colcon_meta'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['ros']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'ros'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['cmake', 'python']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'cmake'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'python'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extensions ['python_setup_py']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies) by extension 'python_setup_py'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'ignore'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'ignore_ament_install'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['colcon_pkg']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'colcon_pkg'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['colcon_meta']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'colcon_meta'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['ros']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'ros'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['cmake', 'python']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'cmake'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'python'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extensions ['python_setup_py']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/dependencies/BehaviorTree.ROS2) by extension 'python_setup_py'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['ignore', 'ignore_ament_install']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'ignore'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'ignore_ament_install'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['colcon_pkg']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'colcon_pkg'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['colcon_meta']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'colcon_meta'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['ros']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'ros'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['cmake', 'python']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'cmake'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'python'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extensions ['python_setup_py']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/generated_skill) by extension 'python_setup_py'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['ignore', 'ignore_ament_install']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'ignore'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'ignore_ament_install'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['colcon_pkg']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'colcon_pkg'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['colcon_meta']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'colcon_meta'
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['ros']
+[0.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'ros'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['cmake', 'python']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'cmake'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'python'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extensions ['python_setup_py']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim) by extension 'python_setup_py'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'ignore'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'ignore_ament_install'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['colcon_pkg']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'colcon_pkg'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['colcon_meta']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'colcon_meta'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['ros']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'ros'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['cmake', 'python']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'cmake'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'python'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extensions ['python_setup_py']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docker) by extension 'python_setup_py'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'ignore'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'ignore_ament_install'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['colcon_pkg']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'colcon_pkg'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['colcon_meta']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'colcon_meta'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['ros']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'ros'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['cmake', 'python']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'cmake'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'python'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extensions ['python_setup_py']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs) by extension 'python_setup_py'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['ignore', 'ignore_ament_install']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'ignore'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'ignore_ament_install'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['colcon_pkg']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'colcon_pkg'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['colcon_meta']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'colcon_meta'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['ros']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'ros'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['cmake', 'python']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'cmake'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'python'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extensions ['python_setup_py']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source) by extension 'python_setup_py'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['ignore', 'ignore_ament_install']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'ignore_ament_install'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['colcon_pkg']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'colcon_pkg'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['colcon_meta']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'colcon_meta'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['ros']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'ros'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['cmake', 'python']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'cmake'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'python'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extensions ['python_setup_py']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates) by extension 'python_setup_py'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'ignore_ament_install'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['colcon_pkg']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'colcon_pkg'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['colcon_meta']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'colcon_meta'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['ros']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'ros'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['cmake', 'python']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'cmake'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'python'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extensions ['python_setup_py']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/_templates/autosummary) by extension 'python_setup_py'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'ignore_ament_install'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['colcon_pkg']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'colcon_pkg'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['colcon_meta']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'colcon_meta'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['ros']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'ros'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['cmake', 'python']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'cmake'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'python'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extensions ['python_setup_py']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/media) by extension 'python_setup_py'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'ignore_ament_install'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['colcon_pkg']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'colcon_pkg'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['colcon_meta']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'colcon_meta'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['ros']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'ros'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['cmake', 'python']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'cmake'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'python'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extensions ['python_setup_py']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/usage) by extension 'python_setup_py'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['ignore', 'ignore_ament_install']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'ignore'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'ignore_ament_install'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['colcon_pkg']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'colcon_pkg'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['colcon_meta']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'colcon_meta'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['ros']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'ros'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['cmake', 'python']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'cmake'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'python'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extensions ['python_setup_py']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/docs/source/yaml) by extension 'python_setup_py'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['ignore', 'ignore_ament_install']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'ignore'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'ignore_ament_install'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['colcon_pkg']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'colcon_pkg'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['colcon_meta']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'colcon_meta'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['ros']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'ros'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['cmake', 'python']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'cmake'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'python'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extensions ['python_setup_py']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim) by extension 'python_setup_py'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pyrobosim/pyrobosim' with type 'python' and name 'pyrobosim'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_msgs) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pyrobosim/pyrobosim_msgs' with type 'ros.ament_cmake' and name 'pyrobosim_msgs'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/pyrobosim_ros) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pyrobosim/pyrobosim_ros' with type 'ros.ament_cmake' and name 'pyrobosim_ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/setup) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyrobosim/test) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/bt_plugins) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/data_types) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/environment) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/policy) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/properties) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/roaml/skills) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/bt_interfaces_dummy) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_interfaces/src/bt_interfaces_dummy' with type 'ros.ament_cmake' and name 'bt_interfaces_dummy'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_interfaces/src/overarching_msgs) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_interfaces/src/overarching_msgs' with type 'ros.ament_cmake' and name 'overarching_msgs'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_sim) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tutorial_sim' with type 'ros.ament_python' and name 'tutorial_sim'
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_target' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_clean_first' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'cmake_force_configure' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'ament_cmake_args' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp_v3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.201s] DEBUG:colcon.colcon_core.verb:Building package 'behaviortree_cpp_v3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/behaviortree_cpp_v3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/behaviortree_cpp_v3', 'merge_install': False, 'path': '/convince_ws/BehaviorTree.CPP', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'bt_interfaces_dummy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'bt_interfaces_dummy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/bt_interfaces_dummy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/bt_interfaces_dummy', 'merge_install': False, 'path': '/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/btcpp_ros2_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/btcpp_ros2_interfaces', 'merge_install': False, 'path': '/convince_ws/src/behaviortree_ros2/btcpp_ros2_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'overarching_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'overarching_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/overarching_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/overarching_msgs', 'merge_install': False, 'path': '/convince_ws/src/ros_interfaces/src/overarching_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'pyrobosim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/pyrobosim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/pyrobosim', 'merge_install': False, 'path': '/convince_ws/src/pyrobosim/pyrobosim', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'pyrobosim_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/pyrobosim_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/pyrobosim_msgs', 'merge_install': False, 'path': '/convince_ws/src/pyrobosim/pyrobosim_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.203s] DEBUG:colcon.colcon_core.verb:Building package 'behaviortree_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/behaviortree_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/behaviortree_ros2', 'merge_install': False, 'path': '/convince_ws/src/behaviortree_ros2/behaviortree_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_target' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'pyrobosim_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.203s] DEBUG:colcon.colcon_core.verb:Building package 'pyrobosim_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/pyrobosim_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/pyrobosim_ros', 'merge_install': False, 'path': '/convince_ws/src/pyrobosim/pyrobosim_ros', 'symlink_install': True, 'test_result_base': None}
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_first' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_force_configure' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'ament_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.203s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_samples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/btcpp_ros2_samples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/btcpp_ros2_samples', 'merge_install': False, 'path': '/convince_ws/src/behaviortree_ros2/btcpp_ros2_samples', 'symlink_install': True, 'test_result_base': None}
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli']'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_target' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.203s] Level 5:colcon.colcon_core.verb:set package 'tutorial_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.203s] DEBUG:colcon.colcon_core.verb:Building package 'tutorial_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/convince_ws/build/tutorial_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/convince_ws/install/tutorial_sim', 'merge_install': False, 'path': '/convince_ws/src/tutorial_sim', 'symlink_install': True, 'test_result_base': None}
+[0.203s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.204s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.204s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/behaviortree_ros2/btcpp_ros2_interfaces' with build type 'ament_cmake'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/behaviortree_ros2/btcpp_ros2_interfaces'
+[0.205s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/pyrobosim/pyrobosim_msgs' with build type 'ament_cmake'
+[0.207s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/pyrobosim/pyrobosim_msgs'
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/ros_interfaces/src/overarching_msgs' with build type 'ament_cmake'
+[0.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/ros_interfaces/src/overarching_msgs'
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.210s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/BehaviorTree.CPP' with build type 'ament_cmake'
+[0.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/BehaviorTree.CPP'
+[0.210s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.211s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy' with build type 'ament_cmake'
+[0.211s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy'
+[0.211s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.211s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.212s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/convince_ws/src/pyrobosim/pyrobosim'
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/behaviortree_ros2/btcpp_ros2_interfaces -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/btcpp_ros2_interfaces
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/pyrobosim/pyrobosim_msgs -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/pyrobosim_msgs
+[0.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/overarching_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/ros_interfaces/src/overarching_msgs -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/overarching_msgs
+[0.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_cpp_v3': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/BehaviorTree.CPP -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/behaviortree_cpp_v3
+[0.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/ros_interfaces/src/bt_interfaces_dummy -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_interfaces_dummy
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_cpp_v3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/BehaviorTree.CPP -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/behaviortree_cpp_v3
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_cpp_v3': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/behaviortree_cpp_v3 -- -j20 -l20
+[0.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim': PYTHONPATH=/convince_ws/build/pyrobosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/convince_ws/install/pyrobosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /convince_ws/build/pyrobosim/build --no-deps
+[0.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_cpp_v3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/behaviortree_cpp_v3 -- -j20 -l20
+[0.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_cpp_v3': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/behaviortree_cpp_v3
+[0.669s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_cpp_v3)
+[0.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_cpp_v3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/behaviortree_cpp_v3
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3' for CMake module files
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3' for CMake config files
+[0.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'cmake_prefix_path')
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.ps1'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.dsv'
+[0.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.sh'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib'
+[0.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'ld_library_path_lib')
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.ps1'
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.dsv'
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.sh'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/bin'
+[0.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'path')
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.dsv'
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.sh'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib/pkgconfig/behaviortree_cpp_v3.pc'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib/python3.12/site-packages'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/bin'
+[0.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'pythonscriptspath')
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.ps1'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.sh'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.ps1'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.sh'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.bash'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.zsh'
+[0.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/behaviortree_cpp_v3/share/colcon-core/packages/behaviortree_cpp_v3)
+[0.683s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_cpp_v3)
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3' for CMake module files
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3' for CMake config files
+[0.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'cmake_prefix_path')
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.ps1'
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.dsv'
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/cmake_prefix_path.sh'
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib'
+[0.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'ld_library_path_lib')
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.ps1'
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.dsv'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/ld_library_path_lib.sh'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/bin'
+[0.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'path')
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.ps1'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.dsv'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/path.sh'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib/pkgconfig/behaviortree_cpp_v3.pc'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/lib/python3.12/site-packages'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_cpp_v3/bin'
+[0.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp_v3', 'pythonscriptspath')
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.ps1'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.dsv'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/hook/pythonscriptspath.sh'
+[0.687s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.sh'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.bash'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.zsh'
+[0.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/behaviortree_cpp_v3/share/colcon-core/packages/behaviortree_cpp_v3)
+[0.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim', 'pythonpath_develop')
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.ps1'
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim' returned '0': PYTHONPATH=/convince_ws/build/pyrobosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/convince_ws/install/pyrobosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /convince_ws/build/pyrobosim/build --no-deps
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.dsv'
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/build/pyrobosim/share/pyrobosim/hook/pythonpath_develop.sh'
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim' for CMake module files
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim' for CMake config files
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim/lib'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim/bin'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim/lib/pkgconfig/pyrobosim.pc'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim/lib/python3.12/site-packages'
+[0.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim', 'pythonpath')
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim/share/pyrobosim/hook/pythonpath.ps1'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim/share/pyrobosim/hook/pythonpath.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim/share/pyrobosim/hook/pythonpath.sh'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim/bin'
+[0.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyrobosim)
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim/share/pyrobosim/package.ps1'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/pyrobosim/share/pyrobosim/package.dsv'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim/share/pyrobosim/package.sh'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim/share/pyrobosim/package.bash'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim/share/pyrobosim/package.zsh'
+[0.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/pyrobosim/share/colcon-core/packages/pyrobosim)
+[0.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/behaviortree_ros2/btcpp_ros2_interfaces -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/btcpp_ros2_interfaces
+[0.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/btcpp_ros2_interfaces -- -j20 -l20
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/btcpp_ros2_interfaces -- -j20 -l20
+[1.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/btcpp_ros2_interfaces
+[1.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces' for CMake module files
+[1.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/btcpp_ros2_interfaces
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces' for CMake config files
+[1.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib'
+[1.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/bin'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages'
+[1.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'pythonpath')
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.dsv'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.sh'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/bin'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[1.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[1.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces' for CMake module files
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces' for CMake config files
+[1.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib'
+[1.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/bin'
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages'
+[1.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'pythonpath')
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.ps1'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.dsv'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.sh'
+[1.252s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_interfaces/bin'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[1.253s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[1.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/behaviortree_ros2/behaviortree_ros2' with build type 'ament_cmake'
+[1.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/behaviortree_ros2/behaviortree_ros2'
+[1.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/pyrobosim/pyrobosim_msgs -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/pyrobosim_msgs
+[1.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/pyrobosim_msgs -- -j20 -l20
+[1.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_ros2': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behaviortree_ros2/behaviortree_ros2 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/behaviortree_ros2
+[1.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/pyrobosim_msgs -- -j20 -l20
+[1.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/pyrobosim_msgs
+[1.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyrobosim_msgs)
+[1.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/pyrobosim_msgs
+[1.532s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs' for CMake module files
+[1.532s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs' for CMake config files
+[1.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'cmake_prefix_path')
+[1.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.ps1'
+[1.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.dsv'
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.sh'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib'
+[1.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'ld_library_path_lib')
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.ps1'
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.dsv'
+[1.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.sh'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/bin'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib/pkgconfig/pyrobosim_msgs.pc'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages'
+[1.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'pythonpath')
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.ps1'
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.dsv'
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.sh'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/bin'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.ps1'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.sh'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.bash'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.zsh'
+[1.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/pyrobosim_msgs/share/colcon-core/packages/pyrobosim_msgs)
+[1.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyrobosim_msgs)
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs' for CMake module files
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs' for CMake config files
+[1.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'cmake_prefix_path')
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.ps1'
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.dsv'
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/cmake_prefix_path.sh'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib'
+[1.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'ld_library_path_lib')
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.ps1'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.dsv'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/ld_library_path_lib.sh'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/bin'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib/pkgconfig/pyrobosim_msgs.pc'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages'
+[1.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_msgs', 'pythonpath')
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.ps1'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.dsv'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/hook/pythonpath.sh'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_msgs/bin'
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.ps1'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.dsv'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.sh'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.bash'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/package.zsh'
+[1.541s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/pyrobosim_msgs/share/colcon-core/packages/pyrobosim_msgs)
+[1.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/pyrobosim/pyrobosim_ros' with build type 'ament_cmake'
+[1.542s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/pyrobosim/pyrobosim_ros'
+[1.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_ros': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/pyrobosim/pyrobosim_ros -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/pyrobosim_ros
+[1.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_ros2' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behaviortree_ros2/behaviortree_ros2 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/behaviortree_ros2
+[1.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_ros2': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/behaviortree_ros2 -- -j20 -l20
+[1.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_ros2' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/behaviortree_ros2 -- -j20 -l20
+[1.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/behaviortree_ros2': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/behaviortree_ros2
+[1.804s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_ros2)
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2' for CMake module files
+[1.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/behaviortree_ros2' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/behaviortree_ros2
+[1.805s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2' for CMake config files
+[1.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_ros2', 'cmake_prefix_path')
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.ps1'
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.dsv'
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.sh'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/bin'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib/pkgconfig/behaviortree_ros2.pc'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib/python3.12/site-packages'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/bin'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.ps1'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.dsv'
+[1.807s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.sh'
+[1.807s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.bash'
+[1.807s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.zsh'
+[1.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/behaviortree_ros2/share/colcon-core/packages/behaviortree_ros2)
+[1.807s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_ros2)
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2' for CMake module files
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2' for CMake config files
+[1.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_ros2', 'cmake_prefix_path')
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.ps1'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.dsv'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.sh'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/bin'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib/pkgconfig/behaviortree_ros2.pc'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/lib/python3.12/site-packages'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/behaviortree_ros2/bin'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.ps1'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.dsv'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.sh'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.bash'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/package.zsh'
+[1.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/behaviortree_ros2/share/colcon-core/packages/behaviortree_ros2)
+[1.810s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/convince_ws/src/behaviortree_ros2/btcpp_ros2_samples' with build type 'ament_cmake'
+[1.810s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/convince_ws/src/behaviortree_ros2/btcpp_ros2_samples'
+[1.810s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.810s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behaviortree_ros2/btcpp_ros2_samples -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/btcpp_ros2_samples
+[2.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/ros_interfaces/src/bt_interfaces_dummy -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_interfaces_dummy
+[2.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/bt_interfaces_dummy -- -j20 -l20
+[2.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/overarching_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /convince_ws/src/ros_interfaces/src/overarching_msgs -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/overarching_msgs
+[2.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/overarching_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/overarching_msgs -- -j20 -l20
+[2.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behaviortree_ros2/btcpp_ros2_samples -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/btcpp_ros2_samples
+[2.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/btcpp_ros2_samples -- -j20 -l20
+[2.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/btcpp_ros2_samples -- -j20 -l20
+[2.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/btcpp_ros2_samples
+[2.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_samples)
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples' for CMake module files
+[2.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/btcpp_ros2_samples
+[2.408s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples' for CMake config files
+[2.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_samples', 'cmake_prefix_path')
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.ps1'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.dsv'
+[2.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.sh'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/bin'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib/pkgconfig/btcpp_ros2_samples.pc'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib/python3.12/site-packages'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/bin'
+[2.410s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.ps1'
+[2.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv'
+[2.411s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.sh'
+[2.411s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.bash'
+[2.411s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.zsh'
+[2.411s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/btcpp_ros2_samples/share/colcon-core/packages/btcpp_ros2_samples)
+[2.412s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_samples)
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples' for CMake module files
+[2.413s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples' for CMake config files
+[2.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_samples', 'cmake_prefix_path')
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.ps1'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.dsv'
+[2.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.sh'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/bin'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib/pkgconfig/btcpp_ros2_samples.pc'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/lib/python3.12/site-packages'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/btcpp_ros2_samples/bin'
+[2.414s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.ps1'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.sh'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.bash'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.zsh'
+[2.415s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/btcpp_ros2_samples/share/colcon-core/packages/btcpp_ros2_samples)
+[2.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_ros' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/pyrobosim/pyrobosim_ros -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/pyrobosim_ros
+[2.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_ros': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/pyrobosim_ros -- -j20 -l20
+[3.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_ros' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /convince_ws/build/pyrobosim_ros -- -j20 -l20
+[3.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/pyrobosim_ros': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/pyrobosim_ros
+[3.242s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyrobosim_ros)
+[3.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/pyrobosim_ros' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_msgs:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /convince_ws/build/pyrobosim_ros
+[3.243s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros' for CMake module files
+[3.243s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros' for CMake config files
+[3.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_ros', 'cmake_prefix_path')
+[3.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.ps1'
+[3.244s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.dsv'
+[3.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.sh'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/bin'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib/pkgconfig/pyrobosim_ros.pc'
+[3.246s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages'
+[3.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_ros', 'pythonpath')
+[3.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.ps1'
+[3.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.dsv'
+[3.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.sh'
+[3.247s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/bin'
+[3.247s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.ps1'
+[3.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.dsv'
+[3.248s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.sh'
+[3.249s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.bash'
+[3.249s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.zsh'
+[3.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/pyrobosim_ros/share/colcon-core/packages/pyrobosim_ros)
+[3.250s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyrobosim_ros)
+[3.250s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros' for CMake module files
+[3.251s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros' for CMake config files
+[3.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_ros', 'cmake_prefix_path')
+[3.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.ps1'
+[3.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.dsv'
+[3.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/cmake_prefix_path.sh'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/bin'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib/pkgconfig/pyrobosim_ros.pc'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages'
+[3.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyrobosim_ros', 'pythonpath')
+[3.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.ps1'
+[3.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.dsv'
+[3.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/hook/pythonpath.sh'
+[3.255s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/pyrobosim_ros/bin'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.ps1'
+[3.256s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.dsv'
+[3.257s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.sh'
+[3.257s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.bash'
+[3.258s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/pyrobosim_ros/share/pyrobosim_ros/package.zsh'
+[3.258s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/pyrobosim_ros/share/colcon-core/packages/pyrobosim_ros)
+[5.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/bt_interfaces_dummy -- -j20 -l20
+[5.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/bt_interfaces_dummy': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/bt_interfaces_dummy
+[6.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bt_interfaces_dummy)
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy' for CMake module files
+[6.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/bt_interfaces_dummy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/bt_interfaces_dummy
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy' for CMake config files
+[6.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'cmake_prefix_path')
+[6.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.ps1'
+[6.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.dsv'
+[6.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.sh'
+[6.143s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib'
+[6.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'ld_library_path_lib')
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.ps1'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.dsv'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.sh'
+[6.144s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/bin'
+[6.144s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib/pkgconfig/bt_interfaces_dummy.pc'
+[6.144s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages'
+[6.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'pythonpath')
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.ps1'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.dsv'
+[6.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.sh'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/bin'
+[6.145s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.ps1'
+[6.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.dsv'
+[6.145s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.sh'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.bash'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.zsh'
+[6.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/bt_interfaces_dummy/share/colcon-core/packages/bt_interfaces_dummy)
+[6.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bt_interfaces_dummy)
+[6.146s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy' for CMake module files
+[6.146s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy' for CMake config files
+[6.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'cmake_prefix_path')
+[6.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.ps1'
+[6.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.dsv'
+[6.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/cmake_prefix_path.sh'
+[6.148s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib'
+[6.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'ld_library_path_lib')
+[6.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.ps1'
+[6.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.dsv'
+[6.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/ld_library_path_lib.sh'
+[6.148s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/bin'
+[6.148s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib/pkgconfig/bt_interfaces_dummy.pc'
+[6.148s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages'
+[6.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('bt_interfaces_dummy', 'pythonpath')
+[6.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.ps1'
+[6.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.dsv'
+[6.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/hook/pythonpath.sh'
+[6.149s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/bt_interfaces_dummy/bin'
+[6.149s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.ps1'
+[6.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.dsv'
+[6.150s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.sh'
+[6.150s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.bash'
+[6.150s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/package.zsh'
+[6.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/bt_interfaces_dummy/share/colcon-core/packages/bt_interfaces_dummy)
+[6.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/overarching_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/overarching_msgs -- -j20 -l20
+[6.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/overarching_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/overarching_msgs
+[7.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(overarching_msgs)
+[7.546s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs' for CMake module files
+[7.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/overarching_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /convince_ws/build/overarching_msgs
+[7.546s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs' for CMake config files
+[7.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'cmake_prefix_path')
+[7.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.ps1'
+[7.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.dsv'
+[7.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.sh'
+[7.548s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib'
+[7.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'ld_library_path_lib')
+[7.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.ps1'
+[7.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.dsv'
+[7.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.sh'
+[7.548s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/bin'
+[7.548s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib/pkgconfig/overarching_msgs.pc'
+[7.548s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib/python3.12/site-packages'
+[7.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'pythonpath')
+[7.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.ps1'
+[7.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.dsv'
+[7.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.sh'
+[7.549s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/bin'
+[7.549s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.ps1'
+[7.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.dsv'
+[7.550s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.sh'
+[7.550s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.bash'
+[7.550s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.zsh'
+[7.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/overarching_msgs/share/colcon-core/packages/overarching_msgs)
+[7.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(overarching_msgs)
+[7.551s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs' for CMake module files
+[7.551s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs' for CMake config files
+[7.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'cmake_prefix_path')
+[7.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.ps1'
+[7.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.dsv'
+[7.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/cmake_prefix_path.sh'
+[7.552s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib'
+[7.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'ld_library_path_lib')
+[7.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.ps1'
+[7.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.dsv'
+[7.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/ld_library_path_lib.sh'
+[7.552s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/bin'
+[7.552s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib/pkgconfig/overarching_msgs.pc'
+[7.552s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/lib/python3.12/site-packages'
+[7.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('overarching_msgs', 'pythonpath')
+[7.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.ps1'
+[7.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.dsv'
+[7.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/overarching_msgs/share/overarching_msgs/hook/pythonpath.sh'
+[7.553s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/overarching_msgs/bin'
+[7.553s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.ps1'
+[7.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.dsv'
+[7.554s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.sh'
+[7.554s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.bash'
+[7.554s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/overarching_msgs/share/overarching_msgs/package.zsh'
+[7.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/overarching_msgs/share/colcon-core/packages/overarching_msgs)
+[7.554s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/convince_ws/src/tutorial_sim' with build type 'ament_python'
+[7.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_sim', 'ament_prefix_path')
+[7.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/ament_prefix_path.ps1'
+[7.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/ament_prefix_path.dsv'
+[7.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/ament_prefix_path.sh'
+[7.555s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.662s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/convince_ws/src/tutorial_sim'
+[7.662s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.662s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/share/ament_index/resource_index/packages/tutorial_sim
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/share/tutorial_sim/package.xml
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/share/tutorial_sim/worlds/object_data.yaml
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/share/tutorial_sim/worlds/world.yaml
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/share/tutorial_sim/worlds/location_data.yaml
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/lib/tutorial_sim/run
+[7.899s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /convince_ws/install/tutorial_sim/lib/tutorial_sim/translate_component
+[7.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/convince_ws/build/tutorial_sim': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_ros:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_ros:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:/convince_ws/install/overarching_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/build/tutorial_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/convince_ws/install/tutorial_sim/lib/python3.12/site-packages:/convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages:/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /convince_ws/build/tutorial_sim/build --no-deps symlink_data --force
+[8.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_sim', 'pythonpath_develop')
+[8.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/build/tutorial_sim/share/tutorial_sim/hook/pythonpath_develop.ps1'
+[8.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/convince_ws/build/tutorial_sim' returned '0': AMENT_PREFIX_PATH=/convince_ws/install/pyrobosim_ros:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/pyrobosim_ros:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs LD_LIBRARY_PATH=/convince_ws/install/pyrobosim_msgs/lib:/convince_ws/install/overarching_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/build/tutorial_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/convince_ws/install/tutorial_sim/lib/python3.12/site-packages:/convince_ws/install/pyrobosim_ros/lib/python3.12/site-packages:/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /convince_ws/build/tutorial_sim/build --no-deps symlink_data --force
+[8.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/build/tutorial_sim/share/tutorial_sim/hook/pythonpath_develop.dsv'
+[8.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/build/tutorial_sim/share/tutorial_sim/hook/pythonpath_develop.sh'
+[8.129s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim' for CMake module files
+[8.130s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim' for CMake config files
+[8.130s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim/lib'
+[8.130s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim/bin'
+[8.130s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim/lib/pkgconfig/tutorial_sim.pc'
+[8.130s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim/lib/python3.12/site-packages'
+[8.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_sim', 'pythonpath')
+[8.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/pythonpath.ps1'
+[8.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/pythonpath.dsv'
+[8.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/convince_ws/install/tutorial_sim/share/tutorial_sim/hook/pythonpath.sh'
+[8.131s] Level 1:colcon.colcon_core.environment:checking '/convince_ws/install/tutorial_sim/bin'
+[8.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_sim)
+[8.131s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/tutorial_sim/share/tutorial_sim/package.ps1'
+[8.131s] INFO:colcon.colcon_core.shell:Creating package descriptor '/convince_ws/install/tutorial_sim/share/tutorial_sim/package.dsv'
+[8.132s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/tutorial_sim/share/tutorial_sim/package.sh'
+[8.132s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/tutorial_sim/share/tutorial_sim/package.bash'
+[8.132s] INFO:colcon.colcon_core.shell:Creating package script '/convince_ws/install/tutorial_sim/share/tutorial_sim/package.zsh'
+[8.132s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/convince_ws/install/tutorial_sim/share/colcon-core/packages/tutorial_sim)
+[8.132s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.132s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.132s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.132s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.137s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.144s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.144s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/convince_ws/install/local_setup.ps1'
+[8.145s] INFO:colcon.colcon_core.shell:Creating prefix util module '/convince_ws/install/_local_setup_util_ps1.py'
+[8.145s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/convince_ws/install/setup.ps1'
+[8.146s] INFO:colcon.colcon_core.shell:Creating prefix script '/convince_ws/install/local_setup.sh'
+[8.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/convince_ws/install/_local_setup_util_sh.py'
+[8.146s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/convince_ws/install/setup.sh'
+[8.147s] INFO:colcon.colcon_core.shell:Creating prefix script '/convince_ws/install/local_setup.bash'
+[8.147s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/convince_ws/install/setup.bash'
+[8.147s] INFO:colcon.colcon_core.shell:Creating prefix script '/convince_ws/install/local_setup.zsh'
+[8.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/convince_ws/install/setup.zsh'

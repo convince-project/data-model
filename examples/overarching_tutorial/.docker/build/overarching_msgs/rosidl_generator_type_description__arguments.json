@@ -1,0 +1,17 @@
+{
+  "package_name": "overarching_msgs",
+  "output_dir": "/convince_ws/build/overarching_msgs/rosidl_generator_type_description/overarching_msgs",
+  "idl_tuples": [
+    "/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:msg/Location.idl",
+    "/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Navigate.idl",
+    "/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Pick.idl",
+    "/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Place.idl",
+    "/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Detect.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

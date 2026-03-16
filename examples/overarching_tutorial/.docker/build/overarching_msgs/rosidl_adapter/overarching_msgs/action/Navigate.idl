@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from overarching_msgs/action/Navigate.action
+// generated code does not contain a copyright notice
+
+
+module overarching_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Navigate_Goal {
+      string location_id;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Navigate_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Navigate_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

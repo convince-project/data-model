@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing tutorial_sim.egg-info/PKG-INFO
+writing dependency_links to tutorial_sim.egg-info/dependency_links.txt
+writing entry points to tutorial_sim.egg-info/entry_points.txt
+writing requirements to tutorial_sim.egg-info/requires.txt
+writing top-level names to tutorial_sim.egg-info/top_level.txt
+reading manifest file 'tutorial_sim.egg-info/SOURCES.txt'
+writing manifest file 'tutorial_sim.egg-info/SOURCES.txt'
+running build_ext
+Creating /convince_ws/install/tutorial_sim/lib/python3.12/site-packages/tutorial-sim.egg-link (link to .)
+Installing run script to /convince_ws/install/tutorial_sim/lib/tutorial_sim
+Installing translate_component script to /convince_ws/install/tutorial_sim/lib/tutorial_sim
+
+Installed /convince_ws/build/tutorial_sim
+running symlink_data

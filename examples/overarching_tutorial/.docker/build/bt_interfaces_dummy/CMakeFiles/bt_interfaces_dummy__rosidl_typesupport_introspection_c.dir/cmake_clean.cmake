@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/action_response__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/action_response__type_support.c.o.d"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/condition_response__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/condition_response__type_support.c.o.d"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/halt_action__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/halt_action__type_support.c.o.d"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/reload_tree__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/reload_tree__type_support.c.o.d"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_action__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_action__type_support.c.o.d"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c.o"
+  "CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c.o.d"
+  "libbt_interfaces_dummy__rosidl_typesupport_introspection_c.pdb"
+  "libbt_interfaces_dummy__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/action_response__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/action_response__type_support.c"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/condition_response__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/msg/detail/condition_response__type_support.c"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/halt_action__type_support.c"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/reload_tree__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/reload_tree__type_support.c"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_action__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_action__type_support.c"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_condition__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/bt_interfaces_dummy/srv/detail/tick_condition__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/bt_interfaces_dummy__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,491 @@
+[0.000000] (-) TimerEvent: {}
+[0.000612] (behaviortree_cpp_v3) JobQueued: {'identifier': 'behaviortree_cpp_v3', 'dependencies': OrderedDict()}
+[0.000675] (bt_interfaces_dummy) JobQueued: {'identifier': 'bt_interfaces_dummy', 'dependencies': OrderedDict()}
+[0.000702] (btcpp_ros2_interfaces) JobQueued: {'identifier': 'btcpp_ros2_interfaces', 'dependencies': OrderedDict()}
+[0.000746] (overarching_msgs) JobQueued: {'identifier': 'overarching_msgs', 'dependencies': OrderedDict()}
+[0.000760] (pyrobosim) JobQueued: {'identifier': 'pyrobosim', 'dependencies': OrderedDict()}
+[0.000778] (pyrobosim_msgs) JobQueued: {'identifier': 'pyrobosim_msgs', 'dependencies': OrderedDict()}
+[0.000796] (behaviortree_ros2) JobQueued: {'identifier': 'behaviortree_ros2', 'dependencies': OrderedDict({'btcpp_ros2_interfaces': '/convince_ws/install/btcpp_ros2_interfaces'})}
+[0.000812] (bt_nodes) JobQueued: {'identifier': 'bt_nodes', 'dependencies': OrderedDict({'bt_interfaces_dummy': '/convince_ws/install/bt_interfaces_dummy'})}
+[0.000862] (place_object_skill) JobQueued: {'identifier': 'place_object_skill', 'dependencies': OrderedDict({'bt_interfaces_dummy': '/convince_ws/install/bt_interfaces_dummy', 'overarching_msgs': '/convince_ws/install/overarching_msgs'})}
+[0.000900] (pyrobosim_ros) JobQueued: {'identifier': 'pyrobosim_ros', 'dependencies': OrderedDict({'pyrobosim_msgs': '/convince_ws/install/pyrobosim_msgs'})}
+[0.000924] (bt_executor) JobQueued: {'identifier': 'bt_executor', 'dependencies': OrderedDict({'bt_interfaces_dummy': '/convince_ws/install/bt_interfaces_dummy', 'btcpp_ros2_interfaces': '/convince_ws/install/btcpp_ros2_interfaces', 'overarching_msgs': '/convince_ws/install/overarching_msgs', 'pyrobosim_msgs': '/convince_ws/install/pyrobosim_msgs', 'behaviortree_ros2': '/convince_ws/install/behaviortree_ros2', 'bt_nodes': '/convince_ws/install/bt_nodes'})}
+[0.000974] (btcpp_ros2_samples) JobQueued: {'identifier': 'btcpp_ros2_samples', 'dependencies': OrderedDict({'btcpp_ros2_interfaces': '/convince_ws/install/btcpp_ros2_interfaces', 'behaviortree_ros2': '/convince_ws/install/behaviortree_ros2'})}
+[0.000983] (tutorial_sim) JobQueued: {'identifier': 'tutorial_sim', 'dependencies': OrderedDict({'overarching_msgs': '/convince_ws/install/overarching_msgs', 'pyrobosim_msgs': '/convince_ws/install/pyrobosim_msgs', 'pyrobosim_ros': '/convince_ws/install/pyrobosim_ros'})}
+[0.000991] (bt_interfaces_dummy) JobStarted: {'identifier': 'bt_interfaces_dummy'}
+[0.003680] (btcpp_ros2_interfaces) JobStarted: {'identifier': 'btcpp_ros2_interfaces'}
+[0.004960] (overarching_msgs) JobStarted: {'identifier': 'overarching_msgs'}
+[0.006146] (pyrobosim_msgs) JobStarted: {'identifier': 'pyrobosim_msgs'}
+[0.007499] (behaviortree_cpp_v3) JobStarted: {'identifier': 'behaviortree_cpp_v3'}
+[0.008726] (pyrobosim) JobStarted: {'identifier': 'pyrobosim'}
+[0.010463] (bt_interfaces_dummy) JobProgress: {'identifier': 'bt_interfaces_dummy', 'progress': 'cmake'}
+[0.010694] (bt_interfaces_dummy) JobProgress: {'identifier': 'bt_interfaces_dummy', 'progress': 'build'}
+[0.010961] (bt_interfaces_dummy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/convince_ws/build/bt_interfaces_dummy', '--', '-j20', '-l20'], 'cwd': '/convince_ws/build/bt_interfaces_dummy', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/bt_interfaces_dummy', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.012032] (btcpp_ros2_interfaces) JobProgress: {'identifier': 'btcpp_ros2_interfaces', 'progress': 'cmake'}
+[0.012266] (btcpp_ros2_interfaces) JobProgress: {'identifier': 'btcpp_ros2_interfaces', 'progress': 'build'}
+[0.012420] (btcpp_ros2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/convince_ws/build/btcpp_ros2_interfaces', '--', '-j20', '-l20'], 'cwd': '/convince_ws/build/btcpp_ros2_interfaces', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/btcpp_ros2_interfaces', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.012762] (overarching_msgs) JobProgress: {'identifier': 'overarching_msgs', 'progress': 'cmake'}
+[0.012981] (overarching_msgs) JobProgress: {'identifier': 'overarching_msgs', 'progress': 'build'}
+[0.013134] (overarching_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/convince_ws/build/overarching_msgs', '--', '-j20', '-l20'], 'cwd': '/convince_ws/build/overarching_msgs', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/overarching_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.013452] (pyrobosim_msgs) JobProgress: {'identifier': 'pyrobosim_msgs', 'progress': 'cmake'}
+[0.013668] (pyrobosim_msgs) JobProgress: {'identifier': 'pyrobosim_msgs', 'progress': 'build'}
+[0.013814] (pyrobosim_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/convince_ws/build/pyrobosim_msgs', '--', '-j20', '-l20'], 'cwd': '/convince_ws/build/pyrobosim_msgs', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/pyrobosim_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.014148] (behaviortree_cpp_v3) JobProgress: {'identifier': 'behaviortree_cpp_v3', 'progress': 'cmake'}
+[0.014350] (behaviortree_cpp_v3) JobProgress: {'identifier': 'behaviortree_cpp_v3', 'progress': 'build'}
+[0.014499] (behaviortree_cpp_v3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/convince_ws/build/behaviortree_cpp_v3', '--', '-j20', '-l20'], 'cwd': '/convince_ws/build/behaviortree_cpp_v3', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/behaviortree_cpp_v3', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.041455] (overarching_msgs) StdoutLine: {'line': b'[  1%] Built target overarching_msgs__rosidl_generator_type_description\n'}
+[0.043062] (behaviortree_cpp_v3) StdoutLine: {'line': b'[  2%] Built target gtest_main\n'}
+[0.043543] (overarching_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_overarching_msgs\n'}
+[0.043867] (behaviortree_cpp_v3) StdoutLine: {'line': b'[  4%] Built target gtest\n'}
+[0.045056] (bt_interfaces_dummy) StdoutLine: {'line': b'[  1%] Built target bt_interfaces_dummy__rosidl_generator_type_description\n'}
+[0.045586] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  1%] Built target btcpp_ros2_interfaces__rosidl_generator_type_description\n'}
+[0.046129] (pyrobosim_msgs) StdoutLine: {'line': b'[  0%] Built target pyrobosim_msgs__rosidl_generator_type_description\n'}
+[0.049628] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_btcpp_ros2_interfaces\n'}
+[0.051405] (bt_interfaces_dummy) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_bt_interfaces_dummy\n'}
+[0.054216] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 38%] Built target behaviortree_cpp_v3\n'}
+[0.055897] (overarching_msgs) StdoutLine: {'line': b'[  2%] Built target overarching_msgs__cpp\n'}
+[0.056601] (pyrobosim_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_pyrobosim_msgs\n'}
+[0.057715] (bt_interfaces_dummy) StdoutLine: {'line': b'[  2%] Built target bt_interfaces_dummy__cpp\n'}
+[0.059824] (overarching_msgs) StdoutLine: {'line': b'[ 25%] Built target overarching_msgs__rosidl_generator_c\n'}
+[0.061015] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  3%] Built target btcpp_ros2_interfaces__cpp\n'}
+[0.061199] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 25%] Built target btcpp_ros2_interfaces__rosidl_generator_c\n'}
+[0.061679] (pyrobosim_msgs) StdoutLine: {'line': b'[  0%] Built target pyrobosim_msgs__cpp\n'}
+[0.061844] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 26%] Built target bt_interfaces_dummy__rosidl_generator_c\n'}
+[0.081154] (pyrobosim_msgs) StdoutLine: {'line': b'[ 28%] Built target pyrobosim_msgs__rosidl_generator_c\n'}
+[0.083142] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 40%] Built target bt3_log_cat\n'}
+[0.083363] (overarching_msgs) StdoutLine: {'line': b'[ 35%] Built target overarching_msgs__rosidl_typesupport_introspection_c\n'}
+[0.083913] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 42%] Built target crossdoor_nodes_dyn\n'}
+[0.084397] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 44%] Built target dummy_nodes_dyn\n'}
+[0.084550] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 34%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.084929] (overarching_msgs) StdoutLine: {'line': b'[ 44%] Built target overarching_msgs__rosidl_typesupport_cpp\n'}
+[0.085125] (overarching_msgs) StdoutLine: {'line': b'[ 54%] Built target overarching_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.085676] (overarching_msgs) StdoutLine: {'line': b'[ 63%] Built target overarching_msgs__rosidl_typesupport_c\n'}
+[0.085836] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 48%] Built target bt_sample_nodes\n'}
+[0.087077] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 43%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.087234] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 50%] Built target movebase_node_dyn\n'}
+[0.087356] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 35%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_c\n'}
+[0.088776] (overarching_msgs) StdoutLine: {'line': b'[ 72%] Built target overarching_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.089224] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 53%] Built target bt_interfaces_dummy__rosidl_typesupport_c\n'}
+[0.089662] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 54%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_c\n'}
+[0.091485] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 53%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.091636] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 62%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c\n'}
+[0.091765] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 71%] Built target btcpp_ros2_interfaces__rosidl_typesupport_cpp\n'}
+[0.091866] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 52%] Built target bt3_recorder\n'}
+[0.091937] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 54%] Built target bt3_plugin_manifest\n'}
+[0.091990] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 56%] Built target t01_first_tree_dynamic\n'}
+[0.092416] (overarching_msgs) StdoutLine: {'line': b'[ 82%] Built target overarching_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.093334] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 64%] Built target bt_interfaces_dummy__rosidl_typesupport_cpp\n'}
+[0.094060] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 81%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.096956] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 73%] Built target bt_interfaces_dummy__rosidl_typesupport_introspection_cpp\n'}
+[0.098064] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 83%] Built target bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp\n'}
+[0.100923] (-) TimerEvent: {}
+[0.107144] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 81%] Built target btcpp_ros2_interfaces\n'}
+[0.113032] (overarching_msgs) StdoutLine: {'line': b'[ 82%] Built target overarching_msgs\n'}
+[0.116120] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 83%] Built target bt_interfaces_dummy\n'}
+[0.116324] (pyrobosim_msgs) StdoutLine: {'line': b'[ 38%] Built target pyrobosim_msgs__rosidl_typesupport_cpp\n'}
+[0.119927] (pyrobosim_msgs) StdoutLine: {'line': b'[ 48%] Built target pyrobosim_msgs__rosidl_typesupport_introspection_c\n'}
+[0.120117] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 58%] Built target t01_first_tree_static\n'}
+[0.120215] (pyrobosim_msgs) StdoutLine: {'line': b'[ 58%] Built target pyrobosim_msgs__rosidl_typesupport_c\n'}
+[0.121427] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 74%] Built target t04_reactive_sequence\n'}
+[0.121588] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 79%] Built target behaviortree_cpp_v3_test\n'}
+[0.122375] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 82%] Built target btcpp_ros2_interfaces__py\n'}
+[0.122560] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 81%] Built target t03_generic_ports\n'}
+[0.123096] (pyrobosim_msgs) StdoutLine: {'line': b'[ 67%] Built target pyrobosim_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.123297] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 83%] Built target t06_subtree_port_remapping\n'}
+[0.123382] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 85%] Built target t02_basic_ports\n'}
+[0.123713] (pyrobosim_msgs) StdoutLine: {'line': b'[ 77%] Built target pyrobosim_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.123815] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 87%] Built target t05_crossdoor\n'}
+[0.123886] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 89%] Built target t08_additional_node_args\n'}
+[0.125363] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 91%] Built target t07_load_multiple_xml\n'}
+[0.126509] (pyrobosim_msgs) StdoutLine: {'line': b'[ 87%] Built target pyrobosim_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.127310] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 95%] Built target ex01_wrap_legacy\n'}
+[0.127387] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 95%] Built target ex02_runtime_ports\n'}
+[0.130056] (overarching_msgs) StdoutLine: {'line': b'[ 83%] Built target overarching_msgs__py\n'}
+[0.131246] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 84%] Built target bt_interfaces_dummy__py\n'}
+[0.136310] (behaviortree_cpp_v3) StdoutLine: {'line': b'[ 97%] Built target ex03_ncurses_manual_selector\n'}
+[0.136815] (pyrobosim_msgs) StdoutLine: {'line': b'[ 87%] Built target pyrobosim_msgs\n'}
+[0.139688] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 90%] Built target btcpp_ros2_interfaces__rosidl_generator_py\n'}
+[0.139809] (behaviortree_cpp_v3) StdoutLine: {'line': b'[100%] Built target ex04_waypoints\n'}
+[0.145667] (overarching_msgs) StdoutLine: {'line': b'[ 91%] Built target overarching_msgs__rosidl_generator_py\n'}
+[0.146136] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 92%] Built target bt_interfaces_dummy__rosidl_generator_py\n'}
+[0.147945] (pyrobosim_msgs) StdoutLine: {'line': b'[ 87%] Built target pyrobosim_msgs__py\n'}
+[0.152908] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 96%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[0.153025] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_c\n'}
+[0.153065] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[0.158767] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 95%] Built target bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c\n'}
+[0.159193] (overarching_msgs) StdoutLine: {'line': b'[ 94%] Built target overarching_msgs_s__rosidl_typesupport_introspection_c\n'}
+[0.159308] (bt_interfaces_dummy) StdoutLine: {'line': b'[ 97%] Built target bt_interfaces_dummy_s__rosidl_typesupport_c\n'}
+[0.159360] (bt_interfaces_dummy) StdoutLine: {'line': b'[100%] Built target bt_interfaces_dummy_s__rosidl_typesupport_introspection_c\n'}
+[0.162643] (overarching_msgs) StdoutLine: {'line': b'[ 97%] Built target overarching_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[0.164010] (overarching_msgs) StdoutLine: {'line': b'[100%] Built target overarching_msgs_s__rosidl_typesupport_c\n'}
+[0.165418] (pyrobosim_msgs) StdoutLine: {'line': b'[ 97%] Built target pyrobosim_msgs__rosidl_generator_py\n'}
+[0.178432] (pyrobosim_msgs) StdoutLine: {'line': b'[ 98%] Built target pyrobosim_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[0.178911] (pyrobosim_msgs) StdoutLine: {'line': b'[ 99%] Built target pyrobosim_msgs_s__rosidl_typesupport_c\n'}
+[0.181738] (pyrobosim_msgs) StdoutLine: {'line': b'[100%] Built target pyrobosim_msgs_s__rosidl_typesupport_introspection_c\n'}
+[0.184577] (btcpp_ros2_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.188459] (behaviortree_cpp_v3) CommandEnded: {'returncode': 0}
+[0.188759] (behaviortree_cpp_v3) JobProgress: {'identifier': 'behaviortree_cpp_v3', 'progress': 'install'}
+[0.191346] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing btcpp_ros2_interfaces.egg-info/PKG-INFO\n'}
+[0.191450] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt\n'}
+[0.191540] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt\n'}
+[0.195140] (behaviortree_cpp_v3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/convince_ws/build/behaviortree_cpp_v3'], 'cwd': '/convince_ws/build/behaviortree_cpp_v3', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/behaviortree_cpp_v3', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.198766] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.198972] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.199105] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/library_path.sh\n'}
+[0.199192] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/library_path.dsv\n'}
+[0.199286] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/ament_index/resource_index/package_run_dependencies/behaviortree_cpp_v3\n'}
+[0.199351] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/ament_index/resource_index/parent_prefix_path/behaviortree_cpp_v3\n'}
+[0.199443] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/ament_prefix_path.sh\n'}
+[0.199518] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/ament_prefix_path.dsv\n'}
+[0.199593] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/path.sh\n'}
+[0.199680] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/environment/path.dsv\n'}
+[0.199761] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/local_setup.bash\n'}
+[0.199834] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/local_setup.sh\n'}
+[0.199903] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/local_setup.zsh\n'}
+[0.199968] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/local_setup.dsv\n'}
+[0.200030] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Symlinking: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.dsv\n'}
+[0.200975] (-) TimerEvent: {}
+[0.202679] (overarching_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.206501] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/ament_index/resource_index/packages/behaviortree_cpp_v3\n'}
+[0.206598] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.206699] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.206778] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.206870] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.206974] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/behaviortree_cpp_v3Config.cmake\n'}
+[0.207039] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/behaviortree_cpp_v3Config-version.cmake\n'}
+[0.207114] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/package.xml\n'}
+[0.207178] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/lib/cmake/behaviortree_cpp_v3/behaviortree_cpp_v3Config.cmake\n'}
+[0.207255] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/bin/bt3_log_cat\n'}
+[0.207330] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/bin/bt3_recorder\n'}
+[0.207405] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/behaviortree_cpp_v3/bin/bt3_plugin_manifest\n'}
+[0.207498] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/behaviortree_cpp_v3TargetsExport.cmake\n'}
+[0.207609] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/share/behaviortree_cpp_v3/cmake/behaviortree_cpp_v3TargetsExport-noconfig.cmake\n'}
+[0.207745] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include\n'}
+[0.207861] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3\n'}
+[0.207988] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/actions\n'}
+[0.208102] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/actions/always_failure_node.h\n'}
+[0.208220] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/actions/pop_from_queue.hpp\n'}
+[0.208345] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/actions/always_success_node.h\n'}
+[0.208409] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/actions/set_blackboard_node.h\n'}
+[0.208484] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/action_node.h\n'}
+[0.208569] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls\n'}
+[0.208633] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/parallel_node.h\n'}
+[0.208695] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/reactive_fallback.h\n'}
+[0.208759] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/sequence_star_node.h\n'}
+[0.208823] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/if_then_else_node.h\n'}
+[0.208892] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/reactive_sequence.h\n'}
+[0.208958] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/sequence_node.h\n'}
+[0.209027] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/while_do_else_node.h\n'}
+[0.209090] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/switch_node.h\n'}
+[0.209151] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/fallback_node.h\n'}
+[0.209214] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/controls/manual_node.h\n'}
+[0.209276] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/basic_types.h\n'}
+[0.209338] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/control_node.h\n'}
+[0.209400] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/leaf_node.h\n'}
+[0.209462] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorator_node.h\n'}
+[0.209524] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils\n'}
+[0.209590] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/make_unique.hpp\n'}
+[0.209658] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/shared_library.h\n'}
+[0.209726] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/expected.hpp\n'}
+[0.209847] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/simple_string.hpp\n'}
+[0.209962] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/strcat.hpp\n'}
+[0.210065] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/any.hpp\n'}
+[0.210177] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/string_view.hpp\n'}
+[0.210311] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/platform.hpp\n'}
+[0.210577] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/signal.h\n'}
+[0.210644] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/safe_any.hpp\n'}
+[0.210711] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/wakeup_signal.hpp\n'}
+[0.210777] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/demangle_util.h\n'}
+[0.210843] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/utils/convert_impl.hpp\n'}
+[0.211043] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/xml_parsing.h\n'}
+[0.211135] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/bt_parser.h\n'}
+[0.211248] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers\n'}
+[0.211331] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers/stl_emulation.h\n'}
+[0.211397] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers/flatbuffers.h\n'}
+[0.211464] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers/base.h\n'}
+[0.211530] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers/BT_logger_generated.h\n'}
+[0.211603] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/flatbuffers/bt_flatbuffer_helper.h\n'}
+[0.211671] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/tree_node.h\n'}
+[0.211737] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/blackboard.h\n'}
+[0.211829] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/bt_factory.h\n'}
+[0.211914] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/behavior_tree.h\n'}
+[0.211994] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers\n'}
+[0.212061] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers/abstract_logger.h\n'}
+[0.212128] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers/bt_file_logger.h\n'}
+[0.212272] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers/bt_minitrace_logger.h\n'}
+[0.212344] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers/bt_cout_logger.h\n'}
+[0.212415] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/loggers/bt_zmq_publisher.h\n'}
+[0.212486] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators\n'}
+[0.212554] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/repeat_node.h\n'}
+[0.212621] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/retry_node.h\n'}
+[0.212710] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/inverter_node.h\n'}
+[0.212790] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/blackboard_precondition.h\n'}
+[0.212918] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/timeout_node.h\n'}
+[0.213073] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/subtree_node.h\n'}
+[0.213319] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/consume_queue.h\n'}
+[0.213452] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/keep_running_until_failure_node.h\n'}
+[0.213529] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/timer_queue.h\n'}
+[0.213721] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/force_failure_node.h\n'}
+[0.213794] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/force_success_node.h\n'}
+[0.213863] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/decorators/delay_node.h\n'}
+[0.213991] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/exceptions.h\n'}
+[0.214079] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/include/behaviortree_cpp_v3/condition_node.h\n'}
+[0.214187] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/lib/libbehaviortree_cpp_v3.so\n'}
+[0.214306] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/lib/cmake/behaviortree_cpp_v3/behaviortree_cpp_v3Targets.cmake\n'}
+[0.214403] (behaviortree_cpp_v3) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/behaviortree_cpp_v3/lib/cmake/behaviortree_cpp_v3/behaviortree_cpp_v3Targets-noconfig.cmake\n'}
+[0.214493] (overarching_msgs) StdoutLine: {'line': b'writing overarching_msgs.egg-info/PKG-INFO\n'}
+[0.214630] (overarching_msgs) StdoutLine: {'line': b'writing dependency_links to overarching_msgs.egg-info/dependency_links.txt\n'}
+[0.214706] (overarching_msgs) StdoutLine: {'line': b'writing top-level names to overarching_msgs.egg-info/top_level.txt\n'}
+[0.214782] (behaviortree_cpp_v3) CommandEnded: {'returncode': 0}
+[0.214965] (btcpp_ros2_interfaces) StdoutLine: {'line': b"reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'\n"}
+[0.215121] (btcpp_ros2_interfaces) StdoutLine: {'line': b"writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'\n"}
+[0.215236] (bt_interfaces_dummy) StdoutLine: {'line': b'running egg_info\n'}
+[0.219090] (pyrobosim_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.220041] (bt_interfaces_dummy) StdoutLine: {'line': b'writing bt_interfaces_dummy.egg-info/PKG-INFO\n'}
+[0.220628] (bt_interfaces_dummy) StdoutLine: {'line': b'writing dependency_links to bt_interfaces_dummy.egg-info/dependency_links.txt\n'}
+[0.220732] (bt_interfaces_dummy) StdoutLine: {'line': b'writing top-level names to bt_interfaces_dummy.egg-info/top_level.txt\n'}
+[0.226094] (pyrobosim_msgs) StdoutLine: {'line': b'writing pyrobosim_msgs.egg-info/PKG-INFO\n'}
+[0.226281] (pyrobosim_msgs) StdoutLine: {'line': b'writing dependency_links to pyrobosim_msgs.egg-info/dependency_links.txt\n'}
+[0.226375] (pyrobosim_msgs) StdoutLine: {'line': b'writing top-level names to pyrobosim_msgs.egg-info/top_level.txt\n'}
+[0.229724] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg\n'}
+[0.229904] (overarching_msgs) StdoutLine: {'line': b"reading manifest file 'overarching_msgs.egg-info/SOURCES.txt'\n"}
+[0.230486] (overarching_msgs) StdoutLine: {'line': b"writing manifest file 'overarching_msgs.egg-info/SOURCES.txt'\n"}
+[0.235719] (behaviortree_cpp_v3) JobEnded: {'identifier': 'behaviortree_cpp_v3', 'rc': 0}
+[0.236821] (btcpp_ros2_interfaces) CommandEnded: {'returncode': 0}
+[0.237592] (btcpp_ros2_interfaces) JobProgress: {'identifier': 'btcpp_ros2_interfaces', 'progress': 'install'}
+[0.237734] (btcpp_ros2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/convince_ws/build/btcpp_ros2_interfaces'], 'cwd': '/convince_ws/build/btcpp_ros2_interfaces', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/btcpp_ros2_interfaces', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.244379] (bt_interfaces_dummy) StdoutLine: {'line': b"reading manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'\n"}
+[0.244619] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.244717] (bt_interfaces_dummy) StdoutLine: {'line': b"writing manifest file 'bt_interfaces_dummy.egg-info/SOURCES.txt'\n"}
+[0.245136] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.245243] (overarching_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_overarching_msgs_egg\n'}
+[0.245343] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/rosidl_interfaces/btcpp_ros2_interfaces\n'}
+[0.245496] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.json\n'}
+[0.245632] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.json\n'}
+[0.245779] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.json\n'}
+[0.245911] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.json\n'}
+[0.245971] (pyrobosim_msgs) StdoutLine: {'line': b"reading manifest file 'pyrobosim_msgs.egg-info/SOURCES.txt'\n"}
+[0.246487] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__functions.h\n'}
+[0.246578] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.h\n'}
+[0.246628] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.h\n'}
+[0.246682] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__functions.h\n'}
+[0.246729] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.h\n'}
+[0.246775] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.h\n'}
+[0.246825] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.h\n'}
+[0.246861] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.h\n'}
+[0.246920] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__functions.h\n'}
+[0.246989] (pyrobosim_msgs) StdoutLine: {'line': b"writing manifest file 'pyrobosim_msgs.egg-info/SOURCES.txt'\n"}
+[0.247051] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.h\n'}
+[0.247098] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.h\n'}
+[0.247144] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.h\n'}
+[0.247191] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.247261] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__functions.h\n'}
+[0.247292] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__struct.h\n'}
+[0.247322] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.h\n'}
+[0.247353] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/get_trees.h\n'}
+[0.247400] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.sh\n'}
+[0.247448] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.dsv\n'}
+[0.247741] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_c.h\n'}
+[0.247814] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_c.h\n'}
+[0.247849] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_c.h\n'}
+[0.247901] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.247947] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_fastrtps_c.h\n'}
+[0.248119] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_c.h\n'}
+[0.248164] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_c.h\n'}
+[0.248207] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_c.h\n'}
+[0.248257] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.248298] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_introspection_c.h\n'}
+[0.248582] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__builder.hpp\n'}
+[0.248646] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.hpp\n'}
+[0.248693] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__traits.hpp\n'}
+[0.248736] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.hpp\n'}
+[0.248783] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__builder.hpp\n'}
+[0.248828] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.hpp\n'}
+[0.248878] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__traits.hpp\n'}
+[0.248927] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.hpp\n'}
+[0.248979] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.hpp\n'}
+[0.249011] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.hpp\n'}
+[0.249056] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__builder.hpp\n'}
+[0.249102] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.hpp\n'}
+[0.249149] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__traits.hpp\n'}
+[0.249200] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.hpp\n'}
+[0.249231] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.hpp\n'}
+[0.249277] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.249325] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__builder.hpp\n'}
+[0.249370] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__struct.hpp\n'}
+[0.249415] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__traits.hpp\n'}
+[0.249462] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__type_support.hpp\n'}
+[0.249510] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/get_trees.hpp\n'}
+[0.249791] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.249851] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.249900] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.249947] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.249993] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.250168] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.250213] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.250262] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.250308] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/srv/detail/get_trees__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.250379] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.sh\n'}
+[0.250440] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.dsv\n'}
+[0.250587] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/PKG-INFO\n'}
+[0.250634] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.250674] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.250719] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.3.0-py3.12.egg-info/top_level.txt\n'}
+[0.251106] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/__init__.py\n'}
+[0.251150] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.251194] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.251236] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.251279] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/__init__.py\n'}
+[0.251323] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree.py\n'}
+[0.251370] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree_s.c\n'}
+[0.251420] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep.py\n'}
+[0.251461] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep_s.c\n'}
+[0.251504] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so\n'}
+[0.251550] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.251597] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[0.251645] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/__init__.py\n'}
+[0.251688] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status.py\n'}
+[0.251739] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status_s.c\n'}
+[0.251783] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/__init__.py\n'}
+[0.251829] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/_get_trees.py\n'}
+[0.251876] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/srv/_get_trees_s.c\n'}
+[0.251983] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.252092] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[0.252208] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so\n'}
+[0.252279] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.idl\n'}
+[0.252368] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.idl\n'}
+[0.252659] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.idl\n'}
+[0.252820] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.idl\n'}
+[0.252931] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.msg\n'}
+[0.252965] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/srv/GetTrees.srv\n'}
+[0.253045] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.action\n'}
+[0.253129] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.action\n'}
+[0.253349] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/package_run_dependencies/btcpp_ros2_interfaces\n'}
+[0.253380] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/parent_prefix_path/btcpp_ros2_interfaces\n'}
+[0.253410] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.sh\n'}
+[0.253441] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.253471] (overarching_msgs) CommandEnded: {'returncode': 0}
+[0.253596] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.sh\n'}
+[0.253634] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.dsv\n'}
+[0.253667] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.bash\n'}
+[0.253700] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.sh\n'}
+[0.253729] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.zsh\n'}
+[0.253758] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.dsv\n'}
+[0.253789] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Symlinking: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv\n'}
+[0.254063] (overarching_msgs) JobProgress: {'identifier': 'overarching_msgs', 'progress': 'install'}
+[0.254202] (overarching_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/convince_ws/build/overarching_msgs'], 'cwd': '/convince_ws/build/overarching_msgs', 'env': OrderedDict({'PYTHONWARNINGS': 'ignore:setup.py install is deprecated,ignore:easy_install command is deprecated', 'HOSTNAME': '6232da2cf4b5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/zmqpp_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/convince_ws', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_WS': '/convince_ws', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/convince_ws/build/overarching_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.258086] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/packages/btcpp_ros2_interfaces\n'}
+[0.258239] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.258332] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.258414] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.258494] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.258583] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.258661] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.258747] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.258825] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig.cmake\n'}
+[0.258896] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig-version.cmake\n'}
+[0.258980] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.xml\n'}
+[0.259044] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_generator_c.so\n'}
+[0.259121] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.259198] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.259262] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_c.so\n'}
+[0.259336] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.259420] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.259504] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /convince_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.260697] (overarching_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.261227] (overarching_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.261415] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/ament_index/resource_index/rosidl_interfaces/overarching_msgs\n'}
+[0.261680] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/msg/Location.json\n'}
+[0.261770] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/action/Navigate.json\n'}
+[0.261849] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/action/Pick.json\n'}
+[0.262028] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/action/Place.json\n'}
+[0.262160] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/action/Detect.json\n'}
+[0.262847] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__functions.h\n'}
+[0.262936] (bt_interfaces_dummy) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_bt_interfaces_dummy_egg\n'}
+[0.263024] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__struct.h\n'}
+[0.263136] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__type_support.h\n'}
+[0.263231] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__functions.h\n'}
+[0.263331] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__struct.h\n'}
+[0.263432] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__type_support.h\n'}
+[0.263523] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__functions.h\n'}
+[0.263605] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__struct.h\n'}
+[0.263713] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__type_support.h\n'}
+[0.263826] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__functions.h\n'}
+[0.263925] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__struct.h\n'}
+[0.264017] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__type_support.h\n'}
+[0.264100] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detect.h\n'}
+[0.264173] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/navigate.h\n'}
+[0.264247] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/pick.h\n'}
+[0.264323] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/place.h\n'}
+[0.264436] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__functions.h\n'}
+[0.264524] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__struct.h\n'}
+[0.264601] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__type_support.h\n'}
+[0.264676] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/location.h\n'}
+[0.264768] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.264865] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/environment/library_path.sh\n'}
+[0.264968] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/share/overarching_msgs/environment/library_path.dsv\n'}
+[0.265065] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__rosidl_typesupport_fastrtps_c.h\n'}
+[0.265138] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__rosidl_typesupport_fastrtps_c.h\n'}
+[0.265210] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__rosidl_typesupport_fastrtps_c.h\n'}
+[0.265280] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__rosidl_typesupport_fastrtps_c.h\n'}
+[0.265401] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__rosidl_typesupport_fastrtps_c.h\n'}
+[0.265511] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.265582] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__rosidl_typesupport_introspection_c.h\n'}
+[0.265679] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__rosidl_typesupport_introspection_c.h\n'}
+[0.265762] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__rosidl_typesupport_introspection_c.h\n'}
+[0.265844] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__rosidl_typesupport_introspection_c.h\n'}
+[0.265947] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__rosidl_typesupport_introspection_c.h\n'}
+[0.266132] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.266225] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__builder.hpp\n'}
+[0.266322] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__struct.hpp\n'}
+[0.266396] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__traits.hpp\n'}
+[0.266488] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__type_support.hpp\n'}
+[0.266654] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__builder.hpp\n'}
+[0.266745] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__struct.hpp\n'}
+[0.266825] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__traits.hpp\n'}
+[0.266951] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__type_support.hpp\n'}
+[0.267052] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__builder.hpp\n'}
+[0.267173] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__struct.hpp\n'}
+[0.267219] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__traits.hpp\n'}
+[0.267252] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__type_support.hpp\n'}
+[0.267288] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__builder.hpp\n'}
+[0.267331] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__struct.hpp\n'}
+[0.267370] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__traits.hpp\n'}
+[0.267410] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__type_support.hpp\n'}
+[0.267450] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detect.hpp\n'}
+[0.267507] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/navigate.hpp\n'}
+[0.267540] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/pick.hpp\n'}
+[0.267609] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/place.hpp\n'}
+[0.267637] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__builder.hpp\n'}
+[0.267666] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__struct.hpp\n'}
+[0.267696] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__traits.hpp\n'}
+[0.267726] (pyrobosim_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_pyrobosim_msgs_egg\n'}
+[0.267909] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__type_support.hpp\n'}
+[0.267971] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/location.hpp\n'}
+[0.268014] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.268044] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.268074] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.268103] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.268163] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.268193] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/detail/location__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.268223] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.268252] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/detect__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.268283] (pyrobosim_msgs) StderrLine: {'line': b'gmake: *** [Makefile:147: all] Interrupt\n'}
+[0.268359] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/navigate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.268391] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/pick__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.268422] (overarching_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /convince_ws/install/overarching_msgs/include/overarching_msgs/overarching_msgs/action/detail/place__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.268451] (bt_interfaces_dummy) StderrLine: {'line': b'gmake: *** [Makefile:147: all] Interrupt\n'}
+[0.268807] (overarching_msgs) CommandEnded: {'returncode': -2}
+[0.273867] (overarching_msgs) JobEnded: {'identifier': 'overarching_msgs', 'rc': 'SIGINT'}
+[0.274374] (bt_interfaces_dummy) JobEnded: {'identifier': 'bt_interfaces_dummy', 'rc': 'SIGINT'}
+[0.274659] (pyrobosim_msgs) JobEnded: {'identifier': 'pyrobosim_msgs', 'rc': 'SIGINT'}
+[0.279098] (pyrobosim) JobEnded: {'identifier': 'pyrobosim', 'rc': 'SIGINT'}
+[0.288137] (btcpp_ros2_interfaces) JobEnded: {'identifier': 'btcpp_ros2_interfaces', 'rc': 'SIGINT'}
+[0.298419] (behaviortree_ros2) JobSkipped: {'identifier': 'behaviortree_ros2'}
+[0.298478] (bt_nodes) JobSkipped: {'identifier': 'bt_nodes'}
+[0.298496] (place_object_skill) JobSkipped: {'identifier': 'place_object_skill'}
+[0.298511] (pyrobosim_ros) JobSkipped: {'identifier': 'pyrobosim_ros'}
+[0.298526] (bt_executor) JobSkipped: {'identifier': 'bt_executor'}
+[0.298540] (btcpp_ros2_samples) JobSkipped: {'identifier': 'btcpp_ros2_samples'}
+[0.298585] (tutorial_sim) JobSkipped: {'identifier': 'tutorial_sim'}
+[0.298601] (-) EventReactorShutdown: {}

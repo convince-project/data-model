@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0b81cd2d8f7060882736.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "overarching_msgs__py",
+					"jsonFile" : "directory-overarching_msgs__py-c86fbef9d61f7b4346fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/convince_ws/build/overarching_msgs/overarching_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "overarching_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_overarching_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_overarching_msgs_egg-22ea4bfc68c08c939fec.json",
+					"name" : "ament_cmake_python_build_overarching_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_overarching_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_overarching_msgs-919aae4c87fdc6d1ce18.json",
+					"name" : "ament_cmake_python_symlink_overarching_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs-520f7fbbcba7818d0a44.json",
+					"name" : "overarching_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__cpp-b4af1ab36e09d963116e.json",
+					"name" : "overarching_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "overarching_msgs__py::@f05f5af2dc4bdcb65c0b",
+					"jsonFile" : "target-overarching_msgs__py-a7b80d8608a0cc94f78b.json",
+					"name" : "overarching_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_generator_c-a35d8885094550ba407b.json",
+					"name" : "overarching_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_generator_py-f5fbc75b47052b2ebd41.json",
+					"name" : "overarching_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_generator_type_description-ef6c86271c8c3e21e7fb.json",
+					"name" : "overarching_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_c-7a0f8b1c34431242d5f5.json",
+					"name" : "overarching_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_cpp-85ddaeb187cffa971c44.json",
+					"name" : "overarching_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_fastrtps_c-af008b0122f22800f7bd.json",
+					"name" : "overarching_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_fastrtps_cpp-ef8211184d725fcf691a.json",
+					"name" : "overarching_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_introspection_c-b0ffc5a1e6ac3b4321a9.json",
+					"name" : "overarching_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs__rosidl_typesupport_introspection_cpp-ccf778770aabb63bde43.json",
+					"name" : "overarching_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs_s__rosidl_typesupport_c-632a08fa10fba12eb411.json",
+					"name" : "overarching_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs_s__rosidl_typesupport_fastrtps_c-e1558f6a6a77f95c40a7.json",
+					"name" : "overarching_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs_s__rosidl_typesupport_introspection_c-7a1700745ca561b5d0f6.json",
+					"name" : "overarching_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "overarching_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-overarching_msgs_uninstall-e933925e618952f45ec7.json",
+					"name" : "overarching_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-86240f81a06d5d38c97c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/convince_ws/build/overarching_msgs",
+		"source" : "/convince_ws/src/ros_interfaces/src/overarching_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

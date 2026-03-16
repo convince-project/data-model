@@ -51,7 +51,10 @@ int main(int argc, char** argv)
 {
   // Create a ROS Node
   rclcpp::init(argc, argv);
-  auto nh = std::make_shared<rclcpp::Node>("btcpp_executor");
+  // Avoid duplicate rosout publisher warnings when multiple same-name nodes
+  // are created internally during BT/plugin lifecycle.
+  auto node_options = rclcpp::NodeOptions().enable_rosout(false);
+  auto nh = std::make_shared<rclcpp::Node>("btcpp_executor", node_options);
 
   nh->declare_parameter("tree", rclcpp::PARAMETER_STRING);
   nh->declare_parameter<std::string>("tree_id", "MainTree");

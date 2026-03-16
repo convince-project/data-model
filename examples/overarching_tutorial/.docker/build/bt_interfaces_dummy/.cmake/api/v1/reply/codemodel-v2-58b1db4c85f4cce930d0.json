@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2748e3c29f9201da0ce1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "bt_interfaces_dummy__py",
+					"jsonFile" : "directory-bt_interfaces_dummy__py-7e772174587e191bcb82.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/convince_ws/build/bt_interfaces_dummy/bt_interfaces_dummy__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "bt_interfaces_dummy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_bt_interfaces_dummy_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_bt_interfaces_dummy_egg-227f857ff187c4099b4e.json",
+					"name" : "ament_cmake_python_build_bt_interfaces_dummy_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_bt_interfaces_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_bt_interfaces_dummy-6415a6a445c2e16401c6.json",
+					"name" : "ament_cmake_python_symlink_bt_interfaces_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy-fd1ce6ff614569403e54.json",
+					"name" : "bt_interfaces_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__cpp-b2e77959c5df0008761d.json",
+					"name" : "bt_interfaces_dummy__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bt_interfaces_dummy__py::@4a6b62470c3b23da8a55",
+					"jsonFile" : "target-bt_interfaces_dummy__py-01927389049c6cd34559.json",
+					"name" : "bt_interfaces_dummy__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_generator_c-c958d25c188524e90ef5.json",
+					"name" : "bt_interfaces_dummy__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_generator_py-df73f685745f07cf63f5.json",
+					"name" : "bt_interfaces_dummy__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_generator_type_description-3bef17b600990be6c43d.json",
+					"name" : "bt_interfaces_dummy__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_c-17dff53b0cd41b01fa4f.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_cpp-7b235b1a77805f12af59.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_fastrtps_c-ca3588ccd1f66447e622.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp-e25be0b781308f613bd5.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_introspection_c-86f8c31480de875a87af.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy__rosidl_typesupport_introspection_cpp-75779b4d9b025d771f4f.json",
+					"name" : "bt_interfaces_dummy__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy_s__rosidl_typesupport_c-2ea3b6fcac092a636407.json",
+					"name" : "bt_interfaces_dummy_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c-843e264f5db66bb968c6.json",
+					"name" : "bt_interfaces_dummy_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy_s__rosidl_typesupport_introspection_c-7a5da1f9a7edcc20d0cd.json",
+					"name" : "bt_interfaces_dummy_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_interfaces_dummy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_interfaces_dummy_uninstall-808de40610dd4f5d4584.json",
+					"name" : "bt_interfaces_dummy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-19ae9d99fcd60a1dc1fa.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/convince_ws/build/bt_interfaces_dummy",
+		"source" : "/convince_ws/src/ros_interfaces/src/bt_interfaces_dummy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

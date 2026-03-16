@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbt_nodes.a CMakeFiles/bt_nodes.dir/src/ROS2Action.cpp.o
+/usr/bin/ranlib libbt_nodes.a

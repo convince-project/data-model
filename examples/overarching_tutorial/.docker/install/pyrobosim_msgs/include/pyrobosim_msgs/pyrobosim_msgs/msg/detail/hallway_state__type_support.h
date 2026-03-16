@@ -1,0 +1,1 @@
+/convince_ws/build/pyrobosim_msgs/rosidl_generator_c/pyrobosim_msgs/msg/detail/hallway_state__type_support.h

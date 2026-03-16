@@ -1,0 +1,1 @@
+/convince_ws/build/place_object_skill/ament_cmake_environment_hooks/local_setup.bash

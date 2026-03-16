@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/convince_ws/build/pyrobosim_msgs': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /convince_ws/build/pyrobosim_msgs -- -j20 -l20
+[0.040s] [  0%] Built target pyrobosim_msgs__rosidl_generator_type_description
+[0.051s] [  0%] Built target ament_cmake_python_symlink_pyrobosim_msgs
+[0.056s] [  0%] Built target pyrobosim_msgs__cpp
+[0.075s] [ 28%] Built target pyrobosim_msgs__rosidl_generator_c
+[0.110s] [ 38%] Built target pyrobosim_msgs__rosidl_typesupport_cpp
+[0.114s] [ 48%] Built target pyrobosim_msgs__rosidl_typesupport_introspection_c
+[0.114s] [ 58%] Built target pyrobosim_msgs__rosidl_typesupport_c
+[0.117s] [ 67%] Built target pyrobosim_msgs__rosidl_typesupport_fastrtps_c
+[0.118s] [ 77%] Built target pyrobosim_msgs__rosidl_typesupport_introspection_cpp
+[0.120s] [ 87%] Built target pyrobosim_msgs__rosidl_typesupport_fastrtps_cpp
+[0.131s] [ 87%] Built target pyrobosim_msgs
+[0.142s] [ 87%] Built target pyrobosim_msgs__py
+[0.159s] [ 97%] Built target pyrobosim_msgs__rosidl_generator_py
+[0.172s] [ 98%] Built target pyrobosim_msgs_s__rosidl_typesupport_fastrtps_c
+[0.173s] [ 99%] Built target pyrobosim_msgs_s__rosidl_typesupport_c
+[0.176s] [100%] Built target pyrobosim_msgs_s__rosidl_typesupport_introspection_c
+[0.213s] running egg_info
+[0.220s] writing pyrobosim_msgs.egg-info/PKG-INFO
+[0.220s] writing dependency_links to pyrobosim_msgs.egg-info/dependency_links.txt
+[0.220s] writing top-level names to pyrobosim_msgs.egg-info/top_level.txt
+[0.240s] reading manifest file 'pyrobosim_msgs.egg-info/SOURCES.txt'
+[0.241s] writing manifest file 'pyrobosim_msgs.egg-info/SOURCES.txt'
+[0.262s] [100%] Built target ament_cmake_python_build_pyrobosim_msgs_egg
+[0.262s] gmake: *** [Makefile:147: all] Interrupt

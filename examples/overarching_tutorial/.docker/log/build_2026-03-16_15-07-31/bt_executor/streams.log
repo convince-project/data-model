@@ -1,0 +1,50 @@
+[0.011s] Invoking command in '/convince_ws/build/bt_executor': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:/convince_ws/install/btcpp_ros2_interfaces:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:/convince_ws/install/btcpp_ros2_interfaces:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/pyrobosim_msgs/lib:/convince_ws/install/overarching_msgs/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behavior_tree/bt_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_executor
+[0.015s] Not searching for unused variables given on the command line.
+[0.047s] -- The C compiler identification is GNU 13.3.0
+[0.085s] -- The CXX compiler identification is GNU 13.3.0
+[0.097s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.159s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.159s] -- Detecting C compile features
+[0.159s] -- Detecting C compile features - done
+[0.165s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.241s] -- Detecting CXX compile features
+[0.241s] -- Detecting CXX compile features - done
+[0.243s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.331s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.372s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.390s] -- Found ament_index_cpp: 1.8.2 (/opt/ros/jazzy/share/ament_index_cpp/cmake)
+[0.391s] -- Found behaviortree_ros2: 0.3.0 (/convince_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[0.416s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.424s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.443s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.489s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.536s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.547s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.562s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.675s] -- Found pyrobosim_msgs: 4.3.3 (/convince_ws/install/pyrobosim_msgs/share/pyrobosim_msgs/cmake)
+[0.711s] -- Found bt_interfaces_dummy: 0.0.0 (/convince_ws/install/bt_interfaces_dummy/share/bt_interfaces_dummy/cmake)
+[0.720s] -- Found overarching_msgs: 0.0.0 (/convince_ws/install/overarching_msgs/share/overarching_msgs/cmake)
+[0.734s] [31mCMake Error at CMakeLists.txt:23 (find_package):
+[0.735s]   By not providing "Findbt_nodes.cmake" in CMAKE_MODULE_PATH this project has
+[0.735s]   asked CMake to find a package configuration file provided by "bt_nodes",
+[0.735s]   but CMake did not find one.
+[0.735s] 
+[0.735s]   Could not find a package configuration file provided by "bt_nodes" with any
+[0.735s]   of the following names:
+[0.735s] 
+[0.735s]     bt_nodesConfig.cmake
+[0.735s]     bt_nodes-config.cmake
+[0.735s] 
+[0.735s]   Add the installation prefix of "bt_nodes" to CMAKE_PREFIX_PATH or set
+[0.735s]   "bt_nodes_DIR" to a directory containing one of the above files.  If
+[0.735s]   "bt_nodes" provides a separate development package or SDK, be sure it has
+[0.735s]   been installed.
+[0.735s] 
+[0.735s] [0m
+[0.735s] -- Configuring incomplete, errors occurred!
+[0.739s] Invoked command in '/convince_ws/build/bt_executor' returned '1': AMENT_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:/convince_ws/install/btcpp_ros2_interfaces:/convince_ws/install/bt_interfaces_dummy:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/convince_ws/install/behaviortree_ros2:/convince_ws/install/pyrobosim_msgs:/convince_ws/install/overarching_msgs:/convince_ws/install/btcpp_ros2_interfaces:/convince_ws/install/bt_interfaces_dummy:/opt/ros/jazzy LD_LIBRARY_PATH=/convince_ws/install/behaviortree_ros2/lib:/convince_ws/install/pyrobosim_msgs/lib:/convince_ws/install/overarching_msgs/lib:/convince_ws/install/btcpp_ros2_interfaces/lib:/convince_ws/install/bt_interfaces_dummy/lib:${LD_LIBRARY_PATH} PYTHONPATH=/convince_ws/install/pyrobosim_msgs/lib/python3.12/site-packages:/convince_ws/install/overarching_msgs/lib/python3.12/site-packages:/convince_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:/convince_ws/install/bt_interfaces_dummy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /convince_ws/src/behavior_tree/bt_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/convince_ws/install/bt_executor
