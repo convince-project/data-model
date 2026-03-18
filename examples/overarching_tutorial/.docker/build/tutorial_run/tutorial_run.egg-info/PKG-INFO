@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: tutorial-run
-Version: 1.0.0
-Summary: Launch package for the CONVINCE overarching tutorial simulation
-Maintainer: Christian Henkel
-Maintainer-email: christian.henkel2@de.bosch.com
-License: Apache-2.0

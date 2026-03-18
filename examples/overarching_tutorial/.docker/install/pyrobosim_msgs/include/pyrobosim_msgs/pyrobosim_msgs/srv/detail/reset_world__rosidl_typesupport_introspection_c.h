@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_typesupport_introspection_c/pyrobosim_msgs/srv/detail/reset_world__rosidl_typesupport_introspection_c.h

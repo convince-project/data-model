@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_generator_cpp/pyrobosim_msgs/srv/request_world_info.hpp

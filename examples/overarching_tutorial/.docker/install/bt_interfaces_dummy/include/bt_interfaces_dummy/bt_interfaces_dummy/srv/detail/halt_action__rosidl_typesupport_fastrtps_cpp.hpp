@@ -1,1 +1,0 @@
-/convince_ws/build/bt_interfaces_dummy/rosidl_typesupport_fastrtps_cpp/bt_interfaces_dummy/srv/detail/halt_action__rosidl_typesupport_fastrtps_cpp.hpp

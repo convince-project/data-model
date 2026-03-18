@@ -1,1 +1,0 @@
-/convince_ws/src/pyrobosim/pyrobosim/setup.py

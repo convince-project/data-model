@@ -1,3 +1,0 @@
-/convince_ws/install/bt_nodes/lib/libbt_nodes.a
-/convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport.cmake
-/convince_ws/install/bt_nodes/share/bt_nodes/cmake/bt_nodesExport-noconfig.cmake

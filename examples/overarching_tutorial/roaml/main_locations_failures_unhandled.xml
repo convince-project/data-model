@@ -22,7 +22,6 @@
     </node_models>
 
     <properties>
-        <input type="xml" src="./properties/properties.xml" />
         <input type="jani" src="./properties/properties.jani" />
     </properties>
 </roaml>

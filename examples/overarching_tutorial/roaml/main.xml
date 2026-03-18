@@ -18,11 +18,10 @@
 
     <node_models>
         <input type="node-ascxml" src="./environment/world.ascxml" />
-        <input type="node-ascxml" src="./skills/PlaceObjectSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/PlaceObjectSkill.scxml" />
     </node_models>
 
     <properties>
-        <input type="xml" src="./properties/properties.xml" />
         <input type="jani" src="./properties/properties.jani" />
     </properties>
 </roaml>

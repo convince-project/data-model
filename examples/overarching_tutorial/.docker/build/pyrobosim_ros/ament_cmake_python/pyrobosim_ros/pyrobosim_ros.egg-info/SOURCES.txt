@@ -1,8 +1,0 @@
-setup.py
-pyrobosim_ros/__init__.py
-pyrobosim_ros/ros_conversions.py
-pyrobosim_ros/ros_interface.py
-pyrobosim_ros.egg-info/PKG-INFO
-pyrobosim_ros.egg-info/SOURCES.txt
-pyrobosim_ros.egg-info/dependency_links.txt
-pyrobosim_ros.egg-info/top_level.txt

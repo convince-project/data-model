@@ -1,1 +1,0 @@
-/convince_ws/src/pyrobosim/pyrobosim_ros/examples/demo_pddl_world.py

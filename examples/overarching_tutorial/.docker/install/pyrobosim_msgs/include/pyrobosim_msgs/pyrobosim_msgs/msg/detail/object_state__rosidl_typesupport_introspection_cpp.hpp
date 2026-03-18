@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_typesupport_introspection_cpp/pyrobosim_msgs/msg/detail/object_state__rosidl_typesupport_introspection_cpp.hpp

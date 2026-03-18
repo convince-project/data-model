@@ -1,6 +1,0 @@
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickAction.idl
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ActionResponse.idl
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:msg/ConditionResponse.idl
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/HaltAction.idl
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/TickCondition.idl
-/convince_ws/build/bt_interfaces_dummy/rosidl_adapter/bt_interfaces_dummy:srv/ReloadTree.idl

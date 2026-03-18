@@ -1,1 +1,0 @@
-/convince_ws/src/behavior_tree/bt_executor/include/pyrobosim_btcpp/nodes/close_node.hpp

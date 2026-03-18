@@ -1,1 +1,0 @@
-/convince_ws/src/pyrobosim/pyrobosim_ros/launch/demo.launch.py

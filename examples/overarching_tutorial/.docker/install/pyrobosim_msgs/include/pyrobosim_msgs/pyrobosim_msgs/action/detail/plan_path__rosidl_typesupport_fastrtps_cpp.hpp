@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_typesupport_fastrtps_cpp/pyrobosim_msgs/action/detail/plan_path__rosidl_typesupport_fastrtps_cpp.hpp

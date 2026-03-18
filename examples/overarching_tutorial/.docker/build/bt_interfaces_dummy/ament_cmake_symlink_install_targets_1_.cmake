@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/convince_ws/build/bt_interfaces_dummy/rosidl_generator_py/bt_interfaces_dummy/bt_interfaces_dummy_s__rosidl_typesupport_introspection_c.so" "TARGETS" "bt_interfaces_dummy_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/bt_interfaces_dummy")

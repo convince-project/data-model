@@ -1,1 +1,0 @@
-/convince_ws/src/behavior_tree/bt_executor/include/pyrobosim_btcpp/nodes/place_object_node.hpp

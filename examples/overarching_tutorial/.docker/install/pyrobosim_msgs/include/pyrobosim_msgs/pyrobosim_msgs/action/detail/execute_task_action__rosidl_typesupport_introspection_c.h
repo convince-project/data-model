@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_typesupport_introspection_c/pyrobosim_msgs/action/detail/execute_task_action__rosidl_typesupport_introspection_c.h

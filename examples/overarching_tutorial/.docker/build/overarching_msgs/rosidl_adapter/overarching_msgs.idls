@@ -1,5 +1,0 @@
-/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:msg/Location.idl
-/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Navigate.idl
-/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Pick.idl
-/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Place.idl
-/convince_ws/build/overarching_msgs/rosidl_adapter/overarching_msgs:action/Detect.idl

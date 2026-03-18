@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_generator_cpp/pyrobosim_msgs/srv/detail/set_location_state__traits.hpp

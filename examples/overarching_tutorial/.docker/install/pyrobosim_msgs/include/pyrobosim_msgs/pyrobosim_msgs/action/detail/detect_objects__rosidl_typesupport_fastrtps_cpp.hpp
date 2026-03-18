@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_typesupport_fastrtps_cpp/pyrobosim_msgs/action/detail/detect_objects__rosidl_typesupport_fastrtps_cpp.hpp

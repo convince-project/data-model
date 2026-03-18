@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_generator_cpp/pyrobosim_msgs/action/detail/follow_path__traits.hpp

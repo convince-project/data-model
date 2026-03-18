@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/ament_cmake_environment_hooks/local_setup.sh

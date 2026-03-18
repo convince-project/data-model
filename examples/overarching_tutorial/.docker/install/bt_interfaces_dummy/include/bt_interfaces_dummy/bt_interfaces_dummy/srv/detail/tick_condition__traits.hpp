@@ -1,1 +1,0 @@
-/convince_ws/build/bt_interfaces_dummy/rosidl_generator_cpp/bt_interfaces_dummy/srv/detail/tick_condition__traits.hpp

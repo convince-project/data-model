@@ -1,1 +1,0 @@
-/convince_ws/build/pyrobosim_msgs/rosidl_generator_c/pyrobosim_msgs/msg/task_plan.h
