@@ -108,6 +108,9 @@ class PolicyExecutor(Node):
             )
             self._policy_fn = self._refined_policy.get_action
             self._goal_fn = self._at_bread
+        elif self._mode == "initial":
+            self._policy_fn = self._initial_bt
+            self._goal_fn = self._at_bread
 
         self.get_logger().info("Executing {} Policy".format(self._mode))
 
@@ -119,9 +122,9 @@ class PolicyExecutor(Node):
             db_collection = self.get_parameter("db_collection").value
             self._db_collection = MongoClient(connect_str)[db_name][db_collection]
             self.get_logger().info("Connected to MongoDB")
-        elif self._mode == "refined":
+        elif self._mode == "refined" or self._mode == "initial":
             self._db_collection = None
-            self.get_logger().info("Running in refined mode - no Mongo logging")
+            self.get_logger().info(f"Running in {self._mode} mode - no Mongo logging")
 
     def _setup_actions(self):
         """Setup the action client for all actions."""
@@ -179,6 +182,34 @@ class PolicyExecutor(Node):
             The action to be executed
         """
         return random.choice(self._enabled_actions(state))
+    
+    def _initial_bt(self, state):
+        """Run the initial policy, which moves clockwise through the environment.
+        
+        Args:
+            state: The current state of the system
+        
+        Returns:
+            The next action to execute
+        """
+        if state["location"] == "hall":
+            return "hallTOfridge"
+        elif state["location"] == "dining_table":
+            if state["bread_at_dining_table"] == "unknown":
+                return "detect"
+        elif state["location"] == "side_table":
+            if state["bread_at_side_table"] == "unknown":
+                return "detect"
+            return "side_tableTOdining_table"
+        elif state["location"] == "kitchen_table":
+            if state["bread_at_kitchen_table"] == "unknown":
+                return "detect"
+            return "kitchen_tableTOside_table"
+        elif state["location"] == "fridge":
+            if state["bread_at_fridge"] == "unknown":
+                return "detect"
+            return "fridgeTOkitchen_table"
+
 
     def _log_action(self, state, new_state, action, start, end):
         """Log an action to the mongoDB database.
