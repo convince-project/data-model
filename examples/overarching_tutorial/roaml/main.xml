@@ -18,7 +18,7 @@
 
     <node_models>
         <input type="node-ascxml" src="./environment/world.ascxml" />
-        <input type="node-ascxml" src="./skills/PlaceObjectSkill.scxml" />
+        <input type="node-ascxml" src="./skills/PlaceObjectSkill.ascxml" />
     </node_models>
 
     <properties>
