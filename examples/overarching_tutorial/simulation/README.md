@@ -75,6 +75,13 @@ When `btcpp_executor` finishes (SUCCESS or FAILURE), the launch automatically sh
 > [!WARNING]
 > Some simulation actions are probabilistic (for example `pick`), so a BT execution can end in `FAILURE` even when the setup is correct.
 > If you see messages like `Simulated pick failure`, rerun the BT or use a tree with retries/fallback handling.
+>
+> To change action success probabilities, edit:
+> - `simulation/tutorial_sim/worlds/world.yaml` under `robots[0].action_execution_options.*.success_probability`
+>   (`navigate`, `pick`, `place`, `open`, `close`, `detect`).
+> - `roaml/environment/world_multiple_locations_w_failures.ascxml` if you want to change the
+>   probabilistic RoAML model used in the tutorial docs/examples (for example transitions with
+>   `prob="0.9"` / `prob="0.8"`).
 
 To choose a different BT when launching, pass the `tree` argument:
 

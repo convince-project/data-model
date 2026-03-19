@@ -93,7 +93,9 @@ int main(int argc, char** argv)
   factory.registerNodeType<BT::DecoratorGetNextLocation>("GetNextLocation", nh->get_logger());
   factory.registerNodeType<BT::CloseAction>("Close", params);
   factory.registerNodeType<BT::DetectObject>("DetectObject", params);
+  // Keep legacy "Navigate" and add RoAML-aligned "NavigateToLocation".
   factory.registerNodeType<BT::NavigateAction>("Navigate", params);
+  factory.registerNodeType<BT::NavigateAction>("NavigateToLocation", params);
   factory.registerNodeType<BT::OpenAction>("Open", params);
   factory.registerNodeType<BT::PickObject>("PickObject", params);
   factory.registerNodeType<BT::PlaceObject>("PlaceObject", params);
