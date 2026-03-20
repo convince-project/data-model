@@ -4,7 +4,7 @@
             <SetBlackboard output_key="current_location" value="fridge"/>
             <Repeat name="detect_or_next" num_cycles="3">
                 <Sequence>
-                    <Navigate name="navigate_to_obj" target="{current_location}" />
+                    <NavigateToLocation name="navigate_to_obj" target="{current_location}" />
                     <Fallback>
                         <DetectObject name="detect_obj" object="butter0" />
                         <GetNextLocation location="{current_location}" />
@@ -12,7 +12,7 @@
                 </Sequence>
             </Repeat>
             <PickObject name="pick_obj" object="butter" />
-            <Navigate name="navigate_to_start" target="dining_table" />
+            <NavigateToLocation name="navigate_to_start" target="dining_table" />
             <!-- <PlaceOb   ject name="place_obj" object="butter" /> -->
             <ROS2Action name="place_action_skill" service_name_tick="/PlaceObjectSkill/tick"  
                                 service_name_halt="/PlaceObjectSkill/halt" interface="ROS2SERVICE" isMonitored="false"/>
