@@ -1,7 +1,7 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="OverarchingTutorialLocationFailures">
         <Sequence name="main_sequence">
-            <SetBlackboard output_key="current_location" value="fridge"/>
+            <SetBlackboard output_key="current_location" value="'fridge'"/>
             <Inverter>
                 <Repeat name="reach_and_detect_attempt" num_cycles="3">
                     <Sequence>
@@ -26,7 +26,7 @@
                 <PickObject name="pick_obj" object="butter" />
             </RetryUntilSuccessful>
             <RetryUntilSuccessful name="navigation_to_start_attempts" num_attempts="4">
-                <NavigateToLocation name="navigate_to_start" target="dining_table" />
+                <NavigateToLocation name="navigate_to_start" target="'dining_table'" />
             </RetryUntilSuccessful>
             <ROS2Action name="place_action_skill" service_name_tick="/PlaceObjectSkill/tick"  
                                 service_name_halt="/PlaceObjectSkill/halt" interface="ROS2SERVICE" isMonitored="false"/>
