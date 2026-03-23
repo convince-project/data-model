@@ -1,18 +1,18 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="OverarchingTutorialLocations">
         <Sequence name="main_seq">
-            <SetBlackboard output_key="current_location" value="'fridge'"/>
-            <Repeat name="detect_or_next" num_cycles="3">
+            <GetNextLocation location="{current_location}" />
+            <Repeat name="detect_or_next" num_cycles="4">
                 <Sequence>
-                    <NavigateToLocation name="navigate_to_obj" target="{current_location}" />
+                    <NavigateToLocation name="navigate_to_obj" location="{current_location}" />
                     <Fallback>
-                        <DetectObject name="detect_obj" object="butter0" />
+                        <DetectObject name="detect_obj" object_id="{object}" />
                         <GetNextLocation location="{current_location}" />
                     </Fallback>
                 </Sequence>
             </Repeat>
-            <PickObject name="pick_obj" object="butter" />
-            <NavigateToLocation name="navigate_to_start" target="'dining_table'" />
+            <PickObject name="pick_obj" object_id="{object}" />
+            <NavigateToLocation name="navigate_to_start" location="'table'" />
             <!-- <PlaceOb   ject name="place_obj" object="butter" /> -->
             <ROS2Action name="place_action_skill" service_name_tick="/PlaceObjectSkill/tick"  
                                 service_name_halt="/PlaceObjectSkill/halt" interface="ROS2SERVICE" isMonitored="false"/>
