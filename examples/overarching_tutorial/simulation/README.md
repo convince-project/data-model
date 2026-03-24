@@ -56,6 +56,20 @@ In a third shell (attach to the same running container) run:
 ros2 run bt_executor btcpp_executor --ros-args -p tree:=src/roaml/policy/bt_tree.xml
 ```
 
+To set a global fallback object (used when BT ports do not provide `object_id`), add
+`-p default_object_id:=<object_id>`:
+
+The object id must refer to an object that is already spawned in the world and
+positioned in the place where you want to pick it from.
+Check `simulation/tutorial_sim/worlds/world.yaml` for object ids and their
+spawn locations.
+
+```bash
+ros2 run bt_executor btcpp_executor --ros-args \
+  -p tree:=src/roaml/policy/bt_tree.xml \
+  -p default_object_id:=soda0
+```
+
 Don't forget to run the custom skill:
 
 ```bash
@@ -68,6 +82,24 @@ Or launch the full stack in one command:
 convince_build_packages tutorial_run
 source /convince_ws/install/setup.bash
 ros2 launch tutorial_run full_simulation.launch.py
+```
+
+Launch arguments:
+- `tree:=...` to select a different BT file.
+- `default_object_id:=...` to set the global fallback object.
+
+Example with both arguments:
+
+```bash
+ros2 launch tutorial_run full_simulation.launch.py \
+  tree:=src/roaml/policy/bt_tree_locations.xml \
+  default_object_id:=soda0
+```
+
+Default BT (if `tree` is not provided):
+
+```bash
+src/roaml/policy/bt_tree.xml
 ```
 
 When `btcpp_executor` finishes (SUCCESS or FAILURE), the launch automatically shuts down all started nodes (`tutorial_sim`, `translate_component`, `place_object_skill`) so no ROS processes are left running.
@@ -83,17 +115,6 @@ When `btcpp_executor` finishes (SUCCESS or FAILURE), the launch automatically sh
 >   probabilistic RoAML model used in the tutorial docs/examples (for example transitions with
 >   `prob="0.9"` / `prob="0.8"`).
 
-To choose a different BT when launching, pass the `tree` argument:
-
-```bash
-ros2 launch tutorial_run full_simulation.launch.py tree:=src/roaml/policy/bt_tree_locations.xml
-```
-
-Default BT (if `tree` is not provided):
-
-```bash
-src/roaml/policy/bt_tree.xml
-```
 ## Translator  
 
 To make dynamic `Place` object resolution reliable during BT execution, two aligned updates were introduced:

@@ -57,7 +57,8 @@ int main(int argc, char** argv)
   auto nh = std::make_shared<rclcpp::Node>("btcpp_executor", node_options);
 
   nh->declare_parameter("tree", rclcpp::PARAMETER_STRING);
-  nh->declare_parameter<std::string>("tree_id", "MainTree");
+  nh->declare_parameter<std::string>("tree_id", "");
+  nh->declare_parameter<std::string>("default_object_id", "butter0");
   nh->declare_parameter("save_model_only", false);
 
   std::string tree_filename;
@@ -65,6 +66,9 @@ int main(int argc, char** argv)
 
   std::string tree_id;
   nh->get_parameter("tree_id", tree_id);
+
+  std::string default_object_id;
+  nh->get_parameter("default_object_id", default_object_id);
 
   bool save_model = false;
   nh->get_parameter("save_model_only", save_model);
@@ -199,6 +203,7 @@ int main(int argc, char** argv)
   // the global blackboard patterns is explained here:
   // https://www.behaviortree.dev/docs/tutorial-advanced/tutorial_16_global_blackboard
   auto global_blackboard = BT::Blackboard::create();
+  global_blackboard->set("default_object_id", default_object_id);
   BT::Tree tree = factory.createTree(tree_id, BT::Blackboard::create(global_blackboard));
 
   // This will add console messages for each action and condition executed

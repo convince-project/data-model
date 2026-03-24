@@ -17,17 +17,32 @@ public:
   // specify the ports offered by this node
   static BT::PortsList providedPorts()
   {
-    return ExecuteTaskNode::appendProvidedPorts({ BT::InputPort<std::string>("target") });
+    return ExecuteTaskNode::appendProvidedPorts(
+        { BT::InputPort<std::string>("target"), BT::InputPort<std::string>("location") });
   }
 
   // Implement the method that sends the goal
   bool setGoal(TaskAction& action) override
   {
     std::string location;
-    if(!getInput("target", location) || location.empty())
+    if((!getInput("target", location) || location.empty()) &&
+       (!getInput("location", location) || location.empty()))
     {
-      throw BT::RuntimeError("missing required input [target]");
+      RCLCPP_ERROR(logger(), "[%s] missing required input [target] or [location]", name().c_str());
+      return false;
     }
+
+    // Accept quoted literals from BT XML, e.g. 'fridge' or "fridge".
+    if(location.size() >= 2)
+    {
+      const char first = location.front();
+      const char last = location.back();
+      if((first == '\'' && last == '\'') || (first == '"' && last == '"'))
+      {
+        location = location.substr(1, location.size() - 2);
+      }
+    }
+
     // prepare the goal message
     action.type = "navigate";
     action.target_location = location;

@@ -29,10 +29,10 @@ robots:
         rng_seed: 42
         # battery_usage: 0.5  # Per meter traveled
       pick:
-        success_probability: 0.7
+        success_probability: 0.9
         # battery_usage: 5
       place:
-        success_probability: 0.7
+        success_probability: 0.9
         # battery_usage: 5
       open:
         success_probability: 0.9
@@ -41,7 +41,7 @@ robots:
         success_probability: 0.6
         # battery_usage: 8
       detect:
-        success_probability: 0.8
+        success_probability: 0.9
         # battery_usage: 0
 
 rooms:

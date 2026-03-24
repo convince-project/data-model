@@ -89,6 +89,15 @@ inline NodeStatus ExecuteTaskNode::onResultReceived(const ExecutionResult& execu
 
 inline NodeStatus ExecuteTaskNode::onFailure(ActionNodeErrorCode error)
 {
+  // In this simulation stack, a just-finished action may still be marked as executing
+  // for a short time, causing the next goal to be aborted transiently.
+  // Keep running so the action can be retried at the next BT tick.
+  if(error == ActionNodeErrorCode::ACTION_ABORTED)
+  {
+    RCLCPP_WARN(logger(), "[%s] action aborted, retrying on next tick", name().c_str());
+    return NodeStatus::RUNNING;
+  }
+
   RCLCPP_ERROR(logger(), "[%s] failed with error: %s", name().c_str(), toStr(error));
   return NodeStatus::FAILURE;
 }

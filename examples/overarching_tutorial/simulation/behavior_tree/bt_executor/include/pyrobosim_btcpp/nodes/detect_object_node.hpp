@@ -17,22 +17,44 @@ public:
   // specify the ports offered by this node
   static BT::PortsList providedPorts()
   {
-    return ExecuteTaskNode::appendProvidedPorts({ BT::InputPort<std::string>("object") });
+    return ExecuteTaskNode::appendProvidedPorts(
+      { BT::InputPort<std::string>("object"), BT::BidirectionalPort<std::string>("object_id") });
   }
 
   // Implement the method that sends the goal
   bool setGoal(TaskAction& action) override
   {
     std::string object;
-    if(!getInput("object", object) || object.empty())
+    if((!getInput("object", object) || object.empty()) &&
+       (!getInput("object_id", object) || object.empty()))
     {
-      throw BT::RuntimeError("missing required input [object]");
+      if(!config().blackboard || !config().blackboard->get("default_object_id", object) ||
+         object.empty())
+      {
+        object = "butter0";
+      }
+      RCLCPP_DEBUG(logger(), "[%s] missing [object]/[object_id], using fallback object '%s'",
+                   name().c_str(), object.c_str());
     }
+    last_detected_object_ = object;
     // prepare the goal message
     action.type = "detect";
     action.object = object;
     return true;
   }
+
+  NodeStatus onResultReceived(const ExecutionResult& execution_result) override
+  {
+    auto status = ExecuteTaskNode::onResultReceived(execution_result);
+    if(status == NodeStatus::SUCCESS)
+    {
+      setOutput("object_id", last_detected_object_);
+    }
+    return status;
+  }
+
+private:
+  std::string last_detected_object_{ "butter0" };
 };
 
 }  // namespace BT

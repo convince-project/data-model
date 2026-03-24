@@ -13,6 +13,12 @@ def generate_launch_description():
         description="Behavior tree file path passed to bt_executor",
     )
 
+    default_object_id_arg = DeclareLaunchArgument(
+        "default_object_id",
+        default_value="butter0",
+        description="Fallback object id used by bt_executor when BT ports do not provide one",
+    )
+
     simulator = Node(
         package="tutorial_sim",
         executable="run",
@@ -43,7 +49,12 @@ def generate_launch_description():
         name="btcpp_executor",
         output="screen",
         emulate_tty=True,
-        parameters=[{"tree": LaunchConfiguration("tree")}],
+        parameters=[
+            {
+                "tree": LaunchConfiguration("tree"),
+                "default_object_id": LaunchConfiguration("default_object_id"),
+            }
+        ],
     )
 
     shutdown_on_bt_exit = RegisterEventHandler(
@@ -56,6 +67,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             tree_arg,
+            default_object_id_arg,
             simulator,
             translator,
             place_object_skill,
