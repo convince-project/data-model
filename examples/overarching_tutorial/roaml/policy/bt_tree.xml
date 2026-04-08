@@ -4,17 +4,17 @@
         <Sequence>
             <!--
             loc
-            0 .. table
-            1 .. desk
+            0 .. origin
+            1 .. object_location
 
             obj
             0 .. waste0
             -->
 
-            <NavigateToLocation name="navigate_to_obj" location="1" />
+            <NavigateToLocation name="navigate_to_obj" location="'table'" />
             <DetectObject name="detect_obj" object_id="{detection_id}" />
             <PickObject name="pick_obj" object_id="{detection_id}" />
-            <NavigateToLocation name="navigate_to_start" location="0" />
+            <NavigateToLocation name="navigate_to_start" location="'start'" />
             <PlaceObject name="place_obj" />
         </Sequence>
     </BehaviorTree>
