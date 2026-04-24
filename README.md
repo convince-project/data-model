@@ -11,3 +11,12 @@ The sub-folders are structured along the information sources and data formats id
 In the [examples](examples) folder, for each of the three CONVINCE use cases (i.e. the vacuum cleaner robot, robotic museum guide, and autonomous assembly robot), data format examples of the respective specifications can be found.
 
 For additional examples, as well as a comprehensive tutorial on the use of the CONVINCE tools, we refer to the [overview repository](https://github.com/convince-project/overview) and [its documentation](https://convince-project.github.io/overview/).
+
+## Cloning this repository
+
+This repository uses submodules to retrieve some of the data-format-specifications.
+
+In order to clone this repository, together with the related submodules, use the command:
+```bash
+git clone --recurse-submodules https://github.com/convince-project/data-model.git
+```
