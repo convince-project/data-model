@@ -1,0 +1,4 @@
+[submodule "data-format-specifications/knowledge-graph-typeql-skrawl"]
+	path = data-format-specifications/knowledge-graph-typeql-skrawl
+	url = https://github.com/convince-project/sit-aw-skrawl
+	branch = main
