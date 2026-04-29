@@ -1,0 +1,137 @@
+{
+    "properties": [
+        {
+            "name": "tree_success",
+            "expression": {
+                "op": "filter",
+                "fun": "values",
+                "values": {
+                "op": "Pmin",
+                "exp": {
+                    "op": "F",
+                    "exp": {
+                    "comment": "1: SUCCESS, 2: FAILURE, 3: RUNNING",
+                    "op": "=",
+                    "left": "bt_1000_response__status",
+                    "right": 1
+                    }
+                }
+                },
+                "states": {
+                "op": "initial"
+                }
+            }
+        },
+        {
+            "name": "battery_alarm_response_1",
+            "expression": {
+                "op": "filter",
+                "fun": "values",
+                "values": {
+                "op": "Pmin",
+                "exp": {
+                    "op": "G",
+                    "exp": {
+                    "op": "⇒",
+                    "left": "topic_NotifyUserComponent__alarm_msg__ros_fields__data",
+                    "right": {
+                        "op": "≤",
+                        "left": "topic_BatteryComponent__battery_level_msg__ros_fields__data",
+                        "right": 30
+                    }
+                    }
+                }
+                },
+                "states": {
+                "op": "initial"
+                }
+            }
+        },
+        {
+            "name": "battery_alarm_response_2",
+            "expression": {
+                "op": "filter",
+                "fun": "values",
+                "values": {
+                "op": "Pmin",
+                "exp": {
+                    "op": "U",
+                    "left": {
+                        "op": "∨",
+                        "left": {
+                            "op": "¬",
+                            "exp": "topic_BatteryComponent__battery_level_msg.valid"
+                        },
+                        "right": {
+                            "op": "≥",
+                            "left": "topic_BatteryComponent__battery_level_msg__ros_fields__data",
+                            "right": 25
+                        }
+                    },
+                    "right": {
+                        "op": "∧",
+                        "left": "topic_NotifyUserComponent__alarm_msg__ros_fields__data",
+                        "right": "topic_NotifyUserComponent__alarm_msg.valid"
+                    }
+                }
+                },
+                "states": {
+                "op": "initial"
+                }
+            }
+        },
+        {
+            "name": "no_alarm_if_battery_high",
+            "expression": {
+                "op": "filter",
+                "fun": "values",
+                "values": {
+                "op": "Pmin",
+                "exp": {
+                    "op": "G",
+                    "exp": {
+                    "op": "⇒",
+                    "left": {
+                        "op": ">",
+                        "left": "topic_BatteryComponent__battery_level_msg__ros_fields__data",
+                        "right": 30
+                    }, 
+                    "right": {
+                        "op": "¬",
+                        "exp": "topic_NotifyUserComponent__alarm_msg__ros_fields__data"
+                    }
+                    }
+                }
+                },
+                "states": {
+                "op": "initial"
+                }
+            }
+        },
+        {
+            "name": "battery_recurrence",
+            "expression": {
+                "op": "filter",
+                "fun": "values",
+                "values": {
+                "op": "Pmin",
+                "exp": {
+                    "op": "G",
+                    "exp": {
+                    "op": "⇒",
+                    "left": {
+                        "op": ">",
+                        "left": "topic_clock_msg__ros_fields__sec",
+                        "right": 50
+                    }, 
+                    "right": "topic_BatteryComponent__battery_level_msg.valid"
+                    }
+                }
+                },
+                "states": {
+                "op": "initial"
+                }
+            }
+        }
+    ]
+}
