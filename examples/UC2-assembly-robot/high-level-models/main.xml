@@ -6,29 +6,29 @@
     </parameters>
 
     <behavior_tree>
-        <input type="bt.cpp-xml" src="./Policy0.xml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/SelectBlock.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/ComputeBestGraspPose.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/ComputeBestPlacePose.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/MoveTo.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/CloseGripper.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/OpenGripper.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/RecoverBlock.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/CheckBlockHasFallen.scxml" />
-        <input type="bt-plugin-ascxml" src="../Plugins/CheckGripperIsEmpty.scxml" />
+        <input type="bt.cpp-xml" src="./bt_policies/Policy0.xml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/SelectBlock.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/ComputeBestGraspPose.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/ComputeBestPlacePose.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/MoveTo.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/CloseGripper.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/OpenGripper.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/RecoverBlock.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/CheckBlockHasFallen.ascxml" />
+        <input type="bt-plugin-ascxml" src="./bt_plugins/CheckGripperIsEmpty.ascxml" />
     </behavior_tree>
 
     <node_models>
-        <input type="node-ascxml" src="../Skills/ComputeBestGraspPoseSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/ComputeBestPlacePoseSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/MoveToSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/CloseGripperSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/OpenGripperSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/RecoverBlockSkill.scxml" />
-        <input type="node-ascxml" src="../Skills/Environment.scxml" />
+        <input type="node-ascxml" src="./skills/ComputeBestGraspPoseSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/ComputeBestPlacePoseSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/MoveToSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/CloseGripperSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/OpenGripperSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/RecoverBlockSkill.ascxml" />
+        <input type="node-ascxml" src="./skills/Environment.ascxml" />
     </node_models>
 
     <properties>
-        <input type="jani" src="./properties.jani" />
+        <input type="jani" src="./properties/properties.jani" />
     </properties>
 </roaml>
